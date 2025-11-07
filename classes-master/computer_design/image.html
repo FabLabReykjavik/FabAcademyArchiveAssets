@@ -1,0 +1,25 @@
+<html>
+<body>
+<pre>
+
+<a href=../project_management/ender3v3.png>PNG</a> (uncompressed, e.g. 89 MB) vs <a href=../project_management/ender3v3.jpg>JPG</a> (compressed, e.g. 184 kB)
+
+<a href=https://www.gimp.org>GIMP</a>
+   <a href=https://www.gimp.org/tutorials/GIMP_Quickies/#changing-the-size-filesize-of-a-jpeg>compress</a>
+   <a href=https://www.gimp.org/tutorials/GIMP_Quickies/#changing-the-size-dimensions-of-an-image-scale>resize</a>
+   <a href=https://alessandrofrancesconi.it/projects/bimp>batch</a>
+
+<a href=https://imagemagick.org>ImageMagick</a>
+   list formats:
+      convert -list format
+   convert PNG to JPG:
+      convert input.png output.jpg
+   convert all PNGs to JPGs: 
+      mogrify -format jpg *.png
+   convert SVG to PNG at 1000 DPI:
+      convert -density 1000 -units PixelsPerInch input.svg output.png
+   compress JPG to quality 50% width 1000:
+      convert input.jpg -quality 50% -resize 1000 output.jpg
+   compress all JPGs to quality 50% width 1000:
+      mogrify -quality 50% -resize 1000 *.jpg
+

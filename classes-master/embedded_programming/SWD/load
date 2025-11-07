@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo ./edbg -b -t samd11 -pv -f free_dap_d11c_mini.bin

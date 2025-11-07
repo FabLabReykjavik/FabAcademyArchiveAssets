@@ -1,0 +1,173 @@
+<html>
+<body>
+
+<p>
+
+<hr>
+<b>NICE DCV (AWS)</b><br>
+<hr>
+
+<pre>
+Windows
+   choose a DCV AMI:
+      https://aws.amazon.com/marketplace/seller-profile?id=74eff437-1315-4130-8b04-27da3fa01de1
+   choose and launch an instance:
+      https://aws.amazon.com/ec2/instance-types/
+   set password:
+      user: administrator
+      password: retrieve from AWS management console
+   connect:
+      browser:
+         https://server_ip_address:8443
+      native client:
+         https://www.nice-dcv.com/
+
+Linux (AMI)
+   choose a DCV AMI:
+      https://aws.amazon.com/marketplace/search/results?searchTerms=dcv
+   choose and launch an instance:
+      https://aws.amazon.com/ec2/instance-types/
+   configure:
+      sudo adduser your_user_name
+      sudo vim /etc/dcv/dcv.conf 
+         create-session = true
+         owner="your_user_name"
+         web-port=your_desired_port_number
+         idle-timeout=0 to disable timeout
+      sudo systemctl restart dcvserver
+   connect:
+      browser:
+         https://server_ip_address:your_desired_port_number
+      native client:
+         https://www.nice-dcv.com/
+
+Linux (Ubuntu 22.04)
+   choose and launch an instance:
+      https://aws.amazon.com/ec2/instance-types/
+   connect to it:
+      https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstances.html
+   install desktop, drivers, NICE DCV:
+      sudo passwd ubuntu
+      sudo apt update
+      sudo apt upgrade
+      sudo reboot now
+      sudo apt install ubuntu-desktop
+      sudo vim /etc/gdm3/custom.conf
+         WaylandEnable=false
+      sudo systemctl restart gdm3
+      sudo systemctl isolate graphical.target
+      install NVIDIA drivers (if needed):
+         sudo apt install build-essential
+         https://developer.nvidia.com/cuda-downloads
+         sudo sh cuda_11.7.0_515.43.04_linux.run
+         sudo nvidia-xconfig --preserve-busid --enable-all-gpus
+      sudo systemctl isolate multi-user.target
+      sudo systemctl isolate graphical.target
+      install NICE DCV driver:
+         https://download.nice-dcv.com/
+         sudo apt install ./nice-dcv-server_2022.1.13216-1_amd64.ubuntu2204.deb
+         sudo apt install ./nice-dcv-web-viewer_2022.1.13216-1_amd64.ubuntu2204.deb
+      sudo usermod -aG video dcv
+      sudo adduser your_user_name
+      sudo vim /etc/dcv/dcv.conf 
+         create-session = true
+         owner="your_user_name"
+         web-port=your_desired_port_number
+      sudo systemctl enable dcvserver
+      sudo reboot now
+   connect:
+      browser:
+         https://server_ip_address:your_desired_port_number
+      native client:
+         https://www.nice-dcv.com/
+
+</pre>
+
+<p>
+
+<hr>
+<b>RDP (AWS + Ubuntu)</b><br>
+<hr>
+
+<p>
+
+<pre>
+sign in to console and launch instance:
+   https://aws.amazon.com/console/
+choose security group (open all or just required ports):
+   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
+ssh to instance:
+   ssh -i ~/.ssh/keys/your_key.pem ubuntu@your_IP_address
+set password:
+   sudo passwd ubuntu
+update, upgrade, install:
+   sudo apt update
+   sudo apt upgrade
+   sudo apt install xrdp xfce4 xfce4-terminal gnome-icon-theme
+      choose lightdm window manager
+   sudo adduser your_username
+   sudo su your_username
+   echo xfce4-session >~/.xsession
+connect with RDP client:
+   https://remmina.org/how-to-install-remmina/
+   https://support.microsoft.com/en-us/help/4028379/windows-10-how-to-use-remote-desktop
+   https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac
+possible options to check:
+   client:
+      screen size
+      color depth
+      encoding (RemoteFX)
+   server:
+      port (/etc/xrdp/xrdp.ini)
+      ssh tunnel
+</pre>
+
+
+<hr>
+<b>VNC (AWS + Ubuntu)</b><br>
+<hr>
+
+<p>
+
+<pre>
+sign in to console and launch instance:
+   https://aws.amazon.com/console/
+choose security group (open all or just required ports):
+   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
+ssh to instance:
+   ssh -i ~/.ssh/keys/your_key.pem ubuntu@your_IP_address
+set password:
+   sudo passwd ubuntu
+update, upgrade, install:
+   sudo apt-get update
+   sudo apt-get dist-upgrade
+   sudo apt-get install ubuntu-desktop vnc4server x11vnc gnome-core gnome-session-flashback python python-numpy lightdm
+      choose lightdm
+set up VNC:
+   vncpasswd
+   vncserver
+   vncserver -kill :1
+   vim .vnc/xstartup
+      #!/bin/sh
+      unset SESSION_MANAGER
+      gnome-session --session=gnome-classic &
+      [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+      [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+viewers
+   Remmina
+   Vinagre
+   noVNC
+set up noVNC:
+   git clone https://github.com/novnc/noVNC.git
+   cd noVNC
+   openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
+reboot:
+   sudo reboot now
+start x11vnc:
+   sudo x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth /var/run/lightdm/root/:0 -usepw -localhost &
+start noVNC:
+   cd noVNC
+   ./utils/launch.sh --vnc localhost:5900 --listen your_port --cert self.pem
+open remote desktop:
+   https://your_IP_address:your_port/vnc.html
+</pre>

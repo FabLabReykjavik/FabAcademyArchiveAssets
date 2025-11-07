@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="mqtt.min.js"></script>
+<script>
+//
+// hello.MQTT-blink.C3.html
+//    Seeed XIAO ESP32C3 MQTT blink hello-world
+//
+// uses https://github.com/mqttjs
+//    https://unpkg.com/mqtt/dist/mqtt.min.js
+//
+// Neil Gershenfeld 11/17/23
+//
+// This work may be reproduced, modified, distributed,
+// performed, and displayed for any purpose, but must
+// acknowledge this project. Copyright is retained and
+// must be preserved. The work is provided as is; no
+// warranty is provided, and users accept all liability.
+//
+var client
+//
+function message(msg) {
+   document.getElementById("message").innerHTML = msg
+   }
+//
+function connect() {
+   const address = document.getElementById("address").value
+   const port = document.getElementById("port").value
+   const host = "ws://"+address+":"+port+"/mqtt"
+   const options = {clientId:"hello.MQTT-blink.C3.html"}
+   message('connecting client')
+   client = mqtt.connect(host,options)
+   client.on('connect',() => {
+      message('connected to '+host)
+      client.subscribe('button')
+      })
+   client.on('message',(topic,msg,packet) => {
+      message('received message: '+msg.toString()+', on topic: '+topic)
+      })
+   }
+//
+function disconnect() {
+   client.end()
+   message('client disconnected')
+   }
+//
+function LEDon() {
+   client.publish('LED','1')
+   message('transit message: 1, on topic: LED')
+   }
+//
+function LEDoff() {
+   client.publish('LED','0')
+   message('transit message: 0, on topic: LED')
+   }
+</script>
+</head>
+<body style="margin-left:2%">
+<br>
+MQTT broker WebSocket address: <input type="text" id="address" value="192.168.1.146" onchange="myFunction()"> &nbsp;port: <input type="text" id="port" value="9001" onchange="myFunction()">
+<br><br>
+<button onclick="connect()" style="font-size:125%">Connect</button>&nbsp;
+<button onclick="disconnect()" style="font-size:125%">Disconnect</button>&nbsp;
+<button onclick="LEDon()" style="font-size:125%">turn LED on</button>&nbsp;
+<button onclick="LEDoff()" style="font-size:125%">turn LED off</button>&nbsp;
+<br><br>
+<div id='message'></div>
+</body>
+</html>

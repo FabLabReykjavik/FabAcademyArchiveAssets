@@ -1,0 +1,232 @@
+#
+# hello.DRV8251A.RP2040.stepper.py
+#    DRV8251A H-bridge stepper RP2040 hello-world
+#
+# Neil Gershenfeld 11/17/24
+#
+# This work may be reproduced, modified, distributed,
+# performed, and displayed for any purpose, but must
+# acknowledge this project. Copyright is retained and
+# must be preserved. The work is provided as is; no
+# warranty is provided, and users accept all liability.
+#
+# install MicroPython
+#    https://micropython.org/download/RPI_PICO/
+#
+from rp2 import PIO,StateMachine,asm_pio
+import machine,sys,time,math
+from machine import Pin,ADC
+#
+# H-bridge settings
+#
+#machine.freq(250_000_000)
+#pwm_freq = 200_000_000 # faster, for smoother stepping
+#pwm_range = 500 # 200 kHz, 2 instructions
+pwm_freq = 50_000_000 # slower, for reduced switching losses
+pwm_range = 1000 # 25 kHz, 2 instructions
+pwm_pinA0 = 27
+pwm_pinA1 = 28
+pwm_pinB0 = 7
+pwm_pinB1 = 0
+vrefA_pin = 26
+vrefB_pin = 6
+#
+# PWM PIO program
+#
+@asm_pio(sideset_init=PIO.OUT_LOW)
+def pwm_prog():
+    pull(noblock).side(0) # empty FIFO moves X to OSR
+    mov(x,osr) # OSR has PWM threshold
+    mov(y,isr) # ISR has PWM range
+    label("loop")
+    jmp(x_not_y,"skip")
+    nop().side(1) # toggle output when X matches Y
+    label("skip")
+    jmp(y_dec,"loop") # loop over Y
+class pwm_pio:
+    def __init__(self,sm_id,pwm_pin,pwm_range,pwm_freq):
+        self._sm = StateMachine(sm_id,pwm_prog,freq=pwm_freq,sideset_base=machine.Pin(pwm_pin))
+        self._sm.put(pwm_range)
+        self._sm.exec("pull()")
+        self._sm.exec("mov(isr,osr)")
+        self._sm.active(1)
+        self._max_count = pwm_range
+        self.put = self._sm.put
+#
+# allocate and turn off PWMs
+#
+pwmA0 = pwm_pio(0,pwm_pinA0,pwm_range,pwm_freq)
+pwmA1 = pwm_pio(1,pwm_pinA1,pwm_range,pwm_freq)
+pwmB0 = pwm_pio(2,pwm_pinB0,pwm_range,pwm_freq)
+pwmB1 = pwm_pio(3,pwm_pinB1,pwm_range,pwm_freq)
+pwmA0.put(0)
+pwmA1.put(0)
+pwmB0.put(0)
+pwmB1.put(0)
+#
+# turn on VREFs
+#
+vrefA = Pin(vrefA_pin,Pin.OUT)
+vrefB = Pin(vrefB_pin,Pin.OUT)
+vrefA.value(1)
+vrefB.value(1)
+#
+# set up ADC
+#
+adc = ADC(Pin(29))
+#
+# convert ADC to amps
+#
+def amps(count):
+    return (3.3*count/65535)/(1575e-6*1000)
+#
+# output PWMs and read ADC
+#
+def output(A,B,delay):
+    if (A > 0):
+        pwmA0.put(int(A*pwm_range))
+        pwmA1.put(0)
+    else:
+        pwmA0.put(0)
+        pwmA1.put(int(-A*pwm_range))
+    if (B > 0):
+        pwmB0.put(int(B*pwm_range))
+        pwmB1.put(0)
+    else:
+        pwmB0.put(0)
+        pwmB1.put(int(-B*pwm_range))
+    count = adc.read_u16()
+    time.sleep_us(delay)
+    return count
+#
+# full step forward
+#
+def full_step_fwd(delay,on):
+    count = 0
+    count += output(on,on,delay)
+    count += output(-on,on,delay)
+    count += output(-on,-on,delay)
+    count += output(on,-on,delay)
+    return count/4
+#
+# full step reverse
+#
+def full_step_rev(delay,on):
+    count = 0
+    count += output(on,-on,delay)
+    count += output(-on,-on,delay)
+    count += output(-on,on,delay)
+    count += output(on,on,delay)
+    return count/4
+#
+# half step forward
+#
+def half_step_fwd(delay,on):
+    count = 0
+    count += output(on,on,delay)
+    count += output(0,on,delay)
+    count += output(-on,on,delay)
+    count += output(-on,0,delay)
+    count += output(-on,-on,delay)
+    count += output(0,-on,delay)
+    count += output(on,-on,delay)
+    count += output(on,0,delay)
+    return count/8
+#
+# half step reverse
+#
+def half_step_rev(delay,on):
+    count = 0
+    count += output(on,on,delay)
+    count += output(on,0,delay)
+    count += output(on,-on,delay)
+    count += output(0,-on,delay)
+    count += output(-on,-on,delay)
+    count += output(-on,0,delay)
+    count += output(-on,on,delay)
+    count += output(0,on,delay)
+    return count/8
+#
+# micro step forward
+#
+def micro_step_fwd(delay,on,micro_step_count):
+    count = 0
+    for i in range(micro_step_count):
+        A = on*math.cos(2*math.pi*i/(micro_step_count-1))
+        B = on*math.sin(2*math.pi*i/(micro_step_count-1))
+        count += output(A,B,delay)
+    return count/micro_step_count
+#
+# micro step reverse
+#
+def micro_step_rev(delay,on,micro_step_count):
+    count = 0
+    for i in range(micro_step_count):
+        A = on*math.sin(2*math.pi*i/(micro_step_count-1))
+        B = on*math.cos(2*math.pi*i/(micro_step_count-1))
+        count += output(A,B,delay)
+    return count/micro_step_count
+#
+# main loop
+#
+while True:
+    #
+    step_count = 20
+    step_delay_us = 10000
+    #
+    on = 0.7
+    count = 0
+    for _ in range(step_count):
+        count += full_step_fwd(step_delay_us,on)
+    print(f"full step forward, PWM fraction 0.7, amps/phase: {amps(count/step_count):.2f}")
+    count = 0
+    for _ in range(step_count):
+        count += full_step_rev(step_delay_us,on)
+    print(f"full step reverse, PWM fraction 0.7, amps/phase: {amps(count/step_count):.2f}")
+    #
+    on = 0.8
+    count = 0
+    for _ in range(step_count):
+        count += full_step_fwd(step_delay_us,on)
+    print(f"full step forward, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")
+    count = 0
+    for _ in range(step_count):
+        count += full_step_rev(step_delay_us,on)
+    print(f"full step reverse, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")
+    #
+    on = 0.9
+    count = 0
+    for _ in range(step_count):
+        count += full_step_fwd(step_delay_us,on)
+    print(f"full step forward, PWM fraction 0.9, amps/phase: {amps(count/step_count):.2f}")
+    count = 0
+    for _ in range(step_count):
+        count += full_step_rev(step_delay_us,on)
+    print(f"full step reverse, PWM fraction 0.9, amps/phase: {amps(count/step_count):.2f}")
+    #
+    step_count = 20
+    step_delay_us = 5000
+    on = 0.8
+    #
+    count = 0
+    for _ in range(step_count):
+        count += half_step_fwd(step_delay_us,on)
+    print(f"half step forward, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")
+    count = 0
+    for _ in range(step_count):
+        count += half_step_rev(step_delay_us,on)
+    print(f"half step reverse, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")
+    #
+    step_count = 20
+    step_delay_us = 100
+    on = 0.8
+    micro_step_count = 100
+    #
+    count = 0
+    for _ in range(step_count):
+        count += micro_step_fwd(step_delay_us,on,micro_step_count)
+    print(f"micro step forward, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")
+    count = 0
+    for _ in range(step_count):
+        count += micro_step_rev(step_delay_us,on,micro_step_count)
+    print(f"micro step reverse, PWM fraction 0.8, amps/phase: {amps(count/step_count):.2f}")

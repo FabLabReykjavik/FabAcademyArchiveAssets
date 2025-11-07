@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>System Integration</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b><a href=dis/index.html>system dis-integration</a></b>
+
+<b>design</b>
+   <a href=https://www.peppercontent.io/blog/apple-design-history/>PCs <i>vs</i> Macs</a>
+   <a href=https://fab.cba.mit.edu/classes/HTDAA.17/index.html>conceptual, preliminary, detailed</a>
+   <i><a href=Jan.pdf>UX, user experience</a>, <a href=https://fab.cba.mit.edu/classes/865.24/topics/usability_acc_sus/book/usability.html>usability</a></i>
+   <i><a href=https://www.disher.com/blog/design-for-manufacturing/>DFM (Design for Manufacturing)</a></i>
+      standard components
+      (near) net shape
+      flexures <i>vs</i> fasteners <i>vs</i> adhesives
+      <a href=https://mtm.cba.mit.edu/2011/2011_mtm-snap/mtm_snap-lock/index.html>self-aligning features</a>
+      <a href=https://www.theverge.com/2023/9/14/23873345/tesla-gigapress-gigacasting-manufacturing-breakthrough>minimize parts</a>
+      <a href=https://www.youtube.com/watch?v=zdv6MlFlOrA>process selection</a>
+   <i>documentation</i>
+      design files
+      <a href=https://github.com/openscopeproject/InteractiveHtmlBom>BOM</a>
+      <a href=https://wiki.freecad.org/OSH_Automated_Documentation>production</a>
+      <a href=https://howtoons.com/>operation</a>
+
+<b>packaging</b>
+   PCB mounting
+   wire routing
+   <a href=https://help.prusa3d.com/guide/4-z-axis-assembly_67704>mechanism alignment</a>
+   <a href=https://fabacademy.org/2024/labs/skylab/group_assignment/week12/>surface finish</a>
+
+<b>testing</b>
+   QA (Quality Assurance, defect prevention)
+   QC (Quality Control, defect detection)
+   shake
+   burn-in
+   cycling
+   environmental
+   <a href=https://about.gitlab.com/topics/devsecops/what-is-fuzz-testing/>fuzzing</a>
+
+<b>failure modes</b>
+   <i>mechanical</i>
+      loads beyond the elastic limit
+      <a href=https://cba.mit.edu/docs/papers/24.01.MIPS.pdf>cracking at stress concentration, fillets</a>
+      <a href=https://www.cnet.com/reviews/makerbot-replicator-review/>fasteners loosening, vibration, thread locks</a>
+      stripped threads
+      <a href=https://mtm.cba.mit.edu/2011/2011_mtm-snap/mtm_snap-lock/index.html>misalignment, binding, flexures</a>
+      <a href=https://www.wsdot.wa.gov/tnbhistory/collapse.htm>dynamic instability</a>
+   <i>wiring</i>
+      ripping up PCB traces
+      pulling wires out of connectors
+      <a href=https://www.amazon.com/s?k=strain+relief>strain relief</a>
+      polarized connectors
+      <a href=https://hackaday.com/2018/04/04/kapton-miracle-material-with-a-tragic-history/>insulation abrasion, dielectric breakdown, shorts</a>
+      <a href=https://gitlab.cba.mit.edu/jakeread/ratchet/-/raw/master/old-ratchet/log/2020-05-31_ratchet-hip.jpg>wire guides</a>
+      <a href=https://www.nytimes.com/2006/12/11/business/worldbusiness/11iht-airbus.3860198.html>wire harnesses</a>
+      connector corrosion
+      insulation abrasion
+   <i>components</i>
+      MOSFET over-voltage, current, temperature
+      inductive flyback, reverse protection diodes
+      regulator reverse polarity
+      processor over-voltage, GPIO current source, sink 
+      current limiting
+      <a href=https://www.digikey.com/en/products/filter/tvs-diodes/144>transient protection</a>
+      <a href=https://www.seymourduncan.com/blog/installation-setup/how-to-shield-a-guitar>EMI shielding</a>
+   <i>power</i>
+      budget, supply compliance
+      batteries, lifetime
+      <a href=https://www.lunyeecnc.com/products/lunyee-3018-pro-max-cnc-router-laser-2-in-1-machine>48v supply to 24V input</a>
+      transient noise, processor faults
+      wiring resistance, inductance
+      bypass capacitors
+      ground loops, mecca
+   <i>software</i>
+      memory leaks
+      <a href=https://www.vox.com/2014/6/19/18076318/heartbleed>buffer overflow</a>
+      race conditions
+      variable scope
+      object interfaces
+      <a href=https://arstechnica.com/information-technology/2021/09/npm-package-with-3-million-weekly-downloads-had-a-severe-vulnerability/>dependencies</a>
+      <a href=https://www.okta.com/identity-101/security-through-obscurity/>obscurity</a>
+   <i>scaling</i>
+      <a href=https://fab.cba.mit.edu/classes/MAS.864/>O(?)</a>
+      <a href=https://www.nature.com/articles/22055>phase transitions in complexity</a>
+   <i>manufacturing</i>
+      <a href=https://www.cnbc.com/2021/02/11/how-covid-led-to-a-60-billion-global-chip-shortage-for-automakers.html>supply chains</a>
+      <a href=https://www.economist.com/business/2022/07/10/after-a-turbocharged-boom-are-chipmakers-in-for-a-supersize-bust>capacity</a>
+   <i>collaboration</i>
+      <a href=https://www.simscale.com/blog/nasa-mars-climate-orbiter-metric/>data interchange</a>
+   <i>fail fast</i>
+      <a href=https://www.cnbc.com/2023/07/26/boeing-has-lost-1point5-billion-developing-starliner-spacecraft-for-nasa.html>feed-forward</a> <i>vs</i> <a href=https://www.space.com/every-spacex-starship-explosion-lessons-learned>feedback</a> development
+
+<b>repair</b>
+   drop, shake
+   modularity
+   <a href=https://en.wikipedia.org/wiki/Bob_Widlar>Widlarize</a>
+
+<b>lifecycle</b>
+   <a href=https://pirg.org/campaigns/right-to-repair>(right to) repair</a>
+   disassembly, reuse, recycling
+   <a href=https://environment.ec.europa.eu/topics/waste-and-recycling/end-life-vehicles_en>end of life</a>
+
+<b><a href=https://archive.fabacademy.org/archives/2016/fablabtorino/students/440/project/P02/B2/electronics.html>assignment</a></b>
+   Design and document the system integration for your final project

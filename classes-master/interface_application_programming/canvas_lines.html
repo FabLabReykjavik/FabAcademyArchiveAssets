@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>canvas line test</title>
+</head>
+<body>
+<div id="div" style="position:absolute;height:100%;">
+<canvas id="canvas">
+browser does not support HTML5 canvas
+</canvas>
+</div>
+<script type="text/javascript">
+var div = document.getElementById("div");
+var height = div.clientHeight;
+var width = height;
+var canvas = document.getElementById("canvas");
+canvas.width = width;
+canvas.height = height;
+var ctx = canvas.getContext("2d");
+var nlines = 1000;
+var linewidth = 0.002;
+var d = new Date();
+t0 = d.getTime();
+var x1 = new Array(nlines);
+var x2 = new Array(nlines);
+var dx1 = new Array(nlines);
+var dx2 = new Array(nlines);
+var y1 = new Array(nlines);
+var y2 = new Array(nlines);
+var dy1 = new Array(nlines);
+var dy2 = new Array(nlines);
+for (i = 0; i < nlines; ++i) {
+   x1[i] = Math.random();
+   x2[i] = Math.random();
+   dx1[i] = 0.02*(Math.random()-.5);
+   dx2[i] = 0.02*(Math.random()-.5);
+   y1[i] = Math.random();
+   y2[i] = Math.random();
+   dy1[i] = 0.02*(Math.random()-.5);
+   dy2[i] = 0.02*(Math.random()-.5);
+   }
+var lines = new Array(nlines);
+var circles = new Array(nlines);
+var told = 0;
+var tnew = 0;
+function line(x1,y1,x2,y2) {
+   ctx.beginPath();
+   ctx.moveTo(x1,y1);
+   ctx.lineTo(x2,y2);
+   ctx.stroke();
+   }
+function circle(x,y,r) {
+   ctx.beginPath();
+   ctx.arc(x, y, r, 0, Math.PI*2, true);
+   ctx.fill();
+   }
+function text(s) {
+   ctx.fillStyle = "#ff0000";
+   ctx.font = "30px sans-serif";
+   ctx.textBaseline = "bottom";
+   ctx.fillText(s,0,height);
+   }
+function animate() {
+   ctx.clearRect(0, 0, width, height);
+   ctx.fillStyle = "#000000";
+   ctx.lineWidth = linewidth*width;
+   for (i = 0; i < nlines; ++i) {
+      x1[i] = x1[i]+dx1[i];
+      if ((x1[i] < 0) || (x1[i] > 1))
+         dx1[i] = -dx1[i];
+      y1[i] = y1[i]+dy1[i];
+      if ((y1[i] < 0) || (y1[i] > 1))
+         dy1[i] = -dy1[i];
+      x2[i] = x2[i]+dx2[i];
+      if ((x2[i] < 0) || (x2[i] > 1))
+         dx2[i] = -dx2[i];
+      y2[i] = y2[i]+dy2[i];
+      if ((y2[i] < 0) || (y2[i] > 1))
+         dy2[i] = -dy2[i];
+      line(width*x1[i],height*y1[i],width*x2[i],height*y2[i]);
+      //circle(width*x1[i],height*y1[i],4*linewidth*width);
+      }
+   var d = new Date();
+   tnew = d.getTime();
+   update = tnew - told;
+   told = tnew;
+   text("lines: "+nlines+" frame (ms): "+update);
+   }
+window.setInterval("animate()",0);
+</script>
+</body>
+</html>
+

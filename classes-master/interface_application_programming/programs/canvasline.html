@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>canvas line test</title>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+<canvas id="canvas"></canvas>
+</div>
+<script type="text/javascript">
+//
+// canvasline.html
+// Neil Gershenfeld 1/28/17
+// demonstrates drawing canvas lines by animating sin(k*x)/k*x
+//
+var div = document.getElementById("div")
+var height = div.clientHeight
+var width = height
+var canvas = document.getElementById("canvas")
+canvas.width = width
+canvas.height = height
+var npts = 500
+var nloop = 100
+var loop = 1
+var step = 1
+var linewidth = 0.005
+var dtms = 10
+var ctx = canvas.getContext("2d")
+ctx.lineWidth = linewidth*width
+window.setInterval("animate()",dtms);
+function animate() {
+   var x,y,r
+   ctx.clearRect(0,0,width,height)
+   ctx.beginPath()
+   point = 0
+   r = 100*(2*point-npts)/(npts*nloop)
+   x = width*point/npts
+   y = height*(1-Math.sin(loop*r)/(loop*r))/2
+   ctx.moveTo(x,y)
+   for (var point = 1; point < npts; ++point) {
+      r = 100*(2*point-npts)/(npts*nloop)
+      x = width*point/npts
+      y = height*(1-Math.sin(loop*r)/(loop*r))/2
+      ctx.lineTo(x,y)
+      }
+   ctx.stroke()
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   }
+</script>
+</body>
+</html>
+

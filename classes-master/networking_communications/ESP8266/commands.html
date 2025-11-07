@@ -1,0 +1,72 @@
+<html>
+<body>
+<pre>
+ESP8266 commands
+   AT version:0.30.0.0(Jul  3 2015 19:35:49)
+   SDK version:1.2.0
+   Ai-Thinker Technology Co.,Ltd.
+   Build:1.2.0.A Aug  7 2015 17:21:44
+\r\n
+   enter carriage return, newline
+general
+   reset
+      AT+RST\r\n
+   get version
+      AT+GMR\r\n
+   update firmware
+      AT+CIUPDATE\r\n
+join access point
+   station mode
+      AT+CWMODE=1\r\n
+   list access points
+      AT+CWLAP\r\n
+   join access point
+      AT+CWJAP="access_point_ssid","access_point_password"\r\n
+   list IP address
+      AT+CIFSR\r\n
+become access point
+   mode: 1=station, 2=access point, 3=both
+      AT+CWMODE=2\r\n
+   set SSID, password, channel, encryption (0 = open)
+      AT+CWSAP="SSID_name","password",3,0\r\n
+   set IP address
+      AT+CIPAP="192.168.1.1"\r\n
+   list stations
+      AT+CWLAP\r\n
+   set DHCP, 0=access point/1=station/2=both, 0=enable DHCP/1=disable
+      AT+CWDHCP=0,0\r\n
+TCP client: get Web page
+   multiple connection mode for TCP
+      AT+CIPMUX=1\r\n
+   open TCP connection 1 to fab.cba.mit.edu port 80
+      AT+CIPSTART=1,"TCP","fab.cba.mit.edu",80\r\n
+   send Web page request on connection 1, with character count
+      AT+CIPSEND=1,50\r\n
+      GET /test.html HTTP/1.1\r\n
+      HOST: fab.cba.mit.edu\r\n
+      \r\n
+   close connection 1
+      AT+CIPCLOSE=1\r\n
+TCP server: send Web page
+   multiple connection mode
+      AT+CIPMUX=1\r\n
+   start TCP server, on port 80
+      AT+CIPSERVER=1,80\r\n
+   send Web page reply on connection 0, with character count
+      AT+CIPSEND=0,44\r\n
+      HTTP/1.1 200 OK\r\n
+      \r\n
+      &lt;html&gt;&lt;body&gt;hello world\r\n
+   close connection 0
+      AT+CIPCLOSE=0\r\n
+UDP client/server
+   multiple connection mode
+      AT+CIPMUX=1\r\n
+   open UDP connection 1, to 192.168.1.11, remote port 1234, local port 1234, 0/2 = remote will not/will change
+      AT+CIPSTART=1,"UDP","192.68.1.11",1234,1234,0\r\n
+   send on connection 1, with character count, to 192.168.1.11, port 1234
+      AT+CIPSEND=1,5,"192.168.1.11",1234\r\n
+      hello
+   close connection 1
+      AT+CIPCLOSE=1\r\n
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>hello.4754.RP4040.html</title>
+<script src="three.min.js"></script>
+</head>
+<body>
+<input type="button" value="open IMU" onclick="open_IMU()">
+<p>
+<script>
+//
+// hello.4754.RP2040.html
+//    Adafruit 4754, BNO085 IMU, XIAO RP2040 hello-world
+//    requires Chrome/Chromium/Edge
+// Neil Gershenfeld 10/21/23
+//
+async function open_IMU(cmd) {
+   //
+   // open port
+   //
+   port = await navigator.serial.requestPort();
+   await port.open({baudRate:115200,bufferSize:1});
+   var reader = port.readable.getReader();
+   //
+   // add 3D cube
+   //
+   const scene = new THREE.Scene()
+   const camera = new THREE.PerspectiveCamera(90,window.innerWidth/window.innerHeight,0.1,500)
+   camera.position.set(1.25,0,1.25)
+   camera.up = new THREE.Vector3(1,0,0)
+   camera.lookAt(new THREE.Vector3(0,0,0))
+   var cube = new THREE.Mesh(new THREE.BoxGeometry(1,1,1),new THREE.MeshNormalMaterial())
+   scene.add(cube)
+   const renderer = new THREE.WebGLRenderer({antialias:true})
+   renderer.setSize(window.innerWidth,window.innerHeight)
+   renderer.render(scene, camera)
+   document.body.appendChild(renderer.domElement);
+   //
+   // read and display IMU data
+   //
+   while (true) {
+      //
+      // wait for line end
+      //
+      while (true) {
+         const {value,done} = await reader.read();
+         let chr = String.fromCharCode(value[0])
+         if (chr == '\n') break
+         }
+      //
+      // accumulate line
+      //
+      let line = ''
+      while (true) {
+         const {value,done} = await reader.read();
+         let chr = String.fromCharCode(value[0])
+         line += chr
+         if (chr == '\n') break
+         }
+      //
+      // convert to floats
+      //
+      vars = line.split(',')
+      yaw = parseFloat(vars[0])*Math.PI/180
+      pitch = parseFloat(vars[1])*Math.PI/180
+      roll = parseFloat(vars[2])*Math.PI/180
+      ax = parseFloat(vars[3])
+      ay = parseFloat(vars[4])
+      az = parseFloat(vars[5])
+      //
+      // update cube
+      //
+      cube.rotation.x = -yaw
+      cube.rotation.y = -pitch
+      cube.rotation.z = -roll
+      renderer.render(scene, camera);
+      }
+   }
+</script>

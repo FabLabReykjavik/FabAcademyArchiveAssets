@@ -1,0 +1,220 @@
+<html>
+<!--
+// video.html
+//   WebRTC video image-processing hello-world
+//
+// (c) Neil Gershenfeld 2015
+// 
+-->
+<head>
+<script>
+var w
+var h
+var video
+var save_context
+var background_context
+var edge_context
+var scratch_context
+var motion_context
+var memory_context
+var backimg
+var memimg
+var R = 0
+var G = 1
+var B = 2
+function image_get(row,col,el) {
+   return this.data[(this.height-1-row)*this.width*4+col*4+el]
+   }
+function image_set(row,col,el,val) {
+   this.data[(this.height-1-row)*this.width*4+col*4+el] = val
+   }
+function startup() {
+   w = parseInt(document.getElementById("width").value)
+   h = parseInt(document.getElementById("height").value)
+   save_canvas = document.getElementById('save_canvas');
+   save_canvas.setAttribute('width',w);
+   save_canvas.setAttribute('height',h);
+   save_context = save_canvas.getContext('2d');
+   background_canvas = document.getElementById('background_canvas');
+   background_canvas.setAttribute('width',w);
+   background_canvas.setAttribute('height',h);
+   background_context = background_canvas.getContext('2d');
+   background_context.fillStyle = '#FF0000'
+   backimg = background_context.getImageData(0,0,w,h)
+   backimg.set = image_set
+   backimg.get = image_get
+   edge_canvas = document.getElementById('edge_canvas');
+   edge_canvas.setAttribute('width',w);
+   edge_canvas.setAttribute('height',h);
+   edge_context = edge_canvas.getContext('2d');
+   scratch_canvas = document.getElementById('edge_canvas');
+   scratch_canvas.setAttribute('width',w);
+   scratch_canvas.setAttribute('height',h);
+   scratch_context = scratch_canvas.getContext('2d');
+   motion_canvas = document.getElementById('motion_canvas');
+   motion_canvas.setAttribute('width',w);
+   motion_canvas.setAttribute('height',h);
+   motion_context = motion_canvas.getContext('2d');
+   memory_canvas = document.getElementById('memory_canvas');
+   memory_canvas.setAttribute('width',w);
+   memory_canvas.setAttribute('height',h);
+   memory_context = memory_canvas.getContext('2d');
+   memimg = memory_context.getImageData(0,0,w,h)
+   memimg.set = image_set
+   memimg.get = image_get
+   video = document.getElementById('video');
+   video.width = w
+   video.height = h
+   navigator.mediaDevices.getUserMedia({audio: false, video: {width:w,height:h} })
+      .then(function(stream) {
+         video.srcObject = stream
+         video.play()
+         update_video()
+         })
+      .catch(function(err) {
+         console.log(err)
+         })
+   }
+function update_video() {
+   delay = parseInt(document.getElementById("width").value)
+   window.setTimeout(update_video,delay)
+   //
+   // background subtraction + centroid
+   //
+   background_context.drawImage(video,0,0,w,h)
+   var img = background_context.getImageData(0,0,w,h)
+   img.set = image_set
+   img.get = image_get
+   var threshold = parseInt(document.getElementById("background_threshold").value)
+   var rowmean,colmean,count
+   rowmean = colmean = count = 0
+   for (var row = 0; row < img.height; ++row) {
+      for (var col = 0; col < img.width; ++col) {
+         if ((Math.abs(img.get(row,col,R)
+            - backimg.get(row,col,R)) < threshold) &&
+             (Math.abs(img.get(row,col,G)
+            - backimg.get(row,col,G)) < threshold) &&
+             (Math.abs(img.get(row,col,B)
+            - backimg.get(row,col,B)) < threshold)) {
+            img.set(row,col,R,0)
+            img.set(row,col,G,0)
+            img.set(row,col,B,0)
+            }
+         else {
+            rowmean += row
+            colmean += col
+            count += 1
+            }
+         }
+      }
+   background_context.putImageData(img,0,0)
+   rowmean = Math.floor(rowmean/count)
+   colmean = Math.floor(colmean/count)
+   background_context.beginPath()
+   background_context.arc(colmean,h-rowmean,h/25,0,2*Math.PI,false)
+   background_context.closePath()
+   background_context.fill()
+   //
+   // edge detection
+   //
+   scratch_context.drawImage(video,0,0,w,h)
+   var img0 = scratch_context.getImageData(0,0,w,h)
+   img0.set = image_set
+   img0.get = image_get
+   var img = edge_context.getImageData(0,0,w,h)
+   img.set = image_set
+   img.get = image_get
+   var threshold = parseInt(document.getElementById("edge_threshold").value)
+   for (var row = 1; row < (img.height-1); ++row) {
+      for (var col = 1; col < (img.width-1); ++col) {
+         var i00 = img0.get(row,col,R)
+                 + img0.get(row,col,G)
+                 + img0.get(row,col,B)
+         var i0p = img0.get(row,col+1,R)
+                 + img0.get(row,col+1,G)
+                 + img0.get(row,col+1,B)
+         var i0m = img0.get(row,col-1,R)
+                 + img0.get(row,col-1,G)
+                 + img0.get(row,col-1,B)
+         var ip0 = img0.get(row+1,col,R)
+                 + img0.get(row+1,col,G)
+                 + img0.get(row+1,col,B)
+         var im0 = img0.get(row-1,col,R)
+                 + img0.get(row-1,col,G)
+                 + img0.get(row-1,col,B)
+         if ((Math.abs(i00-i0p) < threshold) ||
+             (Math.abs(i00-i0m) < threshold) ||
+             (Math.abs(i00-ip0) < threshold) ||
+             (Math.abs(i00-im0) < threshold)) {
+            img.set(row,col,R,0)
+            img.set(row,col,G,0)
+            img.set(row,col,B,0)
+            }
+         else {
+            img.set(row,col,R,255)
+            img.set(row,col,G,255)
+            img.set(row,col,B,255)
+            }
+         }
+      }
+   edge_context.putImageData(img,0,0)
+   //
+   // motion detection
+   //
+   motion_context.drawImage(video,0,0,w,h)
+   var img = motion_context.getImageData(0,0,w,h)
+   img.set = image_set
+   img.get = image_get
+   memimg = memory_context.getImageData(0,0,w,h)
+   memimg.set = image_set
+   memimg.get = image_get
+   var threshold = parseInt(document.getElementById("motion_threshold").value)
+   for (var row = 0; row < img.height; ++row) {
+      for (var col = 0; col < img.width; ++col) {
+         var i0 = memimg.get(row,col,R)
+                + memimg.get(row,col,G)
+                + memimg.get(row,col,B)
+         var i1 = img.get(row,col,R)
+                + img.get(row,col,G)
+                + img.get(row,col,B)
+         if (Math.abs(i0-i1) < threshold) {
+            img.set(row,col,R,0)
+            img.set(row,col,G,0)
+            img.set(row,col,B,0)
+            }
+         }
+      }
+   motion_context.putImageData(img,0,0)
+   memory_context.drawImage(video,0,0,w,h)
+   }
+window.addEventListener('load',startup,false);
+</script>
+</head>
+<body>
+video:
+<input type='text' id='width' size='3' value="320">
+x
+<input type='text' id='height' size='3' value="240">
+<input type='text' id='height' size='3' value="100"> ms
+<input type='button' value='restart' onclick="
+   startup()
+   "><br>
+<video id="video">video stream not available</video><br>
+background subtraction + centroid:
+<button onclick="
+   save_context.drawImage(video,0,0,w,h)
+   backimg = save_context.getImageData(0,0,w,h)
+   backimg.set = image_set
+   backimg.get = image_get
+   ">save background</button>
+threshold: <input type='text' id='background_threshold' size='3' value="50"><br>
+<canvas id="background_canvas"></canvas> <canvas id="save_canvas"></canvas><br>
+edge detection: threshold <input type='text' id='edge_threshold' size='3' value="25"><br>
+<canvas id="edge_canvas"></canvas>
+<br>
+motion detection: threshold <input type='text' id='motion_threshold' size='3' value="50"><br>
+<canvas id="motion_canvas"></canvas>
+<canvas id="scratch_canvas" style="display:none"></canvas>
+<canvas id="memory_canvas" style="display:none"></canvas>
+</body>
+</html>

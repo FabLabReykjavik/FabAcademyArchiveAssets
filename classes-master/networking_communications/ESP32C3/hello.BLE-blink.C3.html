@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+//
+// hello.BLE-blink.C3.html
+//    Seeed XIAO ESP32C3 BLE blink hello-world
+//    requires Chrome/Chromium/Edge
+//       with Experimental Web Platform features enabled
+//
+// Neil Gershenfeld 11/13/23
+//
+// based on https://github.com/makerdiary/web-device-cli
+//
+const ServiceUUID = '6e400001-b5a3-f393-e0a9-e50e24dcca9e'
+const RxUUID  = '6e400002-b5a3-f393-e0a9-e50e24dcca9e'
+const TxUUID  = '6e400003-b5a3-f393-e0a9-e50e24dcca9e'
+const MTU = 20
+//
+var bleDevice
+var nusService
+var rxCharacteristic
+//
+function message(msg) {
+   document.getElementById("message").innerHTML = msg
+   }
+function connect() {
+    if (!navigator.bluetooth) {
+       message('Bluetooth not available, enable Experimental Web Platform features browser flag')
+       return
+       }
+    navigator.bluetooth.requestDevice({
+       optionalServices:[ServiceUUID],acceptAllDevices:true})
+    .then(device => {
+       bleDevice = device 
+       message('connecting to '+device.name)
+       bleDevice.addEventListener('gattserverdisconnected', ondisconnect)
+       return device.gatt.connect()
+       })
+    .then(server => {
+       return server.getPrimaryService(ServiceUUID)})
+    .then(service => {
+       nusService = service;
+       return nusService.getCharacteristic(RxUUID)})
+    .then(characteristic => {
+       rxCharacteristic = characteristic
+       return nusService.getCharacteristic(TxUUID)})
+    .then(characteristic => {
+       let txCharacteristic = characteristic
+       txCharacteristic.startNotifications()
+       txCharacteristic.addEventListener('characteristicvaluechanged',receive)
+       message(bleDevice.name+' connected')})
+    .catch(error => {
+       message(''+error);
+       if(bleDevice && bleDevice.gatt.connected) {
+          bleDevice.gatt.disconnect()
+          }
+       })
+   }
+function disconnect() {
+   if (!bleDevice) {
+      message('nothing connected')
+      return
+      }
+   if (bleDevice.gatt.connected)
+      bleDevice.gatt.disconnect()
+   else
+      message('already disconnected')
+   }
+function ondisconnect() {
+   message(bleDevice.name+' disconnected')
+   }
+function receive(event) {
+   let value = event.target.value
+   let str = '';
+   for (let i = 0; i < value.byteLength; i++)
+      str += String.fromCharCode(value.getUint8(i))
+   message('received: '+str)
+   }
+function transmit(s) {
+    if(bleDevice && bleDevice.gatt.connected) {
+       message("sent: "+s)
+       let arr = new Uint8Array(s.length)
+       for (let i = 0; i < s.length; i++) {
+          let val = s[i].charCodeAt(0)
+          arr[i] = val
+          }
+       send(arr)
+       }
+    else
+       message('not connected')
+   }
+function send(a) {
+   let chunk = a.slice(0,MTU)
+   rxCharacteristic.writeValue(chunk)
+   .then(function() {
+      if (a.length > MTU) {
+         send(a.slice(MTU))
+         }
+      })
+   }
+function LEDon() {
+   transmit('1')
+   }
+function LEDoff() {
+   transmit('0')
+   }
+</script>
+</head>
+<body>
+<br>
+<button onclick="connect()" style="margin-left:2%;font-size:150%">Connect</button>&nbsp;
+<button onclick="disconnect()" style="font-size:150%">Disconnect</button>&nbsp;
+<button onclick="LEDon()" style="font-size:150%">turn LED on</button>&nbsp;
+<button onclick="LEDoff()" style="font-size:150%">turn LED off</button>&nbsp;
+<br><br>
+<div id='message' style="margin-left:2%"></div>
+</body>
+</html>

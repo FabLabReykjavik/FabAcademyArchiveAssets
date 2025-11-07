@@ -1,0 +1,87 @@
+$ sudo python -m serial.tools.miniterm /dev/ttyUSB0 19200 
+--- Miniterm on /dev/ttyUSB0  19200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+reset: 0xFF01FFFFFFFFFFFF
+set interface: 0xFF01000001AAFFFF
+initialization:
+   application command: FF01FFFFFFFFFFFF
+   initialize card: 0xFF01FFFFFFFFFFFF
+   application command: FF01FFFFFFFFFFFF
+   initialize card: 0xFF01FFFFFFFFFFFF
+   application command: FF01FFFFFFFFFFFF
+   initialize card: 0xFF00FFFFFFFFFFFF
+read first partition table:
+   type: 0x0C
+   first sector: 0x00200000
+read first partition block:
+   bytes per sector: 0x0200
+   sectors per cluster: 0x40
+   reserved sectors: 0x0492
+   FATs: 0x02
+   FAT sectors: 0x00001DB7
+   root cluster: 0x00000002
+read root directory:
+   attribute: 0x0F
+   long file name: 0x680065006C006C006F002E007400780074000000FFFFFFFFFFFF
+                   h e l l o . t x t         
+   attribute: 0x20
+   short file name: 0xE5454C4C4F202020545854
+                     ELLO   TXT
+   file cluster: 0x00000004
+   file length: 0x0000000C
+   attribute: 0x0F
+   long file name: 0x650072006C0061006E0064002E007400780074000000FFFFFFFF
+                   e r l a n d . t x t       
+   attribute: 0x0F
+   long file name: 0x74007500720065007300200069006E00200057006F006E006400
+                   t u r e s   i n   W o n d 
+   attribute: 0x0F
+   long file name: 0x41006C0069006300650027007300200041006400760065006E00
+                   A l i c e ' s   A d v e n 
+   attribute: 0x20
+   short file name: 0x414C494345277E31545854
+                    ALICE'~1TXT
+   file cluster: 0x00000005
+   file length: 0x0002A37B
+read first file:
+
+ALICE'S ADVENTURES IN WONDERLAND
+Lewis Carroll
+THE MILLENNIUM FULCRUM EDITION 3.0
+
+CHAPTER I. Down the Rabbit-Hole
+
+Alice was beginning to get very tired of sitting by her sister on the
+bank, and of having nothing to do: once or twice she had peeped into the
+book her sister was reading, but it had no pictures or conversations in
+it, 'and what is the use of a book,' thought Alice 'without pictures or
+conversations?'
+
+So she was considering in her own mind (as well as she could, for the
+hot day made her feel very sleepy and stupid), whether the pleasure
+of making a daisy-chain would be worth the trouble of getting up and
+picking the daisies, when suddenly a White Rabbit with pink eyes ran
+close by her.
+
+There was nothing so VERY remarkable in that; nor did Alice think it so
+VERY much out of the way to hear the Rabbit say to itself, 'Oh dear!
+Oh dear! I shall be late!' (when she thought it over afterwards, it
+occurred to her that she ought to have wondered at this, but at the time
+it all seemed quite natural); but when the Rabbit actually TOOK A WATCH
+OUT OF ITS WAISTCOAT-POCKET, and looked at it, and then hurried on,
+Alice started to her feet, for it flashed across her mind that she had
+never before seen a rabbit with either a waistcoat-pocket, or a watch
+to take out of it, and burning with curiosity, she ran across the field
+after it, and fortunately was just in time to see it pop down a large
+rabbit-hole under the hedge.
+
+In another moment down went Alice after it, never once considering how
+in the world she was to get out again.
+
+The rabbit-hole went straight on like a tunnel for some way, and then
+dipped suddenly down, so suddenly that Alice had not a moment to think
+about stopping herself before she found herself falling down a very deep
+well.
+
+...
+

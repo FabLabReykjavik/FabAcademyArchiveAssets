@@ -1,0 +1,98 @@
+<html>
+<head>
+<title>svg line test</title>
+</head>
+<body>
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+   viewBox="0 0 1 1"
+   style="width:100%;height:100%;">
+</svg>
+<script type="application/javascript">
+var nlines = 1000;
+var linewidth = 0.002;
+var svgns = "http://www.w3.org/2000/svg"
+svg = document.getElementById("svg")
+var d = new Date();
+t0 = d.getTime();
+var x1 = new Array(nlines);
+var x2 = new Array(nlines);
+var dx1 = new Array(nlines);
+var dx2 = new Array(nlines);
+var y1 = new Array(nlines);
+var y2 = new Array(nlines);
+var dy1 = new Array(nlines);
+var dy2 = new Array(nlines);
+for (i = 0; i < nlines; ++i) {
+   x1[i] = Math.random();
+   x2[i] = Math.random();
+   dx1[i] = 0.02*(Math.random()-.5);
+   dx2[i] = 0.02*(Math.random()-.5);
+   y1[i] = Math.random();
+   y2[i] = Math.random();
+   dy1[i] = 0.02*(Math.random()-.5);
+   dy2[i] = 0.02*(Math.random()-.5);
+   }
+var lines = new Array(nlines);
+var circles = new Array(nlines);
+for (i = 0; i < nlines; ++i) {
+   line = document.createElementNS(svgns, "line");
+      line.setAttribute("x1", x1[i]);
+      line.setAttribute("y1", y1[i]);
+      line.setAttribute("x2", x2[i]);
+      line.setAttribute("y2", y2[i]);
+      line.setAttribute("stroke-width",linewidth);
+      line.setAttribute("stroke","black");
+   lines[i] = line;
+   svg.appendChild(lines[i]);
+   /*
+   circ = document.createElementNS(svgns, "circle");
+      circ.setAttribute("cx", x1[i]);
+      circ.setAttribute("cy", y1[i]);
+      circ.setAttribute("r", 4*linewidth);
+      circ.setAttribute("fill","black");
+   circles[i] = circ;
+   svg.appendChild(circles[i]);
+   */
+   }
+var data = document.createTextNode("");
+var text = document.createElementNS(svgns, "text");
+text.setAttributeNS(null, "x", "0.05");
+text.setAttributeNS(null, "y", ".98");
+text.setAttributeNS(null, "font-size", ".05");
+text.setAttributeNS(null, "fill", "red");
+text.setAttributeNS(null, "text-anchor", "start");
+text.appendChild(data);
+svg.appendChild(text);
+var told = 0;
+var tnew = 0;
+function animate() {
+   for (i = 0; i < nlines; ++i) {
+      x1[i] = x1[i]+dx1[i];
+      if ((x1[i] < 0) || (x1[i] > 1))
+         dx1[i] = -dx1[i];
+      y1[i] = y1[i]+dy1[i];
+      if ((y1[i] < 0) || (y1[i] > 1))
+         dy1[i] = -dy1[i];
+      x2[i] = x2[i]+dx2[i];
+      if ((x2[i] < 0) || (x2[i] > 1))
+         dx2[i] = -dx2[i];
+      y2[i] = y2[i]+dy2[i];
+      if ((y2[i] < 0) || (y2[i] > 1))
+         dy2[i] = -dy2[i];
+      lines[i].setAttribute("x1", x1[i]);
+      lines[i].setAttribute("y1", y1[i]);
+      lines[i].setAttribute("x2", x2[i]);
+      lines[i].setAttribute("y2", y2[i]);
+      //circles[i].setAttribute("cx",x1[i]);
+      //circles[i].setAttribute("cy",y1[i]);
+      }
+   var d = new Date();
+   tnew = d.getTime();
+   update = tnew - told;
+   told = tnew;
+   data.textContent = "lines: "+nlines+" frame (ms): "+update;
+   }
+window.setInterval("animate()",0);
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<body>
+<button id="button">play sound</button>
+<br>
+<canvas id="canvas"></canvas>
+<script>
+//
+// audioline.html
+// Neil Gershenfeld 2/5/17
+// demonstrates playing sin(x)/x as a sound
+//
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)()
+var channels = 1
+var channel = 0
+var duration = 2
+var ramp = 0.1*audioCtx.sampleRate
+var frequency = 2*Math.PI*100
+var frames = duration*audioCtx.sampleRate
+var myArrayBuffer = audioCtx.createBuffer(
+   channels,frames,audioCtx.sampleRate)
+var button = document.getElementById('button')
+button.addEventListener('click',function() {
+   var buffer = myArrayBuffer.getChannelData(channel)
+   for (var i = 0; i < frames; i++) {
+      var time = (i+0.5-frames/2)/audioCtx.sampleRate
+      buffer[i] = (1-Math.sin(frequency*time)/(25*time))/2
+      }
+   for (var i = 0; i < ramp; i++)
+      buffer[i] = buffer[i]*i/(ramp-1)
+   for (var i = (frames-ramp); i < frames; i++)
+      buffer[i] = buffer[i]*(frames-i-1)/(ramp-1)
+   var source = audioCtx.createBufferSource()
+   source.buffer = myArrayBuffer
+   source.connect(audioCtx.destination)
+   source.start()
+   })
+var height = document.body.clientHeight
+var width = height
+var canvas = document.getElementById("canvas")
+canvas.width = width
+canvas.height = height
+var linewidth = 0.001
+var ctx = canvas.getContext("2d")
+ctx.lineWidth = linewidth*width
+ctx.clearRect(0,0,width,height)
+ctx.beginPath()
+var i = 0
+var time = (i+0.5-frames/2)/audioCtx.sampleRate
+x = width*i/frames
+y = height*(1-Math.sin(frequency*time)/(0.1*frequency*time))/2
+ctx.moveTo(x,y)
+for (var i = 1; i < frames; i++) {
+   var time = (i+0.5-frames/2)/audioCtx.sampleRate
+   x = width*i/frames
+   y = height*(1-Math.sin(frequency*time)/(25*time))/2
+   ctx.lineTo(x,y)
+   }
+ctx.stroke()
+</script>
+</body>
+</html>

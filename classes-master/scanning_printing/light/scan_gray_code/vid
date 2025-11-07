@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# vid
+# Neil Gershenfeld 6/30/07
+# script to make HTML galleries
+#
+
+ls -r *avi > files
+ls -r *AVI >> files
+ls -r *mp4 >> files
+ls -r *MP4 >> files
+ls -r *3gp >> files
+ls -r *3GP >> files
+ls -r *mov >> files
+ls -r *MOV >> files
+ls -r *mpg >> files
+ls -r *MPG >> files
+
+awk "{ print \"ffmpeg -i \"\$0 \" -vcodec png -vframes 5 -ss 2 -an -f rawvideo \"\$0\".png\nconvert \"\$0\".png -resize 175x125 \"\$0\".jpg\" }" files > conv
+sh conv
+awk "{ print \"<A href=video/\"\$0\"><img src=video/\"\$0\".jpg></A>\" }" files > videos.html
+rm -f files conv *png

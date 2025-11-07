@@ -1,0 +1,173 @@
+[
+    {
+        "id": "029950eff9b7e0c9",
+        "type": "tab",
+        "label": "WebSocket button-blink",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "dea32de0b02b282f",
+        "type": "websocket in",
+        "z": "029950eff9b7e0c9",
+        "name": "",
+        "server": "",
+        "client": "850b049e4f31ce88",
+        "x": 140,
+        "y": 320,
+        "wires": [
+            [
+                "5e5adf26ba5f1025"
+            ]
+        ]
+    },
+    {
+        "id": "157d4e713b97bc10",
+        "type": "websocket out",
+        "z": "029950eff9b7e0c9",
+        "name": "",
+        "server": "",
+        "client": "850b049e4f31ce88",
+        "x": 290,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "391e449b0cddab4d",
+        "type": "ui-button",
+        "z": "029950eff9b7e0c9",
+        "group": "61d4cc805c46008d",
+        "name": "",
+        "label": "on",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "on",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 180,
+        "wires": [
+            [
+                "157d4e713b97bc10"
+            ]
+        ]
+    },
+    {
+        "id": "1a07b111ff740e97",
+        "type": "ui-button",
+        "z": "029950eff9b7e0c9",
+        "group": "61d4cc805c46008d",
+        "name": "",
+        "label": "off",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "off",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 260,
+        "wires": [
+            [
+                "157d4e713b97bc10"
+            ]
+        ]
+    },
+    {
+        "id": "5e5adf26ba5f1025",
+        "type": "ui-text",
+        "z": "029950eff9b7e0c9",
+        "group": "83e1ae3bd4875771",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "className": "",
+        "x": 330,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "850b049e4f31ce88",
+        "type": "websocket-client",
+        "path": "ws://192.168.1.129:12345",
+        "tls": "",
+        "wholemsg": "false",
+        "hb": "0",
+        "subprotocol": ""
+    },
+    {
+        "id": "61d4cc805c46008d",
+        "type": "ui-group",
+        "name": "LED",
+        "page": "dd2cf7c1b2be6f52",
+        "width": "6",
+        "height": "1",
+        "order": 2,
+        "disp": true,
+        "className": ""
+    },
+    {
+        "id": "83e1ae3bd4875771",
+        "type": "ui-group",
+        "name": "response",
+        "page": "dd2cf7c1b2be6f52",
+        "width": "6",
+        "height": "1",
+        "order": 3,
+        "disp": true,
+        "className": ""
+    },
+    {
+        "id": "dd2cf7c1b2be6f52",
+        "type": "ui-page",
+        "name": "hello world",
+        "ui": "8834fd783ece1ab8",
+        "path": "/",
+        "layout": "grid",
+        "theme": "9e7eef8bcf1aac2e",
+        "order": -1,
+        "className": ""
+    },
+    {
+        "id": "8834fd783ece1ab8",
+        "type": "ui-base",
+        "name": "hello",
+        "path": "/dashboard"
+    },
+    {
+        "id": "9e7eef8bcf1aac2e",
+        "type": "ui-theme",
+        "name": "hello",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    }
+]

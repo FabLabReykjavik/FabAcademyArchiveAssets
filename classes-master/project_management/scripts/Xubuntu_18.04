@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# Xubuntu 18.04
+#
+# update and install
+#
+sudo apt-get update
+sudo apt-get -y upgrade
+#
+# utilities
+#
+sudo apt-get -y install vim-gtk konsole qpdf expect xournal mousepad geany geany-plugins evince gparted hardinfo powertop htop xscreensaver synaptic gnome-disk-utility ntp
+#
+# net
+#
+sudo apt-get -y install firefox chromium-browser vinagre openssh-client
+#
+# remmina
+#
+sudo apt-add-repository -y ppa:remmina-ppa-team/remmina-next
+sudo apt update
+sudo apt -y install remmina remmina-plugin-rdp remmina-plugin-secret
+#
+# graphics, CAD
+#
+sudo apt-get -y install geeqie gimp mypaint inkscape blender meshlab povray-includes
+#
+# freecad
+#
+sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
+sudo apt-get update
+sudo apt-get -y install freecad
+#
+# office
+#
+sudo apt-get -y install libreoffice ttf-mscorefonts-installer
+#
+# project management
+#
+sudo apt-get -y install rsync git gitg gitk git-gui
+#
+# media
+#
+sudo apt-get -y install ffmpeg vlc mplayer smplayer guvcview audacity
+#
+# kdenlive
+#
+sudo add-apt-repository -y ppa:kdenlive/kdenlive-stable
+sudo apt-get update
+sudo apt-get -y install kdenlive kde-runtime
+#
+# simplescreenrecorder
+#
+sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get -y install simplescreenrecorder
+#
+# node
+#
+sudo apt-get -y install nodejs npm
+#
+# build
+#
+sudo apt-get -y install git build-essential libpng-dev python3-dev libboost-all-dev libgl1-mesa-dev lemon flex qt5-default ninja-build cmake freeglut3 freeglut3-dev libglew-dev libgif-dev
+#
+# EDA
+#
+sudo add-apt-repository -y ppa:js-reynaud/kicad-5
+sudo apt-get update
+sudo apt-get -y install kicad
+#
+# embedded programming
+#
+sudo apt-get -y install avr-libc gcc-avr binutils-avr avrdude python-serial python-tk
+#
+# math
+#
+sudo apt-get -y install python-numpy python-scipy python-matplotlib
+#
+# TeX
+#
+# sudo apt-get -y install texlive-latex-recommended texlive-fonts-recommended texlive-font-utils
+echo "for Tex: sudo apt-get -y install texlive-latex-recommended texlive-fonts-recommended texlive-font-utils"
+#
+# servers
+#
+# sudo apt-get -y install apache2 openssh-server tightvncserver
+echo "for servers: sudo apt-get -y install apache2 openssh-server tightvncserver"

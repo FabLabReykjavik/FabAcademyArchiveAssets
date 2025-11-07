@@ -1,0 +1,12 @@
+mv hello.SSD1306 hello.SSD1306.45
+mv hello.SSD1306.c hello.SSD1306.45.c
+mv hello.SSD1306.c.hex hello.SSD1306.45.c.hex
+mv hello.SSD1306.html hello.SSD1306.45.html
+mv hello.SSD1306.inline hello.SSD1306.45.inline
+mv hello.SSD1306.interior.png hello.SSD1306.45.interior.png
+mv hello.SSD1306.jpg hello.SSD1306.45.jpg
+mv hello.SSD1306.make hello.SSD1306.45.make
+mv hello.SSD1306.mp4 hello.SSD1306.45.mp4
+mv hello.SSD1306.out hello.SSD1306.45.out
+mv hello.SSD1306.png hello.SSD1306.45.png
+mv hello.SSD1306.traces.png hello.SSD1306.45.traces.png

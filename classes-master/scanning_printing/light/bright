@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# bright scale
+#
+cmd="xrandr --output HDMI1 --brightness "$1
+echo $cmd
+exec $cmd

@@ -1,0 +1,44 @@
+APA: Asynchronous Packet Automata
+
+- source routing
+- network coordinates
+- back-pressure flow control
+
+ :
+ 1    1    1
+0A2  0D2..0E2
+ 3    3    3
+ :    :    :
+ 1    1    1
+0B2..0C2..0F2
+ 3    3    3
+
+A -> E
+A: {3212^|key:value;...;}
+B: {212^1|key:value;...;}
+C: {12^01|key:value;...;}
+D: {2^301|key:value;...;}
+E: {^0301|key:value;...;}
+
+A -> F
+A: {322^|key:value;...;}
+B: {22^1|key:value;...;}
+C: {2^01|key:value;...;}
+F: {^001|key:value;...;}
+
+A -> flood
+A: {FFFF^|key:value;...;}
+B: {FFF^1|key:value;...;}
+C: {FF^01|key:value;...;}
+D: {F^301|key:value;...;} F: {F^001|key:value;...;}
+E: {^0301|key:value;...;} E: {F^3001|key:value;...;}
+
+set key values key1:value1;key2:value2;
+query key values: key1:?;key2:?;
+query all key values: ?:?
+
+buffer overflow character: #
+{3212^|key1:value1;key2:val#}
+
+buffer escape character: \
+{3212^|key1:\#\}\;\\;}

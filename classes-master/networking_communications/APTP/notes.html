@@ -1,0 +1,134 @@
+<html>
+<body>
+<pre>
+=================================================================
+APTP: APA/ATP
+=================================================================
+
+APA: Asynchronous Packet Automata
+   source routing
+   network coordinates
+   back-pressure flow control
+
+ATP: Asynchronous Token Protocol
+   static state
+   unclocked operation
+   exchange verification
+
+=================================================================
+ATP: Asynchronous Token Protocol
+=================================================================
+
+logical states
+   T(oken)
+    B(it)
+   00 x empty
+   01 o occupied
+   10 0 0
+   11 1 1
+
+send handshake
+     x -- x
+   0,1 -> x
+   0,1 <- o
+     x -> o
+     x <- x
+
+receive handshake
+     x -- x
+     x <- 0,1
+     o -> 0,1
+     o <- x
+     x -> x
+
+send/receive signals
+      send  receive
+    O x11xx xxoox
+   TO _--__ _____
+   BO _--__ __--_
+   TI _____ _--__
+   BI __--_ _--__
+    I xxoox x11xx
+
+swap handshake
+     x -- x
+   0,1 -> x
+   0,1 <- 0,1
+     o -> 0,1
+     o <- o
+     x -> o
+     x <- x
+
+simultaneous swap handshake
+     x -- x
+   0,1 <> 0,1
+     o <> o
+     x <> x
+
+missed simultaneous swap handshake
+     x -- x
+   0,1 <> 0,1
+     o <> x
+     x -> x
+
+port states
+   out   out
+      in   in
+   00 00 x x empty
+   00 01 x o send acknowledge
+   00 10 x 0 receive available
+   00 11 x 1 receive available
+   01 00 o x receive acknowledge
+   01 01 o o swap accept
+   01 10 o 0 receive accept
+   01 11 o 1 receive accept
+   10 00 0 x send available
+   10 01 0 o send accept
+   10 10 0 0 swap available
+   10 11 0 1 swap available
+   11 00 1 x send available
+   11 01 1 o send accept
+   11 10 1 0 swap available
+   11 11 1 1 swap available
+
+=================================================================
+APA: Asynchronous Packet Automata
+=================================================================
+
+ 1   1   1
+0A2 0D2-0E2
+ 3   3   3
+ |   |   |
+ 1   1   1 
+0B2-0C2-0F2
+ 3   3   3   
+
+A -> E
+A: {3212^|key:value;...;}
+B: {212^1|key:value;...;}
+C: {12^01|key:value;...;}
+D: {2^301|key:value;...;}
+E: {^0301|key:value;...;}
+
+A -> F
+A: {322^|key:value;...;}
+B: {22^1|key:value;...;}
+C: {2^01|key:value;...;}
+F: {^001|key:value;...;}
+
+A flood
+A: {FFFF^|key:value;...;}
+B: {FFF^1|key:value;...;}
+C: {FF^01|key:value;...;}
+D: {F^301|key:value;...;} F: {F^001|key:value;...;}
+E: {^0301|key:value;...;} E: {^3001|key:value;...;}
+
+set key values: key1:value1;key2:value2;
+query key values: key1:?;key2:?;
+query all key values: ?:?
+
+buffer overflow truncation
+{3212^|key1:value1;key2:val#}
+
+special characters: \{^|:;?#}
+escape characters: \\ \{ \^ \| \: \; \* \? \# \}

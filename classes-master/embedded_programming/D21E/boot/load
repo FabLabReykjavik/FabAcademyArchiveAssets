@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo ./edbg -b -t samd21 -epv -f sam_ba_MT_D21E_rev_B_SAMD21E17A.bin

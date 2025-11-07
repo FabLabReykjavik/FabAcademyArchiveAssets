@@ -1,0 +1,407 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i><a href=http://inventory.fabcloud.io/?purpose=Embedded%20Programming>Embedded Programming</a></i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b>embedded systems</b>
+   internal <em>vs</em> external
+   special <em>vs</em> general purpose
+   real-time <em>vs</em> asynchronous
+
+<b>architectures</b>
+   <a href=http://www.wiley.com/legacy/wileychi/wang_archi/supp/appendix_a.pdf>von Neumann</a>, <a href=http://harvardmagazine.com/2014/04/mark-i-rebooted>Harvard</a>, <a href=https://americanhistory.si.edu/collections/search/object/nmah_334663>bugs</a>
+   RISC, CISC
+   microprocessor, <a href=https://mtm.cba.mit.edu/2021/2021-10_microcontroller-primer/>microcontroller</a>
+   multi-core
+   <a href=https://developer.nvidia.com>GPU</a>, <a href=https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/>embedded</a>
+   <a href=http://www.latticesemi.com/Products.aspx>FPGA</a>, <a href=https://tinyfpga.com>TinyFPGA</a>, <a href=https://github.com/cliffordwolf/icestorm>IceStorm<a>, <a href=https://symbiflow.github.io>Symbiflow</a>
+   <a href=https://github.com/siliconcompiler/siliconcompiler>SiliconCompiler</a>
+   <a href=http://cba.mit.edu/docs/papers/11.12.Computing.pdf>spatial</a>
+
+<b>memory</b>
+   registers (instructions)
+   SRAM (fast)
+   DRAM (big)
+   EEPROM (non-volatile)
+   FLASH (programs, strings)
+   fuse (configuration)
+
+<b>peripherals</b>
+   ports
+   A/D
+   comparator
+   D/A
+   timer/counter/PWM
+   USART
+   USB
+   math
+   crypto
+   ...
+
+<b>word size</b>
+   8
+   16
+   32
+   64
+
+<b>processor families</b>
+   <a href=https://pub.pages.cba.mit.edu/ring/>hardware</a>, <a href=https://gitlab.cba.mit.edu/pub/pi>software</a> benchmarks
+   <a href=http://lapinozz.github.io/learning/2016/11/19/calculator-with-caordboard-and-marbles.html>LOGIC</a>
+   <a href=http://www.megaprocessor.com>Megaprocessor</a>
+   <a href=https://monster6502.com>MOnSter 6502</a>
+   <a href=http://www.faqs.org/faqs/microcontroller-faq/8051/>8051</a>
+   <a href=https://www.microchip.com/design-centers/microcontrollers>PIC</a>
+   <a href=https://www.ti.com/product-category/microcontrollers-processors/overview.html>MSP</a>
+      <a href=https://www.ti.com/about-ti/newsroom/news-releases/2025/2025-03-11-ti-introduces-the-world-s-smallest-mcu--enabling-innovation-in-the-tiniest-of-applications.html>MSPM0C1104</a>
+   <a href=https://www.microchip.com/en-us/products/microcontrollers-and-microprocessors/8-bit-mcus/avr-mcus>AVR</a>
+         &bull; 6-100 pin packages
+      <a href=https://www.digikey.com/en/products/detail/microchip-technology/ATTINY10-TSHR/2051008>ATtiny10</a>
+         &bull; SOT23-6
+      <a href=http://www.digikey.com/product-detail/en/ATTINY45V-10SU/ATTINY45V-10SU-ND>ATtiny45V</a>, <a href=http://www.digikey.com/product-detail/en/ATTINY44A-SSU/ATTINY44A-SSU-ND>ATtiny44A</a>
+         &bull; prior
+      <a href=https://www.digikey.com/product-detail/en/microchip-technology/ATTINY412-SSFR/ATTINY412-SSFRCT-ND>ATtiny412</a>, <a href=https://www.digikey.com/product-detail/en/microchip-technology/ATTINY1614-SSNR/ATTINY1614-SSNRCT-ND>ATtiny1614</a>, <a href=https://www.digikey.com/product-detail/en/microchip-technology/ATTINY3216-SFR/ATTINY3216-SFRCT-ND>ATtiny3216</a>
+         &bull; 1-series
+         &bull; 8 bit, 1.8-5.5V, 20 MHz
+         &bull; single-cycle global instructions
+         &bull; simple peripheral register access
+         &bull; low pin-count packages
+         &bull; one-pin serial programming
+      <a href=https://www.digikey.com/en/products/detail/microchip-technology/ATTINY1624-SSU/12153593>ATtiny1624</a>
+         &bull; 2-series
+         &bull; programmable gain amplifier
+      <a href=https://www.digikey.com/en/products/detail/microchip-technology/AVR128DB32-I-PT/12807334>AVR128DB32</a>
+         &bull; 24 MHz
+         &bull; analog signal conditioning
+         &bull; level shifting
+         &bull; hardware multiplier
+   <a href=http://www.arm.com/>ARM</a>
+      <a href=https://www.digikey.com/products/en?keywords=ATSAMD11C14A-SSUTCT-ND>D11C</a>, <a href=https://www.digikey.com/products/en?keywords=ATSAMD11D14A-SSUTCT-ND>D11D</a>, <a href=https://www.digikey.com/products/en?keywords=ATSAMD21E17A-AUTCT-ND>D21E</a>, <a href=https://www.digikey.com/product-detail/en/microchip-technology/ATSAMD51J18A-AUT/ATSAMD51J18A-AUTCT-ND>D51</a>
+         &bull; 32 bit, 1.6-3.6V
+         &bull; 48 MHz clock, more complex clock distribution and synchronization
+         &bull; more powerful peripherals, more complex register access and libraries
+         &bull; diverse family, larger packages
+         &bull; standard in-circuit debugging
+      <a href=https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html>STM32</a>
+         &bull; 8-265 pins
+         &bull; <a href=https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html#tools-software>good software support</a>
+      <a href=https://www.raspberrypi.com/products/>Raspberry Pi</a>
+         <a href=RP2040/RP2040.pdf>RP2040</a>
+            &bull; 32-bit dual-core
+            &bull; 133 MHz clock (250 MHz+ over-clocked)
+            &bull; 264k SRAM
+            &bull; programmable peripherals
+         <a href=https://www.raspberrypi.com/products/rp2350>RP2350</a>
+   <a href=https://ip.cadence.com/ipportfolio/tensilica-ip/xtensa-customizable>Xtensa</a> (MIPS)
+      <a href=https://www.espressif.com/en/products/hardware/esp8266ex/overview>ESP8266</a>, <a href=https://www.espressif.com/en/products/hardware/esp32/overview>ESP32</a>
+         &bull; integrated RF, networking
+   <a href=https://riscv.org>RISC-V</a>
+         &bull; open architecture
+         &bull; <a href=https://www.espressif.com/en/products/socs/esp32-c3>ESP32-C3</a>, <a href=https://www.espressif.com/en/products/socs/esp32-c6>ESP32-C6</a>
+   <a href=http://www.cypress.com/psoc/?source=CY-ENG-HEADER>PSoC</a>, <a href=http://www.xmos.com/products/silicon>xCORE</a>, <a href=http://www.parallax.com/microcontrollers/propeller>Propeller</a>, <a href=http://tinyfpga.com>Lattice</a>, <a href=http://www.nvidia.com/object/embedded-systems-dev-kits-modules.html>NVIDIA</a>
+         &bull; parallel
+
+<b>vendors</b>
+   <a href=http://octopart.com/>Octopart</a>
+   <a href=http://www.digikey.com/>Digi-Key</a>
+   <a href=http://www.mouser.com/>Mouser</a>
+   <a href=http://www.newark.com/>Newark</a>
+   <a href=http://www.farnell.com/>Farnell</a>
+   <a href=http://www.sparkfun.com/>SparkFun</a>
+   <a href=https://www.adafruit.com/>Adafruit</a>
+
+<b>packages</b>
+   DIP
+   SOT
+   SOIC
+   TSSOP
+   TQFP
+   LQFP
+   LGA, QFN, CSP, <a href=http://fab.cba.mit.edu/classes/S62.12/people/moritz.kassner/bga_pcb.html>BGA</a>
+
+<b>embedded languages</b>
+   modifying code
+   assembly
+      <a href=http://fab.cba.mit.edu/about/fab/hello/ftdi/hello.ftdi.44.echo.hex>hex file</a>
+      <a href=doc0856.pdf>instruction set, opcodes</a>
+      <a href=doc1022.pdf>mnemonics, directives, expressions</a>
+      <a href=http://www.nongnu.org/avr-libc/user-manual/overview.html>avr-as</a>
+      <a href=http://www.nongnu.org/avr-libc/user-manual/inline_asm.html>inline</a>
+   <a href=http://publications.gbdirect.co.uk/c_book/>C</a> <a href=https://isocpp.org/>C++</a>
+      <a href=https://gitlab.fabcloud.org/academany/fabacademy/2020/recitations/blob/master/programming.pdf>programming</a> <a href=https://pubs.opengroup.org/onlinepubs/009695399/basedefs/stdint.h.html>types</a>
+      <a href=http://gcc.gnu.org/>GCC</a>
+         <a href=https://www.gnu.org/software/make/manual/html_node/Introduction.html#Introduction>make files</a> (tabs)
+         <a href=http://playground.arduino.cc/Code/BitMath>bit operations</a>
+      AVR
+         <a href=http://www.nongnu.org/avr-libc/user-manual/index.html>libc</a> <a href=http://www.nongnu.org/avr-libc/user-manual/modules.html>modules</a> <a href=http://www.nongnu.org/avr-libc/user-manual/group__avr__stdint.html>types</a> <a href=http://www.nongnu.org/avr-libc/user-manual/group__avr__math.html>math</a> <a href=http://www.nongnu.org/avr-libc/user-manual/benchmarks.html>benchmarks</a>
+         <a href=http://packages.ubuntu.com/xenial/avr-libc>avr-libc</a> <a href=http://packages.ubuntu.com/xenial/binutils-avr>binutils-avr</a> <a href=http://packages.ubuntu.com/xenial/gcc-avr>gcc-avr</a>
+         <a href=https://github.com/osx-cross/homebrew-avr>homebrew-avr</a>
+      <a href=https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm>ARM</a>
+         <a href=http://packages.ubuntu.com/xenial/gcc-arm-none-eabi>gcc-arm-none-eabi</a> <a href=http://packages.ubuntu.com/xenial/gdb-multiarch>gdb-multiarch</a>
+         <a href=https://github.com/osx-cross/homebrew-arm>homebrew-arm</a>
+         <a href=https://github.com/libopencm3/libopencm3>libopencm3</a>
+      Microchip
+         <a href=https://www.microchip.com/en-us/tools-resources/develop/microchip-studio>Studio</a>
+         <a href=https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers>toolchains</a> <a href=http://packs.download.atmel.com>packs</a> (zip)
+         <a href=https://asf.microchip.com/docs/latest>ASF</a> <a href=https://start.atmel.com/>START</a>
+      Espressif
+         <a href=https://github.com/espressif/esp-idf>ESP-IDF</a>
+         <a href=https://github.com/espressif/esp-dsp>ESP-DSP</a>
+   <a href=https://docs.rust-embedded.org/book/>Rust</a>
+      memory leaks, memory overruns, race conditions
+      <a href=https://github.com/rp-rs>RP</a> <a href=https://github.com/nthnn/rust-rp2040>template</a>
+      <a href=https://github.com/esp-rs>ESP32</a>
+      <a href=https://github.com/avr-rust>AVR</a>
+   interpreters
+      <a href=https://micropython.org>MicroPython</a> <a href=https://github.com/adafruit/circuitpython>CircuitPython</a>
+         <a href=https://docs.python.org/3/>language</a> <a href=https://docs.micropython.org/en/latest/reference>implementation</a> <a href=https://docs.micropython.org/en/latest/reference/repl.html>REPL</a> <a href=https://docs.micropython.org/en/latest/reference/speed_python.html>speed</a> <a href=https://gitlab.cba.mit.edu/quentinbolsee/mpy_bridge>bridge</a>
+         boot.py, main.py
+         <a href=https://docs.micropython.org/en/latest/library/asyncio.html>asyncio</a> <a href=https://docs.micropython.org/en/latest/library/_thread.html>(threads)</a>
+         <a href=https://github.com/v923z/micropython-ulab>ulab</a>
+      <a href=https://www.espruino.com/>Espruino</a> <a href=https://kalumajs.org/>Kaluma</a> <a href=https://microsoft.github.io/devicescript/>DeviceScript</a>
+
+<b><div id="AI"></div>AI</b>
+   <i>coding</i>
+      <a href=https://chat.openai.com>ChatGPT</a> <a href=https://chatgpt.com/codex>Codex</a> <a href=https://github.com/features/copilot>Copilot</a> <a href=https://cursor.com>Cursor</a> <a href=https://about.gitlab.com/gitlab-duo/>Duo</a> <a href=https://deepseekcoder.github.io>DeepSeek</a>
+         <a href=AI/chat.mp4>bugs, hallucination, copyright infringement, sources, ...</a>
+   <i>embedded</i>
+      <a href=https://ai.google.dev/edge/litert>LiteRT</a> <a href=https://www.tinyml.org/>TinyML</a> <a href=https://github.com/espressif/esp-dl>ESP-DL</a> <a href=https://www.edgeimpulse.com/>Edge Impulse</a>
+
+<b>operating systems</b>
+   bare-metal
+   <a href=https://docs.micropython.org/en/latest/library/asyncio.html>cooperative</a> <i>vs</i> preemptive multitasking
+   <a href=https://www.freertos.org>FreeRTOS</a> <a href=https://github.com/tinyos/tinyos-main>TinyOS</a> <a href=https://www.mbed.com/en/>Mbed OS</a> <a href=http://www.ros.org>ROS</a>
+
+<b><a id=programmers><a href=http://pub.fabcloud.io/programmers/summary/>in-system development</a></a></b>
+   <a href=https://docs.micropython.org/en/v1.8.6/pyboard/reference/repl.html>raw REPL</a>, <a href=https://docs.micropython.org/en/latest/esp8266/tutorial/repl.html>Web REPL</a>, <a href=https://gitlab.cba.mit.edu/pub/upy/-/blob/main/upy.py>upy.py</a>
+   <a href=http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42366-SAM-BA-Bootloader-for-SAM-D21_ApplicationNote_AT07175.pdf>bootloader</a>, <a href=https://github.com/arduino/Arduino/wiki/Unofficial-list-of-3rd-party-boards-support-urls>bootloaders</a>
+   JTAG SWD (ARM)
+      <i>software</i>
+         <a href=http://openocd.org>OpenOCD</a>
+         <a href=https://github.com/ataradov/edbg>EDBG</a>
+               <i>program</i>: edbg -b -t target_type -epv -f binary_file
+               <i>read fuses</i>: edbg -b -t target_type -F r,*,file_name
+               <i>write fuses</i>: edbg -b -t target_type -F w,high_bit:low_bit,bit_value
+               <i><a href=https://microchipsupport.force.com/s/article/SAM-D-L-C--Unable-to-program-the-device>disable SAMD bootloader protection</a></i>: edbg -b -t target_type -F w,2:0,7
+         <a href=https://github.com/qbolsee/ArduinoCore-fab-sam>Arduino</a>
+      <i>hardware</i>
+         <a href=http://www.digikey.com/product-detail/en/ATATMEL-ICE-BASIC/ATATMEL-ICE-BASIC-ND>Atmel-ICE</a> <a href=https://www.digikey.com/product-detail/en/maxim-integrated/MAX32625PICO/MAX32625PICO-ND/7560410>PICO</a> <a href=http://goodfet.sourceforge.net>GoodFET</a> <a href=https://learn.adafruit.com/programming-microcontrollers-using-openocd-on-raspberry-pi/overview>Raspberry Pi</a>
+         <a href=https://github.com/ataradov/free-dap>Free-DAP</a>
+            <a href=SWD/hello.CMSIS-DAP.10.D11C id=D11C-SWD>USB-D11C-SWD-10 pin</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.png>board</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.jpg>components</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.traces.png>traces</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.traces_exterior.png>traces+exterior</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.interior.png>interior</a>
+               <a href=SWD/hello.CMSIS-DAP.4.D11C>USB-D11C-SWD-4 pin</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.png>board</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.jpg>components</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.traces.png>traces</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.traces_exterior.png>traces+exterior</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.interior.png>interior</a>
+               <a href=SWD/hello.SWD.10-4>SWD-10-4-0.05 pitch</a> <a href=SWD/hello.SWD.10-4.png>board</a> <a href=SWD/hello.SWD.10-4.jpg>components</a> <a href=SWD/hello.SWD.10-4.traces.png>traces</a> <a href=SWD/hello.SWD.10-4.traces_exterior.png>traces+exterior</a> <a href=SWD/hello.SWD.10-4.interior.png>interior</a>
+               <a href=SWD/hello.SWD.10-4.1>SWD-10-4-0.1 pitch</a> <a href=SWD/hello.SWD.10-4.1.png>board</a> <a href=SWD/hello.SWD.10-4.1.jpg>components</a> <a href=SWD/hello.SWD.10-4.1.traces.png>traces</a> <a href=SWD/hello.SWD.10-4.1.traces_exterior.png>traces+exterior</a> <a href=SWD/hello.SWD.10-4.1.interior.png>interior</a>
+               <a href=SWD/free_dap_d11c_mini.bin>binary</a> <a href=SWD/hello.CMSIS-DAP.4.D11C.mp4>video</a>
+            USB-D11C-SWD-10 pin Eagle <a href=SWD/hello.CMSIS-DAP.10.D11C.brd>brd</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.sch>sch</a>
+            USB-D11C-SWD-10 pin KiCad <a href=SWD/hello.CMSIS-DAP.10.D11C.kicad_sch>sch</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.kicad_pcb>pcb</a> <a href=SWD/hello.CMSIS-DAP.10.D11C.kicad_pro>pro</a> 
+            USB-D11C-SWD-10 pin SVG-PCB <a href=https://leomcelroy.com/svg-pcb/?file=hello.CMSIS-DAP.10.D11C.js>js</a>
+   UPDI (newer AVR)
+      <i>software</i>
+         <a href=https://github.com/mraardvark/pyupdi>pyupdi</a>
+            <i>install</i>:
+               pip3 install intelhex pylint pyserial
+            <i>program</i>:
+               python3 pyupdi.py -d your_processor -c your_port -b your_baud_rate -f your_hex_file -v
+         <a href=https://github.com/microchip-pic-avr-tools/pymcuprog>pymcuprog</a>
+            <i>install</i>:
+               apt install libusb-1.0-0-dev, libudev-dev
+               pip3 install pymcuprog
+            <i>program</i>:
+               pymcuprog -d your_processor -t uart -u your_port -c your_baud_rate -v info erase
+               pymcuprog -d your_processor -t uart -u your_port -c your_baud_rate -v info write -f your_hex_file
+         <a href=https://github.com/SpenceKonde/megaTinyCore>Arduino</a>
+      <i>hardware</i>
+         <a href=UPDI/hello.serial-UPDI>serial-UPDI-2 pin</a> <a href=UPDI/hello.serial-UPDI.png>board</a> <a href=UPDI/hello.serial-UPDI.jpg>components</a> <a href=UPDI/hello.serial-UPDI.traces.png>traces</a> <a href=UPDI/hello.serial-UPDI.traces_exterior.png>traces+exterior</a> <a href=UPDI/hello.serial-UPDI.interior.png>interior</a> <a href=UPDI/UPDI-2.jpg>connector(less)</a>
+         <a href=UPDI/hello.serial-UPDI.3>serial UPDI-3 pin</a> <a href=UPDI/hello.serial-UPDI.3.png>board</a> <a href=UPDI/hello.serial-UPDI.3.jpg>components</a> <a href=UPDI/hello.serial-UPDI.3.traces.png>traces</a> <a href=UPDI/hello.serial-UPDI.3.traces_exterior.png>traces+exterior</a> <a href=UPDI/hello.serial-UPDI.3.interior.png>interior</a>
+         <a href=FTDI/USB-FT230XS-UPDI>USB-FT230X-UPDI</a> <a href=FTDI/USB-FT230XS-UPDI.png>board</a> <a href=FTDI/USB-FT230XS-UPDI.jpg>components</a> <a href=FTDI/USB-FT230XS-UPDI.traces.png>traces</a> <a href=FTDI/USB-FT230XS-UPDI.traces_exterior.png>traces+exterior</a> <a href=FTDI/USB-FT230XS-UPDI.interior.png>interior</a>
+   <a href=https://gitlab.fabcloud.org/pub/programmers/swd-uart-adapter-xiao-rp2040>SWD+UPDI</a>
+   ISP (original AVR)
+      <i>software</i>
+         <a href=http://www.nongnu.org/avrdude/>avrdude</a>
+      <i>hardware</i>
+         <a href=http://www.mouser.com/ProductDetail/FCI/95278-101A06LF/?qs=sGAEpiMZZMtsLRyDR9nM14Vjyw4ze%252bjt4BkljYq5qeM%3d>header</a> <a href=hello.ISP.44.traces.png>pads</a> <a href=http://www.digikey.com/product-detail/en/3m/923655-14/923655-14-ND>clip</a> <a href=http://fab.cba.mit.edu/classes/863.16/doc/projects/Pogo_prog_connector/Pogo.html>pins</a>
+         <a href=https://www.digikey.com/en/products/detail/microchip-technology/ATATMEL-ICE/4753379>Atmel-ICE</a>
+         <a href=https://www.arduino.cc/en/Tutorial/ArduinoISP>Arduino</a>
+         ATmega16U2 <a href=https://gitlab.fabcloud.org/FabISPmk2/FabPDI>Zaerc</a>
+         ATtiny45 <a href=http://fab.cba.mit.edu/classes/863.17/CBA/people/seanhickey/weeks/06-large-format-machining>Sean</a> <a href=http://fabacademy.org/2018/labs/fablabzoi/students/alexdavid-tocagonanrango/wk5.html>Alex</a> <a href=http://fab.cba.mit.edu/classes/863.17/CBA/people/tomasero/index.html>Tom&aacute;s</a> <a href=https://jw4rd.github.io/shieldMill>Jonathan</a> <a href=http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/index.html>Brian</a> <a href=http://fabacademy.org/archives/2015/doc/projects/FabTinyStar/>Zaerc</a>
+         ATtiny44 <a href= http://fab.cba.mit.edu/classes/863.16/doc/tutorials/FabISP/FabISP_Demystified.html>Ali</a> <a href=http://fab.cba.mit.edu/classes/863.11/people/valentin.heun/2.htm>Valentin</a> <a href=http://fabacademy.org/archives/2012/students/bas.withagen/cl08asgn.html>Bas</a> <a href=http://fab.cba.mit.edu/content/archive/projects/fabispkey/index.html>Andy</a> <a href=http://fab.cba.mit.edu/content/archive/projects/fabisp/>David</a> 
+            <a href=../embedded_programming/hello.ISP.44>USB-t44-ISP</a> <a href=../embedded_programming/hello.ISP.44.png>board</a> <a href=../embedded_programming/hello.ISP.44.components.png>components</a> <a href=../embedded_programming/hello.ISP.44.traces.png>traces</a> <a href=../embedded_programming/hello.ISP.44.traces_exterior.png>traces+exterior</a> <a href=../embedded_programming/hello.ISP.44.interior.png>interior</a><!--<a href=../embedded_programming/hello.ISP.44.res.cad>hello.ISP.44.res.cad</a> <a href=../embedded_programming/hello.ISP.44.res.png>board</a> <a href=../embedded_programming/hello.ISP.44.res.traces.png>traces</a> <a href=../embedded_programming/hello.ISP.44.res.interior.png>interior</a>--> <a href=../embedded_programming/firmware.zip>firmware.zip</a> <a href=http://archive.fabacademy.org/archives/2016/doc/programming_FabISP.html>programming</a>
+   <a href=https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/press_breakout/>breakout</a>
+
+<b>development environments</b>
+   <a href=https://www.microchip.com/en-us/tools-resources/develop/microchip-studio>Microchip Studio</a>
+   <a href=http://www.eclipse.org/>Eclipse</a>
+   <a href=https://code.visualstudio.com>VS Code</a>
+   <a href=https://thonny.org/>Thonny</a>
+   <a href=https://leomcelroy.com/codebra/>Codebra</a>
+   <a href=https://platformio.org>PlatformIO</a>
+   <a href=http://www.arduino.cc/>Arduino</a>
+      board + toolchain + libraries + IDE + bootloader + header
+      programming
+         <a href=https://arduino.github.io/arduino-cli/latest/sketch-build-process/>C++</a> <a href=https://create.arduino.cc>Create</a> <a href=https://codebender.cc/>Codebender</a> <a href=http://blog.ardublock.com/>Ardublock</a> <a href=https://arduino.github.io/arduino-cli/latest/getting-started/>CLI</a>
+      original
+         <a href=http://archive.fabacademy.org/archives/2016/doc/projects/fabkit-0.4.html>Fabkit</a> <a href=http://makeyourbot.wikidot.com/fabio-1-1>Fabio</a> <a href=https://github.com/satshakit>satshakit</a> <a href=hello.arduino.328P.png>hello.328P</a>
+      <a href=https://www.arduino.cc/en/guide/cores>cores</a>
+         <a href=https://github.com/earlephilhower/arduino-pico>Arduino-Pico</a> <a href=https://github.com/espressif/arduino-esp32>ESP32</a> <a href=https://github.com/esp8266/Arduino>ESP8266</a> <a href=https://github.com/qbolsee/ArduinoCore-fab-sam>fab-sam</a> <a href=https://github.com/SpenceKonde/megaTinyCore>tinyAVR</a> <a href=https://github.com/SpenceKonde/DxCore>DxCore</a> <a href=https://github.com/SpenceKonde/ATTinyCore>ATTinyCore</a> 
+      <a href=https://pub.pages.cba.mit.edu/ring>overhead</a> <a href=https://www.arduino.cc/reference/en/language/functions/time/millis>millis</a> <a href=https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt>interrupts</a> <a href=https://www.nongnu.org/avr-libc/user-manual/group__avr__interrupts.html>ISR</a>
+
+<b>development boards</b>
+   <a href=https://www.seeedstudio.com/XIAO-c-1964.html>XIAO</a> (<a href=https://ng.cba.mit.edu/neil/23.02.CT/index.html>CT</a>) <a href=https://www.adafruit.com/category/943>Adafruit</a> <a href=https://www.pololu.com/category/149/a-star-programmable-controllers>Pololu</a> <a href=https://www.olimex.com/>Olimex</a> <a href=https://microbit.org>Micro:bit</a> <a href=http://beagleboard.org/>Beagle</a> <a href=http://www.raspberrypi.org/>Rasberry Pi</a>
+   <a href=https://gitlab.fabcloud.org/pub/programmers/quentorres>Quentorres</a> <a href=http://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html>Fab-Xiao</a> <a href=http://fabacademy.org/2020/labs/leon/students/adrian-torres/samdino.html>SAMDino</a> <a href=http://fabacademy.org/2020/labs/leon/students/adrian-torres/adrianino.html>Adrianino</a> <a href=http://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/samd11c_devkit>D11C devkit</a> <a href=http://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/samd21e_devkit/>D21E devkit</a>
+
+<b>clocks</b>
+   types
+      RC (10%, 1% calibrated)
+      ceramic (0.5%)
+      quartz (50 ppm)
+   PLL
+   instruction cycles
+   <a href=https://www.raspberrypi.com/news/dont-try-this-at-home-overclocking-rp2040-to-1ghz/>overclocking</a>
+   underclocking
+
+<b>serial communication</b>
+   <a href=serial.png>RS232</a>
+      bit timing
+   <a href=Ecma-048.pdf>VT100/ANSI/ISO/ECMA terminal</a>
+      <a href=https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-monitor>Arduino serial monitor</a>
+      <a href=https://www.gnu.org/software/screen/manual/screen.html>Screen</a> 
+         screen port speed, ctrl-a k to quit
+      <a href=https://github.com/pyserial/pyserial>pySerial</a> <a href=http://pyserial.readthedocs.org/en/latest/tools.html#miniterm>miniterm</a>
+         python -m serial.tools.miniterm /dev/your_device_port your_baud_rate
+      <a href=https://serialport.io>SerialPort</a> <a href=https://serialport.io/docs/guide-cli>terminal</a>
+         serialport-terminal
+      <a href=https://web.dev/serial>Web Serial</a>
+   <a href=http://www.usb.org/home>USB</a>
+      <a href=https://asf.microchip.com/docs/latest/asf_usb.html>ASF</a> <a href=https://docs.arduino.cc/language-reference/en/functions/communication/serial/>Arduino</a> <a href=https://github.com/hathach/tinyusb>TinyUSB</a>
+      hello.RP2040.serial <a href=serial/hello.RP2040.serial/hello.RP2040.serial.kicad_pro>pro</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.kicad_sch>sch</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.kicad_pcb>pcb</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.png>board</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.jpg>components</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.top.png>traces</a> <a href=serial/hello.RP2040.serial/hello.RP2040.serial.interior.png>interior</a>
+         <a href=https://github.com/qbolsee/rp2040-serial-bridge/blob/main/rp2040-serial-bridge.ino>rp2040-serial-bridge.ino</a>
+      <a href=http://www.ftdichip.com/>FTDI</a> <a href=https://www.ftdichip.com/FTDrivers.htm>drivers</a> <a href=http://www.intra2net.com/en/developer/libftdi/>libFTDI</a> <a href=https://www.digikey.com/product-detail/en/ftdi-future-technology-devices-international-ltd/TTL-232R-5V/768-1028-ND>cable</a> <a href=https://www.ftdichip.com/Products/ICs/FT230X.html>chip</a>
+            <a href=FTDI/USB-FT230XS-serial>hello.USB-serial.FT230X</a> <a href=FTDI/USB-FT230XS-serial.png>board</a> <a href=FTDI/USB-FT230XS-serial.jpg>components</a> <a href=FTDI/USB-FT230XS-serial.traces.png>traces</a> <a href=FTDI/USB-FT230XS-serial.traces_exterior.png>traces+exterior</a> <a href=FTDI/USB-FT230XS-serial.interior.png>interior</a>
+      <a href=D11C/hello.D11C.serial.5V.1.1>USB-D11C-serial</a> <a href=D11C/hello.D11C.serial.5V.1.1.png>board</a> <a href=D11C/hello.D11C.serial.5V.1.1.jpg>components</a> <a href=D11C/hello.D11C.serial.5V.1.1.traces.png>top</a> <a href=D11C/hello.D11C.serial.5V.1.1.interior.png>interior</a>
+         <a href=https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11C14A_SAMD11C14A.bin>bootloader</a> <a href=D11C/hello.D11C.serial.ino>serial.ino</a> <a href=D11C/hello.D11C.serial.3V3.mp4>video</a> <a href=https://github.com/qbolsee/SAMD11C_serial>SAMD11C_serial</a>
+         <a href=https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/dual_serial/>dual serial</a>
+      serial to 4 pin <a href=serial/hello.serial.4.5/hello.serial.4.5.kicad_pro>pro</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.kicad_sch>sch</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.kicad_pcb>pcb</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.png>board</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.jpg>components</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.top.png>traces</a> <a href=serial/hello.serial.4.5/hello.serial.4.5.interior.png>interior</a>
+
+<b>debugging</b>
+   blink LED
+   add print statements
+   <a href=debug/debug_Arduino_D11C14.mp4>use an embedded debugger</a>
+      <a href=http://www.gnu.org/software/gdb/>gdb</a>, <a href=http://www.gnu.org/software/ddd/>ddd</a>
+      <a href=https://www.microchip.com/en-us/tools-resources/develop/microchip-studio>Microchip Studio</a>
+      <a href=https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-debugger>Arduino 2</a>
+
+<b>simulation</b>
+   <a href=https://www.tinkercad.com>Tinkercad</a>
+   digital
+      <a href=https://wokwi.com>Wokwi</a> <a href=sim/Wokwi.mp4>video</a>
+   mixed-signal
+      <a href=https://www.falstad.com/circuit/avr8js/>AVR8js</a> <a href=sim/AVR8js.mp4>video</a>
+
+<b><a href=RP2040/RP2040.pdf>RP2040</a></b>
+   <a href=https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html>XIAO</a> <a href=RP2040/RP2040-XIAO-pinout.jpg>pinout</a>
+      <a href=RP2040/hello.button-blink.RP2040>hello.button-blink.RP2040</a> <a href=RP2040/hello.button-blink.RP2040.png>board</a> <a href=RP2040/hello.button-blink.RP2040.jpg>components</a> <a href=RP2040/hello.button-blink.RP2040.top.png>traces</a> <a href=RP2040/hello.button-blink.RP2040.interior.png>interior</a>
+         <a href=RP2040/hello.button-blink.RP2040.1.ino>hello.button-blink.RP2040.1.ino</a> <a href=RP2040/hello.button-blink.RP2040.1.py>1.py</a> <a href=RP2040/hello.button-blink.RP2040.2.ino>2.ino</a> <a href=RP2040/hello.button-blink.RP2040.2.py>2.py</a> <a href=RP2040/hello.button-blink.RP2040.mp4>video</a>
+         <a href=../output_devices/RGB/hello.RP2040-XIAO.blink-echo.ino>blink-echo.ino</a> <a href=../output_devices/RGB/hello.RP2040-XIAO.blink-echo.py>blink-echo.py</a> <a href=../output_devices/RGB/ws2812.py>ws2812.py</a> <a href=../output_devices/RGB/hello.RP2040-XIAO.blink-echo.mp4>video</a>
+   <a href=https://www.raspberrypi.com/documentation/microcontrollers/raspberry-pi-pico.html>Pico</a> <a href=https://github.com/kilograham/rp2040-doom>Doom</a>
+
+<b><a href=../networking_communications/ESP32/esp32_datasheet_en.pdf>ESP32</a></b>
+   <a href=https://www.espressif.com/en/products/socs/esp32-c3>ESP32-C3</a> <a href=https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html>XIAO</a> <a href=ESP32-C3/XIAO-ESP32C3-pinout.jpg>pinout</a>
+      <a href=ESP32-C3/hello.button-blink.C3>hello.button-blink.C3</a> <a href=ESP32-C3/hello.button-blink.C3.png>board</a> <a href=ESP32-C3/hello.button-blink.C3.jpg>components</a> <a href=ESP32-C3/hello.button-blink.C3.top.png>traces</a> <a href=ESP32-C3/hello.button-blink.C3.interior.png>interior</a>
+         <a href=ESP32-C3/hello.button-blink.C3.ino>hello.button-blink.C3.ino</a> <a href=ESP32-C3/hello.button-blink.C3.py>hello.button-blink.C3.py</a> <a href=ESP32-C3/hello.button-blink.C3.mp4>video</a>
+   <a href=../networking_communications/ESP32/esp32-wroom-32_datasheet_en.pdf>ESP32-WROOM-32 module</a> <a href=https://www.espressif.com/en/products/modules>versions</a>
+      <a href=../networking_communications/ESP32/hello.ESP32-WROOM>ESP32-WROOM-echo</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.png>board</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.jpg>components</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.traces.png>traces</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.traces_exterior.png>traces+exterior</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.holes.png>holes</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.interior.png>interior</a>
+         <a href=../networking_communications/ESP32/hello.ESP32-WROOM.echo.ino>echo.ino</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.echo.mp4>video</a> <a href=https://pub.pages.cba.mit.edu/ring/GPIO/ESP32/ring.ESP32.ino>ring.ino</a>
+         <a href=http://docs.micropython.org/en/latest/esp32/quickref.html>Python</a> <a href=../networking_communications/ESP32/hello.ESP32-WROOM.Python.mp4>video</a>
+
+<b><a href=../networking_communications/ESP8266/0a-esp8266ex_datasheet_en.pdf>ESP8266</a></b>
+   <a href=../networking_communications/ESP8266/esp01.pdf>ESP-01 module</a>
+      <a href=../networking_communications/ESP8266/hello.ESP-01>ESP-01-echo</a> <a href=../networking_communications/ESP8266/hello.ESP-01.png>board</a> <a href=../networking_communications/ESP8266/hello.ESP-01.jpg>components</a> <a href=../networking_communications/ESP8266/hello.ESP-01.traces.png>traces</a> <a href=../networking_communications/ESP8266/hello.ESP-01.traces_exterior.png>traces+exterior</a> <a href=../networking_communications/ESP8266/hello.ESP-01.holes.png>holes</a> <a href=../networking_communications/ESP8266/hello.ESP-01.interior.png>interior</a>
+         <a href=../networking_communications/ESP8266/hello.ESP-01.echo.ino>echo.ino</a> <a href=../networking_communications/ESP8266/hello.ESP-01.echo.mp4>video</a>
+   <a href=../networking_communications/ESP8266/esp-wroom-02d_esp-wroom-02u_datasheet_en-1365835.pdf>ESP-WROOM-02D module</a>
+      <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D>ESP-WROOM-02D-echo</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.png>board</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.jpg>components</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.traces.png>traces</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.traces_exterior.png>traces+exterior</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.holes.png>holes</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.interior.png>interior</a>
+         <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.echo.ino>echo.ino</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.echo.mp4>video</a>
+         <a href=http://docs.micropython.org/en/latest/esp8266/quickref.html>Python</a> <a href=../networking_communications/ESP8266/hello.ESP-WROOM-02D.Python.mp4>video</a>
+
+<b><a href=D11C/atmel-42363-sam-d11_datasheet.pdf>ATSAMD11C</a></b>
+   <a href=D11C/hello.D11C.blink>D11C-blink</a> <a href=D11C/hello.D11C.blink.png>board</a> <a href=D11C/hello.D11C.blink.jpg>components</a> <a href=D11C/hello.D11C.blink.traces.png>traces</a> <a href=D11C/hello.D11C.blink.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.blink.interior.png>interior</a>
+      <a href=D11C/hello.D11C.blink.reset>D11C-blink-reset</a> <a href=D11C/hello.D11C.blink.reset.png>board</a> <a href=D11C/hello.D11C.blink.reset.jpg>components</a> <a href=D11C/hello.D11C.blink.reset.traces.png>traces</a> <a href=D11C/hello.D11C.blink.reset.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.blink.reset.interior.png>interior</a>
+      <a href=D11C/hello.D11C.blink.reset.clock>D11C-blink-reset-clock</a> <a href=D11C/hello.D11C.blink.reset.clock.png>board</a> <a href=D11C/hello.D11C.blink.reset.clock.jpg>components</a> <a href=D11C/hello.D11C.blink.reset.clock.traces.png>traces</a> <a href=D11C/hello.D11C.blink.reset.clock.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.blink.reset.clock.interior.png>interior</a>
+      <a href=D11C/hello.D11C.blink.c>blink.c</a> <a href=D11C/hello.D11C.blink.make>blink.make</a> <a href=https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11C14A_SAMD11C14A.bin>bootloader</a> <a href=D11C/hello.D11C.blink.ino>blink.ino</a> <a href=D11C/hello.D11C.blink.mp4>video</a> <a href=https://pub.pages.cba.mit.edu/ring/GPIO/SAMD11C/ring.D11C.ino>ring.ino</a>
+   <a href=D11C/hello.D11C.echo.1>D11C-echo</a> <a href=D11C/hello.D11C.echo.1.png>board</a> <a href=D11C/hello.D11C.echo.1.jpg>components</a> <a href=D11C/hello.D11C.echo.1.traces.png>traces</a> <a href=D11C/hello.D11C.echo.1.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.echo.1.interior.png>interior</a>
+      <a href=D11C/hello.D11C.echo>D11C-echo-10</a> <a href=D11C/hello.D11C.echo.png>board</a> <a href=D11C/hello.D11C.echo.jpg>components</a> <a href=D11C/hello.D11C.echo.traces.png>traces</a> <a href=D11C/hello.D11C.echo.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.echo.interior.png>interior</a>
+      <a href=D11C/hello.D11C.echo.mini>D11C-echo-mini</a> <a href=D11C/hello.D11C.echo.mini.png>board</a> <a href=D11C/hello.D11C.echo.mini.jpg>components</a> <a href=D11C/hello.D11C.echo.mini.traces.png>traces</a> <a href=D11C/hello.D11C.echo.mini.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.echo.mini.holes.png>holes</a> <a href=D11C/hello.D11C.echo.mini.interior.png>interior</a>
+      <a href=D11C/hello.D11C.echo.micro>D11C-echo-micro</a> <a href=D11C/hello.D11C.echo.micro.png>board</a> <a href=D11C/hello.D11C.echo.micro.jpg>components</a> <a href=D11C/hello.D11C.echo.micro.traces.png>traces</a> <a href=D11C/hello.D11C.echo.micro.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.echo.micro.holes.png>holes</a> <a href=D11C/hello.D11C.echo.micro.interior.png>interior</a>
+      <a href=D11C/hello.D11C.echo.ino>echo.ino</a> <a href=D11C/hello.D11C.echo.mp4>video</a> 
+   <a href=D11C/hello.D11C.serial.5V.1.1>D11C-serial</a> <a href=D11C/hello.D11C.serial.5V.1.1.png>board</a> <a href=D11C/hello.D11C.serial.5V.1.1.jpg>components</a> <a href=D11C/hello.D11C.serial.5V.1.1.traces.png>top</a> <a href=D11C/hello.D11C.serial.5V.1.1.interior.png>interior</a>
+      <a href=D11C/hello.D11C.serial.micro.4>D11C-serial-micro-4</a> <a href=D11C/hello.D11C.serial.micro.4.png>board</a> <a href=D11C/hello.D11C.serial.micro.4.jpg>components</a> <a href=D11C/hello.D11C.serial.micro.4.traces.png>traces</a> <a href=D11C/hello.D11C.serial.micro.4.traces_exterior.png>traces+exterior</a> <a href=D11C/hello.D11C.serial.micro.4.holes.png>holes</a> <a href=D11C/hello.D11C.serial.micro.4.interior.png>interior</a>
+      <a href=D11C/hello.D11C.serial.5V.2.large>D11C-serial-large vias</a> <a href=D11C/hello.D11C.serial.5V.2.large.png>board</a> <a href=D11C/hello.D11C.serial.5V.2.large.jpg>components</a> <a href=D11C/hello.D11C.serial.5V.2.large.top.png>top</a> <a href=D11C/hello.D11C.serial.5V.2.large.top_exterior.png>top+exterior</a> <a href=D11C/hello.D11C.serial.5V.2.large.bottom.png>bottom</a> <a href=D11C/hello.D11C.serial.5V.2.large.holes.png>holes</a> <a href=D11C/hello.D11C.serial.5V.2.large.interior.png>interior</a>
+      <a href=D11C/hello.D11C.serial.5V.2.small>D11C-serial-small vias</a> <a href=D11C/hello.D11C.serial.5V.2.small.png>board</a> <a href=D11C/hello.D11C.serial.5V.2.small.jpg>components</a> <a href=D11C/hello.D11C.serial.5V.2.small.top.png>top</a> <a href=D11C/hello.D11C.serial.5V.2.small.top_exterior.png>top+exterior</a> <a href=D11C/hello.D11C.serial.5V.2.small.bottom.png>bottom</a> <a href=D11C/hello.D11C.serial.5V.2.small.holes.png>holes</a> <a href=D11C/hello.D11C.serial.5V.2.small.interior.png>interior</a> <a href=D11C/hello.D11C.serial.zip>Gerber</a>
+      <a href=D11C/hello.D11C.serial.ino>serial.ino</a> <a href=D11C/hello.D11C.serial.3V3.mp4>video</a> <a href=https://github.com/qbolsee/SAMD11C_serial>SAMD11C_serial</a>
+
+<b><a href=D11D/atmel-42363-sam-d11_datasheet.pdf>ATSAMD11D</a></b>
+   <a href=D11D/hello.D11D.echo>D11D-echo</a> <a href=D11D/hello.D11D.echo.png>board</a> <a href=D11D/hello.D11D.echo.jpg>components</a> <a href=D11D/hello.D11D.echo.traces.png>traces</a> <a href=D11D/hello.D11D.echo.traces_exterior.png>traces+exterior</a> <a href=D11D/hello.D11D.echo.interior.png>interior</a>
+      <a href=D11D/openocd.cfg>openocd.cfg</a> <a href=https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_Generic_D11D14AS_SAMD11D14AS.bin>bootloader</a> <a href=D11D/hello.D11D.echo.ino>echo.ino</a> <a href=D11D/hello.D11D.echo.mp4>video</a>
+
+<b><a href=D21E/Atmel-42181-SAM-D21_Datasheet.pdf>ATSAMD21E</a></b>
+   <a href=D21E/hello.D21E.echo>D21E-echo</a> <a href=D21E/hello.D21E.echo.png>board</a> <a href=D21E/hello.D21E.echo.jpg>components</a> <a href=D21E/hello.D21E.echo.traces.png>traces</a> <a href=D21E/hello.D21E.echo.traces_exterior.png>traces+exterior</a> <a href=D21E/hello.D21E.echo.interior.png>interior</a>
+      <a href=https://github.com/mattairtech/ArduinoCore-samd/blob/master/bootloaders/zero/binaries/sam_ba_MT_D21E_rev_B_SAMD21E17A.bin>bootloader</a> <a href=D21E/hello.D21E.echo.ino>echo.ino</a> <a href=D21E/hello.D21E.echo.mp4>video</a>
+      <a href=https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/projects/samd21e_devkit/#circuitpython-e18-only>Python</a>
+
+<b><a href=D51/60001507E.pdf>ATSAMD51</a></b>
+   <a href=https://gitlab.cba.mit.edu/pub/hello-world/atsamd51>hello worlds</a> <a href=https://pub.pages.cba.mit.edu/ring/prior/gpio/atsamd51/index.html>ring.ino</a>
+
+<b><a href=t412/ATtiny212-412-DataSheet-DS40001911C.pdf>ATtiny412</a></b><a name=echo></a>
+   t412-blink-4 pin <a href=t412/hello.t412.4.kicad_pro>pro</a> <a href=t412/hello.t412.4.kicad_sch>sch</a> <a href=t412/hello.t412.4.kicad_pcb>pcb</a> <a href=t412/hello.t412.4.png>board</a> <a href=t412/hello.t412.4.jpg>components</a> <a href=t412/hello.t412.4.top.png>traces</a> <a href=t412/hello.t412.4.interior.png>interior</a> <a href=t412/hello.t412.4.blink.ino>blink.ino</a>
+   <a href=t412/hello.t412.3.blink>t412-blink-3 pin</a> <a href=t412/hello.t412.3.blink.png>board</a> <a href=t412/hello.t412.3.blink.jpg>components</a> <a href=t412/hello.t412.3.blink.traces.png>traces</a> <a href=t412/hello.t412.3.blink.mask.png>mask</a> <a href=t412/hello.t412.3.blink.traces_exterior.png>traces+exterior</a> <a href=t412/hello.t412.3.blink.interior.png>interior</a>
+      <a href=t412/hello.t412.3.blink.ino>blink.ino</a> <a href=t412/hello.t412.3.blink.c>blink.c</a> <a href=t412/hello.t412.3.blink.make>make</a> <a href=t412/hello.t412.3.blink.mp4>video</a>
+   <a href=t412/hello.t412.blink>t412-blink-2 pin</a> <a href=t412/hello.t412.blink.png>board</a> <a href=t412/hello.t412.blink.jpg>components</a> <a href=t412/hello.t412.blink.traces.png>traces</a> <a href=t412/hello.t412.blink.traces_exterior.png>traces+exterior</a> <a href=t412/hello.t412.blink.interior.png>interior</a>
+      <a href=t412/hello.t412.blink.ino>blink.ino</a> <a href=t412/hello.t412.blink.mp4>video</a> <a href=https://pub.pages.cba.mit.edu/ring/GPIO/ATtiny412/ring.t412.ino>ring.ino</a>
+   <a href=t412/hello.t412.echo>t412-echo</a> <a href=t412/hello.t412.echo.png>board</a> <a href=t412/hello.t412.echo.jpg>componenets</a> <a href=t412/hello.t412.echo.traces.png>traces</a> <a href=t412/hello.t412.echo.traces_exterior.png>traces+exterior</a> <a href=t412/hello.t412.echo.interior.png>interior</a>
+      <a href=t412/hello.t412.echo.ino>echo.ino</a> <a href=t412/hello.t412.echo.mp4>video</a>
+      <a href=t412/hello.t412.echo.c>echo.c</a> <a href=t412/hello.t412.echo.make>echo.make</a> <a href=t412/hello.t412.echo.c.mp4>video</a>
+
+<b><a href=Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf>ATtiny45</a></b>
+   <a href=hello.ftdi.45>t45-echo</a> <a href=hello.ftdi.45.png>board</a> <a href=hello.ftdi.45.jpg>components</a> <a href=hello.ftdi.45.traces.png>traces</a> <a href=hello.ftdi.45.traces_exterior.png>traces+exterior</a> <a href=hello.ftdi.45.interior.png>interior</a> pin re-use
+      <a href=portwrite.html>ports</a> <a href=hello.ftdi.45.port.c>port.c</a> <a href=hello.ftdi.45.port.make>port.make</a> <a href=hello.ftdi.45.port.ino>port.ino</a> <a href=hello.ftdi.45.port.write.ino>port.write.ino</a>
+      <a href=echo.html>bit-bang</a> <a href=hello.ftdi.45.echo.c>echo.c</a> <a href=hello.ftdi.45.echo.make>echo.make</a> <a href=hello.ftdi.45.echo.ino>echo.ino</a> <a href=hello.ftdi.45.echo.serial.ino>echo.serial.ino</a> <a href=hello.ftdi.45.echo.mp4>video</a>
+
+<b><a href=t1614/ATtiny1614-DataSheet-DS40001995B.pdf>ATtiny1614</a> <a href=t1624/ATtiny1624-26-27-DataSheet-DS40002234A.pdf>ATtiny1624</a></b>
+   hello.t1624-XU <a href=t1624/hello.t1624-XU/hello.t1624-XU.kicad_pro>pro</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.kicad_sch>sch</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.kicad_pcb>pcb</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.png>board</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.jpg>components</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.top.png>traces</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.interior.png>interior</a> <a href=t1624/hello.t1624-XU/hello.t1624-XU.blink.ino>blink</a>
+   <a href=t1614/hello.t1614.echo>t1614-echo</a> <a href=t1614/hello.t1614.echo.png>board</a> <a href=t1614/hello.t1614.echo.jpg>components</a> <a href=t1614/hello.t1614.echo.traces.png>traces</a> <a href=t1614/hello.t1614.echo.traces_exterior.png>traces+exterior</a> <a href=t1614/hello.t1614.echo.interior.png>interior</a>
+      <a href=t1614/hello.t1614.echo.ino>echo.ino</a> <a href=t1614/hello.t1614.echo.mp4>video</a>
+
+<b><a href=8183s.pdf>ATtiny44</a></b>
+   <a href=hello.ftdi.44>t44-echo</a> <a href=hello.ftdi.44.png>board</a> <a href=hello.ftdi.44.components.jpg>components</a> <a href=hello.ftdi.44.traces.png>traces</a> <a href=hello.ftdi.44.traces_exterior.png>traces+exterior</a> <a href=hello.ftdi.44.interior.png>interior</a>
+   <a href=hello.ftdi.44.2>t44-echo-2 sided</a> <a href=hello.ftdi.44.2.png>board</a> <a href=hello.ftdi.44.2.jpg>components</a> <a href=hello.ftdi.44.2.top.png>top</a> <a href=hello.ftdi.44.2.top_exterior.png>top+exterior</a> <a href=hello.ftdi.44.2.bottom.png>bottom</a> <a href=hello.ftdi.44.2.holes.png>holes</a> <a href=hello.ftdi.44.2.interior.png>interior</a>
+      <a href=hello.ftdi.44.program.png>programming</a> <a href=hello.ftdi.44.echo.mp4>mods</a>
+      <a href=hello.ftdi.44.echo.c>echo.c</a> <a href=hello.ftdi.44.echo.c.make>echo.c.make</a>
+      <a href=hello.ftdi.44.echo.interrupt.c>echo.interrupt.c</a> <a href=hello.ftdi.44.echo.interrupt.c.make>echo.interrupt.c.make</a>
+      <a href=hello.ftdi.44.echo.asm>echo.asm</a> <a href=hello.ftdi.44.echo.asm.make>echo.asm.make</a>
+
+<b><a href=t3216/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf>ATtiny3216</a> <a href=t3226/ATtiny3224-3226-3227-Data-Sheet-DS40002345A.pdf>ATtiny3226</a></b>
+   hello.t3226-MU <a href=t3226/hello.t3226-MU/hello.t3226-MU.kicad_pro>pro</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.kicad_sch>sch</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.kicad_pcb>pcb</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.png>board</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.jpg>components</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.top.png>traces</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.interior.png>interior</a> <a href=t3226/hello.t3226-MU/hello.t3226-MU.blink.ino>blink</a>
+   <a href=t3216/hello.t3216.echo>t3216-echo</a> <a href=t3216/hello.t3216.echo.png>board</a> <a href=t3216/hello.t3216.echo.jpg>components</a> <a href=t3216/hello.t3216.echo.traces.png>traces</a> <a href=t3216/hello.t3216.echo.traces_exterior.png>traces+exterior</a> <a href=t3216/hello.t3216.echo.interior.png>interior</a>
+      <a href=t3216/hello.t3216.echo.ino>echo.ino</a> <a href=t3216/hello.t3216.echo.mp4>video</a>
+
+<b><a href=DB/AVR128DB28-DS40002247A.pdf>AVR128DB32</a></b>
+   <a href=128DB32/hello.128DB32.echo>128DB32-echo</a> <a href=128DB32/hello.128DB32.echo.png>board</a> <a href=128DB32/hello.128DB32.echo.jpg>components</a> <a href=128DB32/hello.128DB32.echo.traces.png>traces</a> <a href=128DB32/hello.128DB32.echo.traces_exterior.png>traces+exterior</a> <a href=128DB32/hello.128DB32.echo.interior.png>interior</a>
+      <a href=http://pub.pages.cba.mit.edu/ring/GPIO/AVR128DB32/ring.128DB32.c>ring.c</a> <a href=http://pub.pages.cba.mit.edu/ring/GPIO/AVR128DB32/ring.128DB32.make>ring.make</a> <a href=128DB32/hello.128DB32.echo.c>echo.c</a> <a href=128DB32/hello.128DB32.echo.make>echo.make</a> <a href=128DB32/hello.128DB32.echo.mp4>video</a>
+
+<b><a href=https://fab.cba.mit.edu/classes/863.21/CBA/people/lingdong/site/16-output-device.html>Lingdong</a> <a href=https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/assignments/week09/>Quentin</a></b> <b><a href=https://fabacademy.org/2020/labs/leon/students/adrian-torres/week08.html>Adrian</a> <a href=https://fab.cba.mit.edu/classes/863.23/EECS/people/Yohan/week2/>Yohan</a></b>
+   <i>group assignment:</i>
+      &bull; demonstrate and compare the toolchains and development workflows
+         for available embedded architectures
+   <i>individual assignment:</i>
+      &bull; browse through the data sheet for a microcontroller
+      &bull; write and test a program for an <a href=https://quentinbolsee.pages.cba.mit.edu/qpad-page>embedded system</a> using a microcontroller
+         to interact (with local input &/or output devices)
+         and communicate (with remote wired or wireless connections)
+      &bull; <i>extra credit</i>: try different languages &/or development environments
