@@ -1,6 +1,6 @@
 # Asset file management report for 2017
 
-- Generated: 2025-11-10T21:28:07+00:00
+- Generated: 2025-11-10T21:56:44+00:00
 - Year snapshot base: `/classes-years/2017`
 - Class root (canonical): `/classes-years/2017` ((entire year base))
 - Canonical root: `/FabAcademyArchiveAssets/classes-master`
@@ -10,16 +10,88 @@
 ## Summary
 
 - Total files scanned: 2072
+- Index files (index.html) always copied (no dedup): 65
 - Identical files (vs canonical): 575
-- Different vs canonical (total): 529
-  - Variants first seen in 2017 (copied): 71
-  - Variants shared with previous years (not copied): 458
-- Files missing in canonical (total): 968
+- Different vs canonical (total): 465
+  - Variants first seen in 2017 (copied): 45
+  - Variants shared with previous years (not copied): 420
+- Files missing in canonical (total): 967
   - First seen in 2017 (copied): 1
-  - Shared with previous years (not copied): 967
-- Total files copied into `classes-years/2017`: 72
+  - Shared with previous years (not copied): 966
+- Total files copied into `classes-years/2017`: 111
 
 Paths below are relative to `classes-years/2017`.
+
+## 0. Index files (always copied for each year)
+
+These `index.html` files are always copied into the year-specific
+tree, even if they are identical to canonical or previous years.
+
+- `principles_practices/index.html`
+- `machine_design/index.html`
+- `index.html`
+- `electronics_design/index.html`
+- `scanning_printing/index.html`
+- `scanning_printing/light/index.html`
+- `scanning_printing/light/scan_gray_code/index.html`
+- `scanning_printing/light/scan_line/index.html`
+- `embedded_programming/index.html`
+- `input_devices/index.html`
+- `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html`
+- `output_devices/index.html`
+- `composites/index.html`
+- `mechanical_design/index.html`
+- `computer_design/index.html`
+- `computer_machining/index.html`
+- `molding_casting/index.html`
+- `project_management/index.html`
+- `computer_cutting/index.html`
+- `interface_application_programming/index.html`
+- `interface_application_programming/programs/index.html`
+- `invention_IP_business/index.html`
+- `networking_communications/index.html`
+- `old/sensors_actuators_displays/index.html`
+- `old/cad_cam_cae/index.html`
+- `old/embedded_programming/index.html`
+- `old/computer_machining/index.html`
+- `old/molding_casting/index.html`
+- `old/computer_cutting/index.html`
+- `old/scan_print/index.html`
+- `old/embedded_networking_communications/index.html`
+- `project_presentation/index.html`
+- `electronics_production/index.html`
+- `applications_implications/electronics/index.html`
+- `applications_implications/houses/index.html`
+- `applications_implications/drones/index.html`
+- `applications_implications/index.html`
+- `applications_implications/satellite/index.html`
+- `applications_implications/terminal/index.html`
+- `applications_implications/machines/index.html`
+- `applications_implications/boats/index.html`
+- `applications_implications/clothes/index.html`
+- `applications_implications/consumer_electronics/index.html`
+- `applications_implications/laptop/index.html`
+- `applications_implications/cities/index.html`
+- `applications_implications/robots/index.html`
+- `applications_implications/food/index.html`
+- `applications_implications/toys/index.html`
+- `applications_implications/biology/index.html`
+- `applications_implications/test_equipment/index.html`
+- `applications_implications/furniture/index.html`
+- `applications_implications/musical_instruments/index.html`
+- `applications_implications/cars/index.html`
+- `applications_implications/microscope/index.html`
+- `applications_implications/energy/index.html`
+- `applications_implications/phone/index.html`
+- `applications_implications/art/index.html`
+- `applications_implications/bicycles/index.html`
+- `applications_implications/network/index.html`
+- `applications_implications/inflatables/index.html`
+- `applications_implications/prosthetics/index.html`
+- `applications_implications/environment/index.html`
+- `applications_implications/labs/index.html`
+- `applications_implications/shoes/index.html`
+- `project_development/index.html`
 
 ## 1. Files identical to canonical (live in master)
 
@@ -603,23 +675,7 @@ Paths below are relative to `classes-years/2017`.
 
 ### 2.1 Variants first seen in 2017 (copied for this year)
 
-- `principles_practices/index.html`
-- `machine_design/index.html`
-- `electronics_design/index.html`
-- `scanning_printing/index.html`
-- `embedded_programming/index.html`
-- `input_devices/index.html`
-- `output_devices/index.html`
-- `composites/index.html`
-- `mechanical_design/index.html`
-- `computer_design/index.html`
-- `computer_machining/index.html`
-- `molding_casting/index.html`
-- `project_management/index.html`
 - `project_management/archive.html`
-- `computer_cutting/index.html`
-- `interface_application_programming/index.html`
-- `interface_application_programming/programs/index.html`
 - `interface_application_programming/programs/xline.c`
 - `interface_application_programming/programs/cudapi.cu`
 - `interface_application_programming/programs/threejssurf.html`
@@ -656,36 +712,23 @@ Paths below are relative to `classes-years/2017`.
 - `interface_application_programming/programs/cython_pi/setup.py`
 - `interface_application_programming/programs/cython_pi/cython_pi.pyx`
 - `interface_application_programming/programs/svgline.html`
-- `invention_IP_business/index.html`
-- `networking_communications/index.html`
 - `networking_communications/nRF/hello.nRF24L01P.44.c`
 - `networking_communications/RN4871/hello.RN4871.ftdi.cad`
 - `networking_communications/RN4871/hello.RN4871.ftdi.traces.png`
 - `networking_communications/RN4871/hello.RN4871.ftdi.interior.png`
 - `networking_communications/RN4871/RN4871.mp4`
-- `project_presentation/index.html`
-- `electronics_production/index.html`
 - `electronics_production/linetest.png`
 - `electronics_production/linetest.svg`
 - `electronics_production/linetest.interior.png`
-- `applications_implications/index.html`
-- `applications_implications/cities/index.html`
-- `applications_implications/food/index.html`
-- `applications_implications/toys/index.html`
-- `applications_implications/labs/index.html`
-- `project_development/index.html`
 
 ### 2.2 Variants shared with previous years (not copied for this year)
 
 - `machine_design/oldindex.html` → shared with year `2012`
-- `index.html` → shared with year `2012`
 - `scanning_printing/sample.f` → shared with year `2015`
 - `scanning_printing/bearing.cad` → shared with year `2012`
 - `scanning_printing/bearing.math` → shared with year `2012`
-- `scanning_printing/light/index.html` → shared with year `2014`
 - `scanning_printing/light/HDMI1_1366x768` → shared with year `2014`
 - `scanning_printing/light/png_sub.c` → shared with year `2014`
-- `scanning_printing/light/scan_gray_code/index.html` → shared with year `2014`
 - `scanning_printing/light/scan_gray_code/all_color.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_gray_code/img_005_0.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_gray_code/all_diff.png.html` → shared with year `2014`
@@ -726,7 +769,6 @@ Paths below are relative to `classes-years/2017`.
 - `scanning_printing/light/scan_line/diff_025.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_line/img_021_0.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_line/img_026_0.png.html` → shared with year `2014`
-- `scanning_printing/light/scan_line/index.html` → shared with year `2014`
 - `scanning_printing/light/scan_line/img_011_0.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_line/img_022_0.png.html` → shared with year `2014`
 - `scanning_printing/light/scan_line/img_005_0.png.html` → shared with year `2014`
@@ -1083,19 +1125,11 @@ Paths below are relative to `classes-years/2017`.
 - `networking_communications/i0/i0.3.serial.44.packetv4.asm` → shared with year `2012`
 - `networking_communications/i0/i0.3.serial.44.cad` → shared with year `2012`
 - `networking_communications/i0/i0.3.IO.44.cad` → shared with year `2012`
-- `old/sensors_actuators_displays/index.html` → shared with year `2012`
 - `old/sensors_actuators_displays/through-hole.cad` → shared with year `2012`
-- `old/cad_cam_cae/index.html` → shared with year `2012`
 - `old/cad_cam_cae/software.html` → shared with year `2012`
-- `old/embedded_programming/index.html` → shared with year `2012`
-- `old/computer_machining/index.html` → shared with year `2012`
 - `old/computer_machining/sample.g` → shared with year `2012`
 - `old/computer_machining/sample.rml` → shared with year `2012`
-- `old/molding_casting/index.html` → shared with year `2012`
-- `old/computer_cutting/index.html` → shared with year `2012`
-- `old/scan_print/index.html` → shared with year `2012`
 - `old/embedded_networking_communications/i0.3.hub.4.cad` → shared with year `2012`
-- `old/embedded_networking_communications/index.html` → shared with year `2012`
 - `old/embedded_networking_communications/thtpv4.py` → shared with year `2012`
 - `old/embedded_networking_communications/i0.3.serial.44.packetv4.asm` → shared with year `2012`
 - `old/embedded_networking_communications/i0.3.serial.44.cad` → shared with year `2012`
@@ -1109,32 +1143,6 @@ Paths below are relative to `classes-years/2017`.
 - `old/embedded_networking_communications/hello_radio/messager.py` → shared with year `2012`
 - `old/embedded_networking_communications/hello_radio/board/hello_radio.erc` → shared with year `2012`
 - `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg` → shared with year `2012`
-- `applications_implications/electronics/index.html` → shared with year `2015`
-- `applications_implications/houses/index.html` → shared with year `2014`
-- `applications_implications/drones/index.html` → shared with year `2016`
-- `applications_implications/satellite/index.html` → shared with year `2016`
-- `applications_implications/terminal/index.html` → shared with year `2016`
-- `applications_implications/machines/index.html` → shared with year `2016`
-- `applications_implications/boats/index.html` → shared with year `2014`
-- `applications_implications/clothes/index.html` → shared with year `2015`
-- `applications_implications/consumer_electronics/index.html` → shared with year `2014`
-- `applications_implications/laptop/index.html` → shared with year `2016`
-- `applications_implications/robots/index.html` → shared with year `2014`
-- `applications_implications/biology/index.html` → shared with year `2015`
-- `applications_implications/test_equipment/index.html` → shared with year `2015`
-- `applications_implications/furniture/index.html` → shared with year `2015`
-- `applications_implications/musical_instruments/index.html` → shared with year `2016`
-- `applications_implications/cars/index.html` → shared with year `2015`
-- `applications_implications/microscope/index.html` → shared with year `2016`
-- `applications_implications/energy/index.html` → shared with year `2016`
-- `applications_implications/phone/index.html` → shared with year `2016`
-- `applications_implications/art/index.html` → shared with year `2015`
-- `applications_implications/bicycles/index.html` → shared with year `2015`
-- `applications_implications/network/index.html` → shared with year `2016`
-- `applications_implications/inflatables/index.html` → shared with year `2014`
-- `applications_implications/prosthetics/index.html` → shared with year `2016`
-- `applications_implications/environment/index.html` → shared with year `2014`
-- `applications_implications/shoes/index.html` → shared with year `2015`
 
 ## 3. Files missing from canonical
 
@@ -1231,7 +1239,6 @@ Paths below are relative to `classes-years/2017`.
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/build.js` → shared with year `2015`
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/abi_crosswalk.json` → shared with year `2015`
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/versioning.js` → shared with year `2015`
-- `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html` → shared with year `2015`
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json` → shared with year `2015`
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw_crosswalk.json` → shared with year `2015`
 - `input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/s3_setup.js` → shared with year `2015`
