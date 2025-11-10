@@ -1,0 +1,206 @@
+<html>
+<body link="black" alink="black" vlink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<div style="font-size: 125%;">
+<pre>
+<a href=https://git-scm.com/>Git</a>
+   <a href=https://docs.gitlab.com/ce>GitLab</a>
+      repos, issue trackers, workflows, wikis, milestones, kanban, ...
+   <a href=http://git-scm.com/docs/gittutorial>tutorial</a> <a href=http://git-scm.com/book/en/v2>book</a>
+   <a href=https://git-scm.com/downloads>download</a>
+   <a href=https://git-scm.com/downloads/guis>GUIs</a>
+   <a href=https://www.gnu.org/software/bash/>shell</a> <a href=http://www.tldp.org/LDP/abs/html/basic.html>commands</a>
+   <a href=https://help.github.com/categories/ssh/>keys</a>
+      ssh-keygen -t rsa -f keyname -C "user@emailaddress"
+   <a href=https://git-scm.com/download/mac>Mac</a>
+      <a href=http://brew.sh/>Homebrew</a>
+   <a href=https://git-scm.com/download/win>Windows</a>
+      <a href=https://docs.microsoft.com/en-us/windows/wsl/faq>Windows Subsystem for Linux</a>
+   <a href=https://git-scm.com/download/linux>Linux</a>
+      <a href=https://www.debian.org/>Debian</a> <a href=http://www.ubuntu.com/>Ubuntu</a> <a href=https://xubuntu.org>Xubuntu</a>
+      <a href=https://github.com/dnschneid/crouton>Crouton</a> <a href=https://galliumos.org/>GalliumOS</a> <a href=https://www.google.com/chromebook/find>Chromebook/box</a>
+      <a href=scripts/index.html>scripts</a>
+   Android
+      <a href=https://play.google.com/store/apps/details?id=com.termux&hl=en>Termux</a>
+
+distributed version control system
+   maintains version history
+   merges changes between and within files
+   peer-to-peer development
+   remote server file system management
+
+<a href=https://dangitgit.com/>mistakes you will make</a>
+   key path, permissions
+      chmod go-rwx ~/.ssh/key_name
+   check what you're going to commit before doing it
+      git status
+   pull and merge before pushing
+   refresh browser after editing page
+   use relative rather than absolute links to files
+   avoid spaces in paths, they need to be escaped
+   archive size
+      O(MBs)/person/week
+      check size before commit
+         <a href=https://dev.yorhel.nl/ncdu>ncdu</a>
+      compress, resize pictures for Web
+         <a href=http://academy.cba.mit.edu/classes/computer_design/image.html>ImageMagick GIMP</a>
+      compress, encode vidoes for Web
+         <a href=http://academy.cba.mit.edu/classes/computer_design/video.html>ffmpeg</a>
+
+files
+   ~/.gitconfig
+      [user]
+         name = your name
+         email = you@email
+      (lots of other options)
+   ~/.ssh/config
+      host config_name
+         hostname machine_name
+         user user_name
+         port port_number
+         identityfile ~/.ssh/key_name
+   .gitignore, .git/info/exclude 
+      untracked files/directories to ignore
+   .git/hooks/post-merge
+      script to run after a merge (which happens after a pull)
+   .git/hooks/post-receive
+      script to run after receiving a push
+
+commands
+   git help
+      get help
+   git config --list
+      list config
+   git config --system
+      system config
+   git config --global
+      user config
+   git config --global user.name "Firstname Lastname"
+      set name for commits
+   git config --global user.email "address@site" 
+      set email for commits
+   git config --global push.default simple
+      default push only the current branch
+   git config --global fetch.prune true
+      locally prune branches that are remotely deleted
+   git config --global core.editor vim
+      set the editor
+   git config --global merge.tool meld
+      set the merge tool to meld
+   git config --global pull.rebase true
+      rebase rather commit automatic merges
+   git config --global receive.denyCurrentBranch updateInstead
+      update remote after push
+   git config --global core.sharedRepository 0640
+      default access group read
+   git config --global core.autocrlf true
+      configure Windows to use Linux/OSX line endings
+   git init
+      initialize a repository
+   git init --bare
+      initialize a bare repository
+   git clone path_to_repo
+      clone a repository mounted in the file system
+   git clone user_name@machine_name:repo_name
+      clone a repository with a SSH login
+   git clone config_name:repo_name
+      clone a repository with a SSH name config in ~/.ssh/config
+   git remote -v
+      list remotes
+   git remote set-url origin URL
+      set the origin remote
+   git remote add name URL
+      add a remote
+   git pull
+      fetch and merge changes
+   git push
+      push changes
+   git push -u origin branch_name
+      push a branch to origin
+   git push --mirror
+      mirror a repo
+   git status
+      report the repository status
+   git add .
+      stage all changed files to commit
+   git commit -m "commit message"
+      commit changes
+   git commit -a -m "commit message"
+      stage and commit changes
+   git log
+      show history
+   git reflog
+      show reference updates
+   git log --name-status
+      show names and status of changed files
+   git log --graph --oneline --stat
+      compact history view with graph and changes
+   git rm
+      remove a tracked file
+   git mv
+      move a tracked file
+   git revert
+      undo a commit
+   git clean -f
+      remove untracked files
+   git reset --hard
+      undo uncommitted changes
+   git reset --hard origin/master
+      reset to match remote
+   git reset HEAD@{index}
+      reset back to index
+   git checkout -b branch_name
+      create new branch
+   git checkout branch_name
+      checkout branch
+   git push -u origin branch_name
+      push new branch
+   git merge branch_name
+      merge branch
+   git merge --squash branch_name
+      merge branch, squashing its commits
+   git mergetool -t meld
+      resolve a conflicted merge with the meld GUI
+   git checkout --ours .
+      checkout existing files during merge conflict
+   git checkout --theirs .
+      chekout new files during merge conflict
+   git branch -a
+      list branches 
+   git branch -d branch_name
+      delete local branch
+   git push origin --delete branch_name
+      delete remote branch
+   git fetch -p
+      locally prune deleted remote references
+   git tag
+      assign a tag to a commit
+   git blame
+      show revisions of file lines
+   git diff
+      show changes between commits
+   git diff commit1 commit2
+      show changes between commits
+   git diff branch1 branch2
+      show changes between branches
+   git submodule add path_to_repository
+      nest a repository
+   git clone --recursive
+      close a repo including submodules
+   git submodule update --init
+      initialize and update submodules
+   git submodule update
+      update submodules 
+   git submodule update --remote
+      update submodules to remote  
+   git subtree add -P path_in_repo remote_repo master --squash
+      add a remote repo as a subtree
+   git subtree pull -P path_in_repo remote_repo master --squash
+      pull from a remote repo into a subtree
+   git archive --format=tar --remote=repo_path HEAD | (tar xf -)
+      copy the working tree of a repo
+   find . -type d -name ".git" -exec bash -c "cd {}/..; echo ''; pwd; echo ''; git add .; git status; git commit -a -m 'find git'; git pull; git push;" \;
+      recursively update all repos under a directory
+   git lfs track file
+      extension for versioning large files
+   

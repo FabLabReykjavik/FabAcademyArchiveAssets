@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<script src="plotly-latest.min.js"></script>
+</head>
+<body>
+<div id='plot'>
+<script>
+var l = 10.5
+var step = .1
+var data = {x:[],y:[],type:'scatter'};
+for (var x = -l; x <= l; x+= step) {
+   data.x.push(x)
+   data.y.push(Math.sin(x)/x)
+   }
+Plotly.newPlot('plot',[data]);
+var rmin = 1
+var rmax = 5
+var dr = .1
+var r = rmin
+function update() {
+   r += dr
+   if ((r > rmax) || (r < rmin))
+      dr = -dr
+   for (var i = 0; i < data.x.length; ++i) {
+      var d = data.x[i]*r
+      data.y[i] = Math.sin(d)/d
+      }
+   Plotly.redraw('plot')
+   setTimeout(update,10)
+   }
+setTimeout(update,10)
+</script>
+</div>
+</body>
+</html>
+
