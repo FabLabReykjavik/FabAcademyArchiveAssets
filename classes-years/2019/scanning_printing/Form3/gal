@@ -1,0 +1,69 @@
+#!/bin/bash
+#
+# gal
+# Neil Gershenfeld 4/28/13
+# script to make HTML galleries
+#
+# list pictures
+#
+rm -f files
+ls *JPG > files
+ls *jpg >> files
+ls *PNG >> files
+ls *png >> files
+#
+# make thumbnails
+#
+echo "convert thumbnails:"
+awk "{ print \"convert -auto-orient -resize 140x100 \"\$0 \" th_\"\$0 \"\necho  \" \$0}" files > conv
+sh conv
+rm conv
+#
+# make screen images
+#
+#echo "convert screen images:"
+#awk "{ print \"convert -auto-orient -resize 1024x768 \"\$0 \" sc_\"\$0 #\"\necho  \" \$0}" files > conv
+#sh conv
+#rm conv
+#
+# orient images
+#
+echo "orient images:"
+awk "{ print \"convert -auto-orient \"\$0 \" \"\$0 \"\necho  \" \$0}" files > conv
+sh conv
+rm conv
+#
+# add header
+#
+awk "{ system(\"echo '<html>\n<body link=#000000 vlink=#000000 alink=#000000 style=background-color:#ffffff;>' > \" \$0 \".html\" ) }" files
+#
+# add image links
+#
+echo -e "<html>\n<body link=#000000 vlink=#000000 alink=#000000 style=background-color:#ffffff;>" > index.html
+awk "{ print \"<A href=\" \$0 \".html><img src=th_\"\$0 \"></A>\" }" files >> index.html
+awk "{ system(\"echo '<A href=\" \$0 \"><div style=position:absolute;top:5%;height:95%;left:5%;width:90%;text-align:center;><img src=\" \$0 \" style=width:auto;height:auto;max-width:100%;max-height:100%;></div></A>' >> \" \$0 \".html\" ) }" files
+#
+# add index links
+#
+awk "{ system(\"echo '<A href=index.html><div style=position:absolute;top:0%;left:33%;width:34%;height:5%;background-color:#f0f0f0;text-align:center;color:#000060;line-height:200%;>index</div></A>' >> \" \$0 \".html\" ) }" files
+#
+# add last links
+#
+echo '<A href=index.html><div style=position:absolute;top:0%;left:0%;width:33%;height:5%;background-color:#f7f7f7;text-align:center;color:#000060;line-height:200%;>index</div><div style=position:absolute;top:5%;left:0%;width:5%;height:95%;background-color:#f7f7f7;></div></A>' > last
+awk "{ system(\"cat last >> \" \$0 \".html\"); system(\"echo '<A href=\" \$0 \".html><div style=position:absolute;top:0%;left:0;width:33%;height:5%;background-color:#f7f7f7;text-align:center;color:#000060;line-height:200%;>last</div><div style=position:absolute;top:5%;left:0%;width:5%;height:95%;background-color:#f7f7f7;></div></A>' > last\") }" files
+#
+# add next links
+#
+echo '<A href=index.html><div style=position:absolute;top:0%;left:67%;width:33%;height:5%;background-color:#f7f7f8;text-align:center;color:#000060;line-height:200%;>index</div><div style=position:absolute;top:5%;left:95%;width:5%;height:95%;background-color:#f7f7f7;></div></A>' > next
+awk "{ line[NR] = \$0 } END { for (i = NR; i > 0; i--) print line[i] > \"revfiles\" }" files
+awk "{ system(\"cat next >> \" \$0 \".html\"); system(\"echo '<A href=\" \$0 \".html><div style=position:absolute;top:0%;left:67%;width:33%;height:5%;background-color:#f7f7f7;text-align:center;color:#000060;line-height:200%;>next</div><div style=position:absolute;top:5%;left:95%;width:5%;height:95%;background-color:#f7f7f7;></div></A>' > next\") }" revfiles
+#
+# link scripts
+#
+echo "<br><font style=font-size:75%><a href=gal>gal</a> <a href=vid>vid</a></font>" >> index.html
+cp -f ~/git/aws2/bin/gal .
+cp -f ~/git/aws2/bin/vid .
+#
+# clean up
+#
+rm -f files revfiles last next

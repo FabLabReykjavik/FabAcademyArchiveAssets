@@ -1,0 +1,151 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>Input Devices</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b><a href=doc2586.pdf>inputs</a></b>
+   DDR, PORT, PINS
+   comparator
+   A/D
+
+<b>communication</b>
+   <a href=https://github.com/pyserial/pyserial>pySerial</a> <a href=http://pyserial.readthedocs.org/en/latest/tools.html#module-serial.tools.miniterm>miniterm</a> <A href=python/rx.py>rx.py</A> <A href=python/term.py>term.py</A>
+   <a href=https://www.npmjs.com/package/serialport>serialport</a> <a href=https://www.npmjs.com/package/serialport#command-line-tools>terminal</a>
+   bit timing errors
+   clocks (10% RC, 1% RC calibrated, .5% resonator, 50 ppm crystal)
+
+<b>switch</b>
+   <a href=http://www.digikey.com/product-detail/en/B3SN-3112P/SW262CT-ND>button</a> <a href=http://www.digikey.com/product-detail/en/AYZ0102AGRLC/401-2012-1-ND>slide</a>
+      <A href=button/hello.button.45>hello.button.45</A> <A href=button/hello.button.45.png>board</A> <A href=button/hello.button.45.jpg>components</A> <A href=button/hello.button.45.traces.png>traces</A> <A href=button/hello.button.45.interior.png>interior</A>
+      <A href=button/hello.button.45.c>hello.button.45.c</A> <A href=button/hello.button.45.make>makefile</A> <A href=button/hello.button.45.mp4>video</A>
+   debouncing
+
+<b>motion</b>
+   <a href=https://www.amazon.com/DIYmall-HC-SR501-Motion-Infrared-Arduino/dp/B012ZZ4LPM>pyroelectric</a>
+      <A href=motion/hello.HC-SR501>hello.HC-SR501</A> <A href=motion/hello.HC-SR501.png>board</A> <A href=motion/hello.HC-SR501.jpg>components</A> <A href=motion/hello.HC-SR501.traces.png>traces</A> <A href=motion/hello.HC-SR501.interior.png>interior</A>
+      <A href=motion/hello.HC-SR501.c>hello.HC-SR501.c</A> <A href=motion/hello.HC-SR501.make>makefile</A>
+      <A href=motion/hello.HC-SR501.py>hello.HC-SR501.py</A> <A href=motion/hello.HC-SR501.mp4>video</A>
+   <a href=https://www.amazon.com/RCWL-0516-Detection-Microwave-Raspberry-Detector/dp/B07GCHY9K6>Doppler radar</a>
+      <A href=radar/hello.RCWL-0516>hello.RCWL-0516</A> <A href=radar/hello.RCWL-0516.png>board</A> <A href=radar/hello.RCWL-0516.jpg>components</A> <A href=radar/hello.RCWL-0516.traces.png>traces</A> <A href=radar/hello.RCWL-0516.interior.png>interior</A>
+      <A href=radar/hello.RCWL-0516.c>hello.RCWL-0516.c</A> <A href=radar/hello.RCWL-0516.make>makefile</A>
+      <A href=radar/hello.RCWL-0516.py>hello.RCWL-0516.py</A> <A href=radar/hello.RCWL-0516.mp4>video</A>
+
+<b>distance</b>
+   <a href=http://www.amazon.com/SunFounder-Ultrasonic-Distance-Mega2560-Duemilanove/dp/B00E0NXTJW>sonar</a>
+      <A href=sonar/hello.HC-SR04>hello.HC-SR04</A> <A href=sonar/hello.HC-SR04.png>board</A> <A href=sonar/hello.HC-SR04.jpg>components</A> <A href=sonar/hello.HC-SR04.traces.png>traces</A> <A href=sonar/hello.HC-SR04.interior.png>interior</A>
+      <A href=sonar/hello.HC-SR04.c>hello.HC-SR04.c</A> <A href=sonar/hello.HC-SR04.make>makefile</A>
+      <A href=sonar/hello.HC-SR04.py>hello.HC-SR04.py</A> <A href=sonar/hello.HC-SR04.mp4>video</A>
+   <a href=http://www.digikey.com/product-detail/en/stmicroelectronics/VL53L0CXV0DH-1/497-16538-1-ND>optical</a>
+
+<b>magnetic field</b>
+   <a href=http://www.digikey.com/product-detail/en/A1324LLHLT-T/620-1402-1-ND/>Hall effect</a>
+      <A href=mag/hello.mag.45>hello.mag.45</A> <A href=mag/hello.mag.45.png>board</A> <A href=mag/hello.mag.45.jpg>components</A> <A href=mag/hello.mag.45.traces.png>traces</A> <A href=mag/hello.mag.45.interior.png>interior</A>
+      <A href=mag/hello.mag.45.c>hello.mag.45.c</A> <A href=mag/hello.mag.45.make>makefile</A>
+      <A href=mag/hello.mag.45.py>hello.mag.45.py</A> <A href=mag/hello.mag.45.mp4>video</A> 
+      <A href=mag/hello.mag.45.html>hello.mag.45.html</A> <A href=mag/hello.mag.45.js>hello.mag.45.js</A> <A href=mag/hello.mag.45.js.mp4>video</A> <a href=mag/hello.mag.45.mods.mp4>mods</a>
+   <a href=https://www.digikey.com/product-detail/en/ams/AS5013-IQFT/AS5013-IQFT-1000CT-ND>array</a>
+
+<b>temperature</b>
+   bridges
+   <a href=http://www.digikey.com/product-detail/en/NHQ103B375T10/235-1109-1-ND>NTC</a> <a href=http://www.digikey.com/product-detail/en/PTS120601B1K00P100/PTS12061.0KCT-ND>RTD</a> thermistors
+      <A href=temp/hello.temp.45>hello.temp.45</A> <A href=temp/hello.temp.45.png>board</A> <A href=temp/hello.temp.45.jpg>components</A> <A href=temp/hello.temp.45.traces.png>traces</A> <A href=temp/hello.temp.45.interior.png>interior</A>
+      <A href=temp/hello.temp.45.c>hello.temp.45.c</A> <A href=temp/hello.temp.45.make>makefile</A>
+      <A href=temp/hello.temp.45.py>hello.temp.45.py</A> <A href=temp/hello.temp.45.mp4>video</A>
+
+<b>light</b>
+   <a href=http://www.digikey.com/product-detail/en/everlight-electronics-co-ltd/PT15-21B-TR8/1080-1379-1-ND>IR</a> <a href=http://www.digikey.com/product-detail/en/everlight-electronics-co-ltd/PT15-21C-TR8/1080-1380-1-ND>visible</a> phototransistor
+      <A href=light/hello.light.45>hello.light.45</A> <A href=light/hello.light.45.png>board</A> <A href=light/hello.light.45.jpg>components</A> <A href=light/hello.light.45.traces.png>traces</A> <A href=light/hello.light.45.interior.png>interior</A>
+      <A href=light/hello.light.45.c>hello.light.45.c</A> <A href=light/hello.light.45.make>makefile</A>
+      <A href=light/hello.light.45.py>hello.light.45.py</A> <A href=light/hello.light.45.mp4>video</A> 
+   <a href="http://www.cambridge.org/us/knowledge/isbn/item6598594/The%20Physics%20of%20Information%20Technology/?site_locale=en_US">synchronous detection</a> <a href="http://www.cambridge.org/us/knowledge/isbn/item6598594/The%20Physics%20of%20Information%20Technology/?site_locale=en_US">spread spectrum</a>
+      <A href=light/hello.reflect.45>hello.reflect.45</A> <A href=light/hello.reflect.45.png>board</A> <A href=light/hello.reflect.45.jpg>components</A> <A href=light/hello.reflect.45.traces.png>traces</A> <A href=light/hello.reflect.45.interior.png>interior</A>
+      <A href=light/hello.reflect.45.c>hello.reflect.45.c</A> <A href=light/hello.reflect.45.make>makefile</A>
+      <A href=light/hello.reflect.45.py>hello.reflect.45.py</A> <A href=light/hello.reflect.45.mp4>video</A> 
+   <a href=https://www.digikey.com/product-detail/en/vishay-semiconductor-opto-division/VEML6040A3OG/VEML6040A3OGTR-ND>color</a>
+
+<b>acceleration, orientation, rotation</b>
+   <a href=http://www.digikey.com/product-detail/en/ADXL343BCCZ/ADXL343BCCZ-ND>3D accelerometer</a> <a href=../networking_communications/index.html>I<sup>2</sup>C</a>
+      <A href=accel/hello.ADXL343>hello.ADXL343</A> <A href=accel/hello.ADXL343.png>board</A> <A href=accel/hello.ADXL343.jpg>components</A> <A href=accel/hello.ADXL343.traces.png>traces</A> <A href=accel/hello.ADXL343.interior.png>interior</A> <a href=accel/hello.ADXL343.reflow.jpg>reflow</a>
+      <A href=accel/hello.ADXL343.c>hello.ADXL343.c</A> <A href=accel/hello.ADXL343.make>makefile</A> <a href=http://www.analog.com/media/en/technical-documentation/data-sheets/ADXL343.pdf>calibration</a>
+      <A href=accel/hello.ADXL343.py>hello.ADXL343.py</A> <A href=accel/hello.ADXL343.mp4>video</A> 
+   <a href=http://www.digikey.com/product-detail/en/LSM6DS33TR/497-15996-1-ND>6 DOF IMU</a>
+
+<b>sound</b>
+   MEMS
+      <a href=http://www.digikey.com/product-detail/en/SPU0414HR5H-SB/423-1134-1-ND>analog</a>
+      <A href=mic/hello.SPU0414HR5H>hello.SPU0414HR5H</A> <A href=mic/hello.SPU0414HR5H.png>board</A> <A href=mic/hello.SPU0414HR5H.jpg>components</A> <A href=mic/hello.SPU0414HR5H.traces.png>traces</A> <A href=mic/hello.SPU0414HR5H.interior.png>interior</A>
+      <A href=mic/hello.SPU0414HR5H.c>hello.SPU0414HR5H.c</A> <A href=mic/hello.SPU0414HR5H.make>makefile</A>
+      <A href=mic/hello.SPU0414HR5H.py>hello.SPU0414HR5H.py</A> <A href=mic/hello.SPU0414HR5H.mp4>video</A>
+      <a href=http://www.digikey.com/product-detail/en/SPH0645LM4H-B/423-1405-1-ND>digital</a>
+   <a href=http://www.digikey.com/product-detail/en/AOM-6738P-R/668-1296-ND>electret</a>
+      <a href=http://www.digikey.com/product-detail/en/AD8615AUJZ-REEL7/AD8615AUJZ-REEL7CT-ND>op-amp</a>
+      <A href=mic/hello.mic.45>hello.mic.45</A> <A href=mic/hello.mic.45.png>board</A> <A href=mic/hello.mic.45.jpg>components</A> <A href=mic/hello.mic.45.traces.png>traces</A> <A href=mic/hello.mic.45.interior.png>interior</A>
+      <A href=mic/hello.mic.45.c>hello.mic.45.c</A> <A href=mic/hello.mic.45.make>makefile</A>
+      <A href=mic/hello.mic.45.py>hello.mic.45.py</A> <A href=mic/hello.mic.45.mp4>video</A>
+
+<b>step response</b>
+   resistance, capacitance, inductance, position, pressure, force,
+      tilt, acceleration, humidity, proximity, <a href=http://fab.cba.mit.edu/classes/863.10/people/matt.blackshaw/week8.html>touch</a>, <a href=http://fab.cba.mit.edu/classes/863.11/people/matthew.keeter/multitouch/index.html>multitouch</a>, ...
+   loading
+      <A href=step/hello.load.45>hello.load.45</A> <A href=step/hello.load.45.png>board</A> <A href=step/hello.load.45.jpg>components</A> <A href=step/hello.load.45.traces.png>traces</A> <A href=step/hello.load.45.interior.png>interior</A>
+      <A href=step/hello.load.45.c>hello.load.45.c</A> <A href=step/hello.load.45.make>makefile</A>
+      <A href=step/hello.load.45.py>hello.load.45.py</A> <A href=step/hello.load.45.mp4>video</A>
+   transmit-receive
+      <A href=step/hello.txrx.45>hello.txrx.45</A> <A href=step/hello.txrx.45.png>board</A> <A href=step/hello.txrx.45.jpg>components</A> <A href=step/hello.txrx.45.traces.png>traces</A> <A href=step/hello.txrx.45.interior.png>interior</A>
+      <A href=step/hello.txrx.45.c>hello.txrx.45.c</A> <A href=step/hello.txrx.45.make>makefile</A>
+      <A href=step/hello.txrx.45.py>hello.txrx.45.py</A> <A href=step/hello.txrx.45.mp4>video</A>
+   dielectric spectroscopy
+      <a href=DS.pdf>application</a> <a href=meas.pdf>theory</a> <a href=http://cba.mit.edu/docs/theses/17.06.VanWyk.pdf>measurement</a>
+
+<b>vibration</b>
+   <a href=http://www.jameco.com/webapp/wcs/stores/servlet/ProductDisplay?langId=-1&storeId=10001&catalogId=10001&productId=1956784>piezo</a>
+
+<b>force</b>
+   <a href=http://www.interlinkelectronics.com/standard-products.php>force sensing resistor</a>
+   <a href=http://www.omega.com/guides/straingages.html>strain gauge</a>
+   <a href=http://www.omega.com/prodinfo/loadcells.html>load cell</a>
+   <a href=http://www.designworldonline.com/capacitive-sensors-measure-low-forces>capacitance</a>
+
+<b><a href=https://www.digikey.com/product-detail/en/u-blox-america-inc/CAM-M8C-0/672-1014-1-ND>position</a></b>
+
+<b><a href=https://www.digikey.com/product-detail/en/infineon-technologies/DPS310XTSA1/DPS310XTSA1CT-ND/>pressure</a></b>
+
+<b><a href=https://www.digikey.com/products/en/sensors-transducers/encoders/507>angle</a></b>
+
+<b>image</b>
+   modules
+      <a href=https://www.ovt.com>OmniVision</a>
+      <a href=https://jpegcamera.com>JPEG Camera</a>
+      <a href=http://www.arducam.com>Arducam</a>
+      <a href=https://www.onsemi.com>ON Semiconductor</a>
+      <a href=https://pixycam.com>PixyCam</a>
+      <a href=https://openmv.io>OpenMV</a>
+      <a href=https://www.amazon.com/s?k=ESP32-cam>ESP32-CAM</a>
+         <a href=../networking_communications/ESP32/hello.ESP32-CAM>hello.ESP32-CAM</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.png>board</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.jpg>components</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.traces.png>traces</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.holes.png>holes</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.interior.png>interior</a>
+            <a href=https://www.uctronics.com/download/cam_module/OV2640DS.pdf>camera</a> <a href=../networking_communications/ESP32/hello.ESP32-CAM.video.mp4>video</a>
+   <a href=https://www.google.com/search?tbm=shop&q=webcam>webcams</a> 
+      <a href=https://www.google.com/search?tbm=shop&q=embedded+linux+board>boards</a>
+   libraries
+      <a href=http://opencv.org/>OpenCV</a> <a href=https://github.com/ucisysarch/opencvjs>OpenCV.js</a>
+      <a href=https://int80k.com/libuvc/doc/>libuvc</a> <a href=http://guvcview.sourceforge.net/>guvcview</a>
+   <a href=https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API>WebRTC</a>
+      <a href=video.html>video.html</a> <a href=video.mp4>video</a> 
+      security
+   <a href=http://mods.cba.mit.edu/?program=programs/image/motion%20detect>mods</a>
+
+<b>assignment</b>
+   <i>individual assignment:</i>
+      measure something: add a sensor to a microcontroller board
+      that you have designed and read it
+   <i>group assignment:</i>
+      probe an input device's analog levels and digital signals

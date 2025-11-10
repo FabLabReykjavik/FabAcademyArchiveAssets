@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+sign in to console and launch instance:
+   https://aws.amazon.com/console/
+choose security group (open all or just required ports):
+   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html
+ssh to instance:
+   ssh -i ~/.ssh/keys/your_key.pem ubuntu@your_IP_address
+set password:
+   sudo passwd ubuntu
+update, upgrade, install:
+   sudo apt-get update
+   sudo apt-get dist-upgrade
+   sudo apt-get install ubuntu-desktop
+   sudo apt-get install vnc4server x11vnc
+   sudo apt-get install gnome-core gnome-session-flashback
+   sudo apt-get install python python-numpy
+   sudo apt-get install lightdm
+      choose lightdm
+set up VNC:
+   vncpasswd
+   vncserver
+   vncserver -kill :1
+   vim .vnc/xstartup
+      #!/bin/sh
+      unset SESSION_MANAGER
+      gnome-session --session=gnome-classic &
+      [ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+      [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+viewers
+   Remmina
+   Vinagre
+   noVNC
+set up noVNC:
+   git clone https://github.com/novnc/noVNC.git
+   cd noVNC
+   openssl req -new -x509 -days 365 -nodes -out self.pem -keyout self.pem
+reboot:
+   sudo reboot now
+start x11vnc:
+   sudo x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth /var/run/lightdm/root/:0 -usepw -localhost &
+start noVNC:
+   cd noVNC
+   ./utils/launch.sh --vnc localhost:5900 --listen your_port --cert self.pem
+open remote desktop:
+   https://your_IP_address:your_port/vnc.html
