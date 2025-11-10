@@ -1,0 +1,132 @@
+<html>
+<body>
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<div style="font-size: 125%;">
+<pre>
+<a href=http://mercurial.selenic.com/>Mercurial</a> notes
+
+distributed version control system
+   maintains version history
+   merges changes between and within files
+   peer-to-peer development
+   remote server file system management
+
+tutorials
+   <a href=http://mercurial.selenic.com/wiki/Tutorial>http://mercurial.selenic.com/wiki/Tutorial</a>
+   <a href=http://mercurial.selenic.com/wiki/UnderstandingMercurial>http://mercurial.selenic.com/wiki/UnderstandingMercurial</a>
+   <a href=http://hginit.com/>http://hginit.com/</a>
+   <a href=http://hgbook.red-bean.com/>http://hgbook.red-bean.com/</a>
+   <a href=http://fab.cba.mit.edu/classes/MIT/863.10/people/kenny.cheung/hgNotes.html>http://fab.cba.mit.edu/classes/MIT/863.10/people/kenny.cheung/hgNotes.html</a>
+   <a href=http://fab.cba.mit.edu/classes/MIT/863.10/people/natalie.freed/Mercurial_notes_notes.html>http://fab.cba.mit.edu/classes/MIT/863.10/people/natalie.freed/Mercurial_notes_notes.html</a>
+
+file manager extension
+   <a href=http://tortoisehg.bitbucket.org/>http://tortoisehg.bitbucket.org/</a>
+
+Linux packages
+   apt-get install mercurial tortoisehg tortoisehg-nautilus  
+
+Windows
+   <a href=http://tortoisehg.bitbucket.org/download/index.html>http://tortoisehg.bitbucket.org/download/index.html</a>
+   <a href=http://www.cygwin.com/>http://www.cygwin.com/</a> 
+
+OSX
+   <a href=http://brew.sh/>http://brew.sh/</a>
+   <a href=http://mercurial.berkwood.com/>http://mercurial.berkwood.com/</a>
+   <a href=http://jasonfharris.com/machg/>http://jasonfharris.com/machg/</a>
+   <a href=http://bitbucket.org/snej/murky/wiki/Home>http://bitbucket.org/snej/murky/wiki/Home</a>
+   <a href=http://jwwalker.com/pages/macmerc.html>http://jwwalker.com/pages/macmerc.html</a>
+
+public and private keys to ~/.ssh
+   note that private key should have permissions so that only you can read it
+
+clone archive
+   hg clone -v -e "ssh -p port_number -i ~/.ssh/key_name" ssh://hg@server_name/archive_name local_archive_name
+
+edit .hg/hgrc
+   [ui]
+   username = first_name last_name &lt;user@machine.domain&gt;
+   ssh = ssh_command_path -p port -i ~/.ssh/key_name_to_use
+   editor = name_of_your_editor
+   [extensions]
+   convert =
+   fetch =
+   [hooks]
+   changegroup = hg update &gt;&amp;2
+
+hgclone script (clone and edit)
+#!/bin/bash
+#
+if [ $# -ne 6 ]; then
+   echo "hgclone archive_name archive_key archive_server server_port \"user name\" user@email_address"
+else
+   cmd="hg clone -v -e 'ssh -p $4 -i ~/.ssh/$2' ssh://hg@$3/$1 $1"
+   eval $cmd
+   cmd="echo -e '\n[ui]\nssh = ssh -p $4 -i ~/.ssh/keys/$2\nusername = $5 <$6>' >> $1/.hg/hgrc"
+   eval $cmd
+   fi
+
+hgall script (update all local archives)
+   #!/bin/bash
+   cd ~/hg
+   ls > /tmp/hgall.names
+   echo '#!/bin/bash' > /tmp/hgall.cmd
+   echo 'cd ~/hg' >> /tmp/hgall.cmd
+   awk '{ print "echo", $0, "\ncd", $0, "\nhg fetch\ncd .." }' /tmp/hgall.names >> /tmp/hgall.cmd
+   sh /tmp/hgall.cmd
+   rm /tmp/hgall.names /tmp/hgall.cmd
+
+some shell commands
+   hg init (start archive)
+   hg clone (copy archive)
+   hg add (add files)
+   hg commit -m "message" (alias ci)
+   hg revert -a --no-backup (reset file system)
+   hg rollback (undo last commit)
+   hg merge (merge diverged versions)
+   hg pull (pull from archive)
+   hg push (push to archive)
+   hg update (update file system, alias up)
+   hg update null (alias for creating bare repository)
+   hg fetch (pull and update)
+   hg log (history)
+   hgtk/thg log (history GUI)
+   hg status (repository status, alias st)
+   hg summary (repository summary, alias sum)
+   hg diff (changes in files)
+   hg copy (copy versioned file, alias cp)
+   hg remove (remove versioned file alias rm)
+   hg remove --after (remove deleted files from versioning)
+   hg rename (rename versioned file alias mv)
+   hg serve (Web server)
+   hg convert (import from another repository type)
+   hg heads (list repository heads)
+
+.hgignore
+   file types to ignore
+
+subrepositories
+   <a href=http://www.selenic.com/hg/help/subrepos>http://www.selenic.com/hg/help/subrepos</a>
+
+server
+   <a href=http://www.lshift.net/mercurial-server.html>http://www.lshift.net/mercurial-server.html</a>
+
+problems
+   archive size
+      ~MB/person/week
+      check before commit
+         <a href=http://www.linfo.org/du.html>du</a> -s * | sort -rn
+      compress, resize pictures for Web
+         <a href=http://www.imagemagick.org/script/convert.php>convert</a>
+      link to external videos
+   heads, merging
+      don't push multiple heads -- pull and merge before pushing
+      <a href=http://mercurial.selenic.com/wiki/TutorialMerge>http://mercurial.selenic.com/wiki/TutorialMerge</a>
+      <a href=http://mercurial.selenic.com/wiki/KDiff3>http://mercurial.selenic.com/wiki/KDiff3</a>
+      <a href=http://mercurial.selenic.com/wiki/OtherTools>http://mercurial.selenic.com/wiki/OtherTools</a>
+   OS case
+      don't commit same file name with differing case
+      <a href=http://mercurial.selenic.com/wiki/CaseFolding>http://mercurial.selenic.com/wiki/CaseFolding</a>
+      <a href=http://mercurial.selenic.com/wiki/FixingCaseCollisions>http://mercurial.selenic.com/wiki/FixingCaseCollisions</a>
+   special characters
+      not everyone can handle
+   refresh browser after editing page

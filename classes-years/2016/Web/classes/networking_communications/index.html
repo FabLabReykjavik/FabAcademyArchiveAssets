@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>Networking and Communications</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+
+<b>purposes</b>
+   location
+   parallelism
+   modularity
+   interference
+
+<b>serial bus</b>
+   <i>asynchronous</i>
+      <a href=http://www.maxim-ic.com/app-notes/index.mvp/id/723>RS-232, RS-422, RS-485</a>
+      <a href=bus/bus.jpg>components</a> <a href=bus/bus.mp4>video</a>
+      <a href=bus/hello.bus.45.bridge.cad>hello.bus.45.bridge.cad</a> <a href=bus/hello.bus.45.bridge.png>board</a> <a href=bus/hello.bus.45.bridge.traces.png>traces</a> <a href=bus/hello.bus.45.bridge.interior.png>interior</a>
+      <a href=bus/hello.bus.45.node.cad>hello.bus.45.node.cad</a> <a href=bus/hello.bus.45.node.png>board</a> <a href=bus/hello.bus.45.node.traces.png>traces</a> <a href=bus/hello.bus.45.node.interior.png>interior</a>
+      <a href=bus/hello.bus.45.c>hello.bus.45.c</a> <a href=bus/hello.bus.45.make>makefile</a>
+   <i><a href=http://www.nxp.com/documents/user_manual/UM10204.pdf>I<sup>2</sup>C</a></i>
+      TWI <a href=http://www.atmel.com/Images/doc2564.pdf>master</a> <a href=http://www.atmel.com/Images/doc2565.pdf>slave</a>
+      USI <a href=http://www.atmel.com/images/atmel-2561-using-the-usi-module-as-a-i2c-master_ap-note_avr310.pdf>master</a> <a href=http://www.atmel.com/Images/doc2560.pdf>slave</a>
+      software <a href=http://www.atmel.com/Images/doc42010.pdf>master</a> <a href=http://www.atmel.com/Images/doc8478.pdf>slave</a>
+      <a href=http://arduino.cc/en/reference/wire>library</a> <a href=../input_devices/accel/hello.ADXL343.c>bit-bang</a>
+      <a href=I2C/hello.I2C.45.bridge.cad>hello.I2C.45.bridge.cad</a> <a href=I2C/hello.I2C.45.bridge.png>board</a> <a href=I2C/hello.I2C.45.bridge.traces.png>traces</a> <a href=I2C/hello.I2C.45.bridge.interior.png>interior</a>
+      <a href=I2C/hello.I2C.45.node.cad>hello.I2C.45.node.cad</a> <a href=I2C/hello.I2C.45.node.png>board</a> <a href=I2C/hello.I2C.45.node.traces.png>traces</a> <a href=I2C/hello.I2C.45.node.interior.png>interior</a>
+      <a href=I2C/hello.I2C.45.jpg>components</a> <a href=I2C/hello.I2C.45.programming.jpg>programming</a>
+   <i><a href=http://www.atmel.com/images/doc2585.pdf>SPI</a></i>
+      <a href=http://arduino.cc/en/Reference/SPI>library</a> <a href=nRF/hello.nRF24L01P.44.c>bit-bang</a>
+   <i><a href=http://www.ti.com/lit/an/sloa101a/sloa101a.pdf>CAN</a></i>
+   <i><a href=http://www.usb.org>USB</a></i>
+      <a href=http://www.digikey.com/product-detail/en/ATMEGA16U2-AU/ATMEGA16U2-AU-ND>hardware</a>
+         <a href=http://www.atmel.com/Images/doc8360.pdf>AVR</a> <a href=http://www.fourwalledcubicle.com/LUFA.php>LUFA</a>
+         <a href=http://www.st.com/st-web-ui/static/active/en/resource/technical/document/user_manual/CD00158241.pdf>STM32</a>
+      <a href="../embedded_programming/hello.ISP.44.png">software</a>
+         <a href=http://www.obdev.at/products/vusb/index.html>V-USB</a>
+
+<a href=http://www.iso.org/iso/home.htm><b>OSI layers</b></a>
+   7: application (HTTP)
+   6: presentation (SSL)
+   5: session (RPC)
+   4: transport (TCP, UDP)
+   3: network (IP)
+   2: data link (MAC)
+   1: physical (PHY)
+
+<b><a href=http://www.cambridge.org/us/academic/subjects/physics/general-and-classical-physics/physics-information-technology>physical media</a></b>
+   <i>capacity</i>
+      bandwidth * log_2 (signal/noise)
+   <i>wired</i>
+      single-ended, differential, powerline
+      open collector, open drain
+      transmission (pass) gate, tri-state
+      transmission line
+      waveguide
+      <a href=http://www.tiaonline.org/>TIA</a> RS232, 422, 485
+      <a href=http://www.ieee802.org/3/>802.3</a> ethernet
+         <a href=http://www.mouser.com/ProductDetail/WIZnet/W5500/?qs=sGAEpiMZZMtQ1ytNl72Bk71RSkpY9fTvghQ0om8ZlUI%3d>chip</a> <a href=http://www.mouser.com/ProductDetail/WIZnet/WIZ550io/?qs=sGAEpiMZZMtoWqnimR3rm%252beQb9KxLbdYBJL1IUxAr%2fE%3d>module</a>
+      <a href=http://www.sonet.com/EDU/edu.htm>SONET</a> optical fiber
+   <i>wireless</i>
+      RF
+         <a href=http://www.fcc.gov/>FCC</a> <a href=http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&sid=896fdfef3883114171de384cf10702ce&rgn=div5&view=text&node=47:1.0.1.1.16&idno=47>Part 15</a> <a href=http://www.fcc.gov/Bureaus/OPP/working_papers/oppwp38chart.pdf>ISM</a>
+         <a href=http://www.ieee802.org/11/>802.11</a> <a href=http://www.wi-fi.org/>Wi-Fi</a>
+         <a href=http://www.ieee802.org/15>802.15</a> <a href=http://www.zigbee.org/>ZigBee</a>
+         <a href=http://www.ietf.org/dyn/wg/charter/6lowpan-charter.html>6LoWPAN</a>
+         <a href=http://www.bluetooth.com/>Bluetooth</a>
+      optical
+         <a href=http://www.atmel.com/Images/doc2534.pdf>transmitter</a> <a href=http://www.atmel.com/Images/doc1473.pdf>receiver</a>
+      acoustic
+
+<b><a href=http://www.crcpress.com/product/isbn/9780849309670>modulation</a></b>
+   PCM: Pulse-Code Modulation
+   PPM: Pulse-Position Modulation
+   OOK: On-Off Keying
+   FSK: Frequency-Shift Keying
+   BPSK: Binary Phase-Shift Keying
+   QAM: Quadrature Amplitude Modulation
+   OFDM: Orthogonal Frequency-Division Multiplexing
+   FHSS: Frequency-Hopping Spread Spectrum
+   DSSS: Direct-Sequence Spread Spectrum
+   UWB:  Ultra-WideBand
+
+<b><a href=http://authors.phptr.com/tanenbaumcn4/>channel sharing</a></b>
+   ALOHA
+   Master-Slave
+   Token Ring
+   TDMA: Time-Division Multiple Access
+   FDMA: Frequency-Divsion Multiple Access
+   CSMA: Carrier-Sense Multiple Access
+      CD: Collision Detection
+      CA: Collision Avoidance
+      1-persistent: transmit when clear
+      nonpersistent: random backoff
+      p-persistent: probability to transmit
+   CDMA: Code-Division Multiple Access
+   MIMO: Multiple-Input Multiple-Output
+   "PDMA": Physical-Division Multiple Access
+
+<b><a href=http://www.cambridge.org/us/academic/subjects/physics/general-and-classical-physics/physics-information-technology>errors</a></b>
+   detection, correction
+   block, convolution codes
+   parity, checksum, Hamming, Reed-Solomon, Turbo
+
+<b><a href=http://authors.phptr.com/tanenbaumcn4/>networking</a></b>
+   <a href=http://www.ietf.org/>Internet protocols</a>
+      <a href=http://www.ietf.org/rfc/rfc0791.txt>IPv4</a>, <a href=http://www.ietf.org/rfc/rfc2460.txt>IPv6</a>
+      <a href=http://www.ietf.org/rfc/rfc1035.txt>DNS</a> <a href=http://www.ietf.org/rfc/rfc2131.txt>DHCP</a> <a href=http://www.ietf.org/rfc/rfc1631.txt>NAT</a> <a href=http://www.ietf.org/rfc/rfc1918.txt>private</a>
+      <a href=http://www.ietf.org/rfc/rfc768.txt>UDP</a>, <a href=http://www.ietf.org/rfc/rfc793.txt>TCP</a>
+      <a href=http://www.ietf.org/rfc/rfc2616.txt>HTTP</a>
+      <a href=http://www.ietf.org/rfc/rfc4271.txt>BGP</a> <a href=http://www.ietf.org/rfc/rfc3561.txt>AODV</a> <a href=http://www.ietf.org/dyn/wg/charter/roll-charter.html>ROLL</a>
+      <a href=http://docs.python.org/library/socket.html>sockets</a>
+         <a href=socket/udpsnd.js>udpsnd.js</a> <a href=socket/udprcv.js>udprcv.js</a> <a href=socket/udp.mp4>video</a>
+         <a href=socket/udpsnd.py>udpsnd.py</a> <a href=socket/udprcv.py>udprcv.py</a>
+         <a href=socket/udpsnd.c>udpsnd.c</a> <a href=socket/udprcv.c>udprcv.c</a>
+      <a href=http://www.wireshark.org/>Wireshark</a>
+      <a href=http://www.ietf.org/rfc/rfc1055.txt>SLIP</a>
+         <a href=http://manpages.ubuntu.com/manpages/trusty/en/man8/slattach.8.html>slattach</a> <a href=http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html>route</a>
+         <a href=SLIP/hello.bus.45.SLIP.c>hello.bus.45.SLIP.c</a> <a href=SLIP/hello.bus.45.SLIP.make>makefile</a> <a href=SLIP/udp_slip.py>udp_slip.py</a> <a href=SLIP/hello.bus.45.SLIP.mp4>video</a>
+      <a href=http://cba.mit.edu/docs/papers/06.09.i0.pdf>Internet 0</a>
+   <a href=APTP/notes.html>APTP</a> (transitional)
+      <a href=APTP/ATP.XMEGA.E.h>ATP.XMEGA.E.h</a>
+      <a href=APTP/board/ATP.E5.cad>ATP.E5.cad</a> <a href=APTP/board/ATP.E5.board.png>ATP.E5.board.png</a> <a href=APTP/board/ATP.E5.components.jpg>ATP.E5.components.jpg</a> <a href=APTP/board/ATP.E5.traces.png>ATP.E5.traces.png</a> <a href=APTP/board/ATP.E5.interior.png>ATP.E5.interior.png</a>
+      <a href=APTP/bit/ATP.E5.bit.c>ATP.E5.bit.c</a> <a href=APTP/bit/ATP.16E5.bit.make>ATP.16E5.bit.make</a>
+      <a href=APTP/byte/ATP.E5.byte.c>ATP.E5.byte.c</a> <a href=APTP/byte/ATP.16E5.byte.make>ATP.16E5.byte.make</a>
+      <a href=APTP/ftdi/ATP.FTDI.cad>ATP.FTDI.cad</a> <a href=APTP/ftdi/ATP.FTDI.board.png>ATP.FTDI.board.png</a> <a href=APTP/ftdi/ATP.FTDI.traces.png>ATP.FTDI.traces.png</a> <a href=APTP/ftdi/ATP.FTDI.interior.png>ATP.FTDI.interior.png</a>
+      <a href=APTP/ftdi/ATP.E5.FTDI.char.c>ATP.E5.FTDI.char.c</a> <a href=APTP/ftdi/ATP.16E5.FTDI.char.make>ATP.16E5.FTDI.char.make</a>
+
+<b>RF</b>
+   <i><a href=http://www.arrl.org/shop/>radios</a></i>
+      oscillator, mixer, PA, LNA, IF, I/Q, demod, baseband, filters
+   <i><a href=http://www.wiley.com/WileyCDA/WileyTitle/productCd-047166782X.html>antennas</a></i>
+      Q, antenna gain, impedance matching
+      <a href=https://code.google.com/p/fabfi/wiki/FabFi>FabFi</a>
+   <i>single-chip</i>
+      MRF49XA (433/868/915 MHz)
+         <a href=http://www.digikey.com/product-detail/en/MRF49XA-I%2FST/MRF49XA-I%2FST-ND>chip</a> <a href=http://fab.cba.mit.edu/content/projects/comm/hello_radio/>board</a> <a href=http://www.digikey.com/product-detail/en/MRF89XAM8A-I%2FRM/MRF89XAM8A-I%2FRM-ND>module</a>
+      nRF905 (433/868/915 MHz)
+         <a href=http://www.digikey.com/product-detail/en/NRF905/1490-1028-ND>chip</a> <a href=http://www.amazon.com/NRF905-Wireless-Transmitting-Receiver-1-9-3-6V/dp/B00HR69SEO>module</a> <a href=https://github.com/zkemble/nRF905>library</a>
+      nRF24L01+ (2.4 GHz ISM)
+         <a href=http://www.digikey.com/product-detail/en/NRF24L01P-R7/1490-1033-1-ND>chip</a> <a href=https://www.amazon.com/DIYmall-Transceiver-Antistatic-Compatible-Raspberry/dp/B01DD5IV0Y>module</a> <a href=http://playground.arduino.cc/InterfacingWithHardware/Nrf24L01>library</a> antennas
+         <a href=nRF/hello.nRF24L01P.44.cad>hello.nRF24L01P.44.cad</a> <a href=nRF/hello.nRF24L01P.44.png>board</a> <a href=nRF/hello.nRF24L01P.44.jpg>components</a> <a href=nRF/hello.nRF24L01P.44.traces.png>traces</a> <a href=nRF/hello.nRF24L01P.44.interior.png>interior</a>
+         <a href=nRF/hello.nRF24L01P.44.c>hello.nRF24L01P.44.c</a> (incomplete)
+      CC2541 (2.4 GHz Bluetooth)
+         <a href=http://www.ti.com/product/cc2541>chip</a> <a href=https://www.amazon.com/Diymall-Bluetooth-Module-Anti-lost-Android/dp/B00O2TTUEW>module</a> <a href=http://wiki.seeedstudio.com/wiki/Bluetooth_V4.0_HM-11_BLE_Module>commands</a>
+         <a href=HM11/hello.HM-11.ftdi.cad>hello.HM-11.ftdi.cad</a> <a href=HM11/hello.HM-11.ftdi.png>board</a> <a href=HM11/hello.HM-11.ftdi.jpg>components</a> <a href=HM11/hello.HM-11.ftdi.traces.png>traces</a> <a href=HM11/hello.HM-11.ftdi.interior.png>interior</a>
+         <a href=https://www.bluetooth.com/specifications/generic-attributes-overview>BLE GAP GATT UUID</a>
+         <a href=https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en>app</a> <a href=http://www.bluez.org>stack</a> <a href=HM11/HM11.mp4>video</a>
+      ESP8266 (2.4 GHz Wi-Fi)
+         <a href=http://espressif.com/en/products/esp8266/>chip</a> <a href=http://www.amazon.com/Diymall-ESP8266-Wifi-Module-ESP-12E/dp/B00XJG7CYY>module</a> power
+         <a href=ESP8266/hello.ESP8266-12E.ftdi.cad>hello.ESP8266-12E.ftdi.cad</a> <a href=ESP8266/hello.ESP8266-12E.ftdi.png>board</a> <a href=ESP8266/hello.ESP8266-12E.ftdi.jpg>components</a> <a href=ESP8266/hello.ESP8266-12E.ftdi.traces.png>traces</a> <a href=ESP8266/hello.ESP8266-12E.ftdi.interior.png>interior</a>
+         <a href=ESP8266/commands.html>commands</a> <a href=ESP8266/UDP.mp4>UDP</a> TCP <a href=ESP8266/TCP.client.mp4>client</a> <a href=ESP8266/TCP.server.mp4>server</a>
+      <a href=http://fab.cba.mit.edu/classes/863.16/doc/tutorials/ESP32/index.html>ESP32</a>
+      <a href=http://www.digikey.com/product-search/en/rf-if-and-rfid/rf-transceiver-modules/3539948?k=rn2483>RN2483</a>
+         <a href=https://www.lora-alliance.org>LoRA</a>
+   <i><a href=http://gnuradio.org>software radio</a></i>
+
+<b>assignment</b>
+   design and build a wired &/or wireless network connecting at least two processors

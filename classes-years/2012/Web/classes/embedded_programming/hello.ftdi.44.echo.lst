@@ -1,0 +1,171 @@
+gavrasm Gerd's AVR assembler version 2.6 (C)2010 by DG4FAC
+----------------------------------------------------------
+Source file: hello.ftdi.44.echo.asm
+Hex file:    hello.ftdi.44.echo.hex
+Eeprom file: hello.ftdi.44.echo.eep
+Compiled:    15.03.2011, 21:17:58
+Pass:        2
+     1: ;
+     2: ; hello.ftdi.echo.44.asm
+     3: ;
+     4: ; 115200 baud FTDI character echo
+     5: ;
+     6: ; Neil Gershenfeld
+     7: ; 10/17/10
+     8: ;
+     9: ; (c) Massachusetts Institute of Technology 2010
+    10: ; Permission granted for experimental and personal use;
+    11: ; license for commercial sale available from MIT.
+    12: ;
+    13: 
+    14: .include "tn44def.inc"
+ -> Warning 009: Include defs not necessary, using internal values!
+   File: hello.ftdi.44.echo.asm, Line: 14
+   Source line: .include "tn44def.inc"
+    15: 
+    16: .equ rxpin = PA0; serial input pin
+    17: .equ txpin = PA1; serial output pin
+    18: .equ comm_port = PORTA; comm port
+    19: .equ comm_dir = DDRA; comm direction
+    20: .equ comm_pins = PINA; comm pins
+    21: .def bitcnt = R16; bit counter
+    22: .def temp = R17; temporary storage
+    23: .def temp1 = R18; temporary storage
+    24: .def txbyte = R19; transmit byte
+    25: .def rxbyte = R20; receive byte
+    26: 
+    27: ;
+    28: ; print
+    29: ; 
+    30: .macro print
+    31:    ldi zl,low(@0*2)
+    32:    ldi zh,high(@0*2)
+    33:    rcall print_db
+    34:    .endmacro
+    35: 
+    36: .cseg
+    37: .org 0
+    38: 000000   C028  rjmp reset
+    39: 
+    40: ;
+    41: ; half_bit_delay
+    42: ; serial half bit delay
+    43: ;
+    44: half_bit_delay:
+    45: 000001   E119  ldi temp, 25; 115200 baud (20 MHz clock /1)
+    46:    half_bit_delay_loop:
+    47: 000002   951A  dec temp
+    48: 000003   F7F1  brne half_bit_delay_loop
+    49: 000004   9508  ret
+    50: ;
+    51: ; putchar
+    52: ;    assumes line driver (inverts bits)
+    53: ;
+    54: putchar:
+    55: 000005   E00A  ldi bitcnt, 10; 1 start + 8 data + 1 stop bit
+    56: 000006   9530  com txbyte; invert everything
+    57: 000007   9408  sec; set start bit
+    58:    putchar0:
+    59: 000008   F410  brcc putchar1; if carry set
+    60: 000009   98D9  cbi comm_port, txpin; send a '0'
+    61: 00000A   C002  rjmp putchar2; else	
+    62:    putchar1:
+    63: 00000B   9AD9  sbi comm_port, txpin	; send a '1'
+    64: 00000C   0000  nop; even out timing
+    65:    putchar2:
+    66: 00000D   DFF3  rcall half_bit_delay; bit delay
+    67: 00000E   DFF2  rcall half_bit_delay; " 
+    68: 00000F   9536  lsr txbyte; get next bit
+    69: 000010   950A  dec bitcnt; if not all bits sent
+    70: 000011   F7B1  brne putchar0; send next bit
+    71: 000012   9508  ret;
+    72: ;
+    73: ; getchar
+    74: ;    assumes line driver (inverts bits)
+    75: ;
+    76: getchar:
+    77: 000013   E009  ldi bitcnt, 9; 8 data + 1 stop bit
+    78:    getchar1:
+    79: 000014   99C8  sbic comm_pins, rxpin; wait for start bit
+    80: 000015   CFFE  rjmp getchar1
+    81: 000016   DFEA  rcall half_bit_delay; delay to middle of bit
+    82:    getchar2:
+    83: 000017   DFE9  rcall half_bit_delay; bit delay
+    84: 000018   DFE8  rcall half_bit_delay; "
+    85: 000019   9488  clc; clear carry
+    86: 00001A   99C8  sbic comm_pins, rxpin; if RX pin low skip
+    87: 00001B   9408  sec; otherwise set carry
+    88: 00001C   950A  dec bitcnt
+    89: 00001D   F011  breq getchar3; return if all bits read
+    90: 00001E   9547  ror rxbyte; otherwise shift bit into receive byte
+    91: 00001F   CFF7  rjmp getchar2; go get next bit
+    92:    getchar3:
+    93: 000020   9508  ret
+    94: ;
+    95: ; print_db
+    96: ; prints a null-terminated .db string
+    97: ;
+    98: print_db:
+    99:    print_loop:
+   100: 000021   95C8  lpm
+   101: 000022   2D30  mov txbyte,R0
+   102: 000023   3030  cpi txbyte,0
+   103: 000024   F019  breq return
+   104: 000025   DFDF  rcall putchar
+   105: 000026   9631  adiw zl, 1
+   106: 000027   CFF9  rjmp print_loop
+   107:    return:
+   108: 000028   9508  ret
+   109: ;
+   110: ; main program
+   111: ;
+   112: reset:
+   113:    ;
+   114:    ; set fuse low byte to 0x7E for 20 MHz resonator
+   115:    ;
+   116:    ; set clock divider to /1
+   117:    ;
+   118: 000029   E810  ldi temp, (1 << CLKPCE)
+   119: 00002A   E020  ldi temp1, (0 << CLKPS3) | (0 << CLKPS2) | (0 << CLKPS1) | (0 << CLKPS0)
+   120: 00002B   BD16  out CLKPR, temp
+   121: 00002C   BD26  out CLKPR, temp1
+   122:    ;
+   123:    ; set stack pointer to top of RAM
+   124:    ;
+   125: 00002D   E011  ldi temp, high(RAMEND)
+   126: 00002E   BF1E  out SPH, temp
+   127: 00002F   E51F  ldi temp, low(RAMEND)
+   128: 000030   BF1D  out SPL, temp
+   129:    ;
+   130:    ; init comm pin
+   131:    ;
+   132: 000031   9AD9  sbi comm_port, txpin
+   133: 000032   9AD1  sbi comm_dir, txpin
+   134:    ;
+   135:    ; start main loop
+   136:    ;
+   137:    loop:
+   138: 000033   DFDF  rcall getchar
+   139:       print message
+   140:          message: .db "hello.ftdi.44.echo.asm: you typed ",0
+ -> Warning 004: Number of bytes on line is odd, added 00 to fit program memory!
+   File: hello.ftdi.44.echo.asm, Line: 140
+   Source line:          message: .db "hello.ftdi.44.echo.asm: you typed ",0
+        000037 6568 6C6C 2E6F 7466
+        00003B 6964 342E 2E34 6365
+        00003F 6F68 612E 6D73 203A
+        000043 6F79 2075 7974 6570
+        000047 2064 0000
+   141: 000049   2F34  mov txbyte, rxbyte
+   142: 00004A   DFBA  rcall putchar
+   143: 00004B   E03A  ldi txbyte,10
+   144: 00004C   DFB8  rcall putchar
+   145: 00004D   CFE5  rjmp loop
+
+Program             :       60 words.
+Constants           :       18 words.
+Total program memory:       78 words.
+Eeprom space        :        0 bytes.
+Data segment        :        0 bytes.
+Compilation completed, no errors.
+Compilation endet 15.03.2011, 21:17:58

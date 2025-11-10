@@ -1,0 +1,110 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>Electronics Production</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+
+<b>PCB fabrication</b>
+   etching
+      lithography, transfer
+      ferric/cupric chloride, ammonium/sodium persulfate
+      <a href=https://us.vwr.com/store/search/searchMSDS.jsp?tabId=msdsSearch>MSDS</a>
+      waste disposal
+   <a href=http://fab.cba.mit.edu/classes/MAS.863/tutorials/index.html>machining</a>
+      tools
+         <a href=http://www.carbidedepot.com/detail.aspx?ID=70452>0.010</a>
+         <a href=http://www.carbidedepot.com/detail.aspx?ID=180142>1/64</a>
+         <a href=http://www.carbidedepot.com/detail.aspx?ID=180143>1/32</a>
+      fixturing
+      orientation
+      zeroing
+      lifetime
+      deburring
+      cleaning
+   <a href=http://fab.cba.mit.edu/content/processes/PCB/vinylcut.html>cutting</a>
+   <a href=http://cba.mit.edu/events/13.03.scifab/index.html>printing</a>
+   plating
+   <a href=http://cba.mit.edu/docs/papers/00.07.E-broidery.pdf>sewing</a>
+
+<b>PCB materials</b>
+   rigid
+      FR4 (epoxy glass)
+      <a href=http://www.globallaminates.com>FR1</a> (phenolic paper)
+   flex
+      <a href=http://www2.dupont.com/Kapton/en_US/>Kapton</a>
+      <a href=http://www3.3m.com/catalog/hk/en009/utilities_telecom/-/node_HCC7X1ZCDXbe/root_BHGFV1MRNXgv/vroot_VJMHZQJC02ge/gvel_DX90B6PJ2Ngl/theme_hk_utilitiestelecom_3_0/command_AbcPageHandler/output_html>#1 epoxy film</a>, <a href=http://multimedia.3m.com/mws/mediawebserver?mwsId=66666UgxGCuNyXTtlXTyMxftEVtQEcuZgVs6EVs6E666666--&fn=78-8125-9946-8%20Rev%20D.pdf>#1126 copper tape</a>
+   high-frequency
+      teflon
+      glass
+   copper
+      0.5 oz: 17.5 um
+      1.0 oz: 35 um
+      2.0 oz: 70 um
+
+<b>board houses</b>
+   <A href=http://www.apcircuits.com/>AP Circuits</a>, <a href=http://www.4pcb.com/>Advanced</a>, <a href=http://www.protoexpress.com/>Sierra</a>, <a href=http://www.screamingcircuits.com/>Screaming Circuits</a>, <a href=http://www.goldphoenixpcb.biz/>Gold Phoenix</a>
+   design rules
+      width/spacing (15, 5 mils)
+   layers
+      1, 1.5, 2, 4, N
+   solder mask, silk screen
+   vias
+      blind, buried
+
+<a href=http://octopart.com/><b>components</b></a>
+   through-hole
+   surface-mount
+   chip-scale
+
+<a href=breadboard.jpg><b>breadboards</b></a>
+
+<b>assembly</b>
+   solder
+      eutectic
+      wetting
+      flux
+      wire, paste, bar
+      manual, reflow, wave
+      <a href=http://ec.europa.eu/environment/waste/rohs_eee/index_en.htm>ROHS</a>
+   stuffing
+      component orientation
+      tacking down parts
+      bottom to top, inside to outside
+      fumes
+      washing
+   desoldering
+      braid
+      hot air
+      gravity
+   cutting traces, adding jumpers
+   <a href=http://www.ddmnovastar.com/pick-and-place>pick-and-place</a>
+   encapsulation
+
+<b>CAM</b>
+   <a href=http://mod.cba.mit.edu/>fab modules</a>
+   <a href=lines.png>linewidth</a>
+   
+<b>assignment</b>
+   make the FabISP in-circuit programmer
+      <a href=http://fab.cba.mit.edu/content/projects/fabisp/>David</a> <a href=http://fab.cba.mit.edu/content/projects/fabispkey/index.html>Andy</a> <a href=http://fab.cba.mit.edu/classes/863.11/people/valentin.heun/2.htm>Valentin</a>
+      <a href=../embedded_programming/hello.ISP.44.cad>hello.ISP.44.cad</a> <a href=../embedded_programming/hello.ISP.44.png>board</a> <a href=../embedded_programming/hello.ISP.44.components.png>components</a> <a href=../embedded_programming/hello.ISP.44.traces.png>traces</a> <a href=../embedded_programming/hello.ISP.44.interior.png>interior</a>
+         <a href=../embedded_programming/hello.ISP.44.res.cad>hello.ISP.44.res.cad</a> <a href=../embedded_programming/hello.ISP.44.res.png>board</a> <a href=../embedded_programming/hello.ISP.44.res.traces.png>traces</a> <a href=../embedded_programming/hello.ISP.44.res.interior.png>interior</a>
+      <a href=http://fab.cba.mit.edu/about/fab/inv.html>inventory</a> <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=ATTINY44A-SSU-ND>microcontroller</a> <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=644-1039-1-ND>crystal</a> <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=H2961CT-ND>USB connector</a> <a href=http://www.mouser.com/ProductDetail/FCI/71600-006LF/?qs=yJYkLTYh5760qKJxwPD6hA%3d%3d>ribbon connector</a> <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=BZT52C3V3-FDICT-ND>Zener diode</a> <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=311-0.0ERCT-ND>jumper</a>
+      <a href=../embedded_programming/firmware.zip>firmware.zip</a>
+         USB power
+         make clean
+         make hex
+         (sudo) make fuse (check <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?lang=en&site=US&KeyWords=avrisp2&x=0&y=0>programmer</a> in Makefile, may need to repeat)
+         (sudo) make program
+         desolder SJ1 and SJ2
+         make IDC ISP cable, connecting header pin 1 to pin 1, check wires

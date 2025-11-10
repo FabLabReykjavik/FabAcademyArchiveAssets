@@ -1,0 +1,21 @@
+dof: 3
+units: mm mm mm 
+nx ny nz: 600 600 299
+dx dy dz: 50.800102 50.800102 25.400000
+xmin ymin zmin: 0.000000 0.000000 -25.400000
+path start:
+segment start:
+77 57 0 
+541 58 0 
+540 535 0 
+77 534 0 
+77 57 0 
+segment end:
+segment start:
+77 57 299 
+541 58 299 
+540 535 299 
+77 534 299 
+77 57 299 
+segment end:
+path end:

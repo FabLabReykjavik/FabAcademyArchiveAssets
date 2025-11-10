@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+video="/dev/video1"
+#
+if [ $# -ne 1 ]; then
+   echo "command line: scan background_threshold, using 0"
+   threshold=0
+else
+   threshold=$1
+fi
+#
+echo "to set up camera:"
+echo "   HDMI1_1366x768"
+echo "      script to mirror display"
+echo "   guvcview -d video1"
+echo "      set camera to fix focus, adjust brightness and contrast"
+echo "   zoom %"
+echo "      script for zoom, 100 for no change"
+echo "   bright scale"
+echo "      script for display brightness scale, 1 for no change"
+#
+read -p "CR to scan background"
+coord back.png $threshold $video
+#
+read -p "CR to scan object"
+coord front.png $threshold $video
+#
+png_sub front.png back.png height.png
+#
+eog height.png
+#
+echo "png_stl to mesh"
+echo "png_ply to texture map"

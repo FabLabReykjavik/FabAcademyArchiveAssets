@@ -1,0 +1,18 @@
+fabduino.name=hello.arduino.168, mega168, 5V, internal clock
+
+fabduino.upload.protocol=stk500
+fabduino.upload.maximum_size=14336
+fabduino.upload.speed=19200
+
+fabduino.bootloader.low_fuses=0xe2
+fabduino.bootloader.high_fuses=0xdd
+fabduino.bootloader.extended_fuses=0x00
+fabduino.bootloader.path=arduino:atmega
+fabduino.bootloader.file=ATmegaBOOT_168_pro_8MHz.hex
+fabduino.bootloader.unlock_bits=0x3F
+fabduino.bootloader.lock_bits=0x0F
+
+fabduino.build.mcu=atmega168
+fabduino.build.f_cpu=8000000L
+fabduino.build.core=arduino:arduino
+

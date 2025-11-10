@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+
+HTML5 MP4 encoding
+
+variable bit rate 1080p MP3:
+
+   avconv -i input_video -vcodec libx264 -crf 25 -preset medium -vf scale=-1:1080 -acodec libmp3lame -q:a 4 -ar 48000 -ac 2 output_video.mp4
+
+fixed bit rate MP2:
+
+   avconv -i input_video -vcodec libx264 -b:v 1000k -vf scale=-1:1080 -acodec mp2 -b:a 256k -ar 48000 -ac 2 output_video.mp4
+
+no audio:
+
+   avconv -i input_video -vcodec libx264 -b:v 1000k -vf scale=-1:1080 -an output_video.mp4
+
+crop size (width:height:xoffset:yoffset):
+
+   avconv -i input_video -vf crop=1500:800:200:100 -vcodec libx264 -b:v 1000k -an output_video.mp4
+
+trim time (-ss start time, -t duration):
+
+   avconv -i input_video -vcodec libx264 -b:v 1000k -an -ss 00:00:10 -t 00:00:10 output_video.mp4
+
+mix audio and video:
+
+   avconv -i input_video -vcodec libx264 -b:v 1000k -vf crop=1120:876:0:100 -i input_audio -acodec mp2 -b:a 256k -ar 48000 -ac 2 -ss 00:00:20 -t 00:00:20 output_video.mp4
+
+crop, pan, composite:
+
+   avconv -i input_video_1 -i input_video_2 -filter_complex '[1:v]crop=175:95:930:860[cropout];[cropout]scale=350:190[scaleout];[0:v][scaleout]overlay=10:10[outv]' -map '[outv]' -vcodec libx264 -b:v 1000k -map 0:a -acodec mp2 -b:a 256k -ac 2 -t 00:00:05 output_video.mp4
+

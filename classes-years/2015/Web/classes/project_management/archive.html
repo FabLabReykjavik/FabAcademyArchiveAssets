@@ -1,0 +1,167 @@
+<html>
+<body>
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<div style="font-size: 125%;">
+<pre>
+<a href=https://git-scm.com/>Git</a> notes
+   <a href=https://git-scm.com/downloads>download</a>
+   <a href=http://git-scm.com/docs/gittutorial>tutorial</a> <a href=http://git-scm.com/book/en/v2>book</a>
+   <a href=https://git-scm.com/downloads/guis>GUIs</a>
+   <a href=https://www.gnu.org/software/bash/>shell</a> <a href=http://www.tldp.org/LDP/abs/html/basic.html>commands</a>
+   <a href=https://help.github.com/categories/ssh/>keys</a>
+   <a href=https://git-scm.com/download/mac>Mac</a>
+      <a href=http://brew.sh/>Homebrew</a>
+   <a href=https://git-scm.com/download/win>Windows</a>
+      <a href=https://www.cygwin.com/>Cygwin</a>
+   <a href=https://git-scm.com/download/linux>Linux</a>
+      <a href=http://www.ubuntu.com/>Ubuntu</a> <a href=https://www.debian.org/>Debian</a>
+      <a href=https://github.com/dnschneid/crouton>Crouton</a> <a href=http://www.amazon.com/Toshiba-CB35-B3340-Chromebook-Celeron-HD-Screen/dp/B00N99FXIS>Chromebook</a> <a href=http://www.amazon.com/Acer-Chromebox-DT-Z07AA-001-CXI-I34GKM-Desktop/dp/B00U78QKXG>Chromebox</a>
+      sudo add-apt-repository ppa:git-core/ppa 
+      sudo apt-get update  
+      sudo apt-get install git
+         install current git
+      sudo apt-get install gitg git-gui
+         install git GUIs
+      sudo apt-get install hg-fast-export
+         import a Mercurial repository
+
+distributed version control system
+   maintains version history
+   merges changes between and within files
+   peer-to-peer development
+   remote server file system management
+
+issues
+   key path, permissions
+      chmod go-rwx ~/.ssh/key_name
+   archive size
+      ~MB/person/week
+      check before commit
+         <a href=http://www.linfo.org/du.html>du</a> -s * | sort -rn
+      compress, resize pictures for Web
+         <a href=http://www.imagemagick.org/script/convert.php>convert</a>
+      link to external videos
+   pull and merge or rebase before pushing, never force
+   refresh browser after editing page
+
+files
+   ~/.ssh/config
+      host config_name
+         hostname machine_name
+         user user_name
+         port port_number
+         identityfile ~/.ssh/key_name
+   .gitignore, .git/info/exclude 
+      untracked files/directories to ignore
+   .git/hooks/post-merge
+      script to run after a merge (which happens after a pull)
+   .git/hooks/post-receive
+      script to run after receiving a push
+
+commands
+   git help
+      get help
+   git config --list
+      list config
+   git config --system
+      system config
+   git config --global
+      user config
+   git config --global user.name "Firstname Lastname"
+      set name for commits
+   git config --global user.email "address@site" 
+      set email for commits
+   git config --global push.default simple
+      default push only the current branch
+   git config --global core.editor vim
+      set the editor
+   git config --global merge.tool vimdiff
+      set the merge tool
+   git config --global pull.rebase true
+      rebase rather commit automatic merges
+   git config --global receive.denyCurrentBranch updateInstead
+      update remote after push
+   git config --global core.sharedRepository 0640
+      default access group read
+   git config --global core.autocrlf true
+      configure Windows to use Linux/OSX line endings
+   git init
+      initialize a repository
+   git init --bare
+      initialize a bare repository
+   git clone path_to_repo
+      clone a repository mounted in the file system
+   git clone user_name@machine_name:repo_name
+      clone a repository with a SSH login
+   git clone config_name:repo_name
+      clone a repository with a SSH name config in ~/.ssh/config
+   git remote -v
+      list remotes
+   git remote add name URL
+      add a remote
+   git pull
+      fetch and merge changes
+   git push
+      push changes
+   git push -u origin branch_name
+      push a branch to origin
+   git push --mirror
+      mirror a repo
+   git status
+      report the repository status
+   git add .
+      stage all changed files to commit
+   git commit -m "commit message"
+      commit changes
+   git commit -a -m "commit message"
+      stage and commit changes
+   git log
+      show history
+   git log --name-status
+      show names and status of changed files
+   git log --graph --oneline --stat
+      compact history view with graph and changes
+   git rm
+      remove a tracked file
+   git mv
+      move a tracked file
+   git revert
+      undo a commit
+   git clean -f
+      remove untracked files
+   git reset --hard
+      undo uncommitted changes
+   git reset --hard origin/master
+      reset to match remote
+   git checkout -b branch_name
+      create branch
+   git checkout branch_name
+      checkout branch
+   git merge branch_name
+      merge branch
+   git branch -a
+      list branches 
+   git branch -d branch_name
+      delete local branch
+   git push origin --delete branch_name
+      delete remote branch
+   git tag
+      assign a tag to a commit
+   git blame
+      show revisions of file lines
+   git diff
+      show changes between commits
+   git submodule add path_to_repository
+      nest a repository
+   git clone --recursive
+      close a repo including submodules
+   git submodule update --init
+      initialize and update submodules
+   git submodule update
+      update submodules 
+   git submodule update --remote
+      update submodules to remote  
+   git subtree add -P path_in_repo remote_repo master --squash
+      add a remote repo as a subtree
+   git subtree pull -P path_in_repo remote_repo master --squash
+      pull from a remote repo into a subtree

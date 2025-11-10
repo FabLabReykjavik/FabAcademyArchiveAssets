@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>webgl line test</title>
+</head>
+<body>
+<canvas width="500" height="500" id="canvas"></canvas>
+<br>
+<canvas width="500" height="100" id="text_canvas"></canvas>
+<script type="text/javascript">
+var nlines = 1000;
+var text_width = 500;
+var text_height = 100;
+var d = new Date();
+t0 = d.getTime();
+var x1 = new Array(nlines);
+var x2 = new Array(nlines);
+var dx1 = new Array(nlines);
+var dx2 = new Array(nlines);
+var y1 = new Array(nlines);
+var y2 = new Array(nlines);
+var dy1 = new Array(nlines);
+var dy2 = new Array(nlines);
+var vertices = new Array(4*nlines);
+for (i = 0; i < nlines; ++i) {
+   x1[i] = 2*Math.random()-1;
+   x2[i] = 2*Math.random()-1;
+   dx1[i] = 0.02*(Math.random()-.5);
+   dx2[i] = 0.02*(Math.random()-.5);
+   y1[i] = 2*Math.random()-1;
+   y2[i] = 2*Math.random()-1;
+   dy1[i] = 0.02*(Math.random()-.5);
+   dy2[i] = 0.02*(Math.random()-.5);
+   vertices[4*i] = x1[i];
+   vertices[4*i+1] = y1[i];
+   vertices[4*i+2] = x2[i];
+   vertices[4*i+3] = y2[i];
+   }
+var gl;
+var canvas = document.getElementById('canvas');
+try {
+   gl = canvas.getContext('experimental-webgl');
+   } catch (e) {
+      throw new Error('no WebGL found');
+      }
+var buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.DYNAMIC_DRAW);
+var vertCode =
+   'attribute vec2 coordinates;' +
+   'void main(void) {' +
+   '  gl_Position = vec4(coordinates, 0.0, 1.0);' +
+   '}';
+var vertShader = gl.createShader(gl.VERTEX_SHADER);
+gl.shaderSource(vertShader, vertCode);
+gl.compileShader(vertShader);
+if (!gl.getShaderParameter(vertShader, gl.COMPILE_STATUS))
+   throw new Error(gl.getShaderInfoLog(vertShader));
+var fragCode =
+   'void main(void) {' +
+   '   gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);' +
+   '}';
+var fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+gl.shaderSource(fragShader, fragCode);
+gl.compileShader(fragShader);
+if (!gl.getShaderParameter(fragShader, gl.COMPILE_STATUS))
+   throw new Error(gl.getShaderInfoLog(fragShader));
+var shaderProgram = gl.createProgram();
+gl.attachShader(shaderProgram, vertShader);
+gl.attachShader(shaderProgram, fragShader);
+gl.linkProgram(shaderProgram);
+if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS))
+   throw new Error(gl.getProgramInfoLog(shaderProgram));
+gl.useProgram(shaderProgram);
+var coordinatesVar = gl.getAttribLocation(shaderProgram, "coordinates");
+gl.enableVertexAttribArray(coordinatesVar);
+gl.vertexAttribPointer(coordinatesVar, 2, gl.FLOAT, false, 0, 0);
+var canvas = document.getElementById('text_canvas');
+var ctx = canvas.getContext("2d");
+function text(s) {
+   ctx.clearRect(0, 0, text_width, text_height);
+   ctx.fillStyle = "#ff0000";
+   ctx.font = "30px sans-serif";
+   ctx.textBaseline = "bottom";
+   ctx.fillText(s,0,text_height);
+   }
+var told = 0;
+var tnew = 0;
+function animate() {
+   for (i = 0; i < nlines; ++i) {
+      x1[i] = x1[i]+dx1[i];
+      if ((x1[i] < -1) || (x1[i] > 1))
+         dx1[i] = -dx1[i];
+      y1[i] = y1[i]+dy1[i];
+      if ((y1[i] < -1) || (y1[i] > 1))
+         dy1[i] = -dy1[i];
+      x2[i] = x2[i]+dx2[i];
+      if ((x2[i] < -1) || (x2[i] > 1))
+         dx2[i] = -dx2[i];
+      y2[i] = y2[i]+dy2[i];
+      if ((y2[i] < -1) || (y2[i] > 1))
+         dy2[i] = -dy2[i];
+      vertices[4*i] = x1[i];
+      vertices[4*i+1] = y1[i];
+      vertices[4*i+2] = x2[i];
+      vertices[4*i+3] = y2[i];
+      }
+   gl.bufferSubData(gl.ARRAY_BUFFER, 0, new Float32Array(vertices));
+   gl.clearColor(1.0, 1.0, 1.0, 1.0);
+   gl.clear(gl.COLOR_BUFFER_BIT);
+   gl.drawArrays(gl.LINES, 0, 2*nlines);
+   var d = new Date();
+   tnew = d.getTime();
+   update = tnew - told;
+   told = tnew;
+   text("lines: "+nlines+" frame (ms): "+update);
+   }
+window.setInterval("animate()",0);
+</script>
+</body>
+</html>

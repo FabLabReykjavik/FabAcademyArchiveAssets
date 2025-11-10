@@ -1,0 +1,543 @@
+# Asset file management report for 2013
+
+- Generated: 2025-11-10T21:13:24+00:00
+- Year snapshot base: `/classes-years/2013`
+- Class root (canonical): `/classes-years/2013/Web/classes` (Web/classes)
+- Canonical root: `/FabAcademyArchiveAssets/classes-master`
+- Year-specific assets directory: `/FabAcademyArchiveAssets/classes-years/2013`
+- Previous years considered: 2012
+
+## Summary
+
+- Total files scanned: 502
+- Identical files (vs canonical): 189
+- Different vs canonical (total): 269
+  - Variants first seen in 2013 (copied): 90
+  - Variants shared with previous years (not copied): 179
+- Files missing in canonical (total): 44
+  - First seen in 2013 (copied): 20
+  - Shared with previous years (not copied): 24
+- Total files copied into `classes-years/2013`: 110
+
+Paths below are relative to `classes-years/2013`.
+
+## 1. Files identical to canonical (live in master)
+
+- `Web/classes/machine_design/NDS355AN.pdf`
+- `Web/classes/machine_design/A4985-Datasheet.pdf`
+- `Web/classes/machine_design/A4952, 4953.pdf`
+- `Web/classes/machine_design/RFD16N05LSM.pdf`
+- `Web/classes/scanning_printing/MarchingCubes.pdf`
+- `Web/classes/scanning_printing/bearing.png`
+- `Web/classes/embedded_programming/STM32F30x.pdf`
+- `Web/classes/embedded_programming/blink.zip`
+- `Web/classes/embedded_programming/hello.arduino.328P.jpg`
+- `Web/classes/embedded_programming/hello.ISP.44.components.png`
+- `Web/classes/embedded_programming/Ecma-048.pdf`
+- `Web/classes/embedded_programming/hello.ISP.44.old.interior.png`
+- `Web/classes/embedded_programming/hello.ISP.44.interior.png`
+- `Web/classes/embedded_programming/hello.ISP.44.png`
+- `Web/classes/embedded_programming/hello.ISP.44.old.png`
+- `Web/classes/embedded_programming/hello.ISP.44.res.traces.png`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.out`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.c.hex`
+- `Web/classes/embedded_programming/hello.arduino.328P.blink.out`
+- `Web/classes/embedded_programming/blink.c`
+- `Web/classes/embedded_programming/hello.ftdi.44.components.jpg`
+- `Web/classes/embedded_programming/doc0856.pdf`
+- `Web/classes/embedded_programming/doc7766.pdf`
+- `Web/classes/embedded_programming/firmware.zip`
+- `Web/classes/embedded_programming/hello.ISP.44.res.png`
+- `Web/classes/embedded_programming/doc1022.pdf`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.out`
+- `Web/classes/embedded_programming/hello.arduino.328P.blink.c.hex`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.c.hex`
+- `Web/classes/embedded_programming/hello.ISP.44.old.traces.png`
+- `Web/classes/embedded_programming/hello.ftdi.44.program.png`
+- `Web/classes/input_devices/doc2586.pdf`
+- `Web/classes/input_devices/temp/hello.temp.45.jpg`
+- `Web/classes/input_devices/temp/hello.temp.45.png`
+- `Web/classes/input_devices/button/hello.button.45.jpg`
+- `Web/classes/input_devices/button/hello.button.45.png`
+- `Web/classes/input_devices/step/hello.txrx.45.png`
+- `Web/classes/input_devices/step/hello.txrx.45.jpg`
+- `Web/classes/input_devices/step/hello.load.45.png`
+- `Web/classes/input_devices/step/hello.load.45.jpg`
+- `Web/classes/input_devices/light/hello.reflect.45.c.hex`
+- `Web/classes/input_devices/light/hello.reflect.45.out`
+- `Web/classes/input_devices/light/light.jpg`
+- `Web/classes/input_devices/light/hello.reflect.45.jpg`
+- `Web/classes/input_devices/mag/hello.mag.45.jpg`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.png`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.traces.png`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.jpg`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.png`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.jpg`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.interior.png`
+- `Web/classes/output_devices/RGB/hello.RGB.45.png`
+- `Web/classes/output_devices/RGB/hello.RGB.45.mp4`
+- `Web/classes/output_devices/RGB/hello.RGB.45.jpg`
+- `Web/classes/output_devices/array/hello.array.44.2.bottom.png`
+- `Web/classes/output_devices/array/hello.array.44.jpg`
+- `Web/classes/output_devices/array/hello.array.44.2.jpg`
+- `Web/classes/output_devices/array/hello.array.44.png`
+- `Web/classes/output_devices/array/hello.array.44.mp4`
+- `Web/classes/output_devices/array/hello.array.44.2.mp4`
+- `Web/classes/output_devices/array/hello.array.44.2.vias.png`
+- `Web/classes/output_devices/array/hello.array.44.2.png`
+- `Web/classes/output_devices/RS-170.jpg`
+- `Web/classes/output_devices/video/hello.video.44.png`
+- `Web/classes/output_devices/video/hello.video.44.mp4`
+- `Web/classes/output_devices/video/hello.video.44.jpg`
+- `Web/classes/output_devices/LCD/hello.LCD.44.jpg`
+- `Web/classes/output_devices/LCD/hello.LCD.44.mp4`
+- `Web/classes/output_devices/LCD/hello.LCD.44.png`
+- `Web/classes/output_devices/44780.pdf`
+- `Web/classes/output_devices/stepper/hello.stepper.44.png`
+- `Web/classes/output_devices/stepper/hello.stepper.44.jpg`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.jpg`
+- `Web/classes/output_devices/stepper/estepper.png`
+- `Web/classes/output_devices/stepper/hello.stepper.44.mp4`
+- `Web/classes/composites/digital.png`
+- `Web/classes/composites/fold.png`
+- `Web/classes/composites/machine.jpg`
+- `Web/classes/composites/composites.png`
+- `Web/classes/computer_design/alien.png`
+- `Web/classes/computer_machining/test.png`
+- `Web/classes/computer_machining/test.stl`
+- `Web/classes/computer_machining/flexure.jpg`
+- `Web/classes/computer_machining/cuts.png`
+- `Web/classes/computer_machining/sample.sbp`
+- `Web/classes/molding_casting/rohs.png`
+- `Web/classes/molding_casting/glass.png`
+- `Web/classes/molding_casting/hello.png`
+- `Web/classes/molding_casting/sample.png`
+- `Web/classes/molding_casting/sample.blend`
+- `Web/classes/molding_casting/sample.jpg`
+- `Web/classes/molding_casting/hello.mold.png`
+- `Web/classes/molding_casting/tippy.bottom.png`
+- `Web/classes/molding_casting/toolpaths.png`
+- `Web/classes/molding_casting/tippy.png`
+- `Web/classes/molding_casting/metal.png`
+- `Web/classes/molding_casting/sample.stl`
+- `Web/classes/molding_casting/bubbles.png`
+- `Web/classes/molding_casting/tippy.top.png`
+- `Web/classes/computer_cutting/face.2000.png`
+- `Web/classes/computer_cutting/halftone.jpg`
+- `Web/classes/computer_cutting/gray.jpg`
+- `Web/classes/computer_cutting/gray-svg.png`
+- `Web/classes/computer_cutting/56836505.pdf`
+- `Web/classes/computer_cutting/alien.png`
+- `Web/classes/computer_cutting/gik.jpg`
+- `Web/classes/computer_cutting/dm.jpg`
+- `Web/classes/computer_cutting/alien.jpg`
+- `Web/classes/computer_cutting/gray-png.png`
+- `Web/classes/computer_cutting/gik.png`
+- `Web/classes/computer_cutting/holes.jpg`
+- `Web/classes/computer_cutting/gik.fab.png`
+- `Web/classes/computer_cutting/path.png`
+- `Web/classes/computer_cutting/flexures.png`
+- `Web/classes/computer_cutting/gray.png`
+- `Web/classes/computer_cutting/fire.jpg`
+- `Web/classes/interface_application_programming/JavaLine$LinePanel.class`
+- `Web/classes/interface_application_programming/JavaLine.java`
+- `Web/classes/interface_application_programming/JavaImage.html`
+- `Web/classes/interface_application_programming/JavaImage$ImagePanel.class`
+- `Web/classes/interface_application_programming/JavaLine.awt.java`
+- `Web/classes/interface_application_programming/JavaImage.awt.java`
+- `Web/classes/interface_application_programming/JavaImage.java.swing.saf`
+- `Web/classes/interface_application_programming/JavaLine.java.saf`
+- `Web/classes/interface_application_programming/JavaLine.Swing.java`
+- `Web/classes/interface_application_programming/glimage.py`
+- `Web/classes/interface_application_programming/JavaImage.image.java`
+- `Web/classes/interface_application_programming/JavaImage.java.saf`
+- `Web/classes/interface_application_programming/JavaImage.java.swing`
+- `Web/classes/interface_application_programming/JavaLine.html`
+- `Web/classes/interface_application_programming/JavaImage.rect.java`
+- `Web/classes/interface_application_programming/JavaImage.class`
+- `Web/classes/interface_application_programming/JavaLine.class`
+- `Web/classes/interface_application_programming/glsurf.py`
+- `Web/classes/interface_application_programming/glimage.c`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.jpg`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.programming.jpg`
+- `Web/classes/networking_communications/APA/apa.ftdi.interior.png`
+- `Web/classes/networking_communications/APA/apa.ftdi.png`
+- `Web/classes/networking_communications/APA/apa.jpg`
+- `Web/classes/networking_communications/APA/apa.io.traces.png`
+- `Web/classes/networking_communications/APA/apa.io.png`
+- `Web/classes/networking_communications/APA/apa.ftdi.traces.png`
+- `Web/classes/networking_communications/APA/apa.io.interior.png`
+- `Web/classes/networking_communications/SLIP/hello.bus.45.SLIP.avi`
+- `Web/classes/networking_communications/bus/bus.jpg`
+- `Web/classes/networking_communications/bus/hello.bus.45.node.png`
+- `Web/classes/networking_communications/bus/hello.bus.45.bridge.png`
+- `Web/classes/networking_communications/i0/clicks.png`
+- `Web/classes/networking_communications/i0/i0.3.IO.44.thtpv4.asm`
+- `Web/classes/networking_communications/i0/i0.jpg`
+- `Web/classes/old/sensors_actuators_displays/RS-170.jpg`
+- `Web/classes/old/cad_cam_cae/Bowyer.pdf`
+- `Web/classes/old/cad_cam_cae/Bowyer.odp`
+- `Web/classes/old/cad_cam_cae/Leibman.pdf`
+- `Web/classes/old/computer_machining/sample.sbp`
+- `Web/classes/old/computer_cutting/GIK.jpg`
+- `Web/classes/old/computer_cutting/dm.jpg`
+- `Web/classes/old/computer_cutting/David.jpg`
+- `Web/classes/old/computer_cutting/fire.jpg`
+- `Web/classes/old/embedded_networking_communications/clicks.png`
+- `Web/classes/old/embedded_networking_communications/basics.pdf`
+- `Web/classes/old/embedded_networking_communications/i0.pdf`
+- `Web/classes/old/embedded_networking_communications/i0.3.IO.44.thtpv4.asm`
+- `Web/classes/old/embedded_networking_communications/i0.jpg`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#9`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#1`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#7`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#3`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#2`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#5`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#2`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#3`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#8`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio_eagle.png`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#6`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#6`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.sch`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio_interior.png`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.brd`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#1`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#4`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio_exterior.png`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.xcf`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.xcf`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.png`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.s#5`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio_small_bit.png`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.b#4`
+
+## 2. Files different from canonical
+
+### 2.1 Variants first seen in 2013 (copied for this year)
+
+- `Web/classes/principles_practices/index.html`
+- `Web/classes/machine_design/index.html`
+- `Web/classes/electronics_design/index.html`
+- `Web/classes/scanning_printing/index.html`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.c.make`
+- `Web/classes/embedded_programming/hello.arduino.328P.traces.png`
+- `Web/classes/embedded_programming/C.mp4`
+- `Web/classes/embedded_programming/hello.arduino.328P.cad`
+- `Web/classes/embedded_programming/index.html`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.c`
+- `Web/classes/embedded_programming/boards.txt`
+- `Web/classes/embedded_programming/hello.arduino.328P.png`
+- `Web/classes/embedded_programming/Arduino.mp4`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.c.make`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.asm.make`
+- `Web/classes/embedded_programming/blink.mp4`
+- `Web/classes/embedded_programming/hello.arduino.328P.blink.make`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.c`
+- `Web/classes/embedded_programming/hello.arduino.328P.blink.c`
+- `Web/classes/embedded_programming/hello.arduino.328P.interior.png`
+- `Web/classes/input_devices/index.html`
+- `Web/classes/input_devices/temp/hello.temp.45.make`
+- `Web/classes/input_devices/button/hello.button.45.make`
+- `Web/classes/input_devices/mic/hello.mic.45.make`
+- `Web/classes/input_devices/step/hello.load.45.make`
+- `Web/classes/input_devices/step/hello.txrx.45.make`
+- `Web/classes/input_devices/light/hello.light.45.make`
+- `Web/classes/input_devices/light/hello.reflect.45.make`
+- `Web/classes/input_devices/mag/hello.mag.45.traces.png`
+- `Web/classes/input_devices/mag/hello.mag.45.png`
+- `Web/classes/input_devices/mag/hello.mag.45.c`
+- `Web/classes/input_devices/mag/hello.mag.45.py`
+- `Web/classes/input_devices/mag/hello.mag.45.make`
+- `Web/classes/input_devices/mag/hello.mag.45.cad`
+- `Web/classes/input_devices/mag/hello.mag.45.interior.png`
+- `Web/classes/output_devices/index.html`
+- `Web/classes/output_devices/servo/hello.servo.44.make`
+- `Web/classes/output_devices/servo/hello.servo.44.2.make`
+- `Web/classes/output_devices/speaker/hello.speaker.45.make`
+- `Web/classes/output_devices/RGB/hello.RGB.45.make`
+- `Web/classes/output_devices/array/hello.array.44.2.make`
+- `Web/classes/output_devices/array/hello.array.44.make`
+- `Web/classes/output_devices/video/hello.video.44.make`
+- `Web/classes/output_devices/LCD/hello.LCD.44.c`
+- `Web/classes/output_devices/LCD/hello.LCD.44.make`
+- `Web/classes/output_devices/stepper/hello.stepper.44.half.make`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.full.make`
+- `Web/classes/output_devices/stepper/hello.stepper.44.full.make`
+- `Web/classes/output_devices/stepper/hello.stepper.44.wave.make`
+- `Web/classes/composites/index.html`
+- `Web/classes/mechanical_design/index.html`
+- `Web/classes/computer_design/index.html`
+- `Web/classes/computer_design/alien.fab`
+- `Web/classes/computer_machining/index.html`
+- `Web/classes/computer_machining/test.cad`
+- `Web/classes/computer_machining/test.math`
+- `Web/classes/computer_machining/sample.rml`
+- `Web/classes/molding_casting/index.html`
+- `Web/classes/molding_casting/tippy.cad`
+- `Web/classes/project_management/index.html`
+- `Web/classes/project_management/archive.html`
+- `Web/classes/computer_cutting/index.html`
+- `Web/classes/computer_cutting/gray.svg`
+- `Web/classes/computer_cutting/halftone.png`
+- `Web/classes/interface_application_programming/index.html`
+- `Web/classes/invention_IP_business/index.html`
+- `Web/classes/invention_IP_business/license.txt`
+- `Web/classes/networking_communications/socket/udprcv.py`
+- `Web/classes/networking_communications/socket/udprcv.c`
+- `Web/classes/networking_communications/socket/udpsnd.c`
+- `Web/classes/networking_communications/socket/udpsnd.py`
+- `Web/classes/networking_communications/index.html`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.bridge.traces.png`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.node.png`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.node.interior.png`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.node.traces.png`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.bridge.interior.png`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.bridge.cad`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.node.cad`
+- `Web/classes/networking_communications/I2C/hello.I2C.45.bridge.png`
+- `Web/classes/networking_communications/APA/apa.ftdi.make`
+- `Web/classes/networking_communications/APA/apa.io.make`
+- `Web/classes/networking_communications/SLIP/udp_slip.py`
+- `Web/classes/networking_communications/SLIP/hello.bus.45.SLIP.c`
+- `Web/classes/networking_communications/SLIP/hello.bus.45.SLIP.make`
+- `Web/classes/networking_communications/bus/hello.bus.45.c`
+- `Web/classes/project_presentation/index.html`
+- `Web/classes/electronics_production/index.html`
+- `Web/classes/applications_implications/index.html`
+- `Web/classes/project_development/index.html`
+
+### 2.2 Variants shared with previous years (not copied for this year)
+
+- `Web/classes/machine_design/oldindex.html` → shared with year `2012`
+- `Web/classes/index.html` → shared with year `2012`
+- `Web/classes/scanning_printing/bearing.cad` → shared with year `2012`
+- `Web/classes/scanning_printing/bearing.math` → shared with year `2012`
+- `Web/classes/embedded_programming/doc8183.pdf` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.asm` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.cad` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.png` → shared with year `2012`
+- `Web/classes/embedded_programming/Blink.pde` → shared with year `2012`
+- `Web/classes/embedded_programming/term.py` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.hex` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ISP.44.cad` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ISP.44.res.cad` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ISP.44.res.interior.png` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.traces.png` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.echo.lst` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ISP.44.traces.png` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ftdi.44.interior.png` → shared with year `2012`
+- `Web/classes/embedded_programming/serial.png` → shared with year `2012`
+- `Web/classes/embedded_programming/hello.ISP.44.old.cad` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.c` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.py` → shared with year `2012`
+- `Web/classes/input_devices/button/hello.button.45.c` → shared with year `2012`
+- `Web/classes/input_devices/button/hello.button.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/button/hello.button.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/button/hello.button.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/python/rx.py` → shared with year `2012`
+- `Web/classes/input_devices/python/term.py` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.avi` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.py` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.c` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.jpg` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.png` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/mic/hello.mic.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.py` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.py` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.c` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.c` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.py` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.traces.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.cad` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.jpg` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.py` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.interior.png` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.c` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.c` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.cad` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.c` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.jpg` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.2.c` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.png` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.c` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.wave.asm` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.mp4` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.cad` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.png` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.jpg` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.c` → shared with year `2012`
+- `Web/classes/output_devices/speaker/hello.speaker.45.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/RGB/hello.RGB.45.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/RGB/hello.RGB.45.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/RGB/hello.RGB.45.c` → shared with year `2012`
+- `Web/classes/output_devices/RGB/hello.RGB.45.cad` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.2.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.c` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.2.c` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.2.top.png` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/video/hello.video.44.asm` → shared with year `2012`
+- `Web/classes/output_devices/video/hello.video.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/video/hello.video.44.c` → shared with year `2012`
+- `Web/classes/output_devices/video/hello.video.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/video/hello.video.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/LCD/hello.LCD.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/LCD/hello.LCD.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/LCD/hello.LCD.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.half.c` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.traces.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.wave.c` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.interior.png` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.full.c` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.full.c` → shared with year `2012`
+- `Web/classes/computer_design/alien.cad` → shared with year `2012`
+- `Web/classes/computer_design/alien.math` → shared with year `2012`
+- `Web/classes/computer_design/alien.svg` → shared with year `2012`
+- `Web/classes/computer_machining/sample.g` → shared with year `2012`
+- `Web/classes/computer_machining/sample.path` → shared with year `2012`
+- `Web/classes/computer_machining/sample.ord` → shared with year `2012`
+- `Web/classes/molding_casting/sample.cad` → shared with year `2012`
+- `Web/classes/molding_casting/tippy.mp4` → shared with year `2012`
+- `Web/classes/molding_casting/hello.svg` → shared with year `2012`
+- `Web/classes/computer_cutting/gik.cad` → shared with year `2012`
+- `Web/classes/computer_cutting/gik.fab` → shared with year `2012`
+- `Web/classes/computer_cutting/gik.math` → shared with year `2012`
+- `Web/classes/interface_application_programming/svg_lines.html` → shared with year `2012`
+- `Web/classes/interface_application_programming/xline.c` → shared with year `2012`
+- `Web/classes/interface_application_programming/canvas_lines.html` → shared with year `2012`
+- `Web/classes/interface_application_programming/JavaImage.java` → shared with year `2012`
+- `Web/classes/interface_application_programming/ximage.c` → shared with year `2012`
+- `Web/classes/interface_application_programming/webgl_lines.html` → shared with year `2012`
+- `Web/classes/interface_application_programming/ximage` → shared with year `2012`
+- `Web/classes/interface_application_programming/matline.py` → shared with year `2012`
+- `Web/classes/interface_application_programming/glimage` → shared with year `2012`
+- `Web/classes/interface_application_programming/matimage.py` → shared with year `2012`
+- `Web/classes/interface_application_programming/xline` → shared with year `2012`
+- `Web/classes/interface_application_programming/glsurf.c` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.c` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.ftdi.c` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.py` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.h` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.ftdi.cad` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.io.c` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.io.cad` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.bridge.interior.png` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.bridge.cad` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.make` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.node.traces.png` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.node.cad` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.node.interior.png` → shared with year `2012`
+- `Web/classes/networking_communications/bus/hello.bus.45.bridge.traces.png` → shared with year `2012`
+- `Web/classes/networking_communications/i0/i0.3.hub.4.cad` → shared with year `2012`
+- `Web/classes/networking_communications/i0/thtpv4.py` → shared with year `2012`
+- `Web/classes/networking_communications/i0/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `Web/classes/networking_communications/i0/i0.3.serial.44.cad` → shared with year `2012`
+- `Web/classes/networking_communications/i0/i0.3.IO.44.cad` → shared with year `2012`
+- `Web/classes/old/sensors_actuators_displays/index.html` → shared with year `2012`
+- `Web/classes/old/sensors_actuators_displays/through-hole.cad` → shared with year `2012`
+- `Web/classes/old/cad_cam_cae/index.html` → shared with year `2012`
+- `Web/classes/old/cad_cam_cae/software.html` → shared with year `2012`
+- `Web/classes/old/embedded_programming/index.html` → shared with year `2012`
+- `Web/classes/old/computer_machining/index.html` → shared with year `2012`
+- `Web/classes/old/computer_machining/sample.g` → shared with year `2012`
+- `Web/classes/old/computer_machining/sample.rml` → shared with year `2012`
+- `Web/classes/old/molding_casting/index.html` → shared with year `2012`
+- `Web/classes/old/computer_cutting/index.html` → shared with year `2012`
+- `Web/classes/old/scan_print/index.html` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/i0.3.hub.4.cad` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/index.html` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/thtpv4.py` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/i0.3.serial.44.cad` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/i0.3.IO.44.cad` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/RS232_bauds.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/IA4421_config.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/messager.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/RS232.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/delays_8MHz.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/asm/IA4421_code.asm` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/messager.py` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.erc` → shared with year `2012`
+- `Web/classes/old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg` → shared with year `2012`
+- `Web/classes/electronics_production/breadboard.jpg` → shared with year `2012`
+
+## 3. Files missing from canonical
+
+### 3.1 First seen in 2013 (not in master or earlier years, copied)
+
+- `Web/courses/index.html`
+- `Web/classes/electronics_design/pcb.cad`
+- `Web/classes/pit/index.html`
+- `Web/classes/pit/measurement_coding.pdf`
+- `Web/classes/pit/antennas.pdf`
+- `Web/classes/pit/references.pdf`
+- `Web/classes/pit/optics.pdf`
+- `Web/classes/pit/semiconductor_materials_devices.pdf`
+- `Web/classes/pit/noise.pdf`
+- `Web/classes/pit/transducers.pdf`
+- `Web/classes/pit/lensless_imaging.pdf`
+- `Web/classes/pit/circuits.pdf`
+- `Web/classes/pit/quantum_computing_communications.pdf`
+- `Web/classes/pit/information.pdf`
+- `Web/classes/pit/magnetic_materials_devices.pdf`
+- `Web/classes/pit/interactions_units_magnitudes.pdf`
+- `Web/classes/pit/fields_waves.pdf`
+- `Web/classes/input_devices/mag/hello.mag.45.mpg`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.make`
+- `Web/classes/networking_communications/SLIP/hello.bus.45.SLIP.mpg`
+
+### 3.2 Shared with previous years (not copied for this year)
+
+- `.hgignore` → shared with year `2012`
+- `Web/index.html` → shared with year `2012`
+- `Web/about/index.html` → shared with year `2012`
+- `Web/classes/input_devices/temp/hello.temp.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/button/hello.button.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.txrx.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/step/hello.load.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.light.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/light/hello.reflect.45.mpg` → shared with year `2012`
+- `Web/classes/input_devices/light/light.mpg` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.avi` → shared with year `2012`
+- `Web/classes/output_devices/H-bridge/hello.H-bridge.44.c` → shared with year `2012`
+- `Web/classes/output_devices/servo/hello.servo.44.mpg` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/array/hello.array.44.2.cad` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.44.cad` → shared with year `2012`
+- `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.avi` → shared with year `2012`
+- `Web/classes/interface_application_programming/glsurf.mpg` → shared with year `2012`
+- `Web/classes/interface_application_programming/glsurf` → shared with year `2012`
+- `Web/classes/networking_communications/APA/apa.mpg` → shared with year `2012`
+- `Web/classes/networking_communications/bus/bus.mpg` → shared with year `2012`
+- `Web/images/logo.jpg` → shared with year `2012`
+- `Web/images/favicon.ico` → shared with year `2012`

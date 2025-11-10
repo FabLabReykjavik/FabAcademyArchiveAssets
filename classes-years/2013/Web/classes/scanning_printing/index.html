@@ -1,0 +1,113 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>3D Scanning and Printing</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+
+<b>additive vs subtractive processes</b>
+
+<b>printing</b>
+   <i>constraints</i>
+      materials
+         ABS, HIPS, acrylic, PLA, ...
+      resolution
+      time
+      cost
+      supports
+      post-processing
+      wall and edge thickness
+   <i>processes</i>
+      <a href=http://www.3dsystems.com/3d-printers/production/overview>stereolithography</a>
+      <a href=http://www.stratasys.com/>fused-deposition molding</a>
+      <a href=http://www.zcorp.com/Products/3D-Printers/spage.aspx>ink-jet binder</a>
+      <a href=http://www.3dsystems.com/3d-printers/professional/overview>multi-jet modeling</a>
+      <a href=http://www.mcortechnologies.com/>cut sheets</a>
+      <a href=http://www.3dsystems.com/3d-printers/production/overview>selective laser sintering</a>
+      <a href=http://www.tuwien.ac.at/en/news/news_detail/article/7444/>two photon</a>
+      <a href=http://cba.mit.edu/events/13.03.scifab/index.html>digital</a>
+   <i>machines</i>
+      <a href="http://reprap.org/bin/view/Main/WebHome">RepRap</a>
+      <a href=http://www.ultimaker.com/>Ultimaker</a>
+      <a href=http://www.makerbot.com/>MakerBot</a>
+      <a href="http://formlabs.com/">Formlabs</a>
+      <a href="http://mtm.cba.mit.edu/">MTM</a>
+
+<b>file formats</b>
+   STL
+      ASCII
+         solid object_name
+            facet normal n1 n2 n3
+               outer loop
+                  vertex v11 v12 v13
+                  vertex v21 v22 v23
+                  vertex v31 v32 v33
+               endloop
+            endfacet
+            ...
+         endsolid object_name
+      binary
+         80 byte ASCII header
+         32-bit integer number of facets
+         50 byte facet records
+            32-bit IEEE floats
+            normal
+            vertices 1,2,3
+            2 byte attribute
+      right hand rule
+      normal (optional)
+   <a href=http://amf.wikispaces.com/>AMF</a>
+   <a href=http://usa.autodesk.com/alias/>OBJ</a>, <a href=http://usa.autodesk.com/3ds-max/>3ds</a>, <del>DXF</del>
+   <a href=http://www.web3d.org/x3d/vrml/>VRML/WRL</a>, <a href=http://www.web3d.org/x3d/>X3D</a>
+   FREP, BREP
+      <a href=bearing.png>bearing</a> <a href=bearing.cad>.cad</a> <a href=bearing.math>.math</a>
+   volumetric
+      .vol, .tiff, .gif
+      <a href=MarchingCubes.pdf>marching cubes</a>, <a href=http://cba.mit.edu/docs/theses/13.05.Keeter.pdf>adaptively-sampled distance fields</a>
+
+<b>software</b>
+   <a href=http://www.123dapp.com/>123D</a>
+   <a href=http://www.sketchup.com/>SketchUp</a>
+   <a href=http://www.autodesk.com/Inventor>Inventor</a>
+   <a href=http://www.solidworks.com/sw/3d-cad-design-software.htm>SolidWorks</a>
+   <a href=http://www.rhino3d.com/>Rhino</a> <a href=http://www.grasshopper3d.com/>Grasshopper</a>
+   <a href=http://www.blender.org/>Blender</a>
+   <a href=http://www.artofillusion.org/>Art of Illusion</a>
+   <a href=http://sourceforge.net/apps/mediawiki/free-cad/index.php?title=Main_Page>FreeCAD</a>
+   <a href=http://openscad.org/>OpenSCAD</a>
+   <a href=http://kokompe.cba.mit.edu>fab modules</a>
+   <a href=http://replicat.org/>ReplicatorG</a> <a href=http://reprap.org/wiki/Skeinforge>Skeinforge</a>
+   <a href=https://github.com/mkeeter/kokopelli>kokopelli</a>
+   <a href=http://meshlab.sourceforge.net/>MeshLab</a> <a href=http://www.netfabb.com/basic.php>netfabb</a> <a href=http://www.meshmixer.com/>meshmixer</a>
+   <a href=http://www.geomagic.com/>Geomagic</a>
+   <a href=http://www.vtk.org/>VTK</a>
+
+<b>scanning</b>
+   point cloud, triangulation, watertight, texture
+   <a href=http://www.nikonmetrology.com/Products/X-ray-and-CT-Inspection>tomography</a> <a href=http://www.cambridge.org/us/knowledge/isbn/item6598595/?site_locale=en_US>Radon transform</a>
+   <a href=http://www.zeiss.com/lsm>confocal</a>
+   <a href=http://www.plosbiology.org/article/info:doi/10.1371/journal.pbio.0020329>serial sections</a>
+   <a href=http://milkscanner.moviesandbox.net/>opacity</a>
+   <a href=http://www.gomeasure3d.com/microscribe.html>digitizer</a>
+   <a href=http://www.rolanddga.com/products/scanners/mdx15/>scanned probe</a>
+   <a href=http://www.konicaminolta.com/instruments/products/3d/non-contact/vivid910/index.html>triangulation</a>   
+   <a href=http://www.nextengine.com>array illumination</a>
+   <a href=http://code.google.com/p/structured-light/>video projector</a>
+   <a href=http://www.microsoft.com/en-us/kinectforwindows/>structured light</a> <a href=http://openkinect.org/wiki/Main_Page>OpenKinect</a> <a href=http://reconstructme.net/>ReconstructMe</a>
+   <a href=http://www.mesa-imaging.ch/index.php>time of flight</a>
+   <a href=http://opensourcephotogrammetry.blogspot.com/>photogrammetry</a> <a href=http://www.123dapp.com/catch>123D Catch</a>
+
+<b>assignment</b>
+   * design and 3D print an object (small, few cm) that could not be made subtractively
+   * 3D scan an object
+      - extra credit: print the object 
+      - extra credit: make the scanner

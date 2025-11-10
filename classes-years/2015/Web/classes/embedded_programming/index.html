@@ -1,0 +1,212 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>Embedded Programming</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b>architectures</b>
+   <a href=http://harvardmagazine.com/2014/04/mark-i-rebooted>Harvard</a> <a href=http://www.wiley.com/legacy/wileychi/wang_archi/supp/appendix_a.pdf>von Neumann</a>
+   RISC, CISC
+   microprocessor, microcontroller
+   <a href=http://www.latticesemi.com/Products/FPGAandCPLD.aspx>FPGA, CPLD</a>
+   <a href=http://cba.mit.edu/docs/papers/11.12.Computing.pdf>spatial</a>
+
+<b>memory</b>
+   registers
+   SRAM
+   DRAM
+   EEPROM
+   FLASH
+   <a href=http://www.engbedded.com/fusecalc/>fuse</a>
+
+<b>peripherals</b>
+   A/D
+   comparator
+   D/A
+   timer/counter/PWM
+   USART
+   USB
+   ...
+
+<b>word size</b>
+   8
+   16
+   32
+   64
+
+<b>families</b>
+   <a href=http://www.faqs.org/faqs/microcontroller-faq/8051/>8051</a>
+   <a href=http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers>PIC</a>
+   <a href=http://www.ti.com/lsds/ti/microcontroller/16-bit_msp430/overview.page>MSP</a>
+   <a href=http://www.atmel.com/products/microcontrollers/avr/default.aspx>AVR</a>
+   <a href=http://www.arm.com/>ARM</a>, <a href=http://www.st.com/web/en/catalog/mmc/FM141/SC1169>STM32</a>, <a href=https://www.mbed.com/en/>mbed</a>
+   <a href=http://www.cypress.com/psoc/?source=CY-ENG-HEADER>PSoC</a>, <a href=http://www.xmos.com/en/products>xCORE</a>, <a href=http://www.parallax.com/microcontrollers/propeller>Propeller</a>
+
+<b>vendors</b>
+   <a href=http://octopart.com/>Octopart</a>
+   <a href=http://www.digikey.com/>Digi-Key</a>
+   <a href=http://www.mouser.com/>Mouser</a>
+   <a href=http://www.newark.com/>Newark</a>
+   <a href=http://www.farnell.com/>Farnell</a>
+   <a href=http://www.sparkfun.com/>SparkFun</a>
+   <a href=https://www.adafruit.com/>Adafruit</a>
+
+<b>AVR processors</b>
+   <a href=http://www.digikey.com/product-detail/en/ATTINY10-TS8R/ATTINY10-TS8RCT-ND>ATtiny10</a>
+   <a href=http://www.digikey.com/product-detail/en/ATTINY45V-10SU/ATTINY45V-10SU-ND>ATtiny45V</a>
+   <a href=http://www.digikey.com/product-detail/en/ATTINY44A-SSU/ATTINY44A-SSU-ND>ATtiny44A</a>
+   <a href=http://www.digikey.com/product-detail/en/ATMEGA328P-AU/ATMEGA328P-AU-ND>ATmega328P</a>
+   <a href=http://www.digikey.com/product-detail/en/ATMEGA16U2-AU/ATMEGA16U2-AU-ND>ATmega16U2</a>
+   <a href=http://www.digikey.com/product-detail/en/ATXMEGA8E5-AUR/ATXMEGA8E5-AURCT-ND>ATxmega8E5</a>
+   <a href=http://www.digikey.com/product-detail/en/ATXMEGA16A4U-AUR/ATXMEGA16A4U-AURCT-ND>ATxmega16A4U</a>
+
+<b><a href=https://www.google.com/search?q=avr+tutorial>tutorials</a></b>
+
+<b><a href=doc8183.pdf>data sheets</a></b>
+
+<b>packages</b>
+   DIP
+   SOT
+   SOIC
+   TSSOP
+   TQFP
+   LQFP
+   MLF, CSP, <a href=http://fab.cba.mit.edu/classes/S62.12/people/moritz.kassner/bga_pcb.html>BGA</a>
+
+<b>clocks</b>
+   types
+      RC (10%, 1% calibrated)
+      ceramic (0.5%)
+      quartz (50 ppm)
+   PLL
+   instruction cycles
+   overclocking
+
+<b>in-system development</b>
+   ISP (<a href=http://www.mouser.com/ProductDetail/FCI/95278-101A06LF/?qs=sGAEpiMZZMtsLRyDR9nM14Vjyw4ze%252bjt4BkljYq5qeM%3d>header</a>, <a href=hello.ISP.44.traces.png>pads</a>, <a href=http://search.digikey.com/us/en/products/923655-08/923655-08-ND>clip</a>)
+   bootloader
+      <a href=http://arduino.cc/en/Main/Bootloader>Arduino</a>, <a href=http://www.atmel.com/images/doc8457.pdf>DFU</a>, <a href=https://github.com/micronucleus/micronucleus>Micronucleus</a>
+   <a href=http://www.digikey.com/product-detail/en/ATATMEL-ICE-BASIC/ATATMEL-ICE-BASIC-ND>JTAG, PDI</a>
+   <a href=http://www.digikey.com/product-detail/en/AT91SAM-ICE/AT91SAM-ICE-ND>ICE</a>
+
+<b>programmers</b>
+   ISP
+      <a href=../electronics_production/index.html>FabISP</a>
+      <a href=http://www.nongnu.org/avrdude/>avrdude</a>
+   JTAG, PDI
+      <a href=http://www.digikey.com/product-detail/en/ATATMEL-ICE-BASIC/ATATMEL-ICE-BASIC-ND>Atmel-ICE</a>
+
+<b>assembly language</b>
+   <a href=http://fab.cba.mit.edu/about/fab/hello/ftdi/hello.ftdi.44.echo.hex>hex file</a>
+   <a href=doc0856.pdf>instruction set, opcodes</a>
+   <a href=doc1022.pdf>mnemonics, directives, expressions</a>
+   <a href=http://www.nongnu.org/avr-libc/user-manual/overview.html>avr-as</a>
+   <a href=http://www.avr-asm-tutorial.net/gavrasm/index_en.html>gavrasm</a>
+
+<a href=http://publications.gbdirect.co.uk/c_book/><b>C</b></a>
+   <a href=http://gcc.gnu.org/>GCC</a>
+   <a href=http://www.nongnu.org/avr-libc/user-manual/index.html>AVR Libc</a>
+      <a href=http://www.nongnu.org/avr-libc/user-manual/modules.html>modules</a> <a href=http://www.nongnu.org/avr-libc/user-manual/group__avr__stdint.html>types</a> <a href=http://www.nongnu.org/avr-libc/user-manual/group__avr__math.html>math</a>
+   <a href=http://packages.ubuntu.com/trusty/avr-libc>avr-libc</a>, <a href=http://packages.ubuntu.com/trusty/binutils-avr>binutils-avr</a>, <a href=http://packages.ubuntu.com/trusty/gcc-avr>gcc-avr</a>
+   <a href=http://www.obdev.at/products/crosspack/index.html>CrossPack</a>
+   <a href=http://www.atmel.com/Microsite/atmel-studio/default.aspx>Atmel Studio</a>
+
+<b>debugging</b>
+   "printf"
+   <a href=http://www.gnu.org/software/gdb/>gdb</a>, <a href=http://www.gnu.org/software/ddd/>ddd</a>, <a href=http://www.sourceware.org/insight/index.php>Insight</a>
+   <a href=http://www.atmel.com/Microsite/atmel-studio/default.aspx>Atmel Studio</a>
+
+<b>host communication</b>
+   <a href=serial.png>RS232</a>
+      bit timing
+   <a href=Ecma-048.pdf>VT100/ANSI/ISO/ECMA terminal</a>
+      <a href=https://www.gnu.org/software/screen/manual/screen.html>Screen</a> <a href=http://www.columbia.edu/kermit/home.html>Kermit</a> <a href=http://alioth.debian.org/projects/minicom/>Minicom</a>
+      <a href=https://github.com/pyserial/pyserial>pySerial</a> <a href=http://pyserial.readthedocs.org/en/latest/tools.html#miniterm>miniterm.py</a> <a href=rx.py>rx.py</a> <a href=term.py>term.py</a>
+   <a href=http://www.usb.org/home>USB</a>
+      <a href=http://www.obdev.at/products/vusb/index.html>software</a>
+      <a href=http://www.fourwalledcubicle.com/LUFA.php>hardware</a>
+   <a href=http://www.ftdichip.com/>FTDI</a>
+      <a href=http://search.digikey.com/us/en/products/TTL-232R-5V/768-1028-ND/2003493>cable</a>
+      <a href=http://www.intra2net.com/en/developer/libftdi/>libFTDI</a>
+   echo hello-world<a name=echo></a>
+      <a href=hello.ftdi.44.cad>hello.ftdi.44.cad</a> <a href=hello.ftdi.44.png>board</a> <a href=hello.ftdi.44.components.jpg>components</a> <a href=hello.ftdi.44.traces.png>traces</a> <a href=hello.ftdi.44.interior.png>interior</a>
+      <a href=hello.ftdi.44.program.png>programming</a>
+      <a href=hello.ftdi.44.echo.c>hello.ftdi.44.echo.c</a> <a href=hello.ftdi.44.echo.c.make>hello.ftdi.44.echo.c.make</a>
+      <a href=hello.ftdi.44.echo.interrupt.c>hello.ftdi.44.echo.interrupt.c</a> <a href=hello.ftdi.44.echo.interrupt.c.make>hello.ftdi.44.echo.interrupt.c.make</a>
+      <a href=hello.ftdi.44.echo.asm>hello.ftdi.44.echo.asm</a> <a href=hello.ftdi.44.echo.asm.make>hello.ftdi.44.echo.asm.make</a>
+
+<b>XMEGA</b>
+   <a href=http://www.atmel.com/Images/doc7925.pdf>features</a> <a href=http://www.atmel.com/Images/doc8169.pdf>differences</a> <a href=http://www.atmel.com/images/doc8075.pdf>coding</a>
+   toolchain
+      <a href=https://launchpad.net/~pmjdebruijn/+archive/ubuntu/gcc-avr-release>ppa</a>
+      Atmel <a href=http://www.atmel.com/tools/atmelavrtoolchainforlinux.aspx>Linux</a> <a href=http://www.atmel.com/tools/ATMELAVRTOOLCHAINFORWINDOWS.aspx>Windows</a>
+      <a href=https://www.obdev.at/products/crosspack/index.html>OS X</a>
+   echo hello-world<a name=echo></a>
+      <a href=hello.ftdi.8E5.cad>hello.ftdi.8E5.cad</a> <a href=hello.ftdi.8E5.png>board</a> <a href=hello.ftdi.8E5.components.jpg>components</a> <a href=hello.ftdi.8E5.traces.png>traces</a> <a href=hello.ftdi.8E5.interior.png>interior</a>
+      <a href=hello.ftdi.8E5.blink.c>hello.ftdi.8E5.blink.c</a> <a href=hello.ftdi.8E5.blink.make>hello.ftdi.8E5.blink.make</a>
+      <a href=hello.ftdi.8E5.ring.c>hello.ftdi.8E5.ring.c</a> <a href=hello.ftdi.8E5.ring.make>hello.ftdi.8E5.ring.make</a>
+      <a href=hello.ftdi.8E5.echo.c>hello.ftdi.8E5.echo.c</a> <a href=hello.ftdi.8E5.echo.make>hello.ftdi.8E5.echo.make</a>
+
+<a href=http://asf.atmel.com><b>library</b></a>
+
+<b>IDE</b>
+   <a href=http://www.atmel.com/Microsite/atmel-studio/default.aspx>Atmel Studio</a>
+   <a href=http://www.eclipse.org/>Eclipse</a> <a href=http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin>AVR</a>
+   <a href=http://www.grasshopper3d.com/profile/firefly>Firefly</a>
+   <a href=http://wiki.scratch.mit.edu/wiki/PicoBoard>Scratch</a>
+   <a href=http://www.modk.it>Modkit</a>
+
+<b>boards</b>
+   AVR
+      <a href=http://www.digikey.com/product-detail/en/ATXMEGAE5-XPLD/ATXMEGAE5-XPLD-ND>Atmel</a>
+      <a href=http://www.adafruit.com/product/1501>Adafruit</a> <a href=https://www.olimex.com/Products/AVR/>Olimex</a> <a href=https://www.pololu.com/category/149/a-star-programmable-controllers>Polulu</a>
+      <a href=http://www.arduino.cc/>Arduino</a>
+         board + C libraries + IDE + bootloader + header
+         <a href=http://fab.cba.mit.edu/content/projects/fabkit/>Fabkit</a> <a href=http://makeyourbot.wikidot.com/fabio-1-1>Fabio</a>
+         <a href=hello.arduino.328P.cad>hello.arduino.328P.cad</a> <a href=hello.arduino.328P.png>board</a> <a href=hello.arduino.328P.jpg>components</a> <a href=hello.arduino.328P.traces.png>traces</a> <a href=hello.arduino.328P.interior.png>interior</a>
+            <a href=Blink.pde>Blink.pde</a> <a href=boards.txt>boards.txt</a> <a href=Arduino.mp4>programming</a>
+            <a href=hello.arduino.328P.blink.c>hello.arduino.328P.blink.c</a> <a href=hello.arduino.328P.blink.make>hello.arduino.328P.blink.make</a> <a href=C.mp4>programming</a>
+         <a href=http://highlowtech.org/?p=1695>ATtiny</a> <a href=https://github.com/Xmegaduino/Xmegaduino>Xmegaduino</a>
+   <a href=http://www.digikey.com/product-detail/en/CY8CKIT-049-42XX/428-3344-ND>PSoC</a>
+   ARM
+      <a href=http://www.raspberrypi.org/>Rasberry Pi</a>
+      <a href=http://beagleboard.org/>BeagleBone</a>
+      <a href=http://pandaboard.org/>PandaBoard</a>
+      <a href=https://developer.ubuntu.com/en/snappy/>Snappy</a>
+
+<b>Interpreters</b>
+   <a href=https://micropython.org>Python</a>
+   <a href=http://code.google.com/p/dk-basic/>BASIC</a>
+   <a href=http://amforth.sourceforge.net/>FORTH</a>
+   <a href=http://www.instructables.com/id/AVRSH-A-Command-Interpreter-Shell-for-ArduinoAVR/>AVRSH</a>
+   Javascript
+      <a href=http://www.espruino.com/>Espruino</a> <a href=https://tessel.io/>Tessel</a> <a href=http://iop.io/>iop.io</a>
+
+<b><a href=http://www.st.com/web/en/catalog/mmc/FM141/SC1169>STM32</a></b>
+   processor
+      <a href=http://www.digikey.com/product-detail/en/STM32F303CCT6/497-13318-ND>STM32F3</a> <a href=STM32F30x.pdf>data sheet</a>
+   toolchain
+      <a href=https://launchpad.net/gcc-arm-embedded>gcc-arm-none-eabi</a>
+      <a href=http://openocd.sourceforge.net/>OpenOCD</a> <a href=https://github.com/fpoussin/QStlink2>QStlink2</a> <a href=https://github.com/texane/stlink>stlink</a>
+   programmer
+      <a href=http://www.digikey.com/product-detail/en/ST-LINK%2FV2/497-10484-ND/2214535>ST-Link V2</a>
+   software
+      <a href=http://www.st.com/web/en/catalog/tools/FM147/CL1794/SC961>ST</a>  <a href=http://www.st.com/web/en/catalog/tools/PF260613>STMCube</a>
+   board
+      <a href=http://www.digikey.com/product-detail/en/STM32F3DISCOVERY/497-13192-ND>STM32F3Discovery</a>
+         <a href=blink.zip>blink.zip</a> <a href=blink.mp4>programming</a>
+      <a href=http://www.digikey.com/product-detail/en/NUCLEO-F401RE/497-14360-ND>Nucleo</a>
+
+<b>assignment</b>
+   read a microcontroller <a href=doc8183.pdf>data sheet</a>
+   program your <a href=../electronics_design/index.html>board</a> to do something, with as many different programming languages
+      and programming environments as possible
+

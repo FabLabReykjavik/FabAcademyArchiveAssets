@@ -1,0 +1,482 @@
+graph start:
+units: 1
+xmin: -0.28353116298151365
+ymin: -1.4986226429784173
+zmin: 0
+dx: 1.4594393884034713
+dy: 1.4594393884034713
+dz: 0
+xrot: -80
+yrot: 0
+zrot: 100
+grid: 0
+mode: Real
+
+node start:
+index: 0
+name: corner
+offset: 1
+x: -0.012012361622130374
+y: -0.07012379759899984
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [1]
+node end:
+
+node start:
+index: 1
+name: slot size
+offset: 1
+x: -0.07701236
+y: -0.16762379516580428
+z: 0
+code start:
+slot_depth_per_width = 1.5; // slot depth / width
+chamfer_size_per_depth = 0.2; // chamfer / depth
+dx = 2*(node.in(0).x - node.x);
+//dx = 0.13; // uncomment to fix slot size
+dy = slot_depth_per_width * dx;
+node.x = node.in(0).x - dx/2.0;
+node.y = node.in(0).y - dy/2.0;
+xorg = node.x;
+yorg = node.y;
+part = '(('+number(xorg)+'-'+number(Math.abs(dx/2.0))+')-X)';
+part1 = '(X-('+number(xorg)+'+'+number(Math.abs(dx/2.0))+'))';
+part = 'max('+part+','+part1+')';
+part1 = '(('+number(yorg)+'-'+number(Math.abs(dy/2.0))+')-Y)';
+part = 'max('+part+','+part1+')';
+part1 = '(Y-('+number(yorg)+'+'+number(Math.abs(dy/2.0))+'))';
+part = 'max('+part+','+part1+')';
+node.output['part#'] = part;
+node.output['slot_x'] = xorg;
+node.output['slot_y'] = yorg;
+node.output['slot_width'] = dx;
+node.output['slot_depth'] = dy;
+node.output['chamfer_size'] = dy * chamfer_size_per_depth;
+code end:
+from: [0]
+to: [2,4,6]
+node end:
+
+node start:
+index: 2
+name: corner
+offset: -1
+x: -0.012012361622130374
+y: -0.2651237927326087
+z: 0
+code start:
+node.x = node.input['slot_x'] + node.input['slot_width']/2.0;
+node.y = node.input['slot_y'] - node.input['slot_depth']/2.0;
+node.output['chamfer_size'] = node.input['chamfer_size'];
+code end:
+from: [1]
+to: [3]
+node end:
+
+node start:
+index: 3
+name: chamfer
+offset: 1
+x: 0.026987637404591404
+y: -0.2651237927326087
+z: 0
+code start:
+node.y = node.in(0).y;
+node.x = node.in(0).x + node.input['chamfer_size'];
+x1 = node.in(0).x;
+y1 = node.in(0).y;
+d = node.x-x1;
+x2 = x1;
+y2 = y1+d;
+x3 = node.x;
+y3 = node.y;
+if (x1 != undefined) {
+   dx12 = x2 - x1;
+   dy12 = y2 - y1;
+   r12 = Math.sqrt(dx12*dx12+dy12*dy12);
+   nx12 = -dy12/r12;
+   ny12 = dx12/r12;
+   part = '('+number(x1)+'-X)';
+   dx23 = x3 - x2;
+   dy23 = y3 - y2;
+   r23 = Math.sqrt(dx23*dx23+dy23*dy23);
+   nx23 = -dy23/r23;
+   ny23 = dx23/r23;
+   part1 = '((X-'+number(x2)+')*'+number(nx23)+'+(Y-'+number(y2)+')*'+number(ny23)+')';
+   part = 'max('+part+','+part1+')';
+   dx31 = x1 - x3;
+   dy31 = y1 - y3;
+   r31 = Math.sqrt(dx31*dx31+dy31*dy31);
+   nx31 = -dy31/r31;
+   ny31 = dx31/r31;
+   part1 = '('+number(y1)+'-Y)';
+   part = 'max('+part+','+part1+')';
+   node.output['part#'] = part;
+   }
+code end:
+from: [2]
+to: [6]
+node end:
+
+node start:
+index: 4
+name: corner
+offset: -1
+x: -0.14201235837786963
+y: -0.2651237927326087
+z: 0
+code start:
+node.x = node.input['slot_x'] - node.input['slot_width']/2.0;
+node.y = node.input['slot_y'] - node.input['slot_depth']/2.0;
+node.output['chamfer_size'] = node.input['chamfer_size'];
+code end:
+from: [1]
+to: [5]
+node end:
+
+node start:
+index: 5
+name: chamfer
+offset: 1
+x: -0.1810123574045914
+y: -0.2651237927326087
+z: 0
+code start:
+node.y = node.in(0).y;
+node.x = node.in(0).x - node.input['chamfer_size'];
+x1 = node.in(0).x;
+y1 = node.in(0).y;
+d = x1-node.x;
+x2 = x1;
+y2 = y1+d;
+x3 = node.x;
+y3 = node.y;
+if (x1 != undefined) {
+   dx12 = x2 - x1;
+   dy12 = y2 - y1;
+   r12 = Math.sqrt(dx12*dx12+dy12*dy12);
+   nx12 = -dy12/r12;
+   ny12 = dx12/r12;
+   part = '(X-'+number(x1)+')';
+   dx23 = x3 - x2;
+   dy23 = y3 - y2;
+   r23 = Math.sqrt(dx23*dx23+dy23*dy23);
+   nx23 = dy23/r23;
+   ny23 = -dx23/r23;
+   part1 = '((X-'+number(x2)+')*'+number(nx23)+'+(Y-'+number(y2)+')*'+number(ny23)+')';
+   part = 'max('+part+','+part1+')';
+   dx31 = x1 - x3;
+   dy31 = y1 - y3;
+   r31 = Math.sqrt(dx31*dx31+dy31*dy31);
+   nx31 = -dy31/r31;
+   ny31 = dx31/r31;
+   part1 = '('+number(y1)+'-Y)';
+   part = 'max('+part+','+part1+')';
+   node.output['part#'] = part;
+   }
+code end:
+from: [4]
+to: [6]
+node end:
+
+node start:
+index: 6
+name: add
+offset: 1
+x: -0.07701236
+y: -0.2651237927326087
+z: 0
+code start:
+node.x = node.in(0).x;
+node.y = node.in(0).y - node.input['slot_depth']/2.0;
+if (node.input['part0'] != undefined) {
+   part = node.input['part0'];
+   for (var n in Object.keys(node.input)) {
+      key = Object.keys(node.input)[n];
+      if ((key.indexOf('part') != -1) && (key != 'part0'))
+          part = 'min('+part+','+node.input[key]+')';
+      }
+   node.output['part#'] = part;
+   node.output['slot_width'] = node.input['slot_width'];
+   node.output['slot_depth'] = node.input['slot_depth'];
+   }
+code end:
+from: [1,5,3]
+to: [7,8,9,10,13,11]
+node end:
+
+node start:
+index: 7
+name: translate
+offset: 1
+x: 0.4979258195120297
+y: -1.30815191859987
+z: 0
+code start:
+node.x = node.input['square_x'];
+node.y = node.input['square_y'] - node.input['square_size']/2.0;
+part = node.input['part0'];
+if (part != undefined) {
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   part = replace(part,'X','(X-'+number(dx)+')');
+   part = replace(part,'Y','(Y-'+number(dy)+')');
+   part = replace(part,'Z','(Z-'+number(dz)+')');
+   }
+node.output['part#'] = part;
+code end:
+from: [6,12]
+to: [14]
+node end:
+
+node start:
+index: 8
+name: reflect xy
+offset: 1
+x: 0.042925830866942294
+y: -0.8531519299547825
+z: 0
+code start:
+node.x = node.input['square_x'] - node.input['square_size']/2.0;
+node.y = node.input['square_y'];
+part = node.input['part0'];
+if (part != undefined) {
+   part = replace(part,'X','(ytemp-'+number(node.y-node.in(0).x)+')');
+   part = replace(part,'Y','(X-'+number(node.x-node.in(0).y)+')');
+   part = replace(part,'Z','(Z-'+number(node.z-node.in(0).z)+')');
+   part = replace(part,'ytemp','Y');
+   }
+node.output['part#'] = part;
+code end:
+from: [6,12]
+to: [14]
+node end:
+
+node start:
+index: 9
+name: reflect -xy
+offset: 1
+x: 0.952925808157117
+y: -0.8531519299547825
+z: 0
+code start:
+node.x = node.input['square_x'] + node.input['square_size']/2.0;
+node.y = node.input['square_y'];
+part = node.input['part0'];
+if (part != undefined) {
+   part = replace(part,'X','(ytemp-'+number(node.y-node.in(0).x)+')');
+   part = replace(part,'Y','('+number(node.x+node.in(0).y)+'-X)');
+   part = replace(part,'Z','(Z-'+number(node.z-node.in(0).z)+')');
+   part = replace(part,'ytemp','Y');
+   }
+node.output['part#'] = part;
+code end:
+from: [6,12]
+to: [14]
+node end:
+
+node start:
+index: 10
+name: mirror y
+offset: 1
+x: 0.4979258195120297
+y: -0.3981519413096951
+z: 0
+code start:
+node.x = node.input['square_x'];
+node.y = node.input['square_y'] + node.input['square_size']/2.0;
+part = node.input['part0'];
+if (part != undefined) {
+   part = replace(part,'X','(X-'+number(node.x-node.in(0).x)+')');
+   part = replace(part,'Y','('+number(node.in(0).y+node.y)+'-Y)');
+   part = replace(part,'Z','(Z-'+number(node.z-node.in(0).z)+')');
+   }
+node.output['part#'] = part;
+code end:
+from: [6,12]
+to: [14]
+node end:
+
+node start:
+index: 11
+name: corner
+offset: 1
+x: 0.042925830866942294
+y: -0.39815194130969506
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+node.output['slot_width'] = node.input['slot_width'];
+node.output['slot_depth'] = node.input['slot_depth'];
+
+code end:
+from: [6]
+to: [12]
+node end:
+
+node start:
+index: 12
+name: rectangle
+offset: 1
+x: 0.4979258195120297
+y: -0.8531519299547825
+z: 0
+code start:
+square_size = node.input['slot_width'] + 4*node.input['slot_depth'];
+node.x = node.in(0).x + square_size/2.0;
+node.y = node.in(0).y - square_size/2.0;
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+xorg = node.x;
+yorg = node.y;
+part = '(('+number(xorg)+'-'+number(Math.abs(dx))+')-X)';
+part1 = '(X-('+number(xorg)+'+'+number(Math.abs(dx))+'))';
+part = 'max('+part+','+part1+')';
+part1 = '(('+number(yorg)+'-'+number(Math.abs(dy))+')-Y)';
+part = 'max('+part+','+part1+')';
+part1 = '(Y-('+number(yorg)+'+'+number(Math.abs(dy))+'))';
+part = 'max('+part+','+part1+')';
+node.output['part#'] = part;
+node.output['slot_width'] = node.input['slot_width'];
+node.output['slot_depth'] = node.input['slot_depth'];
+node.output['square_x'] = node.x;
+node.output['square_y'] = node.y;
+node.output['square_size'] = square_size;
+code end:
+from: [11]
+to: [14,8,10,9,7]
+node end:
+
+node start:
+index: 13
+name: translate
+offset: 1
+x: -0.15856298979066238
+y: -0.5581750641062903
+z: 0
+code start:
+part = node.input['part0'];
+if (part != undefined) {
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   part = replace(part,'X','(X-'+number(dx)+')');
+   part = replace(part,'Y','(Y-'+number(dy)+')');
+   part = replace(part,'Z','(Z-'+number(dz)+')');
+   }
+node.output['part#'] = part;
+code end:
+from: [6]
+to: []
+node end:
+
+node start:
+index: 14
+name: square
+offset: 1
+x: 0.952925808157117
+y: -1.30815191859987
+z: 0
+code start:
+node.x = node.in(0).x + node.input['square_size']/2.0;
+node.y = node.in(0).y - node.input['square_size']/2.0;
+if (node.input['part0'] != undefined) {
+   part = node.input['part0'];
+   for (var n in Object.keys(node.input)) {
+      key = Object.keys(node.input)[n];
+      if ((key.indexOf('part') != -1) && (key != 'part0'))
+         part = 'max('+part+',-('+node.input[key]+'))';
+      }
+   node.output['part#'] = part;
+   node.output['square_size'] = node.input['square_size'];
+   node.output['spacing'] = 0.05; // tile spacing
+   }
+code end:
+from: [12,9,10,8,7]
+to: [15]
+node end:
+
+node start:
+index: 15
+name: linear array
+offset: 1
+x: 1.9129257854472919
+y: -1.30815191859987
+z: 0
+code start:
+n = 3; // number of array elements
+node.x = node.in(0).x + node.input['square_size'] + node.input['spacing'];
+node.y = node.in(0).y;
+part = node.input['part0'];
+if (part != undefined) {
+   array_part = part;
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   //
+   //dx = 0.1; // uncomment to set x step
+   //dy = 0.1; // uncomment to set y step
+   //dz = 0.1; // uncomment to set z step
+   //
+   for (i=1;i<n;i++) {
+      new_part = part;
+      new_part = replace(new_part,'X','(X-'+number(i*dx)+')');
+      new_part = replace(new_part,'Y','(Y-'+number(i*dy)+')');
+      new_part = replace(new_part,'Z','(Z-'+number(i*dz)+')');
+      array_part = 'min('+array_part+','+new_part+')';
+      }
+   node.output['part#'] = '('+array_part+')';
+   node.output['square_size'] = node.input['square_size'];
+   node.output['spacing'] = node.input['spacing'];
+   }
+code end:
+from: [14]
+to: [16]
+node end:
+
+node start:
+index: 16
+name: linear array
+offset: 1
+x: 1.9129257854472919
+y: -2.2681518958900444
+z: 0
+code start:
+n = 2 // number of array elements
+node.x = node.in(0).x;
+node.y = node.in(0).y - node.input['square_size'] - node.input['spacing'];
+part = node.input['part0'];
+if (part != undefined) {
+   array_part = part;
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   //
+   //dx = 0.1; // uncomment to set x step
+   //dy = 0.1; // uncomment to set y step
+   //dz = 0.1; // uncomment to set z step
+   //
+   for (i=1;i<n;i++) {
+      new_part = part;
+      new_part = replace(new_part,'X','(X-'+number(i*dx)+')');
+      new_part = replace(new_part,'Y','(Y-'+number(i*dy)+')');
+      new_part = replace(new_part,'Z','(Z-'+number(i*dz)+')');
+      array_part = 'min('+array_part+','+new_part+')';
+      }
+   node.output['part#'] = '('+array_part+')';
+   }
+code end:
+from: [15]
+to: []
+node end:
+
+graph end:

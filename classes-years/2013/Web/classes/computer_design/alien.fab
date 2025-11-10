@@ -1,0 +1,399 @@
+graph start:
+units: 1
+xmin: 0.11027713625866031
+ymin: -0.5421478060046188
+zmin: 0
+dx: 1.5
+dy: 1.5
+dz: 0
+xrot: -80
+yrot: 0
+zrot: 100
+grid: 0
+mode: Real
+
+node start:
+index: 0
+name: radius
+offset: 1
+x: 0.17551963048498864
+y: 0.35103926096997673
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [1]
+node end:
+
+node start:
+index: 1
+name: circle
+offset: 1
+x: 0.4832563510392611
+y: 0.5063510392609697
+z: 0
+code start:
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+r = Math.sqrt(dx*dx+dy*dy);
+xorg = node.x;
+yorg = node.y;
+node.output['part#'] = '(((X-'+number(xorg)+')*(X-'+number(xorg)+')+(Y-'+number(yorg)+')*(Y-'+number(yorg)+')) - '+number(r)+'*'+number(r)+')';
+code end:
+from: [0]
+to: [5]
+node end:
+
+node start:
+index: 2
+name: radius
+offset: 1
+x: 0.31870669745958435
+y: 0.5866050808314087
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [3]
+node end:
+
+node start:
+index: 3
+name: circle
+offset: 1
+x: 0.35161662817551964
+y: 0.6449191685912219
+z: 0
+code start:
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+r = Math.sqrt(dx*dx+dy*dy);
+xorg = node.x;
+yorg = node.y;
+node.output['part#'] = '(((X-'+number(xorg)+')*(X-'+number(xorg)+')+(Y-'+number(yorg)+')*(Y-'+number(yorg)+')) - '+number(r)+'*'+number(r)+')';
+code end:
+from: [2]
+to: [4]
+node end:
+
+node start:
+index: 4
+name: duplicate
+offset: 1
+x: 0.6195150115473438
+y: 0.6397228637413395
+z: 0
+code start:
+part = node.input['part0'];
+if (part != undefined) {
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   part = replace(part,'X','(X-('+dx+'))');
+   part = replace(part,'Y','(Y-('+dy+'))');
+   part = replace(part,'Z','(Z-('+dz+'))');
+   }
+node.output['part#'] = 'min('+part+','+node.input['part0']+')';
+code end:
+from: [3]
+to: [5]
+node end:
+
+node start:
+index: 5
+name: subtract
+offset: 1
+x: 0.8822170900692842
+y: 0.3325635103926098
+z: 0
+code start:
+if (node.input['part0'] != undefined) {
+   part = node.input['part0'];
+   for (var n in Object.keys(node.input)) {
+      key = Object.keys(node.input)[n];
+      if ((key.indexOf('part') != -1) && (key != 'part0'))
+         part = 'max('+part+',-('+node.input[key]+'))';
+      }
+   node.output['part#'] = part;
+   }
+code end:
+from: [1,4,13]
+to: [14]
+node end:
+
+node start:
+index: 6
+name: origin
+offset: 1
+x: 0.6905311778290992
+y: -0.20092378752886875
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [7]
+node end:
+
+node start:
+index: 7
+name: circle
+offset: 1
+x: 0.47170900692840645
+y: -0.3943418013856821
+z: 0
+code start:
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+r = Math.sqrt(dx*dx+dy*dy);
+xorg = node.in(0).x;
+yorg = node.in(0).y;
+node.output['part#'] = '(((X-'+number(xorg)+')*(X-'+number(xorg)+')+(Y-'+number(yorg)+')*(Y-'+number(yorg)+')) - '+number(r)+'*'+number(r)+')';
+code end:
+from: [6]
+to: [10]
+node end:
+
+node start:
+index: 8
+name: origin
+offset: 1
+x: 0.6905311778290992
+y: -0.198614318706698
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [9]
+node end:
+
+node start:
+index: 9
+name: circle
+offset: 1
+x: 0.47690531177829043
+y: -0.2909930715935336
+z: 0
+code start:
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+r = Math.sqrt(dx*dx+dy*dy);
+xorg = node.in(0).x;
+yorg = node.in(0).y;
+node.output['part#'] = '(((X-'+number(xorg)+')*(X-'+number(xorg)+')+(Y-'+number(yorg)+')*(Y-'+number(yorg)+')) - '+number(r)+'*'+number(r)+')';
+code end:
+from: [8]
+to: [10]
+node end:
+
+node start:
+index: 10
+name: subtract
+offset: 1
+x: 0.6836027713625867
+y: -0.4803695150115479
+z: 0
+code start:
+if (node.input['part0'] != undefined) {
+   part = node.input['part0'];
+   for (var n in Object.keys(node.input)) {
+      key = Object.keys(node.input)[n];
+      if ((key.indexOf('part') != -1) && (key != 'part0'))
+         part = 'max('+part+',-('+node.input[key]+'))';
+      }
+   node.output['part#'] = part;
+   }
+code end:
+from: [7,9,12]
+to: [13,18]
+node end:
+
+node start:
+index: 11
+name: corner
+offset: 1
+x: 0.21882217392609693
+y: -0.30773672110854555
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+code end:
+from: []
+to: [12]
+node end:
+
+node start:
+index: 12
+name: rectangle
+offset: 1
+x: 0.7482679014087765
+y: -0.05542725228637557
+z: 0
+code start:
+dx = node.x - node.in(0).x;
+dy = node.y - node.in(0).y;
+xorg = node.x;
+yorg = node.y;
+part = '(('+number(xorg)+'-'+number(Math.abs(dx))+')-X)';
+part1 = '(X-('+number(xorg)+'+'+number(Math.abs(dx))+'))';
+part = 'max('+part+','+part1+')';
+part1 = '(('+number(yorg)+'-'+number(Math.abs(dy))+')-Y)';
+part = 'max('+part+','+part1+')';
+part1 = '(Y-('+number(yorg)+'+'+number(Math.abs(dy))+'))';
+part = 'max('+part+','+part1+')';
+node.output['part#'] = part;
+code end:
+from: [11]
+to: [10]
+node end:
+
+node start:
+index: 13
+name: translate
+offset: -1
+x: 0.48036952
+y: 0.23325635
+z: 0
+code start:
+part = node.input['part0'];
+if (part != undefined) {
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   part = replace(part,'X','(X-'+number(dx)+')');
+   part = replace(part,'Y','(Y-'+number(dy)+')');
+   part = replace(part,'Z','(Z-'+number(dz)+')');
+   }
+node.output['part#'] = part;
+code end:
+from: [10]
+to: [5]
+node end:
+
+node start:
+index: 14
+name: origin
+offset: 1
+x: 0.47806004618937625
+y: 0.15646651270207868
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+node.output['part#'] = node.input['part0'];
+node.output['x0'] = node.x;
+node.output['y0'] = node.y;
+code end:
+from: [5]
+to: [15]
+node end:
+
+node start:
+index: 15
+name: start
+offset: -1
+x: 1.1729214799538106
+y: 0.15646651270207868
+z: 0
+code start:
+node.y = node.in(0).y;
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+node.output['x0'] = node.input['x0'];
+node.output['y0'] = node.input['y0'];
+node.output['s0'] = node.x - node.in(0).x;
+node.output['part#'] = node.input['part0'];
+code end:
+from: [14]
+to: [16]
+node end:
+
+node start:
+index: 16
+name: finish
+offset: 1
+x: 1.1599307221016173
+y: 0.8596997700000001
+z: 0
+code start:
+node.out(0).x = node.x + node.out(0).x - node.last.x;
+node.out(0).y = node.y + node.out(0).y - node.last.y;
+node.out(0).z = node.z + node.out(0).z - node.last.z;
+node.output['x0'] = node.input['x0'];
+node.output['y0'] = node.input['y0'];
+node.output['s0'] = node.input['s0'];
+node.output['part#'] = node.input['part0'];
+code end:
+from: [15]
+to: [17]
+node end:
+
+node start:
+index: 17
+name: taper x y
+offset: -1
+x: 0.47806004618937625
+y: 0.8596997700000001
+z: 0
+code start:
+node.x = Number(node.input['x0']);
+node.y = node.in(0).y;
+part = node.input['part0'];
+if (part != undefined) {
+   x0 = Number(node.input['x0']);
+   y0 = Number(node.input['y0']);
+   x1 = node.x;
+   y1 = node.y;
+   s0 = Number(node.input['s0'])/(y1-y0);
+   s1 = (node.in(0).x-node.x)/(y1-y0);
+   //
+   //s0 = 0.5; // uncomment to set starting scale
+   //s1 = 2.0; // uncomment to set ending scale
+   //
+   part = replace(part,'X','('+number(x0)+' + (X-'+number(x0)+')*('+number(y1)+'-'+number(y0)+')/('+number(s1)+'*(Y-'+number(y0)+') + '+number(s0)+'*('+number(y1)+'-Y)))');
+   node.output['part#'] = part;
+   }
+code end:
+from: [16]
+to: []
+node end:
+
+node start:
+index: 18
+name: translate
+offset: 1
+x: 1.191108545034642
+y: -0.47459584295612034
+z: 0
+code start:
+part = node.input['part0'];
+if (part != undefined) {
+   dx = node.x - node.in(0).x;
+   dy = node.y - node.in(0).y;
+   dz = node.z - node.in(0).z;
+   part = replace(part,'X','(X-'+number(dx)+')');
+   part = replace(part,'Y','(Y-'+number(dy)+')');
+   part = replace(part,'Z','(Z-'+number(dz)+')');
+   }
+node.output['part#'] = part;
+code end:
+from: [10]
+to: []
+node end:
+
+graph end:

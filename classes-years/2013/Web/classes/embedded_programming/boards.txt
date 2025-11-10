@@ -1,0 +1,16 @@
+hello.name=hello.arduino, ATmega328P, 5V, 8MHz internal oscillator
+hello.upload.protocol=arduino
+hello.upload.maximum_size=30720
+hello.upload.speed=57600
+hello.bootloader.low_fuses=0xE2
+hello.bootloader.high_fuses=0xDA
+hello.bootloader.extended_fuses=0x07
+hello.bootloader.path=arduino:atmega
+hello.bootloader.file=ATmegaBOOT_168_atmega328_pro_8MHz.hex
+hello.bootloader.unlock_bits=0x3F
+hello.bootloader.lock_bits=0x0F
+hello.build.mcu=atmega328p
+hello.build.f_cpu=8000000L
+hello.build.core=arduino:arduino
+hello.build.variant=arduino:standard
+

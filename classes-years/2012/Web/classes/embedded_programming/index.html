@@ -1,0 +1,168 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i>Embedded Programming</i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+
+<b>architectures</b>
+   Harvard, von Neumann
+   RISC, CISC
+   microprocessor, microcontroller
+   <a href=http://www.xilinx.com/products/technology/index.htm>FPGA</a>
+   <a href=http://cba.mit.edu/docs/papers/11.12.Computing.pdf>ALA</a>
+
+<b>memory</b>
+   registers
+   SRAM
+   DRAM
+   EEPROM
+   FLASH
+   fuse
+
+<b>peripherals</b>
+   A/D
+   comparator
+   D/A
+   timer/counter/PWM
+   USART
+   USB
+   ...
+
+<b>word size</b>
+   8
+   16
+   32
+   64
+
+<b>families</b>
+   <a href=http://www.faqs.org/faqs/microcontroller-faq/8051/>8051</a>
+   <a href=http://www.microchip.com/pagehandler/en-us/products/picmicrocontrollers>PIC</a>
+   <a href=http://www.ti.com/lsds/ti/microcontroller/16-bit_msp430/overview.page>MSP</a>
+   <a href=http://www.atmel.com/products/microcontrollers/avr/default.aspx>AVR</a>
+   <a href=http://www.arm.com/>ARM</a>
+   <a href=http://www.st.com/internet/mcu/class/1734.jsp>STM32</a>
+   <a href=http://www.raspberrypi.org/>BCM SoC</a>
+
+<b>vendors</b>
+   <a href=http://octopart.com/>Octopart</a>
+   <a href=http://www.digikey.com/>Digi-Key</a>
+   <a href=http://www.mouser.com/>Mouser</a>
+   <a href=http://www.newark.com/>Newark</a>
+   <a href=http://www.farnell.com/>Farnell</a>
+   <a href=http://www.sparkfun.com/>SparkFun</a>
+
+<b>processors</b>
+   <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=ATTINY10-TSHRCT-ND>ATtiny10</a>
+   <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=ATTINY45V-10XU-ND>ATtiny45V</a>
+   <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=ATTINY44A-SSU-ND>ATtiny44</a>
+   <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=ATMEGA168A-AU-ND>ATmega168</a>
+   <a href=http://www.digikey.com/product-detail/en/ATMEGA32U4-AU/ATMEGA32U4-AU-ND/1914602>ATmega32U4</a>
+   <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail&name=497-6063-ND>STM32F103</a>
+
+<b><a href=doc8183.pdf>data sheets</a></b>
+
+<b>packages</b>
+   DIP
+   SOT
+   SOIC
+   TSSOP
+   TQFP
+   MLF, CSP, <a href=http://fab.cba.mit.edu/classes/S62.12/people/moritz.kassner/bga_pcb.html>BGA</a>
+
+<b>clocks</b>
+   RC (10%, 1% calibrated)
+   ceramic (0.5%)
+   quartz (50 ppm)
+
+<b>in-system development</b>
+   ISP (<a href=http://www.mouser.com/ProductDetail/FCI/95278-101A06LF/?qs=sGAEpiMZZMtsLRyDR9nM14Vjyw4ze%252bjt4BkljYq5qeM%3d>header</a>, <a href=hello.ISP.44.traces.png>pads</a>, <a href=http://search.digikey.com/us/en/products/923655-08/923655-08-ND/30855>clip</a>)
+   <a href=http://arduino.cc/en/Main/Bootloader>bootloader</a>
+   <a href=http://search.digikey.com/us/en/cat/programmers-development-systems/in-circuit-programmers-emulators-and-debuggers/2621880?k=dragon>JTAG, debugWire</a>
+   <a href=http://search.digikey.com/us/en/products/ATJTAGICE3/ATJTAGICE3-ND/2665141>ICE</a>
+
+<b>programmers</b>
+   ISP
+      <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?vendor=0&keywords=avrisp2>AVRISP</a>
+      <a href=http://fab.cba.mit.edu/content/projects/fabisp/>FabISP</a>
+      <a href=hello.ISP.44.cad>hello.ISP.44.cad</a> <a href=hello.ISP.44.png>board</a> <a href=hello.ISP.44.components.png>components</a> <a href=hello.ISP.44.traces.png>traces</a> <a href=hello.ISP.44.interior.png>interior</a> <a href=firmware.zip>firmware</a>
+      <a href=http://www.nongnu.org/avrdude/>avrdude</a>
+   JTAG, debugWIRE
+      <a href=http://search.digikey.com/scripts/DkSearch/dksus.dll?Cat=2621880&k=dragon>Dragon</a>
+
+<b>assembly language</b>
+   <a href=http://fab.cba.mit.edu/about/fab/hello/ftdi/hello.ftdi.44.echo.hex>hex file</a>
+   <a href=doc0856.pdf>instruction set, opcodes</a>
+   <a href=doc1022.pdf>mnemonics, directives, expressions</a>
+   <a href=http://www.nongnu.org/avr-libc/user-manual/overview.html>avr-as</a>
+   <a href=http://www.avr-asm-tutorial.net/gavrasm/index_en.html>gavrasm</a>
+
+<a href=http://publications.gbdirect.co.uk/c_book/><b>C</b></a>
+   <a href=http://www.nongnu.org/avr-libc/user-manual/index.html>AVR Libc</a>
+   <a href=http://gcc.gnu.org/>GCC</a>
+   <a href=http://packages.ubuntu.com/precise/avr-libc>avr-libc</a>, <a href=http://packages.ubuntu.com/precise/binutils-avr>binutils-avr</a>, <a href=http://packages.ubuntu.com/precise/gcc-avr>gcc-avr</a>
+   <a href=http://winavr.sourceforge.net/>WinAVR</a>
+   <a href=http://www.obdev.at/products/crosspack/index.html>CrossPack</a>
+   <a href=http://www.atmel.com/microsite/atmel_studio6/default.aspx>Atmel Studio</a>
+
+<b>host communication</b>
+   <a href=serial.png>RS232</a>
+      bit timing
+   <a href=Ecma-048.pdf>VT100/ANSI/ISO/ECMA terminal</a>
+      <a href=http://www.columbia.edu/kermit/home.html>Kermit</a>
+      <a href=http://alioth.debian.org/projects/minicom/>Minicom</a>
+      <a href=term.py>term.py</a>
+   <a href=http://www.usb.org/home>USB</a>
+      <a href=http://www.obdev.at/products/vusb/index.html>software</a>
+      <a href="doc7766.pdf">hardware</a>
+   <a href=http://www.ftdichip.com/>FTDI</a>
+      <a href=http://search.digikey.com/us/en/products/TTL-232R-5V/768-1028-ND/2003493>cable</a>
+      <a href=http://www.intra2net.com/en/developer/libftdi/>libFTDI</a>
+      echo hello-world
+         <a href=hello.ftdi.44.cad>hello.ftdi.44.cad</a> <a href=hello.ftdi.44.png>board</a> <a href=hello.ftdi.44.components.jpg>components</a> <a href=hello.ftdi.44.traces.png>traces</a> <a href=hello.ftdi.44.interior.png>interior</a>
+         <a href=hello.ftdi.44.program.png>programming</a>
+         <a href=hello.ftdi.44.echo.c>hello.ftdi.44.echo.c</a> <a href=hello.ftdi.44.echo.c.make>hello.ftdi.44.echo.c.make</a>
+         <a href=hello.ftdi.44.echo.interrupt.c>hello.ftdi.44.echo.interrupt.c</a> <a href=hello.ftdi.44.echo.interrupt.c.make>hello.ftdi.44.echo.interrupt.c.make</a>
+         <a href=hello.ftdi.44.echo.asm>hello.ftdi.44.echo.asm</a> <a href=hello.ftdi.44.echo.asm.make>hello.ftdi.44.echo.asm.make</a>
+
+<b>IDE</b>
+   <a href=http://www.atmel.com/microsite/atmel_studio6/default.aspx>Atmel Studio</a>
+   <a href=http://avr-eclipse.sourceforge.net/wiki/index.php/The_AVR_Eclipse_Plugin>AVR</a> <a href=http://www.eclipse.org/>Eclipse</a>
+   <a href=http://www.arduino.cc/>Arduino</a>
+      C libraries + IDE + bootloader + board
+      <a href=http://fab.cba.mit.edu/content/projects/fabkit/>Fabkit</a>
+      <a href=http://makeyourbot.wikidot.com/fabio-1-1>Fabio</a>
+      <a href=hello.arduino.168.cad>hello.arduino.168.cad</a> <a href=hello.arduino.168.png>board</a> <a href=hello.arduino.168.components.jpg>components</a> <a href=hello.arduino.168.traces.png>traces</a> <a href=hello.arduino.168.interior.png>interior</a>
+         <a href=hello.arduino.168.program.mpg>programming</a>
+         <a href=Blink.pde>Blink.pde</a> <a href=boards.txt>hardware/hello.arduino/boards.txt</a>
+         <a href=hello.arduino.168.blink.c>hello.arduino.168.blink.c</a> <a href=hello.arduino.168.blink.make>hello.arduino.168.blink.make</a>
+      <a href=http://hlt.media.mit.edu/?p=1695>ATtiny</a>
+   <a href=http://www.grasshopper3d.com/profile/firefly>Firefly</a>
+   <a href=http://info.scratch.mit.edu/Sensor_Boards>Scratch</a>
+   <a href=http://www.modk.it>Modkit</a>
+
+<b>Interpreters</b>
+   <a href=http://code.google.com/p/python-on-a-chip/>Python</a>
+   <a href=http://code.google.com/p/dk-basic/>BASIC</a>
+   <a href=http://amforth.sourceforge.net/>FORTH</a>
+   <a href=http://www.instructables.com/id/AVRSH-A-Command-Interpreter-Shell-for-ArduinoAVR/>AVRSH</a>
+
+<b>debugging</b>
+   "printf"
+   <a href=http://www.atmel.com/microsite/atmel_studio6/default.aspx>Atmel Studio</a>
+   <a href=http://www.gnu.org/software/ddd/>ddd</a>, <a href=http://www.gnu.org/software/gdb/>gdb</a>, <a href=http://www.nongnu.org/avr-libc/user-manual/overview.html>gdb-avr, avarice</a>
+
+<b>assignment</b>
+   read a microcontroller <a href=doc8183.pdf>data sheet</a>
+   program your <a href=../electronics_design/index.html>board</a> to do something, with as many different programming languages
+      and programming environments as possible
+
