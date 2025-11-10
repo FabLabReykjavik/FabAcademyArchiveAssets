@@ -1,0 +1,112 @@
+<html>
+<head>
+<script>
+
+//
+// pi.html
+// Neil Gershenfeld 1/24/17
+// pi calculation benchmark
+// pi = 3.14159265358979323846
+//
+
+function serial_benchmark() {
+   var points = parseInt(document.getElementById('serial_points').value)
+   var a = 0.5
+   var b = 0.75
+   var c = 0.25
+   var pi = 0
+   var tstart = Date.now()/1000
+   for (var i = 1; i <= points; ++i)
+      pi += a/((i-b)*(i-c));
+   var tend = Date.now()/1000
+   var mflops = points*5.0*1e-6/(tend-tstart);
+   document.getElementById('div_pi_serial').innerHTML = 'pi: '+pi
+   document.getElementById('div_time_serial').innerHTML = 'time: '+(tend-tstart).toFixed(1)+'s'
+   document.getElementById('div_flop_serial').innerHTML = 'estimated MFlops: '+mflops.toFixed(1)
+   }
+
+function reduce_benchmark() {
+   var points = parseInt(document.getElementById('reduce_points').value)
+   var a = 0.5
+   var b = 0.75
+   var c = 0.25
+   var tstart = Date.now()/1000
+   var array = new Float64Array(points)
+   var pi = array.reduce(function(sum,val,i,arr){return sum+a/(((i+1)-b)*((i+1)-c))},0)
+   var tend = Date.now()/1000
+   var mflops = points*5.0*1e-6/(tend-tstart);
+   document.getElementById('div_pi_reduce').innerHTML = 'pi: '+pi
+   document.getElementById('div_time_reduce').innerHTML = 'time: '+(tend-tstart).toFixed(1)+'s'
+   document.getElementById('div_flop_reduce').innerHTML = 'estimated MFlops: '+mflops.toFixed(1)
+   }
+
+function parallel_benchmark() {
+   document.getElementById('div_flop_parallel').innerHTML = 'estimated MFlops: calculating ...'
+   var threads = parseInt(document.getElementById('parallel_threads').value)
+   var points = parseInt(document.getElementById('parallel_points').value)
+   var results = []
+   var workers = new Array(threads)
+   var blob = new Blob(['('+parallel_worker.toString()+'())'])
+   var url = window.URL.createObjectURL(blob)
+   var tstart = Date.now()/1000
+   for (var t = 0; t < threads; ++t) {
+      workers[t] = new Worker(url)
+      workers[t].addEventListener('message',function(evt) {
+         results.push(evt.data.sum)
+         workers[evt.data.index].terminate()
+         if (results.length == threads) {
+            var tend = Date.now()/1000
+            var mflops = (threads*points)*5.0*1e-6/(tend-tstart);
+            var pi = results.reduce(function(x,y){return x+y},0)
+            document.getElementById('div_pi_parallel').innerHTML = 'pi: '+pi
+            document.getElementById('div_time_parallel').innerHTML = 'time: '+(tend-tstart).toFixed(1)+'s'
+            document.getElementById('div_flop_parallel').innerHTML = 'estimated MFlops: '+mflops.toFixed(1)
+            }
+         })
+      workers[t].postMessage({points:points,index:t})
+      }
+   window.URL.revokeObjectURL(url)
+   }
+
+function parallel_worker() {
+   self.addEventListener('message',function(evt) {
+      var points = evt.data.points
+      var index = evt.data.index
+      var a = 0.5
+      var b = 0.75
+      var c = 0.25
+      var sum = 0
+      var istart = 1+points*index
+      var iend = points*(index+1)
+      for (var i = istart; i <= iend; ++i)
+         sum += a/((i-b)*(i-c))
+      self.postMessage({sum:sum,index:index})
+      })
+   }
+
+</script>
+</head>
+<body>
+
+<button onclick='serial_benchmark()'>calculate pi serial</button><br>
+number of points: <input type='text' id='serial_points' value='1000000000' size=10>
+<div id='div_pi_serial'>pi:</div>
+<div id='div_time_serial'>time:</div>
+<div id='div_flop_serial'>estimated MFlops:</div>
+
+<br>
+
+<button onclick='reduce_benchmark()'>calculate pi reduce</button><br>
+number of points: <input type='text' id='reduce_points' value='10000000' size=10>
+<div id='div_pi_reduce'>pi:</div>
+<div id='div_time_reduce'>time:</div>
+<div id='div_flop_reduce'>estimated MFlops:</div>
+
+<br>
+
+<button onclick='parallel_benchmark()'>calculate pi parallel</button><br>
+number of workers: <input type='text' id='parallel_threads' value='4' size=3><br>
+points per thread: <input type='text' id='parallel_points' value='1000000000' size=10>
+<div id='div_pi_parallel'>pi:</div>
+<div id='div_time_parallel'>time:</div>
+<div id='div_flop_parallel'>estimated MFlops:</div>

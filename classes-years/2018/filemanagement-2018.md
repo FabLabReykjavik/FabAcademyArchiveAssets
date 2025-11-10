@@ -1,0 +1,2434 @@
+# Asset file management report for 2018
+
+- Generated: 2025-11-10T22:34:49+00:00
+- Year snapshot base: `/classes-years/2018`
+- Class root (canonical): `/classes-years/2018` ((entire year base))
+- Canonical root: `/FabAcademyArchiveAssets/classes-master`
+- Year-specific assets directory: `/FabAcademyArchiveAssets/classes-years/2018`
+- Previous years considered: 2012 2013 2014 2015 2016 2017
+
+## Summary
+
+- Total files scanned: 2386
+- Index files (index.html) always copied (no dedup): 70
+- Identical files (vs canonical): 624
+- Different vs canonical (total): 1661
+  - Variants first seen in 2018 (copied): 1251
+  - Variants shared with previous years (not copied): 410
+- Files missing in canonical (total): 31
+  - First seen in 2018 (copied): 23
+  - Shared with previous years (not copied): 8
+- Total files copied into `classes-years/2018`: 1344
+
+Paths below are relative to `classes-years/2018`.
+
+## 0. Index files (always copied for each year)
+
+These `index.html` files are always copied into the year-specific
+tree, even if they are identical to canonical or previous years.
+
+- `principles_practices/index.html`
+- `machine_design/index.html`
+- `index.html`
+- `electronics_design/index.html`
+- `scanning_printing/index.html`
+- `scanning_printing/light/index.html`
+- `scanning_printing/light/scan_gray_code/index.html`
+- `scanning_printing/light/scan_line/index.html`
+- `wildcard/index.html`
+- `embedded_programming/index.html`
+- `input_devices/index.html`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/index.html`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/index.html`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/__root__/index.html`
+- `output_devices/index.html`
+- `composites/index.html`
+- `mechanical_design/index.html`
+- `computer_design/index.html`
+- `computer_machining/index.html`
+- `molding_casting/index.html`
+- `project_management/index.html`
+- `computer_cutting/index.html`
+- `interface_application_programming/index.html`
+- `interface_application_programming/programs/index.html`
+- `invention_IP_business/index.html`
+- `networking_communications/index.html`
+- `old/sensors_actuators_displays/index.html`
+- `old/cad_cam_cae/index.html`
+- `old/embedded_programming/index.html`
+- `old/computer_machining/index.html`
+- `old/molding_casting/index.html`
+- `old/computer_cutting/index.html`
+- `old/scan_print/index.html`
+- `old/embedded_networking_communications/index.html`
+- `project_presentation/index.html`
+- `electronics_production/index.html`
+- `applications_implications/electronics/index.html`
+- `applications_implications/houses/index.html`
+- `applications_implications/drones/index.html`
+- `applications_implications/index.html`
+- `applications_implications/satellite/index.html`
+- `applications_implications/terminal/index.html`
+- `applications_implications/machines/index.html`
+- `applications_implications/boats/index.html`
+- `applications_implications/clothes/index.html`
+- `applications_implications/consumer_electronics/index.html`
+- `applications_implications/laptop/index.html`
+- `applications_implications/cities/index.html`
+- `applications_implications/robots/index.html`
+- `applications_implications/food/index.html`
+- `applications_implications/toys/index.html`
+- `applications_implications/biology/index.html`
+- `applications_implications/test_equipment/index.html`
+- `applications_implications/furniture/index.html`
+- `applications_implications/musical_instruments/index.html`
+- `applications_implications/cars/index.html`
+- `applications_implications/microscope/index.html`
+- `applications_implications/energy/index.html`
+- `applications_implications/phone/index.html`
+- `applications_implications/art/index.html`
+- `applications_implications/bicycles/index.html`
+- `applications_implications/network/index.html`
+- `applications_implications/inflatables/index.html`
+- `applications_implications/prosthetics/index.html`
+- `applications_implications/environment/index.html`
+- `applications_implications/labs/index.html`
+- `applications_implications/shoes/index.html`
+- `project_development/index.html`
+- `break/index.html`
+
+## 1. Files identical to canonical (live in master)
+
+- `machine_design/NDS355AN.pdf`
+- `machine_design/A4985-Datasheet.pdf`
+- `machine_design/A4952, 4953.pdf`
+- `machine_design/RFD16N05LSM.pdf`
+- `scanning_printing/MarchingCubes.pdf`
+- `scanning_printing/light/scan.large.jpg`
+- `scanning_printing/light/scan.mp4`
+- `scanning_printing/light/scan_gray_code/img_001_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_007_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_004_1.png`
+- `scanning_printing/light/scan_gray_code/diff_000.png`
+- `scanning_printing/light/scan_gray_code/th_all_diff.png`
+- `scanning_printing/light/scan_gray_code/th_img_000_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_005_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_004_0.png`
+- `scanning_printing/light/scan_gray_code/img_006_1.png`
+- `scanning_printing/light/scan_gray_code/th_all_off.png`
+- `scanning_printing/light/scan_gray_code/img_004_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_003_1.png`
+- `scanning_printing/light/scan_gray_code/img_006_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_001.png`
+- `scanning_printing/light/scan_gray_code/img_003_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_006_0.png`
+- `scanning_printing/light/scan_gray_code/all_off.png`
+- `scanning_printing/light/scan_gray_code/img_000_1.png`
+- `scanning_printing/light/scan_gray_code/diff_001.png`
+- `scanning_printing/light/scan_gray_code/th_diffs.png`
+- `scanning_printing/light/scan_gray_code/diffs.png`
+- `scanning_printing/light/scan_gray_code/img_007_1.png`
+- `scanning_printing/light/scan_gray_code/img_001_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_006_1.png`
+- `scanning_printing/light/scan_gray_code/img_002_1.png`
+- `scanning_printing/light/scan_gray_code/diff_005.png`
+- `scanning_printing/light/scan_gray_code/th_img_002_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_005_0.png`
+- `scanning_printing/light/scan_gray_code/th_all_on.png`
+- `scanning_printing/light/scan_gray_code/img_002_0.png`
+- `scanning_printing/light/scan_gray_code/img_007_0.png`
+- `scanning_printing/light/scan_gray_code/img_000_0.png`
+- `scanning_printing/light/scan_gray_code/diff_007.png`
+- `scanning_printing/light/scan_gray_code/th_img_001_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_003_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_006.png`
+- `scanning_printing/light/scan_gray_code/all_color.png`
+- `scanning_printing/light/scan_gray_code/diff_006.png`
+- `scanning_printing/light/scan_gray_code/th_diff_004.png`
+- `scanning_printing/light/scan_gray_code/img_005_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_001_0.png`
+- `scanning_printing/light/scan_gray_code/th_all_color.png`
+- `scanning_printing/light/scan_gray_code/diff_002.png`
+- `scanning_printing/light/scan_gray_code/th_diff_005.png`
+- `scanning_printing/light/scan_gray_code/all_diff.png`
+- `scanning_printing/light/scan_gray_code/th_diff_003.png`
+- `scanning_printing/light/scan_gray_code/diff_004.png`
+- `scanning_printing/light/scan_gray_code/th_img_002_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_000.png`
+- `scanning_printing/light/scan_gray_code/th_diff_002.png`
+- `scanning_printing/light/scan_gray_code/th_img_007_1.png`
+- `scanning_printing/light/scan_gray_code/all_on.png`
+- `scanning_printing/light/scan_gray_code/th_diff_007.png`
+- `scanning_printing/light/scan_gray_code/img_004_0.png`
+- `scanning_printing/light/scan_gray_code/img_005_1.png`
+- `scanning_printing/light/scan_gray_code/diff_003.png`
+- `scanning_printing/light/scan_gray_code/img_003_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_000_0.png`
+- `scanning_printing/light/scan_line/th_diff_013.png`
+- `scanning_printing/light/scan_line/th_diff_015.png`
+- `scanning_printing/light/scan_line/th_img_007_0.png`
+- `scanning_printing/light/scan_line/diff_034.png`
+- `scanning_printing/light/scan_line/img_023_0.png`
+- `scanning_printing/light/scan_line/th_img_023_0.png`
+- `scanning_printing/light/scan_line/th_img_012_0.png`
+- `scanning_printing/light/scan_line/th_diff_020.png`
+- `scanning_printing/light/scan_line/img_035_0.png`
+- `scanning_printing/light/scan_line/th_diff_017.png`
+- `scanning_printing/light/scan_line/th_img_019_0.png`
+- `scanning_printing/light/scan_line/diff_012.png`
+- `scanning_printing/light/scan_line/diff_010.png`
+- `scanning_printing/light/scan_line/diff_018.png`
+- `scanning_printing/light/scan_line/img_021_0.png`
+- `scanning_printing/light/scan_line/th_img_017_0.png`
+- `scanning_printing/light/scan_line/diff_033.png`
+- `scanning_printing/light/scan_line/diff_000.png`
+- `scanning_printing/light/scan_line/th_img_039_0.png`
+- `scanning_printing/light/scan_line/th_diff_037.png`
+- `scanning_printing/light/scan_line/diff_017.png`
+- `scanning_printing/light/scan_line/img_009_0.png`
+- `scanning_printing/light/scan_line/th_all_diff.png`
+- `scanning_printing/light/scan_line/th_img_004_0.png`
+- `scanning_printing/light/scan_line/th_img_031_0.png`
+- `scanning_printing/light/scan_line/th_diff_039.png`
+- `scanning_printing/light/scan_line/th_diff_021.png`
+- `scanning_printing/light/scan_line/th_diff_030.png`
+- `scanning_printing/light/scan_line/img_012_0.png`
+- `scanning_printing/light/scan_line/th_img_021_0.png`
+- `scanning_printing/light/scan_line/img_029_0.png`
+- `scanning_printing/light/scan_line/diff_031.png`
+- `scanning_printing/light/scan_line/th_diff_032.png`
+- `scanning_printing/light/scan_line/diff_015.png`
+- `scanning_printing/light/scan_line/img_026_0.png`
+- `scanning_printing/light/scan_line/diff_024.png`
+- `scanning_printing/light/scan_line/diff_025.png`
+- `scanning_printing/light/scan_line/img_011_0.png`
+- `scanning_printing/light/scan_line/th_all_off.png`
+- `scanning_printing/light/scan_line/th_diff_023.png`
+- `scanning_printing/light/scan_line/th_diff_035.png`
+- `scanning_printing/light/scan_line/th_diff_010.png`
+- `scanning_printing/light/scan_line/img_018_0.png`
+- `scanning_printing/light/scan_line/th_diff_016.png`
+- `scanning_printing/light/scan_line/img_006_0.png`
+- `scanning_printing/light/scan_line/th_diff_001.png`
+- `scanning_printing/light/scan_line/diff_037.png`
+- `scanning_printing/light/scan_line/th_img_006_0.png`
+- `scanning_printing/light/scan_line/th_img_026_0.png`
+- `scanning_printing/light/scan_line/th_img_020_0.png`
+- `scanning_printing/light/scan_line/img_039_0.png`
+- `scanning_printing/light/scan_line/diff_021.png`
+- `scanning_printing/light/scan_line/th_img_022_0.png`
+- `scanning_printing/light/scan_line/diff_011.png`
+- `scanning_printing/light/scan_line/diff_009.png`
+- `scanning_printing/light/scan_line/all_off.png`
+- `scanning_printing/light/scan_line/img_031_0.png`
+- `scanning_printing/light/scan_line/th_diff_028.png`
+- `scanning_printing/light/scan_line/th_img_037_0.png`
+- `scanning_printing/light/scan_line/th_diff_029.png`
+- `scanning_printing/light/scan_line/th_img_029_0.png`
+- `scanning_printing/light/scan_line/diff_001.png`
+- `scanning_printing/light/scan_line/diff_030.png`
+- `scanning_printing/light/scan_line/th_diff_018.png`
+- `scanning_printing/light/scan_line/th_diff_025.png`
+- `scanning_printing/light/scan_line/th_diff_022.png`
+- `scanning_printing/light/scan_line/th_img_036_0.png`
+- `scanning_printing/light/scan_line/img_013_0.png`
+- `scanning_printing/light/scan_line/th_diff_031.png`
+- `scanning_printing/light/scan_line/img_001_0.png`
+- `scanning_printing/light/scan_line/diff_036.png`
+- `scanning_printing/light/scan_line/img_010_0.png`
+- `scanning_printing/light/scan_line/diff_005.png`
+- `scanning_printing/light/scan_line/th_img_034_0.png`
+- `scanning_printing/light/scan_line/img_024_0.png`
+- `scanning_printing/light/scan_line/img_027_0.png`
+- `scanning_printing/light/scan_line/th_img_005_0.png`
+- `scanning_printing/light/scan_line/diff_016.png`
+- `scanning_printing/light/scan_line/img_022_0.png`
+- `scanning_printing/light/scan_line/th_img_033_0.png`
+- `scanning_printing/light/scan_line/th_all_on.png`
+- `scanning_printing/light/scan_line/img_028_0.png`
+- `scanning_printing/light/scan_line/img_002_0.png`
+- `scanning_printing/light/scan_line/img_038_0.png`
+- `scanning_printing/light/scan_line/diff_014.png`
+- `scanning_printing/light/scan_line/img_007_0.png`
+- `scanning_printing/light/scan_line/img_000_0.png`
+- `scanning_printing/light/scan_line/img_034_0.png`
+- `scanning_printing/light/scan_line/diff_007.png`
+- `scanning_printing/light/scan_line/diff_020.png`
+- `scanning_printing/light/scan_line/diff_026.png`
+- `scanning_printing/light/scan_line/diff_028.png`
+- `scanning_printing/light/scan_line/diff_019.png`
+- `scanning_printing/light/scan_line/th_img_003_0.png`
+- `scanning_printing/light/scan_line/img_036_0.png`
+- `scanning_printing/light/scan_line/th_diff_006.png`
+- `scanning_printing/light/scan_line/img_033_0.png`
+- `scanning_printing/light/scan_line/img_015_0.png`
+- `scanning_printing/light/scan_line/th_diff_014.png`
+- `scanning_printing/light/scan_line/th_diff_027.png`
+- `scanning_printing/light/scan_line/img_030_0.png`
+- `scanning_printing/light/scan_line/th_img_032_0.png`
+- `scanning_printing/light/scan_line/th_diff_019.png`
+- `scanning_printing/light/scan_line/diff_006.png`
+- `scanning_printing/light/scan_line/th_diff_004.png`
+- `scanning_printing/light/scan_line/diff_035.png`
+- `scanning_printing/light/scan_line/img_005_0.png`
+- `scanning_printing/light/scan_line/th_img_035_0.png`
+- `scanning_printing/light/scan_line/img_014_0.png`
+- `scanning_printing/light/scan_line/th_img_008_0.png`
+- `scanning_printing/light/scan_line/th_img_001_0.png`
+- `scanning_printing/light/scan_line/diff_002.png`
+- `scanning_printing/light/scan_line/img_019_0.png`
+- `scanning_printing/light/scan_line/img_032_0.png`
+- `scanning_printing/light/scan_line/th_diff_009.png`
+- `scanning_printing/light/scan_line/th_diff_005.png`
+- `scanning_printing/light/scan_line/th_diff_034.png`
+- `scanning_printing/light/scan_line/th_img_027_0.png`
+- `scanning_printing/light/scan_line/th_img_030_0.png`
+- `scanning_printing/light/scan_line/th_diff_008.png`
+- `scanning_printing/light/scan_line/th_img_025_0.png`
+- `scanning_printing/light/scan_line/img_020_0.png`
+- `scanning_printing/light/scan_line/all_diff.png`
+- `scanning_printing/light/scan_line/th_diff_033.png`
+- `scanning_printing/light/scan_line/diff_008.png`
+- `scanning_printing/light/scan_line/th_img_013_0.png`
+- `scanning_printing/light/scan_line/diff_022.png`
+- `scanning_printing/light/scan_line/th_diff_011.png`
+- `scanning_printing/light/scan_line/th_diff_003.png`
+- `scanning_printing/light/scan_line/diff_039.png`
+- `scanning_printing/light/scan_line/img_016_0.png`
+- `scanning_printing/light/scan_line/th_img_038_0.png`
+- `scanning_printing/light/scan_line/diff_004.png`
+- `scanning_printing/light/scan_line/th_img_014_0.png`
+- `scanning_printing/light/scan_line/th_img_002_0.png`
+- `scanning_printing/light/scan_line/th_diff_026.png`
+- `scanning_printing/light/scan_line/th_diff_000.png`
+- `scanning_printing/light/scan_line/img_037_0.png`
+- `scanning_printing/light/scan_line/th_diff_012.png`
+- `scanning_printing/light/scan_line/th_diff_002.png`
+- `scanning_printing/light/scan_line/diff_013.png`
+- `scanning_printing/light/scan_line/diff_023.png`
+- `scanning_printing/light/scan_line/th_img_011_0.png`
+- `scanning_printing/light/scan_line/all_on.png`
+- `scanning_printing/light/scan_line/th_diff_024.png`
+- `scanning_printing/light/scan_line/diff_038.png`
+- `scanning_printing/light/scan_line/th_img_010_0.png`
+- `scanning_printing/light/scan_line/th_diff_007.png`
+- `scanning_printing/light/scan_line/img_004_0.png`
+- `scanning_printing/light/scan_line/img_025_0.png`
+- `scanning_printing/light/scan_line/th_img_009_0.png`
+- `scanning_printing/light/scan_line/diff_003.png`
+- `scanning_printing/light/scan_line/th_diff_038.png`
+- `scanning_printing/light/scan_line/th_img_016_0.png`
+- `scanning_printing/light/scan_line/img_017_0.png`
+- `scanning_printing/light/scan_line/diff_029.png`
+- `scanning_printing/light/scan_line/th_img_015_0.png`
+- `scanning_printing/light/scan_line/img_008_0.png`
+- `scanning_printing/light/scan_line/diff_032.png`
+- `scanning_printing/light/scan_line/th_diff_036.png`
+- `scanning_printing/light/scan_line/th_img_018_0.png`
+- `scanning_printing/light/scan_line/th_img_024_0.png`
+- `scanning_printing/light/scan_line/th_img_028_0.png`
+- `scanning_printing/light/scan_line/diff_027.png`
+- `scanning_printing/light/scan_line/img_003_0.png`
+- `scanning_printing/light/scan_line/th_img_000_0.png`
+- `scanning_printing/light/scan.jpg`
+- `scanning_printing/light/scan.png`
+- `scanning_printing/bearing.png`
+- `scanning_printing/fly.mp4`
+- `embedded_programming/STM32F30x.pdf`
+- `embedded_programming/C.mpg`
+- `embedded_programming/hello.arduino.328P.traces.png`
+- `embedded_programming/C.mp4`
+- `embedded_programming/blink.zip`
+- `embedded_programming/hello.arduino.328P.jpg`
+- `embedded_programming/doc8183.pdf`
+- `embedded_programming/hello.ftdi.44.echo.asm`
+- `embedded_programming/blink.mpg`
+- `embedded_programming/hello.ISP.44.components.png`
+- `embedded_programming/Ecma-048.pdf`
+- `embedded_programming/hello.ftdi.44.echo.mp4`
+- `embedded_programming/hello.ftdi.16E5.traces.png`
+- `embedded_programming/hello.ftdi.16E5.interior.png`
+- `embedded_programming/hello.ISP.44.old.interior.png`
+- `embedded_programming/hello.arduino.328P.png`
+- `embedded_programming/hello.ftdi.16E5.blink.c.hex`
+- `embedded_programming/hello.ISP.44.interior.png`
+- `embedded_programming/hello.ftdi.44.png`
+- `embedded_programming/hello.ISP.44.png`
+- `embedded_programming/hello.ISP.44.old.png`
+- `embedded_programming/hello.ISP.44.res.traces.png`
+- `embedded_programming/hello.ftdi.44.echo.out`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c.hex`
+- `embedded_programming/hello.arduino.328P.blink.out`
+- `embedded_programming/blink.c`
+- `embedded_programming/Arduino.mpg`
+- `embedded_programming/Arduino.mp4`
+- `embedded_programming/hello.ftdi.44.components.jpg`
+- `embedded_programming/hello.ftdi.16E5.blink.out`
+- `embedded_programming/blink.mp4`
+- `embedded_programming/doc0856.pdf`
+- `embedded_programming/doc7766.pdf`
+- `embedded_programming/firmware.zip`
+- `embedded_programming/hello.ISP.44.res.png`
+- `embedded_programming/doc1022.pdf`
+- `embedded_programming/hello.ftdi.16E5.echo.out`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.out`
+- `embedded_programming/hello.ftdi.16E5.png`
+- `embedded_programming/hello.arduino.328P.blink.c.hex`
+- `embedded_programming/hello.ftdi.16E5.echo.c.hex`
+- `embedded_programming/hello.ftdi.44.echo.c.hex`
+- `embedded_programming/hello.ftdi.16E5.components.jpg`
+- `embedded_programming/hello.ISP.44.old.traces.png`
+- `embedded_programming/hello.arduino.328P.interior.png`
+- `embedded_programming/hello.ftdi.44.program.png`
+- `input_devices/video.mp4`
+- `input_devices/DS.pdf`
+- `input_devices/meas.pdf`
+- `input_devices/doc2586.pdf`
+- `input_devices/temp/hello.temp.45.jpg`
+- `input_devices/temp/hello.temp.45.mp4`
+- `input_devices/temp/hello.temp.45.png`
+- `input_devices/button/hello.button.45.mp4`
+- `input_devices/button/hello.button.45.jpg`
+- `input_devices/button/hello.button.45.png`
+- `input_devices/mic/hello.SPU0414HR5H.mp4`
+- `input_devices/mic/hello.mic.45.avi`
+- `input_devices/mic/hello.SPU0414HR5H.jpg`
+- `input_devices/mic/hello.SPU0414HR5H.png`
+- `input_devices/mic/hello.mic.45.jpg`
+- `input_devices/mic/hello.mic.45.mp4`
+- `input_devices/mic/hello.mic.45.png`
+- `input_devices/step/hello.txrx.45.png`
+- `input_devices/step/hello.txrx.45.jpg`
+- `input_devices/step/hello.txrx.45.mp4`
+- `input_devices/step/hello.load.45.png`
+- `input_devices/step/hello.load.45.mp4`
+- `input_devices/step/hello.load.45.jpg`
+- `input_devices/sonar/hello.HC-SR04.jpg`
+- `input_devices/sonar/hello.HC-SR04.mp4`
+- `input_devices/sonar/hello.HC-SR04.png`
+- `input_devices/motion/hello.HC-SR501.mp4`
+- `input_devices/motion/hello.HC-SR501.png`
+- `input_devices/motion/hello.HC-SR501.jpg`
+- `input_devices/light/hello.reflect.45.c.hex`
+- `input_devices/light/hello.reflect.45.out`
+- `input_devices/light/light.jpg`
+- `input_devices/light/hello.reflect.45.png`
+- `input_devices/light/hello.reflect.45.jpg`
+- `input_devices/light/hello.light.45.png`
+- `input_devices/light/hello.light.45.jpg`
+- `input_devices/light/hello.reflect.45.mp4`
+- `input_devices/light/hello.light.45.mp4`
+- `input_devices/accel/hello.MXD6235MP.png`
+- `input_devices/accel/hello.MXD6235MP.interior.png`
+- `input_devices/accel/hello.ADXL343.jpg`
+- `input_devices/accel/hello.ADXL343.mp4`
+- `input_devices/accel/hello.MXD6235MP.traces.png`
+- `input_devices/accel/hello.ADXL343.png`
+- `input_devices/accel/hello.MXD6235MP.jpg`
+- `input_devices/accel/hello.ADXL343.reflow.jpg`
+- `input_devices/accel/hello.MXD6235MP.mp4`
+- `input_devices/mag/hello.mag.45.png`
+- `input_devices/mag/hello.mag.45.jpg`
+- `input_devices/mag/hello.mag.45.js.mp4`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/sort-arrow-sprite.png`
+- `input_devices/mag/node_modules/async-limiter/coverage/coverage.json`
+- `input_devices/mag/node_modules/noop-logger/.npmignore`
+- `input_devices/mag/node_modules/component-emitter/LICENSE`
+- `input_devices/mag/node_modules/component-emitter/Readme.md`
+- `input_devices/mag/node_modules/component-emitter/index.js`
+- `input_devices/mag/node_modules/component-emitter/History.md`
+- `input_devices/mag/node_modules/napi-build-utils/napi-build-utils-1.0.0.tgz`
+- `input_devices/mag/node_modules/nan/nan-2.11.1.tgz`
+- `input_devices/mag/node_modules/@serialport/bindings/src/darwin_list.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/darwin_list.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_unix.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_unix.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport.h`
+- `input_devices/mag/node_modules/@serialport/bindings/build/Release/bindings.node`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-dir/file5`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-files/file4`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-files/file3`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/file1`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/file2`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/invalid.tar`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/e/directory/.ignore`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/e/file`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/sort-arrow-sprite.png`
+- `input_devices/mag/node_modules/mute-stream/.nyc_output/33508.json`
+- `input_devices/mag/node_modules/mute-stream/.nyc_output/33510.json`
+- `input_devices/mag/hello.mag.45.mods.mp4`
+- `input_devices/mag/hello.mag.45.mp4`
+- `output_devices/H-bridge/hello.H-bridge.44.png`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.traces.png`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.jpg`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.png`
+- `output_devices/H-bridge/hello.H-bridge.44.jpg`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.interior.png`
+- `output_devices/servo/hello.servo.44.out`
+- `output_devices/servo/hello.servo.44.jpg`
+- `output_devices/servo/hello.servo.44.2.c.hex`
+- `output_devices/servo/hello.servo.44.2.out`
+- `output_devices/servo/hello.servo.44.png`
+- `output_devices/servo/hello.servo.44.1.jpg`
+- `output_devices/servo/hello.servo.44.c.hex`
+- `output_devices/servo/hello.servo.44.mp4`
+- `output_devices/servo/hello.servo.44.1.png`
+- `output_devices/speaker/hello.speaker.45.mp4`
+- `output_devices/speaker/hello.speaker.45.png`
+- `output_devices/speaker/hello.speaker.45.jpg`
+- `output_devices/DC/hello.H-bridge.44.DC.mp4`
+- `output_devices/RGB/hello.RGB.45.png`
+- `output_devices/RGB/hello.RGB.45.mp4`
+- `output_devices/RGB/hello.RGB.45.jpg`
+- `output_devices/array/hello.array.44.2.bottom.png`
+- `output_devices/array/hello.array.44.jpg`
+- `output_devices/array/hello.array.44.2.jpg`
+- `output_devices/array/hello.array.44.png`
+- `output_devices/array/hello.array.44.mp4`
+- `output_devices/array/hello.array.44.2.mp4`
+- `output_devices/array/hello.array.44.2.vias.png`
+- `output_devices/array/hello.array.44.2.png`
+- `output_devices/RS-170.jpg`
+- `output_devices/video/hello.video.44.png`
+- `output_devices/video/hello.video.44.mp4`
+- `output_devices/video/hello.video.44.jpg`
+- `output_devices/LCD/hello.LCD.44.jpg`
+- `output_devices/LCD/hello.LCD.44.mp4`
+- `output_devices/LCD/hello.LCD.44.png`
+- `output_devices/44780.pdf`
+- `output_devices/stepper/hello.stepper.44.png`
+- `output_devices/stepper/hello.stepper.44.jpg`
+- `output_devices/stepper/hello.stepper.bipolar.44.jpg`
+- `output_devices/stepper/hello.stepper.bipolar.44.mp4`
+- `output_devices/stepper/hello.stepper.bipolar.44.png`
+- `output_devices/stepper/estepper.png`
+- `output_devices/stepper/hello.stepper.44.mp4`
+- `output_devices/SSR/SSR.jpg`
+- `composites/digital.png`
+- `composites/fold.png`
+- `composites/machine.jpg`
+- `composites/composites.png`
+- `computer_design/freecad.mp4`
+- `computer_design/alien.png`
+- `computer_design/antimony.mp4`
+- `computer_design/inkscape.mp4`
+- `computer_design/freecadsketch.mp4`
+- `computer_machining/test.png`
+- `computer_machining/test.stl`
+- `computer_machining/flexure.jpg`
+- `computer_machining/cuts.png`
+- `computer_machining/outline.mp4`
+- `computer_machining/sample.sbp`
+- `molding_casting/rohs.png`
+- `molding_casting/glass.png`
+- `molding_casting/hello.png`
+- `molding_casting/sample.png`
+- `molding_casting/sample.blend`
+- `molding_casting/sample.jpg`
+- `molding_casting/foosball.png`
+- `molding_casting/hello.mold.png`
+- `molding_casting/tippy.bottom.png`
+- `molding_casting/toolpaths.png`
+- `molding_casting/sample.mp4`
+- `molding_casting/tippy.png`
+- `molding_casting/metal.png`
+- `molding_casting/sample.stl`
+- `molding_casting/bubbles.png`
+- `molding_casting/tippy.mp4`
+- `molding_casting/tippy.top.png`
+- `computer_cutting/face.2000.png`
+- `computer_cutting/halftone.jpg`
+- `computer_cutting/gray.jpg`
+- `computer_cutting/joints.jpg`
+- `computer_cutting/gray-svg.png`
+- `computer_cutting/56836505.pdf`
+- `computer_cutting/alien.png`
+- `computer_cutting/gik.jpg`
+- `computer_cutting/dm.jpg`
+- `computer_cutting/alien.jpg`
+- `computer_cutting/gray-png.png`
+- `computer_cutting/gik.png`
+- `computer_cutting/holes.jpg`
+- `computer_cutting/gik.fab.png`
+- `computer_cutting/path.png`
+- `computer_cutting/gik.sb`
+- `computer_cutting/flexures.png`
+- `computer_cutting/gray.png`
+- `computer_cutting/fire.jpg`
+- `computer_cutting/halftone.png`
+- `interface_application_programming/JavaLine.mp4`
+- `interface_application_programming/JavaLine$LinePanel.class`
+- `interface_application_programming/JavaLine.java`
+- `interface_application_programming/JavaImage.html`
+- `interface_application_programming/JavaImage$ImagePanel.class`
+- `interface_application_programming/JavaLine.awt.java`
+- `interface_application_programming/xline.mp4`
+- `interface_application_programming/programs/JavaLine.java`
+- `interface_application_programming/programs/JavaImage.html`
+- `interface_application_programming/programs/ximage`
+- `interface_application_programming/programs/glimage.py`
+- `interface_application_programming/programs/glsurf`
+- `interface_application_programming/programs/JavaLine.html`
+- `interface_application_programming/programs/mpipi.c`
+- `interface_application_programming/programs/glsurf.py`
+- `interface_application_programming/programs/xline`
+- `interface_application_programming/programs/glsurf.c`
+- `interface_application_programming/JavaImage.awt.java`
+- `interface_application_programming/matline.mp4`
+- `interface_application_programming/JavaImage.java.swing.saf`
+- `interface_application_programming/JavaLine.java.saf`
+- `interface_application_programming/glimage.mp4`
+- `interface_application_programming/matimage.mp4`
+- `interface_application_programming/JavaImage.mp4`
+- `interface_application_programming/JavaLine.Swing.java`
+- `interface_application_programming/ximage`
+- `interface_application_programming/glimage.py`
+- `interface_application_programming/JavaImage.image.java`
+- `interface_application_programming/JavaImage.java.saf`
+- `interface_application_programming/glsurf.mp4`
+- `interface_application_programming/JavaImage.java.swing`
+- `interface_application_programming/ximage.mp4`
+- `interface_application_programming/JavaLine.html`
+- `interface_application_programming/JavaImage.rect.java`
+- `interface_application_programming/glimage`
+- `interface_application_programming/JavaImage.class`
+- `interface_application_programming/JavaLine.class`
+- `interface_application_programming/glsurf.py`
+- `interface_application_programming/glimage.c`
+- `interface_application_programming/xline`
+- `networking_communications/socket/udp.mp4`
+- `networking_communications/I2C/hello.I2C.45.jpg`
+- `networking_communications/I2C/hello.I2C.45.programming.jpg`
+- `networking_communications/APA/apa.ftdi.interior.png`
+- `networking_communications/APA/apa.ftdi.png`
+- `networking_communications/APA/apa.mp4`
+- `networking_communications/APA/apa.jpg`
+- `networking_communications/APA/apa.io.traces.png`
+- `networking_communications/APA/apa.io.png`
+- `networking_communications/APA/apa.ftdi.traces.png`
+- `networking_communications/APA/apa.io.interior.png`
+- `networking_communications/HM11/HM11.mp4`
+- `networking_communications/HM11/hello.HM-11.ftdi.jpg`
+- `networking_communications/HM11/hello.HM-11.ftdi.png`
+- `networking_communications/ESP8266/TCP.server.mp4`
+- `networking_communications/ESP8266/both.png`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.png`
+- `networking_communications/ESP8266/both.xcf`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.traces.png`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.jpg`
+- `networking_communications/ESP8266/UDP.mp4`
+- `networking_communications/ESP8266/TCP.client.mp4`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.interior.png`
+- `networking_communications/SLIP/hello.bus.45.SLIP.avi`
+- `networking_communications/SLIP/hello.bus.45.SLIP.mp4`
+- `networking_communications/bus/bus.mp4`
+- `networking_communications/bus/bus.jpg`
+- `networking_communications/bus/hello.bus.45.node.png`
+- `networking_communications/bus/hello.bus.45.bridge.png`
+- `networking_communications/nRF/hello.nRF24L01P.44.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.interior.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.traces.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.board.png`
+- `networking_communications/APTP/board/ATP.E5.board.png`
+- `networking_communications/APTP/board/ATP.E5.traces.png`
+- `networking_communications/APTP/board/ATP.E5.interior.png`
+- `networking_communications/APTP/board/ATP.E5.components.jpg`
+- `networking_communications/i0/clicks.png`
+- `networking_communications/i0/i0.3.IO.44.thtpv4.asm`
+- `networking_communications/i0/i0.jpg`
+- `networking_communications/SD/SD.pdf`
+- `networking_communications/SD/hello.uSD.44.png`
+- `networking_communications/SD/FAT.pdf`
+- `networking_communications/SD/hello.uSD.44.jpg`
+- `networking_communications/RN4871/hello.RN4871.ftdi.jpg`
+- `networking_communications/RN4871/hello.RN4871.ftdi.png`
+- `old/sensors_actuators_displays/RS-170.jpg`
+- `old/cad_cam_cae/Bowyer.pdf`
+- `old/cad_cam_cae/Bowyer.odp`
+- `old/cad_cam_cae/Leibman.pdf`
+- `old/computer_machining/sample.sbp`
+- `old/computer_cutting/GIK.jpg`
+- `old/computer_cutting/dm.jpg`
+- `old/computer_cutting/David.jpg`
+- `old/computer_cutting/fire.jpg`
+- `old/embedded_networking_communications/clicks.png`
+- `old/embedded_networking_communications/basics.pdf`
+- `old/embedded_networking_communications/i0.pdf`
+- `old/embedded_networking_communications/i0.3.IO.44.thtpv4.asm`
+- `old/embedded_networking_communications/i0.jpg`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#9`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#1`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#7`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#3`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#2`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#5`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#2`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#3`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#8`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_eagle.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#6`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#6`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.sch`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_interior.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.brd`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#1`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#4`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_exterior.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.xcf`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.xcf`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#5`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_small_bit.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#4`
+- `electronics_production/lines.png`
+- `electronics_production/0156.jpg`
+- `electronics_production/breadboard.jpg`
+- `electronics_production/010.jpg`
+- `electronics_production/traces.mp4`
+- `electronics_production/interior.mp4`
+- `electronics_production/linetest.png`
+- `electronics_production/mods.mp4`
+- `applications_implications/electronics/SPWelectronics.png`
+- `applications_implications/houses/FAB-LAB-HOUSE_A03_team.jpg`
+- `applications_implications/drones/drone.png`
+- `applications_implications/satellite/satellite.jpg`
+- `applications_implications/terminal/terminal.jpg`
+- `applications_implications/machines/machines.jpg`
+- `applications_implications/boats/kayak.png`
+- `applications_implications/clothes/GerardRubio_OpenKnit.png`
+- `applications_implications/clothes/GerardRubio_OpenKnit.pdf`
+- `applications_implications/consumer_electronics/boombox_slide.png`
+- `applications_implications/consumer_electronics/boombox_slide.pdf`
+- `applications_implications/laptop/laptop.jpg`
+- `applications_implications/cities/fabcity_foto_aj.jpg`
+- `applications_implications/robots/ocelot.png`
+- `applications_implications/food/aquaponics.jpg`
+- `applications_implications/food/cityfarm.jpg`
+- `applications_implications/toys/toys.jpg`
+- `applications_implications/biology/biofab.png`
+- `applications_implications/test_equipment/scope.jpg`
+- `applications_implications/furniture/FabLabIL Extreme Make Over.png`
+- `applications_implications/musical_instruments/3d_bass_icon.jpg`
+- `applications_implications/musical_instruments/tonguedrum_as1280.jpg`
+- `applications_implications/cars/car.jpg`
+- `applications_implications/microscope/microscope.jpg`
+- `applications_implications/energy/turbine.jpg`
+- `applications_implications/phone/phone.jpg`
+- `applications_implications/art/Haystack.png`
+- `applications_implications/bicycles/IMG_5765.JPG`
+- `applications_implications/network/fabfi.jpg`
+- `applications_implications/inflatables/soft.png`
+- `applications_implications/prosthetics/hand.jpg`
+- `applications_implications/environment/site.png`
+- `applications_implications/environment/P1000273-2.JPG`
+- `applications_implications/labs/lab.jpg`
+- `applications_implications/shoes/Slide1.png`
+
+## 2. Files different from canonical
+
+### 2.1 Variants first seen in 2018 (copied for this year)
+
+- `scanning_printing/fail.jpg`
+- `embedded_programming/hello.ftdi.44.traces.png`
+- `embedded_programming/hello.arduino.328P.blink.make`
+- `embedded_programming/hello.ftdi.44.interior.png`
+- `input_devices/temp/hello.temp.45.make`
+- `input_devices/video.html`
+- `input_devices/button/hello.button.45.make`
+- `input_devices/mic/hello.mic.45.make`
+- `input_devices/step/hello.load.45.make`
+- `input_devices/step/hello.txrx.45.make`
+- `input_devices/light/hello.reflect.45.make`
+- `input_devices/accel/hello.MXD6235MP.make`
+- `input_devices/mag/hello.mag.45.js`
+- `input_devices/mag/hello.mag.45.make`
+- `input_devices/mag/node_modules/info-symbol/README.md`
+- `input_devices/mag/node_modules/info-symbol/LICENSE`
+- `input_devices/mag/node_modules/info-symbol/index.js`
+- `input_devices/mag/node_modules/info-symbol/package.json`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov.info`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/base.css`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/sorter.js`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/prettify.js`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/prettify.css`
+- `input_devices/mag/node_modules/async-limiter/LICENSE`
+- `input_devices/mag/node_modules/async-limiter/index.js`
+- `input_devices/mag/node_modules/async-limiter/package.json`
+- `input_devices/mag/node_modules/async-limiter/readme.md`
+- `input_devices/mag/node_modules/async-limiter/.travis.yml`
+- `input_devices/mag/node_modules/readable-stream/duplex-browser.js`
+- `input_devices/mag/node_modules/readable-stream/GOVERNANCE.md`
+- `input_devices/mag/node_modules/readable-stream/README.md`
+- `input_devices/mag/node_modules/readable-stream/CONTRIBUTING.md`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_writable.js`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_readable.js`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_transform.js`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/destroy.js`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/stream.js`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/stream-browser.js`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/BufferList.js`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_duplex.js`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_passthrough.js`
+- `input_devices/mag/node_modules/readable-stream/readable.js`
+- `input_devices/mag/node_modules/readable-stream/LICENSE`
+- `input_devices/mag/node_modules/readable-stream/package.json`
+- `input_devices/mag/node_modules/readable-stream/readable-browser.js`
+- `input_devices/mag/node_modules/readable-stream/transform.js`
+- `input_devices/mag/node_modules/readable-stream/duplex.js`
+- `input_devices/mag/node_modules/readable-stream/writable.js`
+- `input_devices/mag/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md`
+- `input_devices/mag/node_modules/readable-stream/.travis.yml`
+- `input_devices/mag/node_modules/readable-stream/writable-browser.js`
+- `input_devices/mag/node_modules/readable-stream/passthrough.js`
+- `input_devices/mag/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/debug/src/common.js`
+- `input_devices/mag/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/debug/dist/debug.js`
+- `input_devices/mag/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/noop-logger/circle.yml`
+- `input_devices/mag/node_modules/noop-logger/lib/index.js`
+- `input_devices/mag/node_modules/noop-logger/Readme.md`
+- `input_devices/mag/node_modules/noop-logger/package.json`
+- `input_devices/mag/node_modules/noop-logger/test/index.js`
+- `input_devices/mag/node_modules/noop-logger/Makefile`
+- `input_devices/mag/node_modules/noop-logger/History.md`
+- `input_devices/mag/node_modules/once/README.md`
+- `input_devices/mag/node_modules/once/once.js`
+- `input_devices/mag/node_modules/once/LICENSE`
+- `input_devices/mag/node_modules/once/package.json`
+- `input_devices/mag/node_modules/log-ok/LICENSE`
+- `input_devices/mag/node_modules/log-ok/index.js`
+- `input_devices/mag/node_modules/log-ok/package.json`
+- `input_devices/mag/node_modules/is-plain-object/README.md`
+- `input_devices/mag/node_modules/is-plain-object/index.d.ts`
+- `input_devices/mag/node_modules/is-plain-object/LICENSE`
+- `input_devices/mag/node_modules/is-plain-object/index.js`
+- `input_devices/mag/node_modules/is-plain-object/package.json`
+- `input_devices/mag/node_modules/chownr/README.md`
+- `input_devices/mag/node_modules/chownr/LICENSE`
+- `input_devices/mag/node_modules/chownr/package.json`
+- `input_devices/mag/node_modules/chownr/chownr.js`
+- `input_devices/mag/node_modules/ansi-bold/LICENSE`
+- `input_devices/mag/node_modules/ansi-bold/index.js`
+- `input_devices/mag/node_modules/ansi-bold/package.json`
+- `input_devices/mag/node_modules/ansi-bold/readme.md`
+- `input_devices/mag/node_modules/prompt-question/README.md`
+- `input_devices/mag/node_modules/prompt-question/lib/utils.js`
+- `input_devices/mag/node_modules/prompt-question/LICENSE`
+- `input_devices/mag/node_modules/prompt-question/index.js`
+- `input_devices/mag/node_modules/prompt-question/package.json`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/component-emitter/package.json`
+- `input_devices/mag/node_modules/os-homedir/index.js`
+- `input_devices/mag/node_modules/os-homedir/package.json`
+- `input_devices/mag/node_modules/os-homedir/readme.md`
+- `input_devices/mag/node_modules/os-homedir/license`
+- `input_devices/mag/node_modules/ansi-strikethrough/LICENSE`
+- `input_devices/mag/node_modules/ansi-strikethrough/index.js`
+- `input_devices/mag/node_modules/ansi-strikethrough/package.json`
+- `input_devices/mag/node_modules/ansi-strikethrough/readme.md`
+- `input_devices/mag/node_modules/ansi-colors/README.md`
+- `input_devices/mag/node_modules/ansi-colors/LICENSE`
+- `input_devices/mag/node_modules/ansi-colors/index.js`
+- `input_devices/mag/node_modules/ansi-colors/package.json`
+- `input_devices/mag/node_modules/object-copy/LICENSE`
+- `input_devices/mag/node_modules/object-copy/index.js`
+- `input_devices/mag/node_modules/object-copy/package.json`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/README.md`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/LICENSE`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/index.js`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/package.json`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/README.md`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/LICENSE`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/index.js`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/package.json`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/README.md`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/LICENSE`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/index.js`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/package.json`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/README.md`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/LICENSE`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/index.js`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/package.json`
+- `input_devices/mag/node_modules/ansi-bgblue/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgblue/index.js`
+- `input_devices/mag/node_modules/ansi-bgblue/package.json`
+- `input_devices/mag/node_modules/ansi-bgblue/readme.md`
+- `input_devices/mag/node_modules/delegates/License`
+- `input_devices/mag/node_modules/delegates/Readme.md`
+- `input_devices/mag/node_modules/delegates/index.js`
+- `input_devices/mag/node_modules/delegates/package.json`
+- `input_devices/mag/node_modules/delegates/test/index.js`
+- `input_devices/mag/node_modules/delegates/Makefile`
+- `input_devices/mag/node_modules/delegates/History.md`
+- `input_devices/mag/node_modules/delegates/.npmignore`
+- `input_devices/mag/node_modules/ansi-bgmagenta/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgmagenta/index.js`
+- `input_devices/mag/node_modules/ansi-bgmagenta/package.json`
+- `input_devices/mag/node_modules/ansi-bgmagenta/readme.md`
+- `input_devices/mag/node_modules/tar-stream/README.md`
+- `input_devices/mag/node_modules/tar-stream/pack.js`
+- `input_devices/mag/node_modules/tar-stream/LICENSE`
+- `input_devices/mag/node_modules/tar-stream/index.js`
+- `input_devices/mag/node_modules/tar-stream/package.json`
+- `input_devices/mag/node_modules/tar-stream/headers.js`
+- `input_devices/mag/node_modules/tar-stream/extract.js`
+- `input_devices/mag/node_modules/pump/README.md`
+- `input_devices/mag/node_modules/pump/LICENSE`
+- `input_devices/mag/node_modules/pump/index.js`
+- `input_devices/mag/node_modules/pump/package.json`
+- `input_devices/mag/node_modules/pump/test-browser.js`
+- `input_devices/mag/node_modules/pump/test-node.js`
+- `input_devices/mag/node_modules/pump/.travis.yml`
+- `input_devices/mag/node_modules/log-utils/LICENSE`
+- `input_devices/mag/node_modules/log-utils/index.js`
+- `input_devices/mag/node_modules/log-utils/package.json`
+- `input_devices/mag/node_modules/ansi-green/LICENSE`
+- `input_devices/mag/node_modules/ansi-green/index.js`
+- `input_devices/mag/node_modules/ansi-green/package.json`
+- `input_devices/mag/node_modules/ansi-green/readme.md`
+- `input_devices/mag/node_modules/string-width/index.js`
+- `input_devices/mag/node_modules/string-width/package.json`
+- `input_devices/mag/node_modules/string-width/readme.md`
+- `input_devices/mag/node_modules/string-width/license`
+- `input_devices/mag/node_modules/prompt-radio/README.md`
+- `input_devices/mag/node_modules/prompt-radio/LICENSE`
+- `input_devices/mag/node_modules/prompt-radio/index.js`
+- `input_devices/mag/node_modules/prompt-radio/package.json`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/buffer-fill/index.js`
+- `input_devices/mag/node_modules/buffer-fill/package.json`
+- `input_devices/mag/node_modules/buffer-fill/readme.md`
+- `input_devices/mag/node_modules/core-util-is/test.js`
+- `input_devices/mag/node_modules/core-util-is/README.md`
+- `input_devices/mag/node_modules/core-util-is/lib/util.js`
+- `input_devices/mag/node_modules/core-util-is/LICENSE`
+- `input_devices/mag/node_modules/core-util-is/package.json`
+- `input_devices/mag/node_modules/core-util-is/float.patch`
+- `input_devices/mag/node_modules/copy-descriptor/LICENSE`
+- `input_devices/mag/node_modules/copy-descriptor/index.js`
+- `input_devices/mag/node_modules/copy-descriptor/package.json`
+- `input_devices/mag/node_modules/ansi-black/LICENSE`
+- `input_devices/mag/node_modules/ansi-black/index.js`
+- `input_devices/mag/node_modules/ansi-black/package.json`
+- `input_devices/mag/node_modules/ansi-black/readme.md`
+- `input_devices/mag/node_modules/ansi-bgyellow/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgyellow/index.js`
+- `input_devices/mag/node_modules/ansi-bgyellow/package.json`
+- `input_devices/mag/node_modules/ansi-bgyellow/readme.md`
+- `input_devices/mag/node_modules/isobject/README.md`
+- `input_devices/mag/node_modules/isobject/index.d.ts`
+- `input_devices/mag/node_modules/isobject/LICENSE`
+- `input_devices/mag/node_modules/isobject/index.js`
+- `input_devices/mag/node_modules/isobject/package.json`
+- `input_devices/mag/node_modules/prompt-list/README.md`
+- `input_devices/mag/node_modules/prompt-list/LICENSE`
+- `input_devices/mag/node_modules/prompt-list/index.js`
+- `input_devices/mag/node_modules/prompt-list/package.json`
+- `input_devices/mag/node_modules/clone-deep/README.md`
+- `input_devices/mag/node_modules/clone-deep/LICENSE`
+- `input_devices/mag/node_modules/clone-deep/index.js`
+- `input_devices/mag/node_modules/clone-deep/package.json`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/expand-template/test.js`
+- `input_devices/mag/node_modules/expand-template/README.md`
+- `input_devices/mag/node_modules/expand-template/index.js`
+- `input_devices/mag/node_modules/expand-template/package.json`
+- `input_devices/mag/node_modules/expand-template/.travis.yml`
+- `input_devices/mag/node_modules/ansi-grey/LICENSE`
+- `input_devices/mag/node_modules/ansi-grey/index.js`
+- `input_devices/mag/node_modules/ansi-grey/package.json`
+- `input_devices/mag/node_modules/ansi-grey/readme.md`
+- `input_devices/mag/node_modules/ansi-magenta/LICENSE`
+- `input_devices/mag/node_modules/ansi-magenta/index.js`
+- `input_devices/mag/node_modules/ansi-magenta/package.json`
+- `input_devices/mag/node_modules/ansi-magenta/readme.md`
+- `input_devices/mag/node_modules/safe-buffer/README.md`
+- `input_devices/mag/node_modules/safe-buffer/index.d.ts`
+- `input_devices/mag/node_modules/safe-buffer/LICENSE`
+- `input_devices/mag/node_modules/safe-buffer/index.js`
+- `input_devices/mag/node_modules/safe-buffer/package.json`
+- `input_devices/mag/node_modules/xtend/test.js`
+- `input_devices/mag/node_modules/xtend/README.md`
+- `input_devices/mag/node_modules/xtend/immutable.js`
+- `input_devices/mag/node_modules/xtend/package.json`
+- `input_devices/mag/node_modules/xtend/LICENCE`
+- `input_devices/mag/node_modules/xtend/Makefile`
+- `input_devices/mag/node_modules/xtend/mutable.js`
+- `input_devices/mag/node_modules/xtend/.jshintrc`
+- `input_devices/mag/node_modules/xtend/.npmignore`
+- `input_devices/mag/node_modules/semver/README.md`
+- `input_devices/mag/node_modules/semver/LICENSE`
+- `input_devices/mag/node_modules/semver/bin/semver`
+- `input_devices/mag/node_modules/semver/package.json`
+- `input_devices/mag/node_modules/semver/semver.js`
+- `input_devices/mag/node_modules/semver/range.bnf`
+- `input_devices/mag/node_modules/napi-build-utils/index.md`
+- `input_devices/mag/node_modules/napi-build-utils/README.md`
+- `input_devices/mag/node_modules/napi-build-utils/LICENSE`
+- `input_devices/mag/node_modules/napi-build-utils/index.js`
+- `input_devices/mag/node_modules/napi-build-utils/package.json`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/index.js`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/package.json`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/readme.md`
+- `input_devices/mag/node_modules/warning-symbol/README.md`
+- `input_devices/mag/node_modules/warning-symbol/LICENSE`
+- `input_devices/mag/node_modules/warning-symbol/index.js`
+- `input_devices/mag/node_modules/warning-symbol/package.json`
+- `input_devices/mag/node_modules/window-size/README.md`
+- `input_devices/mag/node_modules/window-size/utils.js`
+- `input_devices/mag/node_modules/window-size/LICENSE`
+- `input_devices/mag/node_modules/window-size/index.js`
+- `input_devices/mag/node_modules/window-size/package.json`
+- `input_devices/mag/node_modules/window-size/cli.js`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/README.md`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/LICENSE`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/index.js`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/package.json`
+- `input_devices/mag/node_modules/ansi-dim/LICENSE`
+- `input_devices/mag/node_modules/ansi-dim/index.js`
+- `input_devices/mag/node_modules/ansi-dim/package.json`
+- `input_devices/mag/node_modules/ansi-dim/readme.md`
+- `input_devices/mag/node_modules/ansi-bgcyan/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgcyan/index.js`
+- `input_devices/mag/node_modules/ansi-bgcyan/package.json`
+- `input_devices/mag/node_modules/ansi-bgcyan/readme.md`
+- `input_devices/mag/node_modules/ansi-reset/LICENSE`
+- `input_devices/mag/node_modules/ansi-reset/index.js`
+- `input_devices/mag/node_modules/ansi-reset/package.json`
+- `input_devices/mag/node_modules/ansi-reset/readme.md`
+- `input_devices/mag/node_modules/isarray/test.js`
+- `input_devices/mag/node_modules/isarray/README.md`
+- `input_devices/mag/node_modules/isarray/index.js`
+- `input_devices/mag/node_modules/isarray/package.json`
+- `input_devices/mag/node_modules/isarray/Makefile`
+- `input_devices/mag/node_modules/isarray/component.json`
+- `input_devices/mag/node_modules/isarray/.travis.yml`
+- `input_devices/mag/node_modules/isarray/.npmignore`
+- `input_devices/mag/node_modules/ansi-white/LICENSE`
+- `input_devices/mag/node_modules/ansi-white/index.js`
+- `input_devices/mag/node_modules/ansi-white/package.json`
+- `input_devices/mag/node_modules/ansi-white/readme.md`
+- `input_devices/mag/node_modules/node-abi/README.md`
+- `input_devices/mag/node_modules/node-abi/CONTRIBUTING.md`
+- `input_devices/mag/node_modules/node-abi/CODE_OF_CONDUCT.md`
+- `input_devices/mag/node_modules/node-abi/LICENSE`
+- `input_devices/mag/node_modules/node-abi/index.js`
+- `input_devices/mag/node_modules/node-abi/package.json`
+- `input_devices/mag/node_modules/node-abi/test/index.js`
+- `input_devices/mag/node_modules/node-abi/.travis.yml`
+- `input_devices/mag/node_modules/map-visit/README.md`
+- `input_devices/mag/node_modules/map-visit/LICENSE`
+- `input_devices/mag/node_modules/map-visit/index.js`
+- `input_devices/mag/node_modules/map-visit/package.json`
+- `input_devices/mag/node_modules/wide-align/README.md`
+- `input_devices/mag/node_modules/wide-align/LICENSE`
+- `input_devices/mag/node_modules/wide-align/align.js`
+- `input_devices/mag/node_modules/wide-align/package.json`
+- `input_devices/mag/node_modules/strip-ansi/index.js`
+- `input_devices/mag/node_modules/strip-ansi/package.json`
+- `input_devices/mag/node_modules/strip-ansi/readme.md`
+- `input_devices/mag/node_modules/strip-ansi/license`
+- `input_devices/mag/node_modules/buffer-alloc/index.js`
+- `input_devices/mag/node_modules/buffer-alloc/package.json`
+- `input_devices/mag/node_modules/buffer-alloc/readme.md`
+- `input_devices/mag/node_modules/mimic-response/index.js`
+- `input_devices/mag/node_modules/mimic-response/package.json`
+- `input_devices/mag/node_modules/mimic-response/readme.md`
+- `input_devices/mag/node_modules/mimic-response/license`
+- `input_devices/mag/node_modules/is-extendable/README.md`
+- `input_devices/mag/node_modules/is-extendable/LICENSE`
+- `input_devices/mag/node_modules/is-extendable/index.js`
+- `input_devices/mag/node_modules/is-extendable/package.json`
+- `input_devices/mag/node_modules/ini/README.md`
+- `input_devices/mag/node_modules/ini/ini.js`
+- `input_devices/mag/node_modules/ini/LICENSE`
+- `input_devices/mag/node_modules/ini/package.json`
+- `input_devices/mag/node_modules/success-symbol/README.md`
+- `input_devices/mag/node_modules/success-symbol/LICENSE`
+- `input_devices/mag/node_modules/success-symbol/index.js`
+- `input_devices/mag/node_modules/success-symbol/package.json`
+- `input_devices/mag/node_modules/choices-separator/README.md`
+- `input_devices/mag/node_modules/choices-separator/LICENSE`
+- `input_devices/mag/node_modules/choices-separator/index.js`
+- `input_devices/mag/node_modules/choices-separator/package.json`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/is-descriptor/README.md`
+- `input_devices/mag/node_modules/is-descriptor/LICENSE`
+- `input_devices/mag/node_modules/is-descriptor/index.js`
+- `input_devices/mag/node_modules/is-descriptor/package.json`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/CHANGELOG.md`
+- `input_devices/mag/node_modules/inherits/README.md`
+- `input_devices/mag/node_modules/inherits/LICENSE`
+- `input_devices/mag/node_modules/inherits/inherits.js`
+- `input_devices/mag/node_modules/inherits/package.json`
+- `input_devices/mag/node_modules/inherits/inherits_browser.js`
+- `input_devices/mag/node_modules/serialport/test.js`
+- `input_devices/mag/node_modules/serialport/README.md`
+- `input_devices/mag/node_modules/serialport/lib/index.js`
+- `input_devices/mag/node_modules/serialport/lib/parsers.js`
+- `input_devices/mag/node_modules/serialport/LICENSE`
+- `input_devices/mag/node_modules/serialport/bin/echo.js`
+- `input_devices/mag/node_modules/serialport/bin/list.js`
+- `input_devices/mag/node_modules/serialport/bin/repl.js`
+- `input_devices/mag/node_modules/serialport/bin/terminal.js`
+- `input_devices/mag/node_modules/serialport/package.json`
+- `input_devices/mag/node_modules/serialport/CHANGELOG.md`
+- `input_devices/mag/node_modules/readline-utils/README.md`
+- `input_devices/mag/node_modules/readline-utils/LICENSE`
+- `input_devices/mag/node_modules/readline-utils/index.js`
+- `input_devices/mag/node_modules/readline-utils/package.json`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/README.md`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/LICENSE`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/index.js`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/package.json`
+- `input_devices/mag/node_modules/mixin-object/README.md`
+- `input_devices/mag/node_modules/mixin-object/LICENSE`
+- `input_devices/mag/node_modules/mixin-object/index.js`
+- `input_devices/mag/node_modules/mixin-object/package.json`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/README.md`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/LICENSE`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/index.js`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/package.json`
+- `input_devices/mag/node_modules/end-of-stream/README.md`
+- `input_devices/mag/node_modules/end-of-stream/LICENSE`
+- `input_devices/mag/node_modules/end-of-stream/index.js`
+- `input_devices/mag/node_modules/end-of-stream/package.json`
+- `input_devices/mag/node_modules/lazy-cache/README.md`
+- `input_devices/mag/node_modules/lazy-cache/LICENSE`
+- `input_devices/mag/node_modules/lazy-cache/index.js`
+- `input_devices/mag/node_modules/lazy-cache/package.json`
+- `input_devices/mag/node_modules/tunnel-agent/README.md`
+- `input_devices/mag/node_modules/tunnel-agent/LICENSE`
+- `input_devices/mag/node_modules/tunnel-agent/index.js`
+- `input_devices/mag/node_modules/tunnel-agent/package.json`
+- `input_devices/mag/node_modules/prompt-checkbox/README.md`
+- `input_devices/mag/node_modules/prompt-checkbox/LICENSE`
+- `input_devices/mag/node_modules/prompt-checkbox/index.js`
+- `input_devices/mag/node_modules/prompt-checkbox/package.json`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/github-from-package/readme.markdown`
+- `input_devices/mag/node_modules/github-from-package/LICENSE`
+- `input_devices/mag/node_modules/github-from-package/index.js`
+- `input_devices/mag/node_modules/github-from-package/package.json`
+- `input_devices/mag/node_modules/github-from-package/test/c.json`
+- `input_devices/mag/node_modules/github-from-package/test/url.js`
+- `input_devices/mag/node_modules/github-from-package/test/b.json`
+- `input_devices/mag/node_modules/github-from-package/test/e.json`
+- `input_devices/mag/node_modules/github-from-package/test/a.json`
+- `input_devices/mag/node_modules/github-from-package/test/d.json`
+- `input_devices/mag/node_modules/github-from-package/example/package.json`
+- `input_devices/mag/node_modules/github-from-package/example/url.js`
+- `input_devices/mag/node_modules/github-from-package/.travis.yml`
+- `input_devices/mag/node_modules/set-blocking/README.md`
+- `input_devices/mag/node_modules/set-blocking/index.js`
+- `input_devices/mag/node_modules/set-blocking/package.json`
+- `input_devices/mag/node_modules/set-blocking/CHANGELOG.md`
+- `input_devices/mag/node_modules/set-blocking/LICENSE.txt`
+- `input_devices/mag/node_modules/detect-libc/README.md`
+- `input_devices/mag/node_modules/detect-libc/lib/detect-libc.js`
+- `input_devices/mag/node_modules/detect-libc/LICENSE`
+- `input_devices/mag/node_modules/detect-libc/bin/detect-libc.js`
+- `input_devices/mag/node_modules/detect-libc/package.json`
+- `input_devices/mag/node_modules/detect-libc/.npmignore`
+- `input_devices/mag/node_modules/nan/nan_implementation_pre_12_inl.h`
+- `input_devices/mag/node_modules/nan/nan_weak.h`
+- `input_devices/mag/node_modules/nan/README.md`
+- `input_devices/mag/node_modules/nan/nan_string_bytes.h`
+- `input_devices/mag/node_modules/nan/nan_callbacks_12_inl.h`
+- `input_devices/mag/node_modules/nan/nan_define_own_property_helper.h`
+- `input_devices/mag/node_modules/nan/nan_converters_43_inl.h`
+- `input_devices/mag/node_modules/nan/package.json`
+- `input_devices/mag/node_modules/nan/nan_typedarray_contents.h`
+- `input_devices/mag/node_modules/nan/nan_implementation_12_inl.h`
+- `input_devices/mag/node_modules/nan/LICENSE.md`
+- `input_devices/mag/node_modules/nan/nan_object_wrap.h`
+- `input_devices/mag/node_modules/nan/nan_maybe_43_inl.h`
+- `input_devices/mag/node_modules/nan/nan_converters_pre_43_inl.h`
+- `input_devices/mag/node_modules/nan/nan_maybe_pre_43_inl.h`
+- `input_devices/mag/node_modules/nan/nan_persistent_pre_12_inl.h`
+- `input_devices/mag/node_modules/nan/nan_callbacks_pre_12_inl.h`
+- `input_devices/mag/node_modules/nan/include_dirs.js`
+- `input_devices/mag/node_modules/nan/doc/methods.md`
+- `input_devices/mag/node_modules/nan/doc/v8_internals.md`
+- `input_devices/mag/node_modules/nan/doc/buffers.md`
+- `input_devices/mag/node_modules/nan/doc/script.md`
+- `input_devices/mag/node_modules/nan/doc/errors.md`
+- `input_devices/mag/node_modules/nan/doc/callback.md`
+- `input_devices/mag/node_modules/nan/doc/persistent.md`
+- `input_devices/mag/node_modules/nan/doc/asyncworker.md`
+- `input_devices/mag/node_modules/nan/doc/maybe_types.md`
+- `input_devices/mag/node_modules/nan/doc/v8_misc.md`
+- `input_devices/mag/node_modules/nan/doc/scopes.md`
+- `input_devices/mag/node_modules/nan/doc/json.md`
+- `input_devices/mag/node_modules/nan/doc/object_wrappers.md`
+- `input_devices/mag/node_modules/nan/doc/node_misc.md`
+- `input_devices/mag/node_modules/nan/doc/new.md`
+- `input_devices/mag/node_modules/nan/doc/string_bytes.md`
+- `input_devices/mag/node_modules/nan/doc/converters.md`
+- `input_devices/mag/node_modules/nan/nan_private.h`
+- `input_devices/mag/node_modules/nan/CHANGELOG.md`
+- `input_devices/mag/node_modules/nan/nan_new.h`
+- `input_devices/mag/node_modules/nan/nan_callbacks.h`
+- `input_devices/mag/node_modules/nan/nan_converters.h`
+- `input_devices/mag/node_modules/nan/tools/README.md`
+- `input_devices/mag/node_modules/nan/tools/package.json`
+- `input_devices/mag/node_modules/nan/tools/1to2.js`
+- `input_devices/mag/node_modules/nan/nan_persistent_12_inl.h`
+- `input_devices/mag/node_modules/nan/nan.h`
+- `input_devices/mag/node_modules/nan/nan_json.h`
+- `input_devices/mag/node_modules/static-extend/LICENSE`
+- `input_devices/mag/node_modules/static-extend/index.js`
+- `input_devices/mag/node_modules/static-extend/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/README.md`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/LICENSE`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/index.js`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/package.json`
+- `input_devices/mag/node_modules/deep-extend/README.md`
+- `input_devices/mag/node_modules/deep-extend/lib/deep-extend.js`
+- `input_devices/mag/node_modules/deep-extend/LICENSE`
+- `input_devices/mag/node_modules/deep-extend/index.js`
+- `input_devices/mag/node_modules/deep-extend/package.json`
+- `input_devices/mag/node_modules/deep-extend/CHANGELOG.md`
+- `input_devices/mag/node_modules/gauge/spin.js`
+- `input_devices/mag/node_modules/gauge/progress-bar.js`
+- `input_devices/mag/node_modules/gauge/README.md`
+- `input_devices/mag/node_modules/gauge/theme-set.js`
+- `input_devices/mag/node_modules/gauge/has-color.js`
+- `input_devices/mag/node_modules/gauge/LICENSE`
+- `input_devices/mag/node_modules/gauge/plumbing.js`
+- `input_devices/mag/node_modules/gauge/index.js`
+- `input_devices/mag/node_modules/gauge/package.json`
+- `input_devices/mag/node_modules/gauge/template-item.js`
+- `input_devices/mag/node_modules/gauge/wide-truncate.js`
+- `input_devices/mag/node_modules/gauge/base-theme.js`
+- `input_devices/mag/node_modules/gauge/set-immediate.js`
+- `input_devices/mag/node_modules/gauge/set-interval.js`
+- `input_devices/mag/node_modules/gauge/render-template.js`
+- `input_devices/mag/node_modules/gauge/CHANGELOG.md`
+- `input_devices/mag/node_modules/gauge/themes.js`
+- `input_devices/mag/node_modules/gauge/process.js`
+- `input_devices/mag/node_modules/gauge/error.js`
+- `input_devices/mag/node_modules/simple-get/README.md`
+- `input_devices/mag/node_modules/simple-get/LICENSE`
+- `input_devices/mag/node_modules/simple-get/index.js`
+- `input_devices/mag/node_modules/simple-get/package.json`
+- `input_devices/mag/node_modules/ws/README.md`
+- `input_devices/mag/node_modules/ws/lib/validation.js`
+- `input_devices/mag/node_modules/ws/lib/receiver.js`
+- `input_devices/mag/node_modules/ws/lib/constants.js`
+- `input_devices/mag/node_modules/ws/lib/buffer-util.js`
+- `input_devices/mag/node_modules/ws/lib/event-target.js`
+- `input_devices/mag/node_modules/ws/lib/websocket.js`
+- `input_devices/mag/node_modules/ws/lib/sender.js`
+- `input_devices/mag/node_modules/ws/lib/websocket-server.js`
+- `input_devices/mag/node_modules/ws/lib/permessage-deflate.js`
+- `input_devices/mag/node_modules/ws/lib/extension.js`
+- `input_devices/mag/node_modules/ws/LICENSE`
+- `input_devices/mag/node_modules/ws/index.js`
+- `input_devices/mag/node_modules/ws/package.json`
+- `input_devices/mag/node_modules/ws/browser.js`
+- `input_devices/mag/node_modules/to-buffer/test.js`
+- `input_devices/mag/node_modules/to-buffer/README.md`
+- `input_devices/mag/node_modules/to-buffer/LICENSE`
+- `input_devices/mag/node_modules/to-buffer/index.js`
+- `input_devices/mag/node_modules/to-buffer/package.json`
+- `input_devices/mag/node_modules/to-buffer/.travis.yml`
+- `input_devices/mag/node_modules/error-symbol/README.md`
+- `input_devices/mag/node_modules/error-symbol/LICENSE`
+- `input_devices/mag/node_modules/error-symbol/index.js`
+- `input_devices/mag/node_modules/error-symbol/package.json`
+- `input_devices/mag/node_modules/is-windows/README.md`
+- `input_devices/mag/node_modules/is-windows/LICENSE`
+- `input_devices/mag/node_modules/is-windows/index.js`
+- `input_devices/mag/node_modules/is-windows/package.json`
+- `input_devices/mag/node_modules/minimist/readme.markdown`
+- `input_devices/mag/node_modules/minimist/LICENSE`
+- `input_devices/mag/node_modules/minimist/index.js`
+- `input_devices/mag/node_modules/minimist/package.json`
+- `input_devices/mag/node_modules/minimist/test/num.js`
+- `input_devices/mag/node_modules/minimist/test/long.js`
+- `input_devices/mag/node_modules/minimist/test/short.js`
+- `input_devices/mag/node_modules/minimist/test/all_bool.js`
+- `input_devices/mag/node_modules/minimist/test/stop_early.js`
+- `input_devices/mag/node_modules/minimist/test/dash.js`
+- `input_devices/mag/node_modules/minimist/test/parse.js`
+- `input_devices/mag/node_modules/minimist/test/default_bool.js`
+- `input_devices/mag/node_modules/minimist/test/unknown.js`
+- `input_devices/mag/node_modules/minimist/test/kv_short.js`
+- `input_devices/mag/node_modules/minimist/test/whitespace.js`
+- `input_devices/mag/node_modules/minimist/test/parse_modified.js`
+- `input_devices/mag/node_modules/minimist/test/bool.js`
+- `input_devices/mag/node_modules/minimist/test/dotted.js`
+- `input_devices/mag/node_modules/minimist/example/parse.js`
+- `input_devices/mag/node_modules/minimist/.travis.yml`
+- `input_devices/mag/node_modules/console-control-strings/README.md`
+- `input_devices/mag/node_modules/console-control-strings/README.md~`
+- `input_devices/mag/node_modules/console-control-strings/LICENSE`
+- `input_devices/mag/node_modules/console-control-strings/index.js`
+- `input_devices/mag/node_modules/console-control-strings/package.json`
+- `input_devices/mag/node_modules/is-buffer/README.md`
+- `input_devices/mag/node_modules/is-buffer/LICENSE`
+- `input_devices/mag/node_modules/is-buffer/index.js`
+- `input_devices/mag/node_modules/is-buffer/package.json`
+- `input_devices/mag/node_modules/is-buffer/test/basic.js`
+- `input_devices/mag/node_modules/code-point-at/index.js`
+- `input_devices/mag/node_modules/code-point-at/package.json`
+- `input_devices/mag/node_modules/code-point-at/readme.md`
+- `input_devices/mag/node_modules/code-point-at/license`
+- `input_devices/mag/node_modules/which-pm-runs/README.md`
+- `input_devices/mag/node_modules/which-pm-runs/LICENSE`
+- `input_devices/mag/node_modules/which-pm-runs/index.js`
+- `input_devices/mag/node_modules/which-pm-runs/package.json`
+- `input_devices/mag/node_modules/ansi-wrap/README.md`
+- `input_devices/mag/node_modules/ansi-wrap/LICENSE`
+- `input_devices/mag/node_modules/ansi-wrap/index.js`
+- `input_devices/mag/node_modules/ansi-wrap/package.json`
+- `input_devices/mag/node_modules/prompt-actions/README.md`
+- `input_devices/mag/node_modules/prompt-actions/LICENSE`
+- `input_devices/mag/node_modules/prompt-actions/index.js`
+- `input_devices/mag/node_modules/prompt-actions/package.json`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/string_decoder/README.md`
+- `input_devices/mag/node_modules/string_decoder/lib/string_decoder.js`
+- `input_devices/mag/node_modules/string_decoder/LICENSE`
+- `input_devices/mag/node_modules/string_decoder/package.json`
+- `input_devices/mag/node_modules/string_decoder/.travis.yml`
+- `input_devices/mag/node_modules/prebuild-install/bin.js`
+- `input_devices/mag/node_modules/prebuild-install/README.md`
+- `input_devices/mag/node_modules/prebuild-install/CONTRIBUTING.md`
+- `input_devices/mag/node_modules/prebuild-install/download.js`
+- `input_devices/mag/node_modules/prebuild-install/LICENSE`
+- `input_devices/mag/node_modules/prebuild-install/proxy.js`
+- `input_devices/mag/node_modules/prebuild-install/index.js`
+- `input_devices/mag/node_modules/prebuild-install/package.json`
+- `input_devices/mag/node_modules/prebuild-install/appveyor.yml`
+- `input_devices/mag/node_modules/prebuild-install/asset.js`
+- `input_devices/mag/node_modules/prebuild-install/help.txt`
+- `input_devices/mag/node_modules/prebuild-install/util.js`
+- `input_devices/mag/node_modules/prebuild-install/rc.js`
+- `input_devices/mag/node_modules/prebuild-install/.travis.yml`
+- `input_devices/mag/node_modules/prebuild-install/log.js`
+- `input_devices/mag/node_modules/prebuild-install/error.js`
+- `input_devices/mag/node_modules/terminal-paginator/README.md`
+- `input_devices/mag/node_modules/terminal-paginator/LICENSE`
+- `input_devices/mag/node_modules/terminal-paginator/index.js`
+- `input_devices/mag/node_modules/terminal-paginator/package.json`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/rc/README.md`
+- `input_devices/mag/node_modules/rc/LICENSE.MIT`
+- `input_devices/mag/node_modules/rc/lib/utils.js`
+- `input_devices/mag/node_modules/rc/LICENSE.BSD`
+- `input_devices/mag/node_modules/rc/index.js`
+- `input_devices/mag/node_modules/rc/package.json`
+- `input_devices/mag/node_modules/rc/cli.js`
+- `input_devices/mag/node_modules/rc/test/test.js`
+- `input_devices/mag/node_modules/rc/test/ini.js`
+- `input_devices/mag/node_modules/rc/test/nested-env-vars.js`
+- `input_devices/mag/node_modules/rc/browser.js`
+- `input_devices/mag/node_modules/rc/LICENSE.APACHE2`
+- `input_devices/mag/node_modules/decompress-response/index.js`
+- `input_devices/mag/node_modules/decompress-response/package.json`
+- `input_devices/mag/node_modules/decompress-response/readme.md`
+- `input_devices/mag/node_modules/decompress-response/license`
+- `input_devices/mag/node_modules/npmlog/README.md`
+- `input_devices/mag/node_modules/npmlog/LICENSE`
+- `input_devices/mag/node_modules/npmlog/package.json`
+- `input_devices/mag/node_modules/npmlog/CHANGELOG.md`
+- `input_devices/mag/node_modules/npmlog/log.js`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/cctalk.js`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/binding-mock/README.md`
+- `input_devices/mag/node_modules/@serialport/binding-mock/LICENSE`
+- `input_devices/mag/node_modules/@serialport/binding-mock/package.json`
+- `input_devices/mag/node_modules/@serialport/binding-mock/binding-mock.js`
+- `input_devices/mag/node_modules/@serialport/binding-mock/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/delimiter.js`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/README.md`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/LICENSE`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/package.json`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/binding-abstract.js`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/parser-ready/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-ready/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-ready/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-ready/ready.js`
+- `input_devices/mag/node_modules/@serialport/parser-ready/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/parser-readline/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-readline/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-readline/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-readline/readline.js`
+- `input_devices/mag/node_modules/@serialport/parser-readline/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/stream/README.md`
+- `input_devices/mag/node_modules/@serialport/stream/LICENSE`
+- `input_devices/mag/node_modules/@serialport/stream/package.json`
+- `input_devices/mag/node_modules/@serialport/stream/stream.js`
+- `input_devices/mag/node_modules/@serialport/stream/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/parser-regex/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-regex/regex.js`
+- `input_devices/mag/node_modules/@serialport/parser-regex/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-regex/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-regex/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/README.md`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/LICENSE`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/package.json`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/byte-length.js`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/CHANGELOG.md`
+- `input_devices/mag/node_modules/@serialport/bindings/README.md`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/unix-read.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux-list-test.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/bindings-win32-sn-parser-test.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/unix-write.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/darwin.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/index.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/bindings-test.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux-list.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/util.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/win32-sn-parser.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/poller.js`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/win32.js`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_win.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_win.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/poller.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/poller.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_linux.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_linux.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/LICENSE`
+- `input_devices/mag/node_modules/@serialport/bindings/package.json`
+- `input_devices/mag/node_modules/@serialport/bindings/binding.gyp`
+- `input_devices/mag/node_modules/@serialport/bindings/CHANGELOG.md`
+- `input_devices/mag/node_modules/ansi-inverse/LICENSE`
+- `input_devices/mag/node_modules/ansi-inverse/index.js`
+- `input_devices/mag/node_modules/ansi-inverse/package.json`
+- `input_devices/mag/node_modules/ansi-inverse/readme.md`
+- `input_devices/mag/node_modules/aproba/README.md`
+- `input_devices/mag/node_modules/aproba/LICENSE`
+- `input_devices/mag/node_modules/aproba/index.js`
+- `input_devices/mag/node_modules/aproba/package.json`
+- `input_devices/mag/node_modules/ansi-bgblack/README.md`
+- `input_devices/mag/node_modules/ansi-bgblack/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgblack/index.js`
+- `input_devices/mag/node_modules/ansi-bgblack/package.json`
+- `input_devices/mag/node_modules/ansi-underline/LICENSE`
+- `input_devices/mag/node_modules/ansi-underline/index.js`
+- `input_devices/mag/node_modules/ansi-underline/package.json`
+- `input_devices/mag/node_modules/ansi-underline/readme.md`
+- `input_devices/mag/node_modules/ansi-yellow/LICENSE`
+- `input_devices/mag/node_modules/ansi-yellow/index.js`
+- `input_devices/mag/node_modules/ansi-yellow/package.json`
+- `input_devices/mag/node_modules/ansi-yellow/readme.md`
+- `input_devices/mag/node_modules/fs-constants/README.md`
+- `input_devices/mag/node_modules/fs-constants/LICENSE`
+- `input_devices/mag/node_modules/fs-constants/index.js`
+- `input_devices/mag/node_modules/fs-constants/package.json`
+- `input_devices/mag/node_modules/fs-constants/browser.js`
+- `input_devices/mag/node_modules/radio-symbol/README.md`
+- `input_devices/mag/node_modules/radio-symbol/LICENSE`
+- `input_devices/mag/node_modules/radio-symbol/index.js`
+- `input_devices/mag/node_modules/radio-symbol/package.json`
+- `input_devices/mag/node_modules/has-unicode/README.md`
+- `input_devices/mag/node_modules/has-unicode/LICENSE`
+- `input_devices/mag/node_modules/has-unicode/index.js`
+- `input_devices/mag/node_modules/has-unicode/package.json`
+- `input_devices/mag/node_modules/is-data-descriptor/README.md`
+- `input_devices/mag/node_modules/is-data-descriptor/LICENSE`
+- `input_devices/mag/node_modules/is-data-descriptor/index.js`
+- `input_devices/mag/node_modules/is-data-descriptor/package.json`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/CHANGELOG.md`
+- `input_devices/mag/node_modules/for-in/README.md`
+- `input_devices/mag/node_modules/for-in/LICENSE`
+- `input_devices/mag/node_modules/for-in/index.js`
+- `input_devices/mag/node_modules/for-in/package.json`
+- `input_devices/mag/node_modules/are-we-there-yet/README.md`
+- `input_devices/mag/node_modules/are-we-there-yet/LICENSE`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-group.js`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-stream.js`
+- `input_devices/mag/node_modules/are-we-there-yet/index.js`
+- `input_devices/mag/node_modules/are-we-there-yet/package.json`
+- `input_devices/mag/node_modules/are-we-there-yet/CHANGES.md`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-base.js`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker.js`
+- `input_devices/mag/node_modules/tar-fs/README.md`
+- `input_devices/mag/node_modules/tar-fs/LICENSE`
+- `input_devices/mag/node_modules/tar-fs/index.js`
+- `input_devices/mag/node_modules/tar-fs/package.json`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/a/hello.txt`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/b/a/test.txt`
+- `input_devices/mag/node_modules/tar-fs/test/index.js`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/test.js`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/README.md`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/LICENSE`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/index.js`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/package.json`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/test-browser.js`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/.travis.yml`
+- `input_devices/mag/node_modules/tar-fs/.travis.yml`
+- `input_devices/mag/node_modules/set-value/README.md`
+- `input_devices/mag/node_modules/set-value/LICENSE`
+- `input_devices/mag/node_modules/set-value/index.js`
+- `input_devices/mag/node_modules/set-value/package.json`
+- `input_devices/mag/node_modules/prompt-base/README.md`
+- `input_devices/mag/node_modules/prompt-base/LICENSE`
+- `input_devices/mag/node_modules/prompt-base/index.js`
+- `input_devices/mag/node_modules/prompt-base/package.json`
+- `input_devices/mag/node_modules/prompt-base/changelog.md`
+- `input_devices/mag/node_modules/object-assign/index.js`
+- `input_devices/mag/node_modules/object-assign/package.json`
+- `input_devices/mag/node_modules/object-assign/readme.md`
+- `input_devices/mag/node_modules/object-assign/license`
+- `input_devices/mag/node_modules/process-nextick-args/license.md`
+- `input_devices/mag/node_modules/process-nextick-args/index.js`
+- `input_devices/mag/node_modules/process-nextick-args/package.json`
+- `input_devices/mag/node_modules/process-nextick-args/readme.md`
+- `input_devices/mag/node_modules/ansi-hidden/LICENSE`
+- `input_devices/mag/node_modules/ansi-hidden/index.js`
+- `input_devices/mag/node_modules/ansi-hidden/package.json`
+- `input_devices/mag/node_modules/ansi-hidden/readme.md`
+- `input_devices/mag/node_modules/ansi-red/LICENSE`
+- `input_devices/mag/node_modules/ansi-red/index.js`
+- `input_devices/mag/node_modules/ansi-red/package.json`
+- `input_devices/mag/node_modules/ansi-red/readme.md`
+- `input_devices/mag/node_modules/signal-exit/README.md`
+- `input_devices/mag/node_modules/signal-exit/index.js`
+- `input_devices/mag/node_modules/signal-exit/package.json`
+- `input_devices/mag/node_modules/signal-exit/signals.js`
+- `input_devices/mag/node_modules/signal-exit/CHANGELOG.md`
+- `input_devices/mag/node_modules/signal-exit/LICENSE.txt`
+- `input_devices/mag/node_modules/pointer-symbol/README.md`
+- `input_devices/mag/node_modules/pointer-symbol/LICENSE`
+- `input_devices/mag/node_modules/pointer-symbol/index.js`
+- `input_devices/mag/node_modules/pointer-symbol/package.json`
+- `input_devices/mag/node_modules/is-number/README.md`
+- `input_devices/mag/node_modules/is-number/LICENSE`
+- `input_devices/mag/node_modules/is-number/index.js`
+- `input_devices/mag/node_modules/is-number/package.json`
+- `input_devices/mag/node_modules/ansi-bggreen/LICENSE`
+- `input_devices/mag/node_modules/ansi-bggreen/index.js`
+- `input_devices/mag/node_modules/ansi-bggreen/package.json`
+- `input_devices/mag/node_modules/ansi-bggreen/readme.md`
+- `input_devices/mag/node_modules/for-own/README.md`
+- `input_devices/mag/node_modules/for-own/LICENSE`
+- `input_devices/mag/node_modules/for-own/index.js`
+- `input_devices/mag/node_modules/for-own/package.json`
+- `input_devices/mag/node_modules/extend-shallow/README.md`
+- `input_devices/mag/node_modules/extend-shallow/LICENSE`
+- `input_devices/mag/node_modules/extend-shallow/index.js`
+- `input_devices/mag/node_modules/extend-shallow/package.json`
+- `input_devices/mag/node_modules/ansi-italic/LICENSE`
+- `input_devices/mag/node_modules/ansi-italic/index.js`
+- `input_devices/mag/node_modules/ansi-italic/package.json`
+- `input_devices/mag/node_modules/ansi-italic/readme.md`
+- `input_devices/mag/node_modules/strip-json-comments/index.js`
+- `input_devices/mag/node_modules/strip-json-comments/package.json`
+- `input_devices/mag/node_modules/strip-json-comments/readme.md`
+- `input_devices/mag/node_modules/strip-json-comments/license`
+- `input_devices/mag/node_modules/number-is-nan/index.js`
+- `input_devices/mag/node_modules/number-is-nan/package.json`
+- `input_devices/mag/node_modules/number-is-nan/readme.md`
+- `input_devices/mag/node_modules/number-is-nan/license`
+- `input_devices/mag/node_modules/to-object-path/README.md`
+- `input_devices/mag/node_modules/to-object-path/LICENSE`
+- `input_devices/mag/node_modules/to-object-path/index.js`
+- `input_devices/mag/node_modules/to-object-path/package.json`
+- `input_devices/mag/node_modules/collection-visit/README.md`
+- `input_devices/mag/node_modules/collection-visit/LICENSE`
+- `input_devices/mag/node_modules/collection-visit/index.js`
+- `input_devices/mag/node_modules/collection-visit/package.json`
+- `input_devices/mag/node_modules/mkdirp/readme.markdown`
+- `input_devices/mag/node_modules/mkdirp/LICENSE`
+- `input_devices/mag/node_modules/mkdirp/examples/pow.js`
+- `input_devices/mag/node_modules/mkdirp/bin/usage.txt`
+- `input_devices/mag/node_modules/mkdirp/bin/cmd.js`
+- `input_devices/mag/node_modules/mkdirp/index.js`
+- `input_devices/mag/node_modules/mkdirp/package.json`
+- `input_devices/mag/node_modules/mkdirp/test/opts_fs.js`
+- `input_devices/mag/node_modules/mkdirp/test/umask.js`
+- `input_devices/mag/node_modules/mkdirp/test/root.js`
+- `input_devices/mag/node_modules/mkdirp/test/rel.js`
+- `input_devices/mag/node_modules/mkdirp/test/sync.js`
+- `input_devices/mag/node_modules/mkdirp/test/mkdirp.js`
+- `input_devices/mag/node_modules/mkdirp/test/return_sync.js`
+- `input_devices/mag/node_modules/mkdirp/test/chmod.js`
+- `input_devices/mag/node_modules/mkdirp/test/perm.js`
+- `input_devices/mag/node_modules/mkdirp/test/opts_fs_sync.js`
+- `input_devices/mag/node_modules/mkdirp/test/race.js`
+- `input_devices/mag/node_modules/mkdirp/test/return.js`
+- `input_devices/mag/node_modules/mkdirp/test/umask_sync.js`
+- `input_devices/mag/node_modules/mkdirp/test/perm_sync.js`
+- `input_devices/mag/node_modules/mkdirp/test/clobber.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/readme.markdown`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/LICENSE`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/index.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/package.json`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/long.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/short.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/dash.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/parse.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/default_bool.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/whitespace.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/dotted.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/example/parse.js`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/.travis.yml`
+- `input_devices/mag/node_modules/mkdirp/.travis.yml`
+- `input_devices/mag/node_modules/.bin/prominode`
+- `input_devices/mag/node_modules/.bin/serialport-list`
+- `input_devices/mag/node_modules/.bin/serialport-term`
+- `input_devices/mag/node_modules/.bin/semver`
+- `input_devices/mag/node_modules/.bin/window-size`
+- `input_devices/mag/node_modules/.bin/detect-libc`
+- `input_devices/mag/node_modules/.bin/prebuild-install`
+- `input_devices/mag/node_modules/.bin/rc`
+- `input_devices/mag/node_modules/.bin/mkdirp`
+- `input_devices/mag/node_modules/.bin/serialport-repl`
+- `input_devices/mag/node_modules/prompt-choices/README.md`
+- `input_devices/mag/node_modules/prompt-choices/lib/utils.js`
+- `input_devices/mag/node_modules/prompt-choices/lib/choice.js`
+- `input_devices/mag/node_modules/prompt-choices/LICENSE`
+- `input_devices/mag/node_modules/prompt-choices/index.js`
+- `input_devices/mag/node_modules/prompt-choices/package.json`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/README.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/LICENSE`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/index.js`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/package.json`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/CHANGELOG.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/README.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/LICENSE`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/index.js`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/package.json`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/CHANGELOG.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/README.md`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/LICENSE`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/index.js`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/package.json`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/index.js`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/package.json`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/readme.md`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/license`
+- `input_devices/mag/node_modules/ansi-regex/index.js`
+- `input_devices/mag/node_modules/ansi-regex/package.json`
+- `input_devices/mag/node_modules/ansi-regex/readme.md`
+- `input_devices/mag/node_modules/ansi-regex/license`
+- `input_devices/mag/node_modules/time-stamp/README.md`
+- `input_devices/mag/node_modules/time-stamp/LICENSE`
+- `input_devices/mag/node_modules/time-stamp/index.js`
+- `input_devices/mag/node_modules/time-stamp/package.json`
+- `input_devices/mag/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/util-deprecate/README.md`
+- `input_devices/mag/node_modules/util-deprecate/node.js`
+- `input_devices/mag/node_modules/util-deprecate/LICENSE`
+- `input_devices/mag/node_modules/util-deprecate/package.json`
+- `input_devices/mag/node_modules/util-deprecate/browser.js`
+- `input_devices/mag/node_modules/util-deprecate/History.md`
+- `input_devices/mag/node_modules/is-accessor-descriptor/README.md`
+- `input_devices/mag/node_modules/is-accessor-descriptor/LICENSE`
+- `input_devices/mag/node_modules/is-accessor-descriptor/index.js`
+- `input_devices/mag/node_modules/is-accessor-descriptor/package.json`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/CHANGELOG.md`
+- `input_devices/mag/node_modules/arr-swap/README.md`
+- `input_devices/mag/node_modules/arr-swap/LICENSE`
+- `input_devices/mag/node_modules/arr-swap/index.js`
+- `input_devices/mag/node_modules/arr-swap/package.json`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/README.md`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/LICENSE`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/index.js`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/package.json`
+- `input_devices/mag/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/mute-stream/README.md`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov.info`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/base.css`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/__root__/mute.js.html`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/sorter.js`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/prettify.js`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/prettify.css`
+- `input_devices/mag/node_modules/mute-stream/LICENSE`
+- `input_devices/mag/node_modules/mute-stream/package.json`
+- `input_devices/mag/node_modules/mute-stream/test/basic.js`
+- `input_devices/mag/node_modules/mute-stream/.travis.yml`
+- `input_devices/mag/node_modules/mute-stream/mute.js`
+- `input_devices/mag/node_modules/define-property/README.md`
+- `input_devices/mag/node_modules/define-property/LICENSE`
+- `input_devices/mag/node_modules/define-property/index.js`
+- `input_devices/mag/node_modules/define-property/package.json`
+- `input_devices/mag/node_modules/simple-concat/README.md`
+- `input_devices/mag/node_modules/simple-concat/LICENSE`
+- `input_devices/mag/node_modules/simple-concat/index.js`
+- `input_devices/mag/node_modules/simple-concat/package.json`
+- `input_devices/mag/node_modules/simple-concat/test/basic.js`
+- `input_devices/mag/node_modules/simple-concat/.travis.yml`
+- `input_devices/mag/node_modules/arr-flatten/README.md`
+- `input_devices/mag/node_modules/arr-flatten/LICENSE`
+- `input_devices/mag/node_modules/arr-flatten/index.js`
+- `input_devices/mag/node_modules/arr-flatten/package.json`
+- `input_devices/mag/node_modules/ansi-bgred/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgred/index.js`
+- `input_devices/mag/node_modules/ansi-bgred/package.json`
+- `input_devices/mag/node_modules/ansi-bgred/readme.md`
+- `input_devices/mag/node_modules/wrappy/README.md`
+- `input_devices/mag/node_modules/wrappy/LICENSE`
+- `input_devices/mag/node_modules/wrappy/package.json`
+- `input_devices/mag/node_modules/wrappy/wrappy.js`
+- `input_devices/mag/node_modules/bl/README.md`
+- `input_devices/mag/node_modules/bl/bl.js`
+- `input_devices/mag/node_modules/bl/package.json`
+- `input_devices/mag/node_modules/bl/test/test.js`
+- `input_devices/mag/node_modules/bl/LICENSE.md`
+- `input_devices/mag/node_modules/bl/.travis.yml`
+- `input_devices/mag/node_modules/bl/.jshintrc`
+- `input_devices/mag/node_modules/bindings/README.md`
+- `input_devices/mag/node_modules/bindings/package.json`
+- `input_devices/mag/node_modules/bindings/bindings.js`
+- `input_devices/mag/node_modules/ansi-gray/LICENSE`
+- `input_devices/mag/node_modules/ansi-gray/index.js`
+- `input_devices/mag/node_modules/ansi-gray/package.json`
+- `input_devices/mag/node_modules/ansi-gray/readme.md`
+- `input_devices/mag/node_modules/set-getter/README.md`
+- `input_devices/mag/node_modules/set-getter/LICENSE`
+- `input_devices/mag/node_modules/set-getter/index.js`
+- `input_devices/mag/node_modules/set-getter/package.json`
+- `input_devices/mag/node_modules/readline-ui/README.md`
+- `input_devices/mag/node_modules/readline-ui/LICENSE`
+- `input_devices/mag/node_modules/readline-ui/index.js`
+- `input_devices/mag/node_modules/readline-ui/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.coveralls.yml`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/README.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/node.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/node.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/browser.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/inspector-log.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/debug.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/LICENSE`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/Makefile`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/karma.conf.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.eslintrc`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/component.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/CHANGELOG.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.travis.yml`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.npmignore`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/readme.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/license`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/readme.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/license`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/readme.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/license`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/readme.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/license`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/license.md`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/index.js`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/package.json`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/readme.md`
+- `input_devices/mag/node_modules/koalas/README.md`
+- `input_devices/mag/node_modules/koalas/LICENSE`
+- `input_devices/mag/node_modules/koalas/index.js`
+- `input_devices/mag/node_modules/koalas/package.json`
+- `input_devices/mag/node_modules/shallow-clone/README.md`
+- `input_devices/mag/node_modules/shallow-clone/LICENSE`
+- `input_devices/mag/node_modules/shallow-clone/index.js`
+- `input_devices/mag/node_modules/shallow-clone/package.json`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/README.md`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/LICENSE`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/index.js`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/package.json`
+- `input_devices/mag/node_modules/toggle-array/README.md`
+- `input_devices/mag/node_modules/toggle-array/LICENSE`
+- `input_devices/mag/node_modules/toggle-array/index.js`
+- `input_devices/mag/node_modules/toggle-array/package.json`
+- `input_devices/mag/node_modules/strip-color/README.md`
+- `input_devices/mag/node_modules/strip-color/LICENSE`
+- `input_devices/mag/node_modules/strip-color/index.js`
+- `input_devices/mag/node_modules/strip-color/package.json`
+- `input_devices/mag/node_modules/ansi-blue/LICENSE`
+- `input_devices/mag/node_modules/ansi-blue/index.js`
+- `input_devices/mag/node_modules/ansi-blue/package.json`
+- `input_devices/mag/node_modules/ansi-blue/readme.md`
+- `input_devices/mag/node_modules/ansi-cyan/LICENSE`
+- `input_devices/mag/node_modules/ansi-cyan/index.js`
+- `input_devices/mag/node_modules/ansi-cyan/package.json`
+- `input_devices/mag/node_modules/ansi-cyan/readme.md`
+- `input_devices/mag/node_modules/object-visit/README.md`
+- `input_devices/mag/node_modules/object-visit/LICENSE`
+- `input_devices/mag/node_modules/object-visit/index.js`
+- `input_devices/mag/node_modules/object-visit/package.json`
+- `input_devices/mag/node_modules/promirepl/README.md`
+- `input_devices/mag/node_modules/promirepl/LICENSE`
+- `input_devices/mag/node_modules/promirepl/bin/prominode.js`
+- `input_devices/mag/node_modules/promirepl/index.js`
+- `input_devices/mag/node_modules/promirepl/package.json`
+- `input_devices/mag/node_modules/promirepl/.npmignore`
+- `input_devices/mag/node_modules/ansi-bgwhite/LICENSE`
+- `input_devices/mag/node_modules/ansi-bgwhite/index.js`
+- `input_devices/mag/node_modules/ansi-bgwhite/package.json`
+- `input_devices/mag/node_modules/ansi-bgwhite/readme.md`
+- `input_devices/mag/node_modules/commander/LICENSE`
+- `input_devices/mag/node_modules/commander/Readme.md`
+- `input_devices/mag/node_modules/commander/index.js`
+- `input_devices/mag/node_modules/commander/package.json`
+- `input_devices/mag/node_modules/commander/typings/index.d.ts`
+- `input_devices/mag/node_modules/commander/CHANGELOG.md`
+- `output_devices/servo/hello.servo.44.1.interior.png`
+- `output_devices/servo/hello.servo.44.make`
+- `output_devices/servo/hello.servo.44.1.traces.png`
+- `output_devices/servo/hello.servo.44.2.make`
+- `output_devices/servo/hello.servo.44.traces.png`
+- `output_devices/servo/hello.servo.44.interior.png`
+- `output_devices/speaker/hello.speaker.45.interior.png`
+- `output_devices/speaker/hello.speaker.45.c`
+- `output_devices/speaker/hello.speaker.45.traces.png`
+- `output_devices/speaker/hello.speaker.45.make`
+- `output_devices/DC/hello.H-bridge.44.DC.make`
+- `output_devices/RGB/hello.RGB.45.make`
+- `output_devices/array/hello.array.44.2.make`
+- `output_devices/array/hello.array.44.make`
+- `output_devices/video/hello.video.44.make`
+- `output_devices/LCD/hello.LCD.44.make`
+- `output_devices/stepper/hello.stepper.44.half.make`
+- `output_devices/stepper/hello.stepper.bipolar.44.full.make`
+- `output_devices/stepper/hello.stepper.44.full.make`
+- `output_devices/stepper/hello.stepper.44.wave.make`
+- `computer_design/image.html`
+- `computer_design/video.html`
+- `project_management/archive.html`
+- `interface_application_programming/programs/pi.html`
+- `networking_communications/SLIP/hello.bus.45.SLIP.make`
+- `networking_communications/bus/hello.bus.45.make`
+- `networking_communications/SD/hello.uSD.44.cad`
+- `networking_communications/SD/hello.uSD.44.read.txt`
+- `networking_communications/SD/hello.uSD.44.interior.png`
+- `networking_communications/SD/hello.uSD.44.read.c`
+- `networking_communications/SD/hello.uSD.44.read.make`
+- `networking_communications/SD/hello.uSD.44.traces.png`
+- `electronics_production/linetest.svg`
+
+### 2.2 Variants shared with previous years (not copied for this year)
+
+- `machine_design/oldindex.html` → shared with year `2012`
+- `scanning_printing/sample.f` → shared with year `2015`
+- `scanning_printing/bearing.cad` → shared with year `2012`
+- `scanning_printing/bearing.math` → shared with year `2012`
+- `scanning_printing/light/HDMI1_1366x768` → shared with year `2014`
+- `scanning_printing/light/png_sub.c` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_color.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_005_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_diff.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_001_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_007.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_007_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_002_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_005_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_004_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_003.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_004.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_001.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_003_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_006_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_006_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_000_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_on.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diffs.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_001_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_005.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_006.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_003_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_007_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/gal` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/vid` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_000_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_002_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_004_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_000.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_002.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_off.png.html` → shared with year `2014`
+- `scanning_printing/light/png_ply.c` → shared with year `2014`
+- `scanning_printing/light/zoom` → shared with year `2014`
+- `scanning_printing/light/png_stl.c` → shared with year `2014`
+- `scanning_printing/light/scan` → shared with year `2014`
+- `scanning_printing/light/coord.c` → shared with year `2014`
+- `scanning_printing/light/linescan.c` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_025.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_021_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_026_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_011_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_022_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_005_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_023_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_diff.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_015_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_007.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_009_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_007_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_032.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_012.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_033.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_027.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_004_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_003.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_033_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_038.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_004.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_014.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_039.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_001.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_039_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_010.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_035.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_009.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_024_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_026.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_003_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_017.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_019_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_006_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_034.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_000_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_022.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_021.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_013.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_029_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_on.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_035_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_028_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_025_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_008.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_030.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_037.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_020_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_028.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_008_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_015.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_032_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_001_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_005.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_024.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_006.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_010_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_029.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_020.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_019.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_031.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/gal` → shared with year `2014`
+- `scanning_printing/light/scan_line/vid` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_018_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_034_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_016_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_027_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_011.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_023.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_014_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_031_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_016.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_018.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_002_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_036_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_017_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_000.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_030_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_002.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_013_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_off.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_037_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_036.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_012_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_038_0.png.html` → shared with year `2014`
+- `scanning_printing/light/bright` → shared with year `2014`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c.make` → shared with year `2016`
+- `embedded_programming/hello.arduino.328P.cad` → shared with year `2015`
+- `embedded_programming/hello.ftdi.44.echo.c` → shared with year `2015`
+- `embedded_programming/hello.ftdi.16E5.cad` → shared with year `2016`
+- `embedded_programming/hello.ftdi.16E5.echo.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.cad` → shared with year `2015`
+- `embedded_programming/rx.py` → shared with year `2015`
+- `embedded_programming/boards.txt` → shared with year `2013`
+- `embedded_programming/hello.ftdi.16E5.blink.make` → shared with year `2016`
+- `embedded_programming/Blink.pde` → shared with year `2012`
+- `embedded_programming/term.py` → shared with year `2015`
+- `embedded_programming/hello.ftdi.44.echo.hex` → shared with year `2012`
+- `embedded_programming/hello.ftdi.44.echo.c.make` → shared with year `2016`
+- `embedded_programming/hello.ftdi.16E5.ring.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.echo.asm.make` → shared with year `2016`
+- `embedded_programming/hello.ISP.44.cad` → shared with year `2015`
+- `embedded_programming/hello.ISP.44.res.cad` → shared with year `2015`
+- `embedded_programming/hello.ftdi.16E5.ring.make` → shared with year `2016`
+- `embedded_programming/hello.ISP.44.res.interior.png` → shared with year `2012`
+- `embedded_programming/hello.ftdi.16E5.blink.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.echo.lst` → shared with year `2012`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c` → shared with year `2015`
+- `embedded_programming/hello.ftdi.16E5.echo.make` → shared with year `2016`
+- `embedded_programming/hello.ISP.44.traces.png` → shared with year `2012`
+- `embedded_programming/hello.arduino.328P.blink.c` → shared with year `2013`
+- `embedded_programming/serial.png` → shared with year `2012`
+- `embedded_programming/hello.ISP.44.old.cad` → shared with year `2015`
+- `input_devices/temp/hello.temp.45.interior.png` → shared with year `2012`
+- `input_devices/temp/hello.temp.45.traces.png` → shared with year `2012`
+- `input_devices/temp/hello.temp.45.c` → shared with year `2015`
+- `input_devices/temp/hello.temp.45.cad` → shared with year `2012`
+- `input_devices/temp/hello.temp.45.py` → shared with year `2012`
+- `input_devices/button/hello.button.45.c` → shared with year `2015`
+- `input_devices/button/hello.button.45.cad` → shared with year `2012`
+- `input_devices/button/hello.button.45.traces.png` → shared with year `2012`
+- `input_devices/button/hello.button.45.interior.png` → shared with year `2012`
+- `input_devices/python/rx.py` → shared with year `2012`
+- `input_devices/python/term.py` → shared with year `2012`
+- `input_devices/mic/hello.SPU0414HR5H.c` → shared with year `2015`
+- `input_devices/mic/hello.SPU0414HR5H.traces.png` → shared with year `2015`
+- `input_devices/mic/hello.SPU0414HR5H.py` → shared with year `2015`
+- `input_devices/mic/hello.SPU0414HR5H.interior.png` → shared with year `2015`
+- `input_devices/mic/hello.mic.45.traces.png` → shared with year `2014`
+- `input_devices/mic/hello.SPU0414HR5H.cad` → shared with year `2015`
+- `input_devices/mic/hello.mic.45.py` → shared with year `2014`
+- `input_devices/mic/hello.mic.45.c` → shared with year `2014`
+- `input_devices/mic/hello.mic.45.interior.png` → shared with year `2014`
+- `input_devices/mic/hello.mic.45.cad` → shared with year `2014`
+- `input_devices/mic/hello.SPU0414HR5H.make` → shared with year `2015`
+- `input_devices/step/hello.txrx.45.interior.png` → shared with year `2012`
+- `input_devices/step/hello.load.45.py` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.cad` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.py` → shared with year `2012`
+- `input_devices/step/hello.load.45.interior.png` → shared with year `2012`
+- `input_devices/step/hello.load.45.cad` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.traces.png` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.c` → shared with year `2015`
+- `input_devices/step/hello.load.45.c` → shared with year `2015`
+- `input_devices/step/hello.load.45.traces.png` → shared with year `2012`
+- `input_devices/sonar/hello.HC-SR04.make` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.c` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.py` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.traces.png` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.cad` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.interior.png` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.cad` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.traces.png` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.c` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.make` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.py` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.interior.png` → shared with year `2015`
+- `input_devices/light/hello.light.45.traces.png` → shared with year `2012`
+- `input_devices/light/hello.light.45.py` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.traces.png` → shared with year `2012`
+- `input_devices/light/hello.light.45.cad` → shared with year `2016`
+- `input_devices/light/hello.light.45.make` → shared with year `2016`
+- `input_devices/light/hello.light.45.interior.png` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.cad` → shared with year `2016`
+- `input_devices/light/hello.reflect.45.py` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.interior.png` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.c` → shared with year `2015`
+- `input_devices/light/hello.light.45.c` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.interior.png` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.make` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.c` → shared with year `2016`
+- `input_devices/accel/hello.MXD6235MP.cad` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.traces.png` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.cad` → shared with year `2015`
+- `input_devices/accel/hello.MXD6235MP.c` → shared with year `2015`
+- `input_devices/accel/hello.MXD6235MP.py` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.py` → shared with year `2015`
+- `input_devices/mag/hello.mag.45.traces.png` → shared with year `2014`
+- `input_devices/mag/hello.mag.45.c` → shared with year `2014`
+- `input_devices/mag/hello.mag.45.py` → shared with year `2013`
+- `input_devices/mag/hello.mag.45.cad` → shared with year `2014`
+- `input_devices/mag/hello.mag.45.interior.png` → shared with year `2013`
+- `input_devices/mag/hello.mag.45.html` → shared with year `2014`
+- `output_devices/H-bridge/hello.H-bridge.44.traces.png` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.cad` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.cad` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.interior.png` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.c` → shared with year `2015`
+- `output_devices/servo/hello.servo.44.2.c` → shared with year `2015`
+- `output_devices/servo/hello.servo.44.cad` → shared with year `2016`
+- `output_devices/servo/hello.servo.44.c` → shared with year `2015`
+- `output_devices/speaker/hello.speaker.45.wave.asm` → shared with year `2012`
+- `output_devices/speaker/hello.speaker.45.cad` → shared with year `2012`
+- `output_devices/DC/hello.H-bridge.44.DC.c` → shared with year `2015`
+- `output_devices/RGB/hello.RGB.45.traces.png` → shared with year `2012`
+- `output_devices/RGB/hello.RGB.45.interior.png` → shared with year `2012`
+- `output_devices/RGB/hello.RGB.45.c` → shared with year `2015`
+- `output_devices/RGB/hello.RGB.45.cad` → shared with year `2012`
+- `output_devices/array/hello.array.44.2.interior.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.traces.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.c` → shared with year `2015`
+- `output_devices/array/hello.array.44.2.c` → shared with year `2015`
+- `output_devices/array/hello.array.44.2.top.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.interior.png` → shared with year `2012`
+- `output_devices/video/hello.video.44.asm` → shared with year `2012`
+- `output_devices/video/hello.video.44.interior.png` → shared with year `2012`
+- `output_devices/video/hello.video.44.c` → shared with year `2015`
+- `output_devices/video/hello.video.44.cad` → shared with year `2012`
+- `output_devices/video/hello.video.44.traces.png` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44.c` → shared with year `2015`
+- `output_devices/LCD/hello.LCD.44.cad` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44.interior.png` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44.traces.png` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.bipolar.44.traces.png` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.half.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.traces.png` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.44.wave.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.interior.png` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.bipolar.44.interior.png` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.bipolar.44.full.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.full.c` → shared with year `2015`
+- `computer_design/alien.cad` → shared with year `2012`
+- `computer_design/alien.math` → shared with year `2012`
+- `computer_design/alien.svg` → shared with year `2012`
+- `computer_design/alien.fab` → shared with year `2013`
+- `computer_machining/test.cad` → shared with year `2013`
+- `computer_machining/sample.g` → shared with year `2012`
+- `computer_machining/sample.path` → shared with year `2012`
+- `computer_machining/sample.ord` → shared with year `2012`
+- `computer_machining/test.math` → shared with year `2013`
+- `computer_machining/sample.rml` → shared with year `2013`
+- `molding_casting/tippy.cad` → shared with year `2013`
+- `molding_casting/sample.cad` → shared with year `2012`
+- `molding_casting/hello.svg` → shared with year `2012`
+- `computer_cutting/gray.svg` → shared with year `2013`
+- `computer_cutting/gik.cad` → shared with year `2012`
+- `computer_cutting/joints.sb` → shared with year `2015`
+- `computer_cutting/gik.fab` → shared with year `2012`
+- `computer_cutting/gik.math` → shared with year `2012`
+- `interface_application_programming/svg_lines.html` → shared with year `2012`
+- `interface_application_programming/xline.c` → shared with year `2012`
+- `interface_application_programming/canvas_lines.html` → shared with year `2012`
+- `interface_application_programming/programs/xline.c` → shared with year `2017`
+- `interface_application_programming/programs/cudapi.cu` → shared with year `2017`
+- `interface_application_programming/programs/threejssurf.html` → shared with year `2017`
+- `interface_application_programming/programs/udprcv.py` → shared with year `2017`
+- `interface_application_programming/programs/plot.ipynb` → shared with year `2017`
+- `interface_application_programming/programs/lines.py` → shared with year `2017`
+- `interface_application_programming/programs/sendudp.c` → shared with year `2017`
+- `interface_application_programming/programs/udprcv.js` → shared with year `2017`
+- `interface_application_programming/programs/pi.py` → shared with year `2017`
+- `interface_application_programming/programs/JavaImage.java` → shared with year `2017`
+- `interface_application_programming/programs/ximage.c` → shared with year `2017`
+- `interface_application_programming/programs/recvudp.c` → shared with year `2017`
+- `interface_application_programming/programs/threejsline.html` → shared with year `2017`
+- `interface_application_programming/programs/plot.html` → shared with year `2017`
+- `interface_application_programming/programs/psline.c` → shared with year `2017`
+- `interface_application_programming/programs/stl.c` → shared with year `2017`
+- `interface_application_programming/programs/audioline.html` → shared with year `2017`
+- `interface_application_programming/programs/surface.py` → shared with year `2017`
+- `interface_application_programming/programs/line.py` → shared with year `2017`
+- `interface_application_programming/programs/three.min.js` → shared with year `2017`
+- `interface_application_programming/programs/threejsimage.html` → shared with year `2017`
+- `interface_application_programming/programs/webglline.html` → shared with year `2017`
+- `interface_application_programming/programs/canvasline.html` → shared with year `2017`
+- `interface_application_programming/programs/psimage.c` → shared with year `2017`
+- `interface_application_programming/programs/pim.c` → shared with year `2017`
+- `interface_application_programming/programs/numpi.py` → shared with year `2017`
+- `interface_application_programming/programs/udpsnd.js` → shared with year `2017`
+- `interface_application_programming/programs/pi.c` → shared with year `2017`
+- `interface_application_programming/programs/udpsnd.py` → shared with year `2017`
+- `interface_application_programming/programs/canvasimage.html` → shared with year `2017`
+- `interface_application_programming/programs/image.py` → shared with year `2017`
+- `interface_application_programming/programs/cython_pi/cython_pi.py` → shared with year `2017`
+- `interface_application_programming/programs/cython_pi/setup.py` → shared with year `2017`
+- `interface_application_programming/programs/cython_pi/cython_pi.pyx` → shared with year `2017`
+- `interface_application_programming/programs/svgline.html` → shared with year `2017`
+- `interface_application_programming/JavaImage.java` → shared with year `2012`
+- `interface_application_programming/ximage.c` → shared with year `2012`
+- `interface_application_programming/js/three.min.js` → shared with year `2015`
+- `interface_application_programming/js/stats.min.js` → shared with year `2015`
+- `interface_application_programming/webgl_lines.html` → shared with year `2012`
+- `interface_application_programming/matline.py` → shared with year `2012`
+- `interface_application_programming/three.js_lines.html` → shared with year `2015`
+- `interface_application_programming/matimage.py` → shared with year `2012`
+- `interface_application_programming/glsurf.c` → shared with year `2012`
+- `invention_IP_business/license.txt` → shared with year `2013`
+- `networking_communications/socket/udprcv.py` → shared with year `2013`
+- `networking_communications/socket/udprcv.c` → shared with year `2013`
+- `networking_communications/socket/udpsnd.c` → shared with year `2013`
+- `networking_communications/socket/udprcv.js` → shared with year `2015`
+- `networking_communications/socket/udpsnd.js` → shared with year `2015`
+- `networking_communications/socket/udpsnd.py` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.bridge.traces.png` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node.png` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node.interior.png` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node.traces.png` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.bridge.interior.png` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.bridge.cad` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node.cad` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.bridge.png` → shared with year `2013`
+- `networking_communications/APA/apa.c` → shared with year `2012`
+- `networking_communications/APA/apa.ftdi.make` → shared with year `2013`
+- `networking_communications/APA/apa.ftdi.c` → shared with year `2015`
+- `networking_communications/APA/apa.py` → shared with year `2012`
+- `networking_communications/APA/apa.io.make` → shared with year `2013`
+- `networking_communications/APA/apa.h` → shared with year `2012`
+- `networking_communications/APA/apa.ftdi.cad` → shared with year `2012`
+- `networking_communications/APA/apa.io.c` → shared with year `2015`
+- `networking_communications/APA/apa.io.cad` → shared with year `2012`
+- `networking_communications/HM11/hello.HM-11.ftdi.traces.png` → shared with year `2016`
+- `networking_communications/HM11/hello.HM-11.ftdi.interior.png` → shared with year `2016`
+- `networking_communications/HM11/hello.HM-11.ftdi.cad` → shared with year `2016`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.cad` → shared with year `2015`
+- `networking_communications/ESP8266/commands.html` → shared with year `2015`
+- `networking_communications/SLIP/udp_slip.py` → shared with year `2013`
+- `networking_communications/SLIP/hello.bus.45.SLIP.c` → shared with year `2013`
+- `networking_communications/bus/hello.bus.45.bridge.interior.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.c` → shared with year `2013`
+- `networking_communications/bus/hello.bus.45.bridge.cad` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node.traces.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node.cad` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node.interior.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.bridge.traces.png` → shared with year `2012`
+- `networking_communications/nRF/hello.nRF24L01P.44.jpg` → shared with year `2016`
+- `networking_communications/nRF/hello.nRF24L01P.44.c` → shared with year `2017`
+- `networking_communications/nRF/hello.nRF24L01P.44.interior.png` → shared with year `2016`
+- `networking_communications/nRF/hello.nRF24L01P.44.cad` → shared with year `2016`
+- `networking_communications/nRF/hello.nRF24L01P.44.traces.png` → shared with year `2016`
+- `networking_communications/APTP/notes.html` → shared with year `2016`
+- `networking_communications/APTP/bit/ATP.E5.bit.c` → shared with year `2016`
+- `networking_communications/APTP/bit/ATP.16E5.bit.make` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.16E5.FTDI.char.make` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.E5.FTDI.char.c` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.FTDI.cad` → shared with year `2016`
+- `networking_communications/APTP/ATP.XMEGA.E.h` → shared with year `2016`
+- `networking_communications/APTP/byte/ATP.E5.byte.c` → shared with year `2016`
+- `networking_communications/APTP/byte/ATP.16E5.byte.make` → shared with year `2016`
+- `networking_communications/APTP/board/ATP.E5.cad` → shared with year `2016`
+- `networking_communications/i0/i0.3.hub.4.cad` → shared with year `2012`
+- `networking_communications/i0/thtpv4.py` → shared with year `2012`
+- `networking_communications/i0/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `networking_communications/i0/i0.3.serial.44.cad` → shared with year `2012`
+- `networking_communications/i0/i0.3.IO.44.cad` → shared with year `2012`
+- `networking_communications/RN4871/hello.RN4871.ftdi.cad` → shared with year `2017`
+- `networking_communications/RN4871/hello.RN4871.ftdi.traces.png` → shared with year `2017`
+- `networking_communications/RN4871/hello.RN4871.ftdi.interior.png` → shared with year `2017`
+- `networking_communications/RN4871/RN4871.mp4` → shared with year `2017`
+- `old/sensors_actuators_displays/through-hole.cad` → shared with year `2012`
+- `old/cad_cam_cae/software.html` → shared with year `2012`
+- `old/computer_machining/sample.g` → shared with year `2012`
+- `old/computer_machining/sample.rml` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.hub.4.cad` → shared with year `2012`
+- `old/embedded_networking_communications/thtpv4.py` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.serial.44.cad` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.IO.44.cad` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/RS232_bauds.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/IA4421_config.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/messager.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/RS232.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/delays_8MHz.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/IA4421_code.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/messager.py` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.erc` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg` → shared with year `2012`
+- `electronics_production/linetest.interior.png` → shared with year `2017`
+
+## 3. Files missing from canonical
+
+### 3.1 First seen in 2018 (not in master or earlier years, copied)
+
+- `embedded_programming/hello.ftdi.16E5.py`
+- `embedded_programming/hello.arduino.328P.py`
+- `embedded_programming/hello.ftdi.44.py`
+- `output_devices/servo/hello.servo.44.py`
+- `output_devices/servo/hello.servo.44.1.py`
+- `output_devices/speaker/hello.speaker.45.py`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-Edge.Cuts.png`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-cache.lib`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-F.Cu.png`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-Edge.Cuts.svg`
+- `output_devices/RGB/hello.RGB.45/test.obj`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.pro`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-F.Cu.svg`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.kicad_pcb-bak`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.bak`
+- `output_devices/RGB/hello.RGB.45/sym-lib-table`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.step`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.kicad_pcb`
+- `output_devices/RGB/hello.RGB.45/hello.RGB-Margin.svg`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.net`
+- `output_devices/RGB/hello.RGB.45/hello.RGB.sch`
+- `project_management/script_18.04_Xfce`
+- `networking_communications/SD/hello.uSD.44.py`
+
+### 3.2 Shared with previous years (not copied for this year)
+
+- `output_devices/array/hello.array.44.cad` → shared with year `2012`
+- `output_devices/array/hello.array.44.2.cad` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.bipolar.44.cad` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.cad` → shared with year `2012`
+- `computer_machining/rough.mp4` → shared with year `2016`
+- `computer_machining/finish.mp4` → shared with year `2016`
+- `project_management/script_16.04_Xfce` → shared with year `2017`
+- `interface_application_programming/glsurf` → shared with year `2016`

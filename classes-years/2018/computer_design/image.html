@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+
+ImageMagick image encoding
+
+List formats:
+
+   convert -list format
+
+Convert JPG to PNG:
+
+   convert input.jpg output.png
+
+Convert all JPGs to PNGs: 
+
+   mogrify -format png *.jpg
+
+Convert SVG to PNG at 1000 DPI:
+
+   convert -density 1000 -units PixelsPerInch input.svg output.png
+
+Compress JPG to quality 50% width 1000:
+
+   convert input.jpg -quality 50% -resize 1000 output.jpg
+
+Compress all JPGs to quality 50% width 1000:
+
+   mogrify -quality 50% -resize 1000 *.jpg

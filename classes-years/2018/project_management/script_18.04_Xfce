@@ -1,0 +1,82 @@
+#!/bin/bash
+#
+# Xubuntu 18.04 + Xfce
+#
+# update and install
+#
+sudo apt-get update
+sudo apt-get -y dist-upgrade
+#
+# utilities
+#
+sudo apt-get -y install vim-gtk konsole qpdf expect xournal mousepad geany geany-plugins evince gparted hardinfo powertop xscreensaver synaptic gnome-disk-utility ntp
+#
+# net
+#
+sudo apt-get -y install firefox chromium-browser vinagre openssh-client
+#
+# graphics, CAD
+#
+sudo apt-get -y install geeqie gimp mypaint inkscape blender meshlab
+#
+# freecad
+#
+sudo add-apt-repository -y ppa:freecad-maintainers/freecad-stable
+sudo apt-get update
+sudo apt-get -y install freecad
+#
+# office
+#
+sudo apt-get -y install libreoffice
+#
+# project management
+#
+sudo apt-get -y install rsync git gitg gitk git-gui
+#
+# media
+#
+sudo apt-get -y install ffmpeg vlc mplayer smplayer guvcview audacity
+#
+# kdenlive
+#
+sudo add-apt-repository -y ppa:kdenlive/kdenlive-stable
+sudo apt-get update
+sudo apt-get -y install kdenlive kde-runtime
+#
+# simplescreenrecorder
+#
+sudo add-apt-repository -y ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get -y install simplescreenrecorder
+#
+# node
+#
+sudo apt-get -y install nodejs npm
+#
+# build
+#
+sudo apt-get -y install git build-essential libpng-dev python3-dev libboost-all-dev libgl1-mesa-dev lemon flex qt5-default ninja-build cmake freeglut3 freeglut3-dev libgif-dev
+#
+# EDA
+#
+sudo add-apt-repository -y ppa:js-reynaud/kicad-5
+sudo apt-get update
+sudo apt-get -y install kicad
+#
+# embedded programming
+#
+sudo apt-get -y install avr-libc gcc-avr binutils-avr avrdude python-serial python-tk
+#
+# math
+#
+sudo apt-get -y install python-numpy python-scipy python-matplotlib
+#
+# TeX
+#
+# sudo apt-get -y install texlive-latex-recommended texlive-fonts-recommended
+echo "for Tex: sudo apt-get -y install texlive-latex-recommended texlive-fonts-recommended"
+#
+# servers
+#
+# sudo apt-get -y install apache2 openssh-server tightvncserver
+echo "for servers: sudo apt-get -y install apache2 openssh-server tightvncserver"
