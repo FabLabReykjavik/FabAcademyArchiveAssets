@@ -1,0 +1,3233 @@
+# Asset file management report for 2021
+
+- Generated: 2025-11-10T22:57:14+00:00
+- Year snapshot base: `/classes-years/2021`
+- Class root (canonical): `/classes-years/2021` ((entire year base))
+- Canonical root: `/FabAcademyArchiveAssets/classes-master`
+- Year-specific assets directory: `/FabAcademyArchiveAssets/classes-years/2021`
+- Previous years considered: 2012 2013 2014 2015 2016 2017 2018 2019 2020
+
+## Summary
+
+- Total files scanned: 3185
+- Index files (index.html) always copied (no dedup): 77
+- Identical files (vs canonical): 1047
+- Different vs canonical (total): 2047
+  - Variants first seen in 2021 (copied): 102
+  - Variants shared with previous years (not copied): 1945
+- Files missing in canonical (total): 14
+  - First seen in 2021 (copied): 11
+  - Shared with previous years (not copied): 3
+- Total files copied into `classes-years/2021`: 190
+
+Paths below are relative to `classes-years/2021`.
+
+## 0. Index files (always copied for each year)
+
+These `index.html` files are always copied into the year-specific
+tree, even if they are identical to canonical or previous years.
+
+- `principles_practices/index.html`
+- `machine_design/index.html`
+- `index.html`
+- `electronics_design/index.html`
+- `scanning_printing/index.html`
+- `scanning_printing/C260/index.html`
+- `scanning_printing/Form3/index.html`
+- `scanning_printing/light/index.html`
+- `scanning_printing/light/scan_gray_code/index.html`
+- `scanning_printing/light/scan_line/index.html`
+- `scanning_printing/Prusa/index.html`
+- `wildcard/index.html`
+- `embedded_programming/index.html`
+- `input_devices/index.html`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/index.html`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.html`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/index.html`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/__root__/index.html`
+- `inventory/index.html`
+- `output_devices/index.html`
+- `composites/index.html`
+- `mechanical_design/index.html`
+- `computer_design/index.html`
+- `computer_machining/index.html`
+- `molding_casting/index.html`
+- `project_management/index.html`
+- `project_management/scripts/index.html`
+- `computer_cutting/index.html`
+- `interface_application_programming/index.html`
+- `interface_application_programming/programs/index.html`
+- `invention_IP_business/index.html`
+- `networking_communications/index.html`
+- `old/sensors_actuators_displays/index.html`
+- `old/cad_cam_cae/index.html`
+- `old/embedded_programming/index.html`
+- `old/computer_machining/index.html`
+- `old/molding_casting/index.html`
+- `old/computer_cutting/index.html`
+- `old/scan_print/index.html`
+- `old/embedded_networking_communications/index.html`
+- `project_presentation/index.html`
+- `electronics_production/index.html`
+- `applications_implications/electronics/index.html`
+- `applications_implications/houses/index.html`
+- `applications_implications/drones/index.html`
+- `applications_implications/index.html`
+- `applications_implications/satellite/index.html`
+- `applications_implications/medical/index.html`
+- `applications_implications/terminal/index.html`
+- `applications_implications/machines/index.html`
+- `applications_implications/boats/index.html`
+- `applications_implications/clothes/index.html`
+- `applications_implications/consumer_electronics/index.html`
+- `applications_implications/laptop/index.html`
+- `applications_implications/cities/index.html`
+- `applications_implications/robots/index.html`
+- `applications_implications/food/index.html`
+- `applications_implications/toys/index.html`
+- `applications_implications/biology/index.html`
+- `applications_implications/test_equipment/index.html`
+- `applications_implications/furniture/index.html`
+- `applications_implications/musical_instruments/index.html`
+- `applications_implications/cars/index.html`
+- `applications_implications/microscope/index.html`
+- `applications_implications/economies/index.html`
+- `applications_implications/energy/index.html`
+- `applications_implications/phone/index.html`
+- `applications_implications/art/index.html`
+- `applications_implications/bicycles/index.html`
+- `applications_implications/network/index.html`
+- `applications_implications/inflatables/index.html`
+- `applications_implications/prosthetics/index.html`
+- `applications_implications/environment/index.html`
+- `applications_implications/labs/index.html`
+- `applications_implications/shoes/index.html`
+- `project_development/index.html`
+- `break/index.html`
+
+## 1. Files identical to canonical (live in master)
+
+- `machine_design/NDS355AN.pdf`
+- `machine_design/A4985-Datasheet.pdf`
+- `machine_design/A4952, 4953.pdf`
+- `machine_design/RFD16N05LSM.pdf`
+- `electronics_design/pcb.py.mp4`
+- `scanning_printing/free.stl`
+- `scanning_printing/angle.FCStd`
+- `scanning_printing/dimension.stl`
+- `scanning_printing/infill.stl`
+- `scanning_printing/clearance.FCStd`
+- `scanning_printing/clearance.stl`
+- `scanning_printing/overhang.FCStd`
+- `scanning_printing/dimension.FCStd`
+- `scanning_printing/thickness.stl`
+- `scanning_printing/emissions.pdf`
+- `scanning_printing/overhang.stl`
+- `scanning_printing/bridging.FCStd`
+- `scanning_printing/C260/th_IMG_20191001_101030.jpg`
+- `scanning_printing/C260/IMG_20191001_100847.jpg`
+- `scanning_printing/C260/IMG_20191001_100951.jpg`
+- `scanning_printing/C260/IMG_20191001_100828.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100951.jpg`
+- `scanning_printing/C260/th_IMG_20191001_101048.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100812.jpg`
+- `scanning_printing/C260/IMG_20191001_101048.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100847.jpg`
+- `scanning_printing/C260/IMG_20191001_095348.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100901.jpg`
+- `scanning_printing/C260/IMG_20191001_100901.jpg`
+- `scanning_printing/C260/IMG_20191001_100812.jpg`
+- `scanning_printing/C260/IMG_20191001_101030.jpg`
+- `scanning_printing/C260/IMG_20191001_101007.jpg`
+- `scanning_printing/C260/th_IMG_20191001_095348.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100920.jpg`
+- `scanning_printing/C260/IMG_20191001_100920.jpg`
+- `scanning_printing/C260/th_IMG_20191001_100828.jpg`
+- `scanning_printing/C260/IMG_20191001_095427.jpg`
+- `scanning_printing/C260/th_IMG_20191001_095427.jpg`
+- `scanning_printing/C260/th_IMG_20191001_101007.jpg`
+- `scanning_printing/angle.stl`
+- `scanning_printing/anisotropy.stl`
+- `scanning_printing/bridging.stl`
+- `scanning_printing/finish.FCStd`
+- `scanning_printing/thickness.FCStd`
+- `scanning_printing/Form3/bridging.jpg`
+- `scanning_printing/Form3/th_free.jpg`
+- `scanning_printing/Form3/angle.jpg`
+- `scanning_printing/Form3/infill.jpg`
+- `scanning_printing/Form3/overhang.jpg`
+- `scanning_printing/Form3/th_bridging.jpg`
+- `scanning_printing/Form3/th_overhang.jpg`
+- `scanning_printing/Form3/th_thickness.jpg`
+- `scanning_printing/Form3/thickness.jpg`
+- `scanning_printing/Form3/th_angle.jpg`
+- `scanning_printing/Form3/clearange.jpg`
+- `scanning_printing/Form3/anisotropy.jpg`
+- `scanning_printing/Form3/dimensions.jpg`
+- `scanning_printing/Form3/th_infill.jpg`
+- `scanning_printing/Form3/th_dimensions.jpg`
+- `scanning_printing/Form3/clearance.support.jpg`
+- `scanning_printing/Form3/th_finish.jpg`
+- `scanning_printing/Form3/free.jpg`
+- `scanning_printing/Form3/th_clearance.support.jpg`
+- `scanning_printing/Form3/th_anisotropy.jpg`
+- `scanning_printing/Form3/th_clearange.jpg`
+- `scanning_printing/Form3/finish.jpg`
+- `scanning_printing/MarchingCubes.pdf`
+- `scanning_printing/infill.FCStd`
+- `scanning_printing/designrules.jpg`
+- `scanning_printing/light/scan.large.jpg`
+- `scanning_printing/light/scan.mp4`
+- `scanning_printing/light/scan_gray_code/img_001_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_007_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_004_1.png`
+- `scanning_printing/light/scan_gray_code/diff_000.png`
+- `scanning_printing/light/scan_gray_code/th_all_diff.png`
+- `scanning_printing/light/scan_gray_code/th_img_000_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_005_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_004_0.png`
+- `scanning_printing/light/scan_gray_code/img_006_1.png`
+- `scanning_printing/light/scan_gray_code/th_all_off.png`
+- `scanning_printing/light/scan_gray_code/img_004_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_003_1.png`
+- `scanning_printing/light/scan_gray_code/img_006_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_001.png`
+- `scanning_printing/light/scan_gray_code/img_003_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_006_0.png`
+- `scanning_printing/light/scan_gray_code/all_off.png`
+- `scanning_printing/light/scan_gray_code/img_000_1.png`
+- `scanning_printing/light/scan_gray_code/diff_001.png`
+- `scanning_printing/light/scan_gray_code/th_diffs.png`
+- `scanning_printing/light/scan_gray_code/diffs.png`
+- `scanning_printing/light/scan_gray_code/img_007_1.png`
+- `scanning_printing/light/scan_gray_code/img_001_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_006_1.png`
+- `scanning_printing/light/scan_gray_code/img_002_1.png`
+- `scanning_printing/light/scan_gray_code/diff_005.png`
+- `scanning_printing/light/scan_gray_code/th_img_002_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_005_0.png`
+- `scanning_printing/light/scan_gray_code/th_all_on.png`
+- `scanning_printing/light/scan_gray_code/img_002_0.png`
+- `scanning_printing/light/scan_gray_code/img_007_0.png`
+- `scanning_printing/light/scan_gray_code/img_000_0.png`
+- `scanning_printing/light/scan_gray_code/diff_007.png`
+- `scanning_printing/light/scan_gray_code/th_img_001_1.png`
+- `scanning_printing/light/scan_gray_code/th_img_003_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_006.png`
+- `scanning_printing/light/scan_gray_code/all_color.png`
+- `scanning_printing/light/scan_gray_code/diff_006.png`
+- `scanning_printing/light/scan_gray_code/th_diff_004.png`
+- `scanning_printing/light/scan_gray_code/img_005_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_001_0.png`
+- `scanning_printing/light/scan_gray_code/th_all_color.png`
+- `scanning_printing/light/scan_gray_code/diff_002.png`
+- `scanning_printing/light/scan_gray_code/th_diff_005.png`
+- `scanning_printing/light/scan_gray_code/all_diff.png`
+- `scanning_printing/light/scan_gray_code/th_diff_003.png`
+- `scanning_printing/light/scan_gray_code/diff_004.png`
+- `scanning_printing/light/scan_gray_code/th_img_002_0.png`
+- `scanning_printing/light/scan_gray_code/th_diff_000.png`
+- `scanning_printing/light/scan_gray_code/th_diff_002.png`
+- `scanning_printing/light/scan_gray_code/th_img_007_1.png`
+- `scanning_printing/light/scan_gray_code/all_on.png`
+- `scanning_printing/light/scan_gray_code/th_diff_007.png`
+- `scanning_printing/light/scan_gray_code/img_004_0.png`
+- `scanning_printing/light/scan_gray_code/img_005_1.png`
+- `scanning_printing/light/scan_gray_code/diff_003.png`
+- `scanning_printing/light/scan_gray_code/img_003_0.png`
+- `scanning_printing/light/scan_gray_code/th_img_000_0.png`
+- `scanning_printing/light/scan_line/th_diff_013.png`
+- `scanning_printing/light/scan_line/th_diff_015.png`
+- `scanning_printing/light/scan_line/th_img_007_0.png`
+- `scanning_printing/light/scan_line/diff_034.png`
+- `scanning_printing/light/scan_line/img_023_0.png`
+- `scanning_printing/light/scan_line/th_img_023_0.png`
+- `scanning_printing/light/scan_line/th_img_012_0.png`
+- `scanning_printing/light/scan_line/th_diff_020.png`
+- `scanning_printing/light/scan_line/img_035_0.png`
+- `scanning_printing/light/scan_line/th_diff_017.png`
+- `scanning_printing/light/scan_line/th_img_019_0.png`
+- `scanning_printing/light/scan_line/diff_012.png`
+- `scanning_printing/light/scan_line/diff_010.png`
+- `scanning_printing/light/scan_line/diff_018.png`
+- `scanning_printing/light/scan_line/img_021_0.png`
+- `scanning_printing/light/scan_line/th_img_017_0.png`
+- `scanning_printing/light/scan_line/diff_033.png`
+- `scanning_printing/light/scan_line/diff_000.png`
+- `scanning_printing/light/scan_line/th_img_039_0.png`
+- `scanning_printing/light/scan_line/th_diff_037.png`
+- `scanning_printing/light/scan_line/diff_017.png`
+- `scanning_printing/light/scan_line/img_009_0.png`
+- `scanning_printing/light/scan_line/th_all_diff.png`
+- `scanning_printing/light/scan_line/th_img_004_0.png`
+- `scanning_printing/light/scan_line/th_img_031_0.png`
+- `scanning_printing/light/scan_line/th_diff_039.png`
+- `scanning_printing/light/scan_line/th_diff_021.png`
+- `scanning_printing/light/scan_line/th_diff_030.png`
+- `scanning_printing/light/scan_line/img_012_0.png`
+- `scanning_printing/light/scan_line/th_img_021_0.png`
+- `scanning_printing/light/scan_line/img_029_0.png`
+- `scanning_printing/light/scan_line/diff_031.png`
+- `scanning_printing/light/scan_line/th_diff_032.png`
+- `scanning_printing/light/scan_line/diff_015.png`
+- `scanning_printing/light/scan_line/img_026_0.png`
+- `scanning_printing/light/scan_line/diff_024.png`
+- `scanning_printing/light/scan_line/diff_025.png`
+- `scanning_printing/light/scan_line/img_011_0.png`
+- `scanning_printing/light/scan_line/th_all_off.png`
+- `scanning_printing/light/scan_line/th_diff_023.png`
+- `scanning_printing/light/scan_line/th_diff_035.png`
+- `scanning_printing/light/scan_line/th_diff_010.png`
+- `scanning_printing/light/scan_line/img_018_0.png`
+- `scanning_printing/light/scan_line/th_diff_016.png`
+- `scanning_printing/light/scan_line/img_006_0.png`
+- `scanning_printing/light/scan_line/th_diff_001.png`
+- `scanning_printing/light/scan_line/diff_037.png`
+- `scanning_printing/light/scan_line/th_img_006_0.png`
+- `scanning_printing/light/scan_line/th_img_026_0.png`
+- `scanning_printing/light/scan_line/th_img_020_0.png`
+- `scanning_printing/light/scan_line/img_039_0.png`
+- `scanning_printing/light/scan_line/diff_021.png`
+- `scanning_printing/light/scan_line/th_img_022_0.png`
+- `scanning_printing/light/scan_line/diff_011.png`
+- `scanning_printing/light/scan_line/diff_009.png`
+- `scanning_printing/light/scan_line/all_off.png`
+- `scanning_printing/light/scan_line/img_031_0.png`
+- `scanning_printing/light/scan_line/th_diff_028.png`
+- `scanning_printing/light/scan_line/th_img_037_0.png`
+- `scanning_printing/light/scan_line/th_diff_029.png`
+- `scanning_printing/light/scan_line/th_img_029_0.png`
+- `scanning_printing/light/scan_line/diff_001.png`
+- `scanning_printing/light/scan_line/diff_030.png`
+- `scanning_printing/light/scan_line/th_diff_018.png`
+- `scanning_printing/light/scan_line/th_diff_025.png`
+- `scanning_printing/light/scan_line/th_diff_022.png`
+- `scanning_printing/light/scan_line/th_img_036_0.png`
+- `scanning_printing/light/scan_line/img_013_0.png`
+- `scanning_printing/light/scan_line/th_diff_031.png`
+- `scanning_printing/light/scan_line/img_001_0.png`
+- `scanning_printing/light/scan_line/diff_036.png`
+- `scanning_printing/light/scan_line/img_010_0.png`
+- `scanning_printing/light/scan_line/diff_005.png`
+- `scanning_printing/light/scan_line/th_img_034_0.png`
+- `scanning_printing/light/scan_line/img_024_0.png`
+- `scanning_printing/light/scan_line/img_027_0.png`
+- `scanning_printing/light/scan_line/th_img_005_0.png`
+- `scanning_printing/light/scan_line/diff_016.png`
+- `scanning_printing/light/scan_line/img_022_0.png`
+- `scanning_printing/light/scan_line/th_img_033_0.png`
+- `scanning_printing/light/scan_line/th_all_on.png`
+- `scanning_printing/light/scan_line/img_028_0.png`
+- `scanning_printing/light/scan_line/img_002_0.png`
+- `scanning_printing/light/scan_line/img_038_0.png`
+- `scanning_printing/light/scan_line/diff_014.png`
+- `scanning_printing/light/scan_line/img_007_0.png`
+- `scanning_printing/light/scan_line/img_000_0.png`
+- `scanning_printing/light/scan_line/img_034_0.png`
+- `scanning_printing/light/scan_line/diff_007.png`
+- `scanning_printing/light/scan_line/diff_020.png`
+- `scanning_printing/light/scan_line/diff_026.png`
+- `scanning_printing/light/scan_line/diff_028.png`
+- `scanning_printing/light/scan_line/diff_019.png`
+- `scanning_printing/light/scan_line/th_img_003_0.png`
+- `scanning_printing/light/scan_line/img_036_0.png`
+- `scanning_printing/light/scan_line/th_diff_006.png`
+- `scanning_printing/light/scan_line/img_033_0.png`
+- `scanning_printing/light/scan_line/img_015_0.png`
+- `scanning_printing/light/scan_line/th_diff_014.png`
+- `scanning_printing/light/scan_line/th_diff_027.png`
+- `scanning_printing/light/scan_line/img_030_0.png`
+- `scanning_printing/light/scan_line/th_img_032_0.png`
+- `scanning_printing/light/scan_line/th_diff_019.png`
+- `scanning_printing/light/scan_line/diff_006.png`
+- `scanning_printing/light/scan_line/th_diff_004.png`
+- `scanning_printing/light/scan_line/diff_035.png`
+- `scanning_printing/light/scan_line/img_005_0.png`
+- `scanning_printing/light/scan_line/th_img_035_0.png`
+- `scanning_printing/light/scan_line/img_014_0.png`
+- `scanning_printing/light/scan_line/th_img_008_0.png`
+- `scanning_printing/light/scan_line/th_img_001_0.png`
+- `scanning_printing/light/scan_line/diff_002.png`
+- `scanning_printing/light/scan_line/img_019_0.png`
+- `scanning_printing/light/scan_line/img_032_0.png`
+- `scanning_printing/light/scan_line/th_diff_009.png`
+- `scanning_printing/light/scan_line/th_diff_005.png`
+- `scanning_printing/light/scan_line/th_diff_034.png`
+- `scanning_printing/light/scan_line/th_img_027_0.png`
+- `scanning_printing/light/scan_line/th_img_030_0.png`
+- `scanning_printing/light/scan_line/th_diff_008.png`
+- `scanning_printing/light/scan_line/th_img_025_0.png`
+- `scanning_printing/light/scan_line/img_020_0.png`
+- `scanning_printing/light/scan_line/all_diff.png`
+- `scanning_printing/light/scan_line/th_diff_033.png`
+- `scanning_printing/light/scan_line/diff_008.png`
+- `scanning_printing/light/scan_line/th_img_013_0.png`
+- `scanning_printing/light/scan_line/diff_022.png`
+- `scanning_printing/light/scan_line/th_diff_011.png`
+- `scanning_printing/light/scan_line/th_diff_003.png`
+- `scanning_printing/light/scan_line/diff_039.png`
+- `scanning_printing/light/scan_line/img_016_0.png`
+- `scanning_printing/light/scan_line/th_img_038_0.png`
+- `scanning_printing/light/scan_line/diff_004.png`
+- `scanning_printing/light/scan_line/th_img_014_0.png`
+- `scanning_printing/light/scan_line/th_img_002_0.png`
+- `scanning_printing/light/scan_line/th_diff_026.png`
+- `scanning_printing/light/scan_line/th_diff_000.png`
+- `scanning_printing/light/scan_line/img_037_0.png`
+- `scanning_printing/light/scan_line/th_diff_012.png`
+- `scanning_printing/light/scan_line/th_diff_002.png`
+- `scanning_printing/light/scan_line/diff_013.png`
+- `scanning_printing/light/scan_line/diff_023.png`
+- `scanning_printing/light/scan_line/th_img_011_0.png`
+- `scanning_printing/light/scan_line/all_on.png`
+- `scanning_printing/light/scan_line/th_diff_024.png`
+- `scanning_printing/light/scan_line/diff_038.png`
+- `scanning_printing/light/scan_line/th_img_010_0.png`
+- `scanning_printing/light/scan_line/th_diff_007.png`
+- `scanning_printing/light/scan_line/img_004_0.png`
+- `scanning_printing/light/scan_line/img_025_0.png`
+- `scanning_printing/light/scan_line/th_img_009_0.png`
+- `scanning_printing/light/scan_line/diff_003.png`
+- `scanning_printing/light/scan_line/th_diff_038.png`
+- `scanning_printing/light/scan_line/th_img_016_0.png`
+- `scanning_printing/light/scan_line/img_017_0.png`
+- `scanning_printing/light/scan_line/diff_029.png`
+- `scanning_printing/light/scan_line/th_img_015_0.png`
+- `scanning_printing/light/scan_line/img_008_0.png`
+- `scanning_printing/light/scan_line/diff_032.png`
+- `scanning_printing/light/scan_line/th_diff_036.png`
+- `scanning_printing/light/scan_line/th_img_018_0.png`
+- `scanning_printing/light/scan_line/th_img_024_0.png`
+- `scanning_printing/light/scan_line/th_img_028_0.png`
+- `scanning_printing/light/scan_line/diff_027.png`
+- `scanning_printing/light/scan_line/img_003_0.png`
+- `scanning_printing/light/scan_line/th_img_000_0.png`
+- `scanning_printing/light/scan.jpg`
+- `scanning_printing/light/scan.png`
+- `scanning_printing/Meshroom.jpg`
+- `scanning_printing/finish.stl`
+- `scanning_printing/anisotropy.FCStd`
+- `scanning_printing/free.FCStd`
+- `scanning_printing/J55/color.jpg`
+- `scanning_printing/Prusa/bridging.jpg`
+- `scanning_printing/Prusa/th_free.jpg`
+- `scanning_printing/Prusa/angle.jpg`
+- `scanning_printing/Prusa/infill.jpg`
+- `scanning_printing/Prusa/th_bridging.jpg`
+- `scanning_printing/Prusa/th_overhang.jpg`
+- `scanning_printing/Prusa/th_angle.jpg`
+- `scanning_printing/Prusa/anisotropy.jpg`
+- `scanning_printing/Prusa/th_dimension.jpg`
+- `scanning_printing/Prusa/th_clearance.jpg`
+- `scanning_printing/Prusa/th_infill.jpg`
+- `scanning_printing/Prusa/th_finish.jpg`
+- `scanning_printing/Prusa/free.jpg`
+- `scanning_printing/Prusa/dimension.jpg`
+- `scanning_printing/Prusa/th_anisotropy.jpg`
+- `scanning_printing/Prusa/finish.jpg`
+- `scanning_printing/bearing.png`
+- `scanning_printing/fly.mp4`
+- `embedded_programming/STM32F30x.pdf`
+- `embedded_programming/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATtiny45-ATtiny85_Datasheet.pdf`
+- `embedded_programming/UPDI/hello.serial-UPDI.jpg`
+- `embedded_programming/UPDI/hello.serial-UPDI.3.png`
+- `embedded_programming/UPDI/hello.serial-UPDI.png`
+- `embedded_programming/UPDI/hello.serial-UPDI.3.jpg`
+- `embedded_programming/C.mpg`
+- `embedded_programming/t1624/ATtiny1624-26-27-DataSheet-DS40002234A.pdf`
+- `embedded_programming/hello.arduino.328P.traces.png`
+- `embedded_programming/C.mp4`
+- `embedded_programming/blink.zip`
+- `embedded_programming/hello.arduino.328P.jpg`
+- `embedded_programming/doc8183.pdf`
+- `embedded_programming/hello.ftdi.44.echo.asm`
+- `embedded_programming/blink.mpg`
+- `embedded_programming/hello.ISP.44.components.png`
+- `embedded_programming/Ecma-048.pdf`
+- `embedded_programming/hello.ftdi.44.echo.mp4`
+- `embedded_programming/hello.ftdi.45.jpg`
+- `embedded_programming/hello.ftdi.16E5.traces.png`
+- `embedded_programming/hello.ftdi.16E5.interior.png`
+- `embedded_programming/hello.ISP.44.old.interior.png`
+- `embedded_programming/hello.arduino.328P.png`
+- `embedded_programming/hello.ftdi.16E5.blink.c.hex`
+- `embedded_programming/hello.ISP.44.interior.png`
+- `embedded_programming/hello.ftdi.44.png`
+- `embedded_programming/SWD/hello.SWD.10-4.1.png`
+- `embedded_programming/SWD/hello.SWD.10-4.png`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C.jpg`
+- `embedded_programming/SWD/hello.SWD.10-4.1.top.png`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C.png`
+- `embedded_programming/SWD/hello.SWD.10-4.jpg`
+- `embedded_programming/SWD/hello.SWD.10-4.1.jpg`
+- `embedded_programming/SWD/edbg`
+- `embedded_programming/SWD/free_dap_d11c_mini.bin`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C.mp4`
+- `embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.png`
+- `embedded_programming/hello.ISP.44.png`
+- `embedded_programming/D21E/hello.D21E.echo.png`
+- `embedded_programming/D21E/Atmel-42181-SAM-D21_Datasheet.pdf`
+- `embedded_programming/D21E/hello.D21E.echo.jpg`
+- `embedded_programming/D21E/MT-D21E_revB_User_Guide.pdf`
+- `embedded_programming/D21E/boot/sam_ba_MT_D21E_rev_B_SAMD21E17A.bin`
+- `embedded_programming/D21E/hello.D21E.echo.mp4`
+- `embedded_programming/hello.ISP.44.old.png`
+- `embedded_programming/hello.ISP.44.res.traces.png`
+- `embedded_programming/DB/AVR128DB28-DS40002247A.pdf`
+- `embedded_programming/hello.ftdi.44.echo.out`
+- `embedded_programming/t3226/ATtiny3224-3226-3227-Data-Sheet-DS40002345A.pdf`
+- `embedded_programming/hello.ftdi.44.2.bottom.png`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c.hex`
+- `embedded_programming/hello.arduino.328P.blink.out`
+- `embedded_programming/blink.c`
+- `embedded_programming/Arduino.mpg`
+- `embedded_programming/Arduino.mp4`
+- `embedded_programming/hello.ftdi.44.components.jpg`
+- `embedded_programming/hello.ftdi.44.2.png`
+- `embedded_programming/hello.ftdi.45.echo.out`
+- `embedded_programming/t3216/hello.t3216.echo.jpg`
+- `embedded_programming/t3216/hello.t3216.echo.png`
+- `embedded_programming/t3216/hello.t3216.echo.mp4`
+- `embedded_programming/t3216/ATtiny3216_ATtiny1616-data-sheet-40001997B.pdf`
+- `embedded_programming/hello.ftdi.45.port.c.hex`
+- `embedded_programming/hello.ftdi.16E5.blink.out`
+- `embedded_programming/hello.ftdi.45.png`
+- `embedded_programming/blink.mp4`
+- `embedded_programming/doc0856.pdf`
+- `embedded_programming/doc7766.pdf`
+- `embedded_programming/firmware.zip`
+- `embedded_programming/D51/60001507E.pdf`
+- `embedded_programming/hello.ftdi.44.2.holes.png`
+- `embedded_programming/FTDI/USB-FT230XS-UPDI.jpg`
+- `embedded_programming/FTDI/USB-FT230XS-serial.jpg`
+- `embedded_programming/FTDI/USB-FT230XS-serial.png`
+- `embedded_programming/FTDI/USB-FT230XS-UPDI.png`
+- `embedded_programming/t1614/hello.t1614.echo.jpg`
+- `embedded_programming/t1614/ATtiny1614-DataSheet-DS40001995B.pdf`
+- `embedded_programming/t1614/hello.t1614.echo.png`
+- `embedded_programming/t1614/hello.t1614.echo.mp4`
+- `embedded_programming/hello.ISP.44.res.png`
+- `embedded_programming/doc1022.pdf`
+- `embedded_programming/hello.ftdi.45.port.out`
+- `embedded_programming/hello.ftdi.16E5.echo.out`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.out`
+- `embedded_programming/hello.ftdi.16E5.png`
+- `embedded_programming/hello.arduino.328P.blink.c.hex`
+- `embedded_programming/hello.ftdi.16E5.echo.c.hex`
+- `embedded_programming/hello.ftdi.44.echo.c.hex`
+- `embedded_programming/t412/ATtiny212-412-DataSheet-DS40001911C.pdf`
+- `embedded_programming/t412/hello.t412.echo.png`
+- `embedded_programming/t412/hello.t412.3.blink.jpg`
+- `embedded_programming/t412/hello.t412.echo.c.mp4`
+- `embedded_programming/t412/hello.t412.echo.mp4`
+- `embedded_programming/t412/hello.t412.blink.png`
+- `embedded_programming/t412/hello.t412.3.blink.mp4`
+- `embedded_programming/t412/hello.t412.blink.mp4`
+- `embedded_programming/t412/hello.t412.blink.jpg`
+- `embedded_programming/t412/hello.t412.3.blink.png`
+- `embedded_programming/t412/hello.t412.echo.jpg`
+- `embedded_programming/t412/40001911A.pdf`
+- `embedded_programming/hello.ftdi.45.echo.mp4`
+- `embedded_programming/hello.ftdi.16E5.components.jpg`
+- `embedded_programming/128DB32/hello.128DB32.echo.jpg`
+- `embedded_programming/128DB32/hello.128DB32.echo.mp4`
+- `embedded_programming/128DB32/hello.128DB32.echo.png`
+- `embedded_programming/8183s.pdf`
+- `embedded_programming/D11D/hello.D11D.echo.mp4`
+- `embedded_programming/D11D/hello.D11D.echo.jpg`
+- `embedded_programming/D11D/hello.D11D.echo.png`
+- `embedded_programming/D11D/atmel-42363-sam-d11_datasheet.pdf`
+- `embedded_programming/hello.ISP.44.old.traces.png`
+- `embedded_programming/D11C/hello.D11C.bridge.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.1.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.holes.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.bottom.png`
+- `embedded_programming/D11C/hello.D11C.blink.pullup.jpg`
+- `embedded_programming/D11C/hello.D11C.blink.pullup.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.mp4`
+- `embedded_programming/D11C/hello.D11C.echo.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.bottom.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.interior.png`
+- `embedded_programming/D11C/hello.D11C.blink.pullup.traces.png`
+- `embedded_programming/D11C/hello.D11C.blink.jpg`
+- `embedded_programming/D11C/program.mp4`
+- `embedded_programming/D11C/hello.D11C.serial.3V3.mp4`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.jpg`
+- `embedded_programming/D11C/hello.D11C.bridge.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.3V3.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.bottom.png`
+- `embedded_programming/D11C/hello.D11C.serial.3V3.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.interior.png`
+- `embedded_programming/D11C/hello.D11C.blink.reset.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.top.png`
+- `embedded_programming/D11C/hello.D11C.blink.reset.clock.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.holes.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.png`
+- `embedded_programming/D11C/hello.D11C.blink.mp4`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.holes.png`
+- `embedded_programming/D11C/hello.D11C.bridge.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.png`
+- `embedded_programming/D11C/hello.D11C.serial.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.top.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.png`
+- `embedded_programming/D11C/hello.D11C.bridge.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.exterior.png`
+- `embedded_programming/D11C/hello.D11C.echo.1.png`
+- `embedded_programming/D11C/hello.D11C.blink.reset.clock.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.zip`
+- `embedded_programming/D11C/hello.D11C.serial.5V.jpg`
+- `embedded_programming/D11C/boot/sam_ba_Generic_D11C14A_SAMD11C14A.bin`
+- `embedded_programming/D11C/boot/edbg`
+- `embedded_programming/D11C/hello.D11C.blink.pullup.png`
+- `embedded_programming/D11C/hello.D11C.blink.reset.png`
+- `embedded_programming/D11C/hello.D11C.serial.3V3.interior.png`
+- `embedded_programming/D11C/atmel-42363-sam-d11_datasheet.pdf`
+- `embedded_programming/D11C/hello.D11C.echo.mp4`
+- `embedded_programming/D11C/hello.D11C.echo.1.jpg`
+- `embedded_programming/D11C/hello.D11C.bridge.mp4`
+- `embedded_programming/D11C/hello.D11C.serial.3V3.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.1.jpg`
+- `embedded_programming/D11C/hello.D11C.blink.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.interior.png`
+- `embedded_programming/D11C/hello.D11C.echo.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.1.png`
+- `embedded_programming/hello.arduino.328P.interior.png`
+- `embedded_programming/hello.ftdi.45.echo.c.hex`
+- `embedded_programming/serial.png`
+- `embedded_programming/hello.ftdi.44.2.jpg`
+- `embedded_programming/hello.ftdi.44.program.png`
+- `input_devices/video.mp4`
+- `input_devices/tof/hello.VL53L1X.mp4`
+- `input_devices/tof/hello.VL53L1X.t1614.png`
+- `input_devices/tof/hello.VL53L1X.t1614.jpg`
+- `input_devices/radar/hello.RCWL-0516.c.hex`
+- `input_devices/radar/hello.RCWL-0516.mp4`
+- `input_devices/radar/hello.RCWL-0516.jpg`
+- `input_devices/radar/hello.RCWL-0516.png`
+- `input_devices/radar/hello.RCWL-0516.out`
+- `input_devices/DS.pdf`
+- `input_devices/meas.pdf`
+- `input_devices/doc2586.pdf`
+- `input_devices/temp/hello.temp.45.jpg`
+- `input_devices/temp/hello.temp.45.mp4`
+- `input_devices/temp/hello.temp.45.png`
+- `input_devices/color/hello.VEML6040.jpg`
+- `input_devices/color/hello.VEML6040.mp4`
+- `input_devices/color/hello.VEML6040.t412.png`
+- `input_devices/button/hello.button.D11C.jpg`
+- `input_devices/button/hello.button.45.mp4`
+- `input_devices/button/hello.button.D11C.png`
+- `input_devices/button/hello.button.45.jpg`
+- `input_devices/button/hello.button.45.png`
+- `input_devices/button/hello.button.t412.jpg`
+- `input_devices/button/hello.button.t412.png`
+- `input_devices/mic/hello.SPU0414HR5H.mp4`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.t1614.png`
+- `input_devices/mic/hello.mic.45.avi`
+- `input_devices/mic/hello.SPU0414HR5H.jpg`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.mp4`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.jpg`
+- `input_devices/mic/hello.SPU0414HR5H.png`
+- `input_devices/mic/hello.mic.45.jpg`
+- `input_devices/mic/hello.mic.45.mp4`
+- `input_devices/mic/hello.mic.45.png`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.speaker.jpg`
+- `input_devices/accelgyro/hello.LSM6DS33.mp4`
+- `input_devices/accelgyro/hello.LSM6DS33.t1614.png`
+- `input_devices/accelgyro/hello.LSM6DS33.jpg`
+- `input_devices/step/hello.txrx.45.png`
+- `input_devices/step/hello.txrx.45.jpg`
+- `input_devices/step/hello.txrx.45.mp4`
+- `input_devices/step/hello.txrx.t1624.png`
+- `input_devices/step/hello.load.45.png`
+- `input_devices/step/hello.txrx.t1624.jpg`
+- `input_devices/step/hello.load.45.mp4`
+- `input_devices/step/hello.load.45.jpg`
+- `input_devices/step/hello.txrx.t1624.mp4`
+- `input_devices/sonar/hello.HC-SR04.jpg`
+- `input_devices/sonar/hello.HC-SR04.mp4`
+- `input_devices/sonar/hello.HC-SR04.png`
+- `input_devices/motion/hello.HC-SR501.mp4`
+- `input_devices/motion/hello.HC-SR501.png`
+- `input_devices/motion/hello.HC-SR501.jpg`
+- `input_devices/light/hello.reflect.45.c.hex`
+- `input_devices/light/hello.reflect.45.out`
+- `input_devices/light/light.jpg`
+- `input_devices/light/hello.reflect.45.png`
+- `input_devices/light/hello.reflect.45.jpg`
+- `input_devices/light/hello.light.45.png`
+- `input_devices/light/hello.light.45.jpg`
+- `input_devices/light/hello.reflect.45.mp4`
+- `input_devices/light/hello.light.45.mp4`
+- `input_devices/GPS/hello.GPS.t1614.mp4`
+- `input_devices/GPS/hello.GPS.t1614.png`
+- `input_devices/GPS/hello.GPS.t1614.jpg`
+- `input_devices/accel/hello.MXD6235MP.png`
+- `input_devices/accel/hello.MXD6235MP.interior.png`
+- `input_devices/accel/hello.ADXL343.jpg`
+- `input_devices/accel/hello.ADXL343.mp4`
+- `input_devices/accel/hello.MXD6235MP.traces.png`
+- `input_devices/accel/hello.ADXL343.png`
+- `input_devices/accel/hello.MXD6235MP.jpg`
+- `input_devices/accel/hello.ADXL343.reflow.jpg`
+- `input_devices/accel/hello.MXD6235MP.mp4`
+- `input_devices/accelgyromag/hello.MinIMU9v5.t1614.png`
+- `input_devices/accelgyromag/hello.MinIMU9v5.t1614.jpg`
+- `input_devices/accelgyromag/hello.MinIMU9v5.mp4`
+- `input_devices/mag/vector/hello.ALS31313.t412.interior.png`
+- `input_devices/mag/vector/hello.ALS31313.t412.traces.png`
+- `input_devices/mag/vector/hello.ALS31313.t412.mp4`
+- `input_devices/mag/vector/hello.ALS31313.t412.png`
+- `input_devices/mag/vector/hello.ALS31313.t412.jpg`
+- `input_devices/mag/hello.mag.45.png`
+- `input_devices/mag/hello.mag.D11C.jpg`
+- `input_devices/mag/hello.mag.t412.jpg`
+- `input_devices/mag/hello.mag.45.jpg`
+- `input_devices/mag/hello.mag.t412.png`
+- `input_devices/mag/hello.mag.45.js.mp4`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.jpg`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.png`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.mp4`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/sort-arrow-sprite.png`
+- `input_devices/mag/node_modules/async-limiter/coverage/coverage.json`
+- `input_devices/mag/node_modules/noop-logger/.npmignore`
+- `input_devices/mag/node_modules/component-emitter/LICENSE`
+- `input_devices/mag/node_modules/component-emitter/Readme.md`
+- `input_devices/mag/node_modules/component-emitter/index.js`
+- `input_devices/mag/node_modules/component-emitter/History.md`
+- `input_devices/mag/node_modules/napi-build-utils/napi-build-utils-1.0.0.tgz`
+- `input_devices/mag/node_modules/nan/nan-2.11.1.tgz`
+- `input_devices/mag/node_modules/@serialport/bindings/src/darwin_list.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/darwin_list.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_unix.h`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_unix.cpp`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport.h`
+- `input_devices/mag/node_modules/@serialport/bindings/build/Release/bindings.node`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-dir/file5`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-files/file4`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/sub-files/file3`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/file1`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/d/file2`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/invalid.tar`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/e/directory/.ignore`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/e/file`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/sort-arrow-sprite.png`
+- `input_devices/mag/node_modules/mute-stream/.nyc_output/33508.json`
+- `input_devices/mag/node_modules/mute-stream/.nyc_output/33510.json`
+- `input_devices/mag/hello.mag.D11C.png`
+- `input_devices/mag/hello.mag.45.mods.mp4`
+- `input_devices/mag/hello.mag.45.mp4`
+- `output_devices/H-bridge/hello.H-bridge.44.png`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.traces.png`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.jpg`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.png`
+- `output_devices/H-bridge/hello.H-bridge.44.jpg`
+- `output_devices/H-bridge/out.png`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.interior.png`
+- `output_devices/servo/hello.servo.44.out`
+- `output_devices/servo/hello.servo-D11C.mask.png`
+- `output_devices/servo/hello.servo.44.jpg`
+- `output_devices/servo/hello.servo.44.2.c.hex`
+- `output_devices/servo/hello.servo-D11C.xcf`
+- `output_devices/servo/PWM.jpg`
+- `output_devices/servo/hello.servo-D11C.silk.png`
+- `output_devices/servo/hello.servo.44.2.out`
+- `output_devices/servo/hello.servo.44.png`
+- `output_devices/servo/hello.servo-D11C.gbr.png`
+- `output_devices/servo/hello.servo.44.1.jpg`
+- `output_devices/servo/hello.servo.44.c.hex`
+- `output_devices/servo/hello.servo.t412.mp4`
+- `output_devices/servo/hello.servo.44.mp4`
+- `output_devices/servo/hello.servo.44.1.png`
+- `output_devices/servo/hello.servo.t412.jpg`
+- `output_devices/servo/hello.servo.t412.png`
+- `output_devices/LEDs/hello.LEDs.t412.jpg`
+- `output_devices/LEDs/hello.LEDs.t412.mp4`
+- `output_devices/LEDs/hello.LEDs.t412.png`
+- `output_devices/speaker/hello.speaker.45.mp4`
+- `output_devices/speaker/hello.speaker.45.png`
+- `output_devices/speaker/hello.speaker.45.jpg`
+- `output_devices/DC/hello.H-bridge.44.DC.mp4`
+- `output_devices/RGB/hello.RGB.45.png`
+- `output_devices/RGB/hello.RGB/hello.RGB-Edge.Cuts.png`
+- `output_devices/RGB/hello.RGB/hello.RGB-F.Cu.png`
+- `output_devices/RGB/hello.RGB.45.mp4`
+- `output_devices/RGB/hello.RGB.45.jpg`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.mask.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.jpg`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.mech.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C.mp4`
+- `output_devices/DRV8428/hello.DRV8428-D11C.jpg`
+- `output_devices/DRV8428/hello.DRV8428-D11C.top.png`
+- `output_devices/DRV8428/hello.DRV8428.png`
+- `output_devices/DRV8428/hello.DRV8428.mp4`
+- `output_devices/DRV8428/hello.DRV8428.jpg`
+- `output_devices/DRV8428/hello.DRV8428.interior.png`
+- `output_devices/DRV8428/hello.DRV8428.top.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C.holes.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.zip`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.silk.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.holes.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.gbr.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C.png`
+- `output_devices/OLED/hello.SSD1306.45.mp4`
+- `output_devices/OLED/Monospace16B.png`
+- `output_devices/OLED/Monospace16B.xcf`
+- `output_devices/OLED/Monospace11B.png`
+- `output_devices/OLED/SSD1306.pdf`
+- `output_devices/OLED/hello.SSD1306.45.png`
+- `output_devices/OLED/Monospace11.xcf`
+- `output_devices/OLED/Monospace11.png`
+- `output_devices/OLED/hello.SSD1306.45.out`
+- `output_devices/OLED/hello.SSD1306.45.jpg`
+- `output_devices/OLED/Monospace16.png`
+- `output_devices/OLED/hello.SSD1306.45.c.hex`
+- `output_devices/OLED/Monospace11B.b`
+- `output_devices/OLED/Monospace16.xcf`
+- `output_devices/OLED/Monospace11B.xcf`
+- `output_devices/TFT/ILI9341.pdf`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.jpg`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.bottom.png`
+- `output_devices/TFT/hello.ILI9341.SW.D21E.png`
+- `output_devices/TFT/hello.ILI9341.SW.D21E.jpg`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.png`
+- `output_devices/TFT/ST7735.pdf`
+- `output_devices/TFT/hello.ST7735.HW.mp4`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.holes.png`
+- `output_devices/TFT/hello.ILI9341.SW.D21E.mp4`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.mp4`
+- `output_devices/array/hello.array.44.2.bottom.png`
+- `output_devices/array/hello.array.44.jpg`
+- `output_devices/array/hello.array.44.2.jpg`
+- `output_devices/array/hello.array.44.png`
+- `output_devices/array/hello.array.44.mp4`
+- `output_devices/array/hello.array.44.2.mp4`
+- `output_devices/array/hello.array.44.2.vias.png`
+- `output_devices/array/hello.array.44.2.png`
+- `output_devices/RS-170.jpg`
+- `output_devices/video/hello.video.44.png`
+- `output_devices/video/hello.video.44.mp4`
+- `output_devices/video/hello.video.44.jpg`
+- `output_devices/LCD/hello.LCD.44.jpg`
+- `output_devices/LCD/hello.LCD.44.mp4`
+- `output_devices/LCD/hello.LCD.I2C.mp4`
+- `output_devices/LCD/hello.LCD.44.png`
+- `output_devices/ESC/hello.ESC.44.mp4`
+- `output_devices/ESC/hello.ESC.45.board.png`
+- `output_devices/ESC/hello.ESC.45.out`
+- `output_devices/ESC/hello.ESC.45.interior.png`
+- `output_devices/ESC/hello.ESC.44.out`
+- `output_devices/ESC/hello.ESC.44.png`
+- `output_devices/ESC/hello.ESC.45.traces.png`
+- `output_devices/ESC/hello.ESC.45.c.hex`
+- `output_devices/ESC/hello.ESC.44.c.hex`
+- `output_devices/ESC/hello.ESC.44.jpg`
+- `output_devices/44780.pdf`
+- `output_devices/stepper/hello.stepper.44.png`
+- `output_devices/stepper/hello.stepper.44.jpg`
+- `output_devices/stepper/hello.stepper.bipolar.44.jpg`
+- `output_devices/stepper/hello.stepper.bipolar.44.mp4`
+- `output_devices/stepper/hello.stepper.bipolar.44.png`
+- `output_devices/stepper/estepper.png`
+- `output_devices/stepper/hello.stepper.44.mp4`
+- `output_devices/SSR/SSR.jpg`
+- `composites/digital.png`
+- `composites/fold.png`
+- `composites/machine.jpg`
+- `composites/composites.png`
+- `computer_design/3Dconstraints.mp4`
+- `computer_design/sculpt.mp4`
+- `computer_design/freecad.mp4`
+- `computer_design/revolve.mp4`
+- `computer_design/loft.mp4`
+- `computer_design/snaps.mp4`
+- `computer_design/pixels.mp4`
+- `computer_design/fold.mp4`
+- `computer_design/parametric.mp4`
+- `computer_design/filletchamfer.mp4`
+- `computer_design/drawing.mp4`
+- `computer_design/alien.png`
+- `computer_design/algorithmic.mp4`
+- `computer_design/hierarchy.mp4`
+- `computer_design/alignment.mp4`
+- `computer_design/construction.mp4`
+- `computer_design/sweep.mp4`
+- `computer_design/CSG.mp4`
+- `computer_design/antimony.mp4`
+- `computer_design/offset.mp4`
+- `computer_design/inkscape.mp4`
+- `computer_design/extrude.mp4`
+- `computer_design/2Dconstraints.mp4`
+- `computer_design/Blender.mp4`
+- `computer_design/freecadsketch.mp4`
+- `computer_machining/2.5D.mp4`
+- `computer_machining/2D.mp4`
+- `computer_machining/test.png`
+- `computer_machining/test.stl`
+- `computer_machining/flexure.jpg`
+- `computer_machining/cuts.png`
+- `computer_machining/outline.mp4`
+- `computer_machining/sample.sbp`
+- `computer_machining/3D.mp4`
+- `molding_casting/rohs.png`
+- `molding_casting/glass.png`
+- `molding_casting/hello.png`
+- `molding_casting/sample.png`
+- `molding_casting/sample.blend`
+- `molding_casting/sample.jpg`
+- `molding_casting/foosball.png`
+- `molding_casting/hello.mold.png`
+- `molding_casting/tippy.bottom.png`
+- `molding_casting/toolpaths.png`
+- `molding_casting/sample.mp4`
+- `molding_casting/tippy.png`
+- `molding_casting/metal.png`
+- `molding_casting/sample.stl`
+- `molding_casting/bubbles.png`
+- `molding_casting/tippy.mp4`
+- `molding_casting/tippy.top.png`
+- `computer_cutting/joints.FCStd`
+- `computer_cutting/face.2000.png`
+- `computer_cutting/halftone.jpg`
+- `computer_cutting/gray.jpg`
+- `computer_cutting/joints.jpg`
+- `computer_cutting/gray-svg.png`
+- `computer_cutting/56836505.pdf`
+- `computer_cutting/alien.png`
+- `computer_cutting/gik.jpg`
+- `computer_cutting/hinges.jpg`
+- `computer_cutting/dm.jpg`
+- `computer_cutting/GIK.FCStd`
+- `computer_cutting/vinyl.jpg`
+- `computer_cutting/alien.jpg`
+- `computer_cutting/Arial Bold.ttf`
+- `computer_cutting/gray-png.png`
+- `computer_cutting/gik.png`
+- `computer_cutting/joints.png`
+- `computer_cutting/holes.jpg`
+- `computer_cutting/gik.fab.png`
+- `computer_cutting/path.png`
+- `computer_cutting/GIK.mp4`
+- `computer_cutting/GIK.FCStd1`
+- `computer_cutting/mods.mp4`
+- `computer_cutting/gik.sb`
+- `computer_cutting/flexures.png`
+- `computer_cutting/gray.png`
+- `computer_cutting/fire.jpg`
+- `computer_cutting/halftone.png`
+- `interface_application_programming/JavaLine.mp4`
+- `interface_application_programming/JavaLine$LinePanel.class`
+- `interface_application_programming/JavaLine.java`
+- `interface_application_programming/JavaImage.html`
+- `interface_application_programming/JavaImage$ImagePanel.class`
+- `interface_application_programming/JavaLine.awt.java`
+- `interface_application_programming/xline.mp4`
+- `interface_application_programming/matlines.mp4`
+- `interface_application_programming/programs/JavaLine.java`
+- `interface_application_programming/programs/JavaImage.html`
+- `interface_application_programming/programs/ximage`
+- `interface_application_programming/programs/glimage.py`
+- `interface_application_programming/programs/glsurf`
+- `interface_application_programming/programs/JavaLine.html`
+- `interface_application_programming/programs/mpipi.c`
+- `interface_application_programming/programs/glsurf.py`
+- `interface_application_programming/programs/xline`
+- `interface_application_programming/programs/glsurf.c`
+- `interface_application_programming/JavaImage.awt.java`
+- `interface_application_programming/matline.mp4`
+- `interface_application_programming/JavaImage.java.swing.saf`
+- `interface_application_programming/JavaLine.java.saf`
+- `interface_application_programming/glimage.mp4`
+- `interface_application_programming/matimage.mp4`
+- `interface_application_programming/JavaImage.mp4`
+- `interface_application_programming/JavaLine.Swing.java`
+- `interface_application_programming/ximage`
+- `interface_application_programming/glimage.py`
+- `interface_application_programming/JavaImage.image.java`
+- `interface_application_programming/JavaImage.java.saf`
+- `interface_application_programming/surface.mp4`
+- `interface_application_programming/glsurf.mp4`
+- `interface_application_programming/JavaImage.java.swing`
+- `interface_application_programming/ximage.mp4`
+- `interface_application_programming/JavaLine.html`
+- `interface_application_programming/JavaImage.rect.java`
+- `interface_application_programming/glimage`
+- `interface_application_programming/JavaImage.class`
+- `interface_application_programming/JavaLine.class`
+- `interface_application_programming/glsurf.py`
+- `interface_application_programming/glimage.c`
+- `interface_application_programming/physics.mp4`
+- `interface_application_programming/xline`
+- `networking_communications/socket/udp.mp4`
+- `networking_communications/MFRC522/hello.MFRC522.t1614.png`
+- `networking_communications/MFRC522/hello.MFRC522.t1614.jpg`
+- `networking_communications/MFRC522/hello.MFRC522.t1614.mp4`
+- `networking_communications/I2C/hello.I2C.45.bridge.traces.png`
+- `networking_communications/I2C/hello.I2C.45.jpg`
+- `networking_communications/I2C/hello.I2C.45.node.png`
+- `networking_communications/I2C/hello.I2C.45.node.interior.png`
+- `networking_communications/I2C/hello.I2C.mp4`
+- `networking_communications/I2C/hello.I2C.t1614.jpg`
+- `networking_communications/I2C/hello.I2C.45.node.traces.png`
+- `networking_communications/I2C/hello.I2C.45.bridge.interior.png`
+- `networking_communications/I2C/hello.I2C.45.programming.jpg`
+- `networking_communications/I2C/out.png`
+- `networking_communications/I2C/hello.I2C.t1614.png`
+- `networking_communications/I2C/hello.I2C.45.bridge.png`
+- `networking_communications/APA/apa.ftdi.interior.png`
+- `networking_communications/APA/apa.ftdi.png`
+- `networking_communications/APA/apa.mp4`
+- `networking_communications/APA/apa.jpg`
+- `networking_communications/APA/apa.io.traces.png`
+- `networking_communications/APA/apa.io.png`
+- `networking_communications/APA/apa.ftdi.traces.png`
+- `networking_communications/APA/apa.io.interior.png`
+- `networking_communications/HM11/HM11.mp4`
+- `networking_communications/HM11/hello.HM-11.ftdi.jpg`
+- `networking_communications/HM11/hello.HM-11.ftdi.png`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.Python.mp4`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.AccessPoint.mp4`
+- `networking_communications/ESP8266/TCP.server.mp4`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.png`
+- `networking_communications/ESP8266/hello.ESP-01.png`
+- `networking_communications/ESP8266/both.png`
+- `networking_communications/ESP8266/hello.ESP-01.jpg`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.png`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.jpg`
+- `networking_communications/ESP8266/0a-esp8266ex_datasheet_en.pdf`
+- `networking_communications/ESP8266/both.xcf`
+- `networking_communications/ESP8266/hello.ESP-01.echo.mp4`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.traces.png`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.echo.mp4`
+- `networking_communications/ESP8266/hello.ESP-01.WebServer.mp4`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.jpg`
+- `networking_communications/ESP8266/UDP.mp4`
+- `networking_communications/ESP8266/TCP.client.mp4`
+- `networking_communications/ESP8266/esp-wroom-02d_esp-wroom-02u_datasheet_en-1365835.pdf`
+- `networking_communications/ESP8266/0c-esp-wroom-02_datasheet_en.pdf`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.interior.png`
+- `networking_communications/ESP8266/hello.ESP-01.holes.png`
+- `networking_communications/ESP8266/esp01.pdf`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.holes.png`
+- `networking_communications/ESP32/hello.ESP32-WROOM.Python.mp4`
+- `networking_communications/ESP32/hello.ESP32-WROOM.BLE.mp4`
+- `networking_communications/ESP32/hello.ESP32-WROOM.UDP.mp4`
+- `networking_communications/ESP32/esp32_datasheet_en.pdf`
+- `networking_communications/ESP32/hello.ESP32-WROOM.jpg`
+- `networking_communications/ESP32/hello.ESP32-WROOM.holes.png`
+- `networking_communications/ESP32/hello.ESP32-CAM.video.mp4`
+- `networking_communications/ESP32/hello.ESP32-WROOM.WebClient.mp4`
+- `networking_communications/ESP32/hello.ESP32-CAM.jpg`
+- `networking_communications/ESP32/hello.ESP32-CAM.png`
+- `networking_communications/ESP32/hello.ESP32-WROOM.SPP.mp4`
+- `networking_communications/ESP32/hello.ESP32-CAM.mp4`
+- `networking_communications/ESP32/hello.ESP32-CAM.holes.png`
+- `networking_communications/ESP32/hello.ESP32-WROOM.echo.mp4`
+- `networking_communications/ESP32/hello.ESP32-WROOM.png`
+- `networking_communications/ESP32/hello.ESP32-WROOM.WebServer.mp4`
+- `networking_communications/ESP32/esp32-wroom-32_datasheet_en.pdf`
+- `networking_communications/SLIP/hello.bus.45.SLIP.avi`
+- `networking_communications/SLIP/hello.bus.45.SLIP.mp4`
+- `networking_communications/bus/bus.mp4`
+- `networking_communications/bus/bus.jpg`
+- `networking_communications/bus/hello.bus.45.node.png`
+- `networking_communications/bus/hello.bus.45.bridge.png`
+- `networking_communications/nRF/hello.nRF24L01P.44.jpg`
+- `networking_communications/nRF/hello.nRF24L01P.44.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.interior.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.traces.png`
+- `networking_communications/APTP/ftdi/ATP.FTDI.board.png`
+- `networking_communications/APTP/board/ATP.E5.board.png`
+- `networking_communications/APTP/board/ATP.E5.traces.png`
+- `networking_communications/APTP/board/ATP.E5.interior.png`
+- `networking_communications/APTP/board/ATP.E5.components.jpg`
+- `networking_communications/i0/clicks.png`
+- `networking_communications/i0/i0.3.IO.44.thtpv4.asm`
+- `networking_communications/i0/i0.jpg`
+- `networking_communications/SD/hello.uSD.D11C.jpg`
+- `networking_communications/SD/SD.pdf`
+- `networking_communications/SD/hello.uSD.D11C.mp4`
+- `networking_communications/SD/hello.uSD.D11C.png`
+- `networking_communications/SD/hello.uSD.44.png`
+- `networking_communications/SD/FAT.pdf`
+- `networking_communications/SD/hello.uSD.44.jpg`
+- `networking_communications/RN4871/RN4871.mp4`
+- `networking_communications/RN4871/hello.RN4871.ftdi.jpg`
+- `networking_communications/RN4871/hello.RN4871.ftdi.png`
+- `old/sensors_actuators_displays/RS-170.jpg`
+- `old/cad_cam_cae/Bowyer.pdf`
+- `old/cad_cam_cae/Bowyer.odp`
+- `old/cad_cam_cae/Leibman.pdf`
+- `old/computer_machining/sample.sbp`
+- `old/computer_cutting/GIK.jpg`
+- `old/computer_cutting/dm.jpg`
+- `old/computer_cutting/David.jpg`
+- `old/computer_cutting/fire.jpg`
+- `old/embedded_networking_communications/clicks.png`
+- `old/embedded_networking_communications/basics.pdf`
+- `old/embedded_networking_communications/i0.pdf`
+- `old/embedded_networking_communications/i0.3.IO.44.thtpv4.asm`
+- `old/embedded_networking_communications/i0.jpg`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#9`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#1`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#7`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#3`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#2`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#5`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#2`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#3`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#8`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_eagle.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#6`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#6`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.sch`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_interior.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.brd`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#1`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#4`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_exterior.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.xcf`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.xcf`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.s#5`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio_small_bit.png`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.b#4`
+- `electronics_production/solders.png`
+- `electronics_production/lines.png`
+- `electronics_production/0156.jpg`
+- `electronics_production/braid.jpg`
+- `electronics_production/desolder.jpg`
+- `electronics_production/breadboard.jpg`
+- `electronics_production/010.jpg`
+- `electronics_production/fiber.jpg`
+- `electronics_production/traces.mp4`
+- `electronics_production/interior.mp4`
+- `electronics_production/Gerber.jpg`
+- `electronics_production/linetest.png`
+- `electronics_production/mods.mp4`
+- `applications_implications/electronics/SPWelectronics.png`
+- `applications_implications/houses/FAB-LAB-HOUSE_A03_team.jpg`
+- `applications_implications/drones/drone.jpg`
+- `applications_implications/drones/drone.png`
+- `applications_implications/satellite/satellite.jpg`
+- `applications_implications/medical/medical.png`
+- `applications_implications/terminal/terminal.jpg`
+- `applications_implications/machines/machines.jpg`
+- `applications_implications/boats/kayak.png`
+- `applications_implications/clothes/GerardRubio_OpenKnit.png`
+- `applications_implications/clothes/GerardRubio_OpenKnit.pdf`
+- `applications_implications/consumer_electronics/boombox_slide.png`
+- `applications_implications/consumer_electronics/boombox_slide.pdf`
+- `applications_implications/laptop/laptop.jpg`
+- `applications_implications/cities/Poblenou.png`
+- `applications_implications/cities/fabcity_foto_aj.jpg`
+- `applications_implications/robots/ocelot.png`
+- `applications_implications/food/aquaponics.jpg`
+- `applications_implications/food/cityfarm.jpg`
+- `applications_implications/toys/toys.jpg`
+- `applications_implications/biology/biofab.png`
+- `applications_implications/test_equipment/scope.jpg`
+- `applications_implications/furniture/FabLabIL Extreme Make Over.png`
+- `applications_implications/musical_instruments/3d_bass_icon.jpg`
+- `applications_implications/musical_instruments/tonguedrum_as1280.jpg`
+- `applications_implications/cars/car.jpg`
+- `applications_implications/microscope/microscope.jpg`
+- `applications_implications/economies/Vestmannaeyjar.jpg`
+- `applications_implications/energy/turbine.jpg`
+- `applications_implications/phone/phone.jpg`
+- `applications_implications/art/Haystack.png`
+- `applications_implications/bicycles/IMG_5765.JPG`
+- `applications_implications/network/fabfi.jpg`
+- `applications_implications/inflatables/soft.png`
+- `applications_implications/prosthetics/hand.jpg`
+- `applications_implications/environment/site.png`
+- `applications_implications/environment/P1000273-2.JPG`
+- `applications_implications/labs/lab.jpg`
+- `applications_implications/labs/labs.jpg`
+- `applications_implications/shoes/Slide1.png`
+
+## 2. Files different from canonical
+
+### 2.1 Variants first seen in 2021 (copied for this year)
+
+- `embedded_programming/UPDI/hello.serial-UPDI`
+- `embedded_programming/UPDI/hello.serial-UPDI.interior.png`
+- `embedded_programming/UPDI/hello.serial-UPDI.3.interior.png`
+- `embedded_programming/UPDI/hello.serial-UPDI.3.traces.png`
+- `embedded_programming/UPDI/hello.serial-UPDI.3`
+- `embedded_programming/UPDI/hello.serial-UPDI.traces.png`
+- `embedded_programming/SWD/load`
+- `embedded_programming/SWD/hello.SWD.10-4`
+- `embedded_programming/SWD/hello.SWD.10-4.1`
+- `embedded_programming/SWD/hello.SWD.10-4.1.interior.png`
+- `embedded_programming/t412/hello.t412.echo.make`
+- `embedded_programming/t412/hello.t412.echo.c`
+- `embedded_programming/t412/hello.t412.3.blink.make`
+- `embedded_programming/t412/hello.t412.3.blink.c`
+- `embedded_programming/t412/hello.t412.3.blink.interior.png`
+- `embedded_programming/t412/hello.t412.3.blink`
+- `embedded_programming/t412/hello.t412.3.blink.traces.png`
+- `embedded_programming/t412/hello.t412.3.blink.ino`
+- `embedded_programming/128DB32/hello.128DB32.echo.interior.png`
+- `embedded_programming/128DB32/hello.128DB32.echo.traces.png`
+- `embedded_programming/128DB32/hello.128DB32.echo.c`
+- `embedded_programming/128DB32/hello.128DB32.echo`
+- `embedded_programming/128DB32/hello.128DB32.echo.make`
+- `embedded_programming/D11C/hello.D11C.echo.1.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.1.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large`
+- `embedded_programming/D11C/hello.D11C.serial.5V.1.1`
+- `embedded_programming/D11C/hello.D11C.echo.micro.traces.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.top.png`
+- `embedded_programming/D11C/hello.D11C.echo.1.interior.png`
+- `embedded_programming/D11C/hello.D11C.echo.micro.interior.png`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.interior.png`
+- `embedded_programming/D11C/hello.D11C.echo.1`
+- `embedded_programming/D11C/hello.D11C.echo.micro.holes.png`
+- `embedded_programming/D11C/hello.D11C.blink.make`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small.jpg`
+- `embedded_programming/D11C/boot/load`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.large.top.png`
+- `embedded_programming/D11C/hello.D11C.echo.micro.jpg`
+- `embedded_programming/D11C/hello.D11C.serial.5V.2.small`
+- `embedded_programming/D11C/hello.D11C.echo.micro.png`
+- `embedded_programming/D11C/hello.D11C.echo.micro`
+- `input_devices/step/hello.txrx.t1624`
+- `input_devices/step/hello.txrx.t1624.ino`
+- `input_devices/step/hello.txrx.t1624.traces.png`
+- `input_devices/step/hello.txrx.t1624.py`
+- `input_devices/step/hello.txrx.t1624.interior.png`
+- `input_devices/GPS/hello.GPS.t1614.interior.png`
+- `input_devices/GPS/hello.GPS.t1614`
+- `input_devices/GPS/hello.GPS.t1614.ino`
+- `input_devices/GPS/hello.GPS.t1614.traces.png`
+- `input_devices/accel/hello.ADXL343.c`
+- `input_devices/accelgyromag/hello.MinIMU9v5.t1614.traces.png`
+- `input_devices/accelgyromag/hello.MinIMU9v5.ino`
+- `input_devices/accelgyromag/hello.MinIMU9v5.t1614.interior.png`
+- `input_devices/accelgyromag/hello.MinIMU9v5.t1614`
+- `input_devices/accelgyromag/hello.MinIMU9v5.py`
+- `input_devices/mag/vector/hello.ALS31313.t412.py`
+- `input_devices/mag/vector/hello.ALS31313.t412.make`
+- `input_devices/mag/vector/hello.ALS31313.t412`
+- `input_devices/mag/vector/hello.ALS31313.t412.c`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.traces.png`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.interior.png`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.make`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.py`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.ino`
+- `input_devices/mag/TLE493D/hello.TLE493D.t412.c`
+- `output_devices/servo/hello.servo-D11C.mech.png-outline.gbr`
+- `output_devices/servo/hello.servo-D11C.mask.png-fill.gbr`
+- `output_devices/servo/hello.servo-D11C`
+- `output_devices/servo/hello.servo.t412.ino`
+- `output_devices/servo/hello.servo-D11C.interior.png`
+- `output_devices/servo/hello.servo.t412`
+- `output_devices/servo/hello.servo.t412.interior.png`
+- `output_devices/servo/hello.servo-registers.t412.ino`
+- `output_devices/servo/hello.servo-D11C.traces.png`
+- `output_devices/servo/hello.servo-D11C.jpg`
+- `output_devices/servo/hello.servo.t412.traces.png`
+- `output_devices/servo/hello.servo-D11C.png`
+- `output_devices/servo/hello.servo-D11C.silk.png-fill.gbr`
+- `output_devices/servo/hello.servo-D11C.traces.png-fill.gbr`
+- `output_devices/DRV8428/hello.DRV8428-D11C`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.traces.png-fill.gbr`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.interior.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.mech.png-outline.gbr`
+- `output_devices/DRV8428/hello.DRV8428-D11C.ino`
+- `output_devices/DRV8428/hello.DRV8428`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.traces.png`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.mask.png-fill.gbr`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17`
+- `output_devices/DRV8428/hello.DRV8428.ino`
+- `output_devices/DRV8428/hello.DRV8428-D11C.interior.png`
+- `output_devices/DRV8428/serialstep.py`
+- `output_devices/DRV8428/hello.DRV8428-D11C-NEMA17.silk.png-fill.gbr`
+- `computer_design/image.html`
+- `project_management/archive.html`
+- `project_management/scripts/Ubuntu_20.04`
+- `interface_application_programming/remote.html`
+
+### 2.2 Variants shared with previous years (not copied for this year)
+
+- `machine_design/oldindex.html` → shared with year `2012`
+- `electronics_design/KiCad.mp4` → shared with year `2020`
+- `scanning_printing/sample.f` → shared with year `2015`
+- `scanning_printing/bearing.cad` → shared with year `2012`
+- `scanning_printing/fail.jpg` → shared with year `2018`
+- `scanning_printing/C260/IMG_20191001_100812.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_100901.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_095427.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_101048.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_101007.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_100951.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_100847.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_100920.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_095348.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/gal` → shared with year `2019`
+- `scanning_printing/C260/vid` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_101030.jpg.html` → shared with year `2019`
+- `scanning_printing/C260/IMG_20191001_100828.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/thickness.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/clearange.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/infill.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/clearance.support.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/finish.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/bridging.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/angle.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/overhang.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/gal` → shared with year `2019`
+- `scanning_printing/Form3/vid` → shared with year `2019`
+- `scanning_printing/Form3/anisotropy.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/dimensions.jpg.html` → shared with year `2019`
+- `scanning_printing/Form3/free.jpg.html` → shared with year `2019`
+- `scanning_printing/bearing.math` → shared with year `2012`
+- `scanning_printing/light/HDMI1_1366x768` → shared with year `2014`
+- `scanning_printing/light/png_sub.c` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_color.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_005_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_diff.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_001_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_007.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_007_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_002_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_005_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_004_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_003.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_004.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_001.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_003_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_006_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_006_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_000_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_on.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diffs.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_001_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_005.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_006.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_003_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_007_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/gal` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/vid` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_000_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_002_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/img_004_1.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_000.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/diff_002.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_gray_code/all_off.png.html` → shared with year `2014`
+- `scanning_printing/light/png_ply.c` → shared with year `2014`
+- `scanning_printing/light/zoom` → shared with year `2014`
+- `scanning_printing/light/png_stl.c` → shared with year `2014`
+- `scanning_printing/light/scan` → shared with year `2014`
+- `scanning_printing/light/coord.c` → shared with year `2014`
+- `scanning_printing/light/linescan.c` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_025.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_021_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_026_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_011_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_022_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_005_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_023_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_diff.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_015_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_007.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_009_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_007_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_032.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_012.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_033.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_027.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_004_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_003.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_033_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_038.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_004.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_014.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_039.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_001.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_039_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_010.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_035.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_009.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_024_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_026.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_003_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_017.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_019_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_006_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_034.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_000_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_022.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_021.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_013.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_029_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_on.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_035_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_028_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_025_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_008.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_030.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_037.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_020_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_028.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_008_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_015.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_032_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_001_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_005.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_024.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_006.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_010_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_029.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_020.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_019.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_031.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/gal` → shared with year `2014`
+- `scanning_printing/light/scan_line/vid` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_018_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_034_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_016_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_027_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_011.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_023.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_014_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_031_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_016.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_018.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_002_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_036_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_017_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_000.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_030_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_002.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_013_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/all_off.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_037_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/diff_036.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_012_0.png.html` → shared with year `2014`
+- `scanning_printing/light/scan_line/img_038_0.png.html` → shared with year `2014`
+- `scanning_printing/light/bright` → shared with year `2014`
+- `scanning_printing/Prusa/overhang.jpg` → shared with year `2019`
+- `scanning_printing/Prusa/infill.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/dimension.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/finish.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/bridging.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/angle.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/clearance.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/clearance.jpg` → shared with year `2019`
+- `scanning_printing/Prusa/overhang.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/gal` → shared with year `2019`
+- `scanning_printing/Prusa/vid` → shared with year `2019`
+- `scanning_printing/Prusa/anisotropy.jpg.html` → shared with year `2019`
+- `scanning_printing/Prusa/free.jpg.html` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c.make` → shared with year `2016`
+- `embedded_programming/hello.arduino.328P.cad` → shared with year `2015`
+- `embedded_programming/hello.ftdi.44.2` → shared with year `2019`
+- `embedded_programming/hello.ftdi.45.echo.make` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44` → shared with year `2019`
+- `embedded_programming/echo.html` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.echo.c` → shared with year `2019`
+- `embedded_programming/hello.ftdi.16E5.cad` → shared with year `2016`
+- `embedded_programming/hello.ftdi.16E5.echo.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.45.traces.png` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.2.interior.png` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.cad` → shared with year `2015`
+- `embedded_programming/rx.py` → shared with year `2020`
+- `embedded_programming/hello.ftdi.16E5` → shared with year `2019`
+- `embedded_programming/boards.txt` → shared with year `2013`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C.interior.png` → shared with year `2019`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C.traces.png` → shared with year `2020`
+- `embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.interior.png` → shared with year `2019`
+- `embedded_programming/SWD/hello.CMSIS-DAP.10.D11C` → shared with year `2019`
+- `embedded_programming/SWD/hello.SWD.10-4.interior.png` → shared with year `2020`
+- `embedded_programming/SWD/hello.CMSIS-DAP.4.D11C` → shared with year `2020`
+- `embedded_programming/SWD/hello.SWD.10-4.traces.png` → shared with year `2020`
+- `embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.traces.png` → shared with year `2019`
+- `embedded_programming/SWD/hello.CMSIS-DAP.10.D11C.jpg` → shared with year `2019`
+- `embedded_programming/D21E/hello.D21E.echo.traces.png` → shared with year `2020`
+- `embedded_programming/D21E/hello.D21E.echo.interior.png` → shared with year `2020`
+- `embedded_programming/D21E/boot/openocd.cfg` → shared with year `2020`
+- `embedded_programming/D21E/hello.D21E.echo.ino` → shared with year `2019`
+- `embedded_programming/D21E/hello.D21E.echo` → shared with year `2020`
+- `embedded_programming/hello.ftdi.16E5.blink.make` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.2.top.png` → shared with year `2019`
+- `embedded_programming/Blink.pde` → shared with year `2012`
+- `embedded_programming/term.py` → shared with year `2020`
+- `embedded_programming/hello.ftdi.44.echo.hex` → shared with year `2012`
+- `embedded_programming/t3216/hello.t3216.echo` → shared with year `2020`
+- `embedded_programming/t3216/hello.t3216.echo.traces.png` → shared with year `2020`
+- `embedded_programming/t3216/hello.t3216.echo.interior.png` → shared with year `2020`
+- `embedded_programming/t3216/hello.t3216.echo.ino` → shared with year `2020`
+- `embedded_programming/hello.ftdi.45.echo.serial.ino` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.echo.c.make` → shared with year `2019`
+- `embedded_programming/hello.ftdi.16E5.ring.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.echo.asm.make` → shared with year `2016`
+- `embedded_programming/hello.ISP.44.cad` → shared with year `2015`
+- `embedded_programming/hello.ftdi.45.port.c` → shared with year `2019`
+- `embedded_programming/hello.ISP.44.res.cad` → shared with year `2015`
+- `embedded_programming/hello.ftdi.16E5.ring.make` → shared with year `2016`
+- `embedded_programming/hello.ISP.44.res.interior.png` → shared with year `2012`
+- `embedded_programming/FTDI/USB-FT230XS-serial.traces.png` → shared with year `2020`
+- `embedded_programming/FTDI/USB-FT230XS-UPDI` → shared with year `2020`
+- `embedded_programming/FTDI/USB-FT230XS-UPDI.interior.png` → shared with year `2020`
+- `embedded_programming/FTDI/USB-FT230XS-UPDI.traces.png` → shared with year `2020`
+- `embedded_programming/FTDI/USB-FT230XS-serial` → shared with year `2020`
+- `embedded_programming/FTDI/USB-FT230XS-serial.interior.png` → shared with year `2020`
+- `embedded_programming/t1614/hello.t1614.echo.ino` → shared with year `2019`
+- `embedded_programming/t1614/hello.t1614.echo.traces.png` → shared with year `2019`
+- `embedded_programming/t1614/hello.t1614.echo` → shared with year `2019`
+- `embedded_programming/t1614/hello.t1614.echo.interior.png` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.traces.png` → shared with year `2018`
+- `embedded_programming/hello.ftdi.45.echo.c` → shared with year `2019`
+- `embedded_programming/hello.ftdi.45.port.ino` → shared with year `2019`
+- `embedded_programming/hello.ftdi.45` → shared with year `2019`
+- `embedded_programming/hello.arduino.328P.blink.make` → shared with year `2018`
+- `embedded_programming/hello.ftdi.45.port.make` → shared with year `2019`
+- `embedded_programming/hello.ISP.44` → shared with year `2019`
+- `embedded_programming/hello.ftdi.16E5.blink.c` → shared with year `2016`
+- `embedded_programming/hello.ftdi.44.echo.lst` → shared with year `2012`
+- `embedded_programming/t412/hello.t412.echo` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.blink.traces.png` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.echo.traces.png` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.echo.interior.png` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.blink.interior.png` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.blink` → shared with year `2019`
+- `embedded_programming/t412/hello.t412.echo.ino` → shared with year `2020`
+- `embedded_programming/t412/hello.t412.blink.ino` → shared with year `2019`
+- `embedded_programming/hello.ftdi.44.echo.interrupt.c` → shared with year `2020`
+- `embedded_programming/hello.ftdi.16E5.echo.make` → shared with year `2016`
+- `embedded_programming/hello.arduino.328P` → shared with year `2019`
+- `embedded_programming/D11D/hello.D11D.echo.interior.png` → shared with year `2019`
+- `embedded_programming/D11D/hello.D11D.echo` → shared with year `2019`
+- `embedded_programming/D11D/hello.D11D.echo.ino` → shared with year `2019`
+- `embedded_programming/D11D/hello.D11D.echo.traces.png` → shared with year `2019`
+- `embedded_programming/D11D/openocd.cfg` → shared with year `2019`
+- `embedded_programming/hello.ftdi.45.interior.png` → shared with year `2019`
+- `embedded_programming/hello.ISP.44.traces.png` → shared with year `2012`
+- `embedded_programming/hello.ftdi.44.interior.png` → shared with year `2018`
+- `embedded_programming/D11C/hello.D11C.serial.3V3` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.blink.interior.png` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.reset.interior.png` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.echo.traces.png` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.serial.5V` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.echo.interior.png` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.serial.ino` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.reset.clock.traces.png` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.bridge` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.reset.clock.interior.png` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.blink.reset.clock` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.echo` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.pullup` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.echo.ino` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.reset` → shared with year `2020`
+- `embedded_programming/D11C/hello.D11C.serial` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.ino` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.c` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.traces.png` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.bridge.ino` → shared with year `2019`
+- `embedded_programming/D11C/hello.D11C.blink.reset.traces.png` → shared with year `2020`
+- `embedded_programming/hello.arduino.328P.blink.c` → shared with year `2013`
+- `embedded_programming/hello.ftdi.45.echo.ino` → shared with year `2019`
+- `embedded_programming/hello.ISP.44.old.cad` → shared with year `2015`
+- `embedded_programming/portwrite.html` → shared with year `2019`
+- `embedded_programming/hello.ftdi.45.port.write.ino` → shared with year `2019`
+- `input_devices/tof/hello.VL53L1X.t1614.interior.png` → shared with year `2020`
+- `input_devices/tof/hello.VL53L1X.t1614` → shared with year `2020`
+- `input_devices/tof/hello.VL53L1X.ino` → shared with year `2020`
+- `input_devices/tof/hello.VL53L1X.py` → shared with year `2020`
+- `input_devices/tof/hello.VL53L1X.t1614.traces.png` → shared with year `2020`
+- `input_devices/radar/hello.RCWL-0516.make` → shared with year `2019`
+- `input_devices/radar/hello.RCWL-0516.c` → shared with year `2019`
+- `input_devices/radar/hello.RCWL-0516.interior.png` → shared with year `2019`
+- `input_devices/radar/hello.RCWL-0516.traces.png` → shared with year `2019`
+- `input_devices/radar/hello.RCWL-0516.py` → shared with year `2020`
+- `input_devices/radar/hello.RCWL-0516` → shared with year `2019`
+- `input_devices/temp/hello.temp.45.interior.png` → shared with year `2012`
+- `input_devices/temp/hello.temp.45.traces.png` → shared with year `2012`
+- `input_devices/temp/hello.temp.45.c` → shared with year `2015`
+- `input_devices/temp/hello.temp.45.make` → shared with year `2018`
+- `input_devices/temp/hello.temp.45.cad` → shared with year `2012`
+- `input_devices/temp/hello.temp.45` → shared with year `2019`
+- `input_devices/temp/hello.temp.45.py` → shared with year `2020`
+- `input_devices/video.html` → shared with year `2018`
+- `input_devices/color/hello.VEML6040.py` → shared with year `2020`
+- `input_devices/color/hello.VEML6040.ino` → shared with year `2020`
+- `input_devices/color/hello.VEML6040.t412` → shared with year `2020`
+- `input_devices/color/hello.VEML6040.t412.traces.png` → shared with year `2020`
+- `input_devices/color/hello.VEML6040.t412.interior.png` → shared with year `2020`
+- `input_devices/button/hello.button.t412.interior.png` → shared with year `2020`
+- `input_devices/button/hello.button.t412.traces.png` → shared with year `2020`
+- `input_devices/button/hello.button.45` → shared with year `2019`
+- `input_devices/button/hello.button.45.c` → shared with year `2015`
+- `input_devices/button/hello.button.D11C.ino` → shared with year `2020`
+- `input_devices/button/hello.button.t412` → shared with year `2020`
+- `input_devices/button/hello.button.45.cad` → shared with year `2012`
+- `input_devices/button/hello.button.45.make` → shared with year `2018`
+- `input_devices/button/hello.button.D11C.traces.png` → shared with year `2020`
+- `input_devices/button/hello.button.USB.ino` → shared with year `2020`
+- `input_devices/button/hello.button.D11C` → shared with year `2020`
+- `input_devices/button/hello.button.45.traces.png` → shared with year `2012`
+- `input_devices/button/hello.button.45.interior.png` → shared with year `2012`
+- `input_devices/button/hello.button.t412.ino` → shared with year `2020`
+- `input_devices/button/hello.button.D11C.interior.png` → shared with year `2020`
+- `input_devices/button/hello.button.serial.ino` → shared with year `2020`
+- `input_devices/python/rx.py` → shared with year `2020`
+- `input_devices/python/term.py` → shared with year `2020`
+- `input_devices/mic/hello.SPU0414HR5H.c` → shared with year `2015`
+- `input_devices/mic/hello.SPU0414HR5H.traces.png` → shared with year `2015`
+- `input_devices/mic/hello.SPU0414HR5H.py` → shared with year `2020`
+- `input_devices/mic/hello.SPU0414HR5H.interior.png` → shared with year `2015`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.py` → shared with year `2020`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.t1614.traces.png` → shared with year `2020`
+- `input_devices/mic/hello.mic.45.traces.png` → shared with year `2014`
+- `input_devices/mic/hello.mic.45` → shared with year `2019`
+- `input_devices/mic/hello.SPU0414HR5H.cad` → shared with year `2015`
+- `input_devices/mic/hello.mic.45.py` → shared with year `2020`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.t1614.interior.png` → shared with year `2020`
+- `input_devices/mic/hello.mic.45.c` → shared with year `2014`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.t1614` → shared with year `2020`
+- `input_devices/mic/hello.CMM-4030D-261-I2S-TR.ino` → shared with year `2020`
+- `input_devices/mic/hello.SPU0414HR5H` → shared with year `2019`
+- `input_devices/mic/hello.mic.45.interior.png` → shared with year `2014`
+- `input_devices/mic/hello.mic.45.cad` → shared with year `2014`
+- `input_devices/mic/hello.SPU0414HR5H.make` → shared with year `2015`
+- `input_devices/mic/hello.mic.45.make` → shared with year `2018`
+- `input_devices/accelgyro/hello.LSM6DS33.ino` → shared with year `2020`
+- `input_devices/accelgyro/hello.LSM6DS33.t1614` → shared with year `2020`
+- `input_devices/accelgyro/hello.LSM6DS33.t1614.traces.png` → shared with year `2020`
+- `input_devices/accelgyro/hello.LSM6DS33.py` → shared with year `2020`
+- `input_devices/accelgyro/hello.LSM6DS33.t1614.interior.png` → shared with year `2020`
+- `input_devices/step/hello.txrx.45.interior.png` → shared with year `2012`
+- `input_devices/step/hello.load.45.py` → shared with year `2020`
+- `input_devices/step/hello.txrx.45.cad` → shared with year `2012`
+- `input_devices/step/hello.load.45` → shared with year `2019`
+- `input_devices/step/hello.txrx.45.py` → shared with year `2020`
+- `input_devices/step/hello.load.45.interior.png` → shared with year `2012`
+- `input_devices/step/hello.txrx.45` → shared with year `2019`
+- `input_devices/step/hello.load.45.cad` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.traces.png` → shared with year `2012`
+- `input_devices/step/hello.load.45.make` → shared with year `2018`
+- `input_devices/step/hello.txrx.45.c` → shared with year `2015`
+- `input_devices/step/hello.load.45.c` → shared with year `2015`
+- `input_devices/step/hello.load.45.traces.png` → shared with year `2012`
+- `input_devices/step/hello.txrx.45.make` → shared with year `2018`
+- `input_devices/sonar/hello.HC-SR04.make` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.c` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.py` → shared with year `2020`
+- `input_devices/sonar/hello.HC-SR04.traces.png` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04.cad` → shared with year `2015`
+- `input_devices/sonar/hello.HC-SR04` → shared with year `2019`
+- `input_devices/sonar/hello.HC-SR04.interior.png` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.cad` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.traces.png` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.c` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.make` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501.py` → shared with year `2020`
+- `input_devices/motion/hello.HC-SR501.interior.png` → shared with year `2015`
+- `input_devices/motion/hello.HC-SR501` → shared with year `2019`
+- `input_devices/light/hello.light.45.traces.png` → shared with year `2012`
+- `input_devices/light/hello.light.45.py` → shared with year `2020`
+- `input_devices/light/hello.reflect.45.traces.png` → shared with year `2012`
+- `input_devices/light/hello.light.45.cad` → shared with year `2016`
+- `input_devices/light/hello.light.45.make` → shared with year `2016`
+- `input_devices/light/hello.reflect.45` → shared with year `2019`
+- `input_devices/light/hello.light.45.interior.png` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.cad` → shared with year `2016`
+- `input_devices/light/hello.light.45` → shared with year `2019`
+- `input_devices/light/hello.reflect.45.make` → shared with year `2018`
+- `input_devices/light/hello.reflect.45.py` → shared with year `2020`
+- `input_devices/light/hello.reflect.45.interior.png` → shared with year `2012`
+- `input_devices/light/hello.reflect.45.c` → shared with year `2015`
+- `input_devices/light/hello.light.45.c` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.interior.png` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.make` → shared with year `2015`
+- `input_devices/accel/hello.MXD6235MP.make` → shared with year `2018`
+- `input_devices/accel/hello.MXD6235MP.cad` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.traces.png` → shared with year `2015`
+- `input_devices/accel/hello.ADXL343.cad` → shared with year `2015`
+- `input_devices/accel/hello.MXD6235MP.c` → shared with year `2015`
+- `input_devices/accel/hello.MXD6235MP.py` → shared with year `2020`
+- `input_devices/accel/hello.ADXL343.py` → shared with year `2020`
+- `input_devices/accel/hello.ADXL343` → shared with year `2019`
+- `input_devices/mag/hello.mag.45.traces.png` → shared with year `2014`
+- `input_devices/mag/hello.mag.45.js` → shared with year `2018`
+- `input_devices/mag/hello.mag.t412.interior.png` → shared with year `2020`
+- `input_devices/mag/hello.mag.45.c` → shared with year `2014`
+- `input_devices/mag/hello.mag.45` → shared with year `2019`
+- `input_devices/mag/hello.mag.D11C.ino` → shared with year `2020`
+- `input_devices/mag/hello.mag.USB.ino` → shared with year `2020`
+- `input_devices/mag/hello.mag.45.py` → shared with year `2020`
+- `input_devices/mag/hello.mag.t412.ino` → shared with year `2020`
+- `input_devices/mag/hello.mag.45.make` → shared with year `2018`
+- `input_devices/mag/hello.mag.45.cad` → shared with year `2014`
+- `input_devices/mag/hello.mag.t412.traces.png` → shared with year `2020`
+- `input_devices/mag/hello.mag.45.interior.png` → shared with year `2013`
+- `input_devices/mag/hello.mag.D11C` → shared with year `2020`
+- `input_devices/mag/node_modules/info-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/info-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/info-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/info-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov.info` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/base.css` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/sorter.js` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/prettify.js` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/async-throttle/index.js.html` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/coverage/lcov-report/prettify.css` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/async-limiter/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/duplex-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/GOVERNANCE.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/CONTRIBUTING.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_writable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_readable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_transform.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/destroy.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/stream.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/stream-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/internal/streams/BufferList.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_duplex.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/lib/_stream_passthrough.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/readable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/readable-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/transform.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/duplex.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/writable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/doc/wg-meetings/2015-01-30.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/writable-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readable-stream/passthrough.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/src/common.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/dist/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/circle.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/lib/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/Readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/test/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/noop-logger/History.md` → shared with year `2018`
+- `input_devices/mag/node_modules/once/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/once/once.js` → shared with year `2018`
+- `input_devices/mag/node_modules/once/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/once/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/log-ok/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/log-ok/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/log-ok/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-plain-object/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-plain-object/index.d.ts` → shared with year `2018`
+- `input_devices/mag/node_modules/is-plain-object/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-plain-object/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-plain-object/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/chownr/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/chownr/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/chownr/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/chownr/chownr.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bold/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bold/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bold/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bold/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/lib/utils.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-question/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/component-emitter/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/os-homedir/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/os-homedir/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/os-homedir/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/os-homedir/license` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-strikethrough/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-strikethrough/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-strikethrough/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-strikethrough/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-colors/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-colors/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-colors/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-colors/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-data-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/is-accessor-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-copy/node_modules/define-property/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblue/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblue/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblue/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblue/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/License` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/Readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/test/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/History.md` → shared with year `2018`
+- `input_devices/mag/node_modules/delegates/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgmagenta/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgmagenta/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgmagenta/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgmagenta/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/pack.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/headers.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-stream/extract.js` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/test-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/test-node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/pump/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/log-utils/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/log-utils/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/log-utils/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-green/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-green/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-green/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-green/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/string-width/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/string-width/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/string-width/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/string-width/license` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-radio/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-fill/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-fill/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-fill/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/lib/util.js` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/core-util-is/float.patch` → shared with year `2018`
+- `input_devices/mag/node_modules/copy-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/copy-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/copy-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-black/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-black/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-black/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-black/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgyellow/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgyellow/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgyellow/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgyellow/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/isobject/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/isobject/index.d.ts` → shared with year `2018`
+- `input_devices/mag/node_modules/isobject/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/isobject/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/isobject/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-list/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-list/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-list/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-list/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/clone-deep/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/expand-template/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/expand-template/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/expand-template/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/expand-template/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/expand-template/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-grey/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-grey/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-grey/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-grey/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-magenta/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-magenta/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-magenta/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-magenta/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/safe-buffer/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/safe-buffer/index.d.ts` → shared with year `2018`
+- `input_devices/mag/node_modules/safe-buffer/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/safe-buffer/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/safe-buffer/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/immutable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/LICENCE` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/mutable.js` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/.jshintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/xtend/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/bin/semver` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/semver.js` → shared with year `2018`
+- `input_devices/mag/node_modules/semver/range.bnf` → shared with year `2018`
+- `input_devices/mag/node_modules/napi-build-utils/index.md` → shared with year `2018`
+- `input_devices/mag/node_modules/napi-build-utils/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/napi-build-utils/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/napi-build-utils/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/napi-build-utils/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc-unsafe/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/warning-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/warning-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/warning-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/warning-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/utils.js` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/cli.js` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/window-size/node_modules/is-number/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-dim/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-dim/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-dim/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-dim/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgcyan/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgcyan/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgcyan/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgcyan/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-reset/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-reset/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-reset/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-reset/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/isarray/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-white/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-white/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-white/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-white/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/CONTRIBUTING.md` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/CODE_OF_CONDUCT.md` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/test/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/node-abi/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/map-visit/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/map-visit/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/map-visit/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/map-visit/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/wide-align/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/wide-align/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/wide-align/align.js` → shared with year `2018`
+- `input_devices/mag/node_modules/wide-align/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-ansi/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-ansi/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-ansi/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-ansi/license` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/buffer-alloc/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mimic-response/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mimic-response/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mimic-response/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mimic-response/license` → shared with year `2018`
+- `input_devices/mag/node_modules/is-extendable/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-extendable/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-extendable/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-extendable/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ini/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ini/ini.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ini/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ini/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/success-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/success-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/success-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/success-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/choices-separator/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-descriptor/node_modules/kind-of/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/inherits/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/inherits/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/inherits/inherits.js` → shared with year `2018`
+- `input_devices/mag/node_modules/inherits/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/inherits/inherits_browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/lib/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/lib/parsers.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/bin/echo.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/bin/list.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/bin/repl.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/bin/terminal.js` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/serialport/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-utils/node_modules/is-number/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mixin-object/node_modules/for-in/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/end-of-stream/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/end-of-stream/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/end-of-stream/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/end-of-stream/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/lazy-cache/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/lazy-cache/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/lazy-cache/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/lazy-cache/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/tunnel-agent/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/tunnel-agent/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/tunnel-agent/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tunnel-agent/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-checkbox/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/readme.markdown` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/c.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/url.js` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/b.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/e.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/a.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/test/d.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/example/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/example/url.js` → shared with year `2018`
+- `input_devices/mag/node_modules/github-from-package/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/set-blocking/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/set-blocking/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/set-blocking/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/set-blocking/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/set-blocking/LICENSE.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/lib/detect-libc.js` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/bin/detect-libc.js` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/detect-libc/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_implementation_pre_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_weak.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_string_bytes.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_callbacks_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_define_own_property_helper.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_converters_43_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_typedarray_contents.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_implementation_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/LICENSE.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_object_wrap.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_maybe_43_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_converters_pre_43_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_maybe_pre_43_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_persistent_pre_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_callbacks_pre_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/include_dirs.js` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/methods.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/v8_internals.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/buffers.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/script.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/errors.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/callback.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/persistent.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/asyncworker.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/maybe_types.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/v8_misc.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/scopes.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/json.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/object_wrappers.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/node_misc.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/new.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/string_bytes.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/doc/converters.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_private.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_new.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_callbacks.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_converters.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/tools/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/tools/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/tools/1to2.js` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_persistent_12_inl.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan.h` → shared with year `2018`
+- `input_devices/mag/node_modules/nan/nan_json.h` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-data-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/static-extend/node_modules/define-property/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/lib/deep-extend.js` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/deep-extend/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/spin.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/progress-bar.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/theme-set.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/has-color.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/plumbing.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/template-item.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/wide-truncate.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/base-theme.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/set-immediate.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/set-interval.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/render-template.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/themes.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/process.js` → shared with year `2018`
+- `input_devices/mag/node_modules/gauge/error.js` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-get/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-get/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-get/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-get/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/validation.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/receiver.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/constants.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/buffer-util.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/event-target.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/websocket.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/sender.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/websocket-server.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/permessage-deflate.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/lib/extension.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ws/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/to-buffer/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/error-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/error-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/error-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/error-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-windows/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-windows/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-windows/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-windows/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/readme.markdown` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/num.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/long.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/short.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/all_bool.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/stop_early.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/dash.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/parse.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/default_bool.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/unknown.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/kv_short.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/whitespace.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/parse_modified.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/bool.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/test/dotted.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/example/parse.js` → shared with year `2018`
+- `input_devices/mag/node_modules/minimist/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/console-control-strings/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/console-control-strings/README.md~` → shared with year `2018`
+- `input_devices/mag/node_modules/console-control-strings/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/console-control-strings/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/console-control-strings/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-buffer/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-buffer/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-buffer/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-buffer/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-buffer/test/basic.js` → shared with year `2018`
+- `input_devices/mag/node_modules/code-point-at/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/code-point-at/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/code-point-at/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/code-point-at/license` → shared with year `2018`
+- `input_devices/mag/node_modules/which-pm-runs/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/which-pm-runs/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/which-pm-runs/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/which-pm-runs/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-wrap/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-wrap/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-wrap/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-wrap/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-actions/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/string_decoder/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/string_decoder/lib/string_decoder.js` → shared with year `2018`
+- `input_devices/mag/node_modules/string_decoder/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/string_decoder/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/string_decoder/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/bin.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/CONTRIBUTING.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/download.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/proxy.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/appveyor.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/asset.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/help.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/util.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/rc.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prebuild-install/error.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/terminal-paginator/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/LICENSE.MIT` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/lib/utils.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/LICENSE.BSD` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/cli.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/test/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/test/ini.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/test/nested-env-vars.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/rc/LICENSE.APACHE2` → shared with year `2018`
+- `input_devices/mag/node_modules/decompress-response/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/decompress-response/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/decompress-response/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/decompress-response/license` → shared with year `2018`
+- `input_devices/mag/node_modules/npmlog/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/npmlog/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/npmlog/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/npmlog/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/npmlog/log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/cctalk.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-cctalk/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-mock/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-mock/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-mock/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-mock/binding-mock.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-mock/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/delimiter.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-delimiter/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/binding-abstract.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/binding-abstract/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-ready/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-ready/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-ready/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-ready/ready.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-ready/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-readline/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-readline/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-readline/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-readline/readline.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-readline/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/stream/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/stream/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/stream/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/stream/stream.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/stream/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-regex/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-regex/regex.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-regex/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-regex/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-regex/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/byte-length.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/parser-byte-length/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/unix-read.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux-list-test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/bindings-win32-sn-parser-test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/unix-write.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/darwin.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/bindings-test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/linux-list.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/util.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/win32-sn-parser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/poller.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/lib/win32.js` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_win.cpp` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_win.h` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/poller.h` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport.cpp` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/poller.cpp` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_linux.h` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/src/serialport_linux.cpp` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/binding.gyp` → shared with year `2018`
+- `input_devices/mag/node_modules/@serialport/bindings/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-inverse/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-inverse/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-inverse/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-inverse/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/aproba/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/aproba/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/aproba/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/aproba/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblack/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblack/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblack/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgblack/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-underline/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-underline/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-underline/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-underline/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-yellow/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-yellow/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-yellow/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-yellow/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/fs-constants/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/fs-constants/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/fs-constants/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/fs-constants/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/fs-constants/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/radio-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/radio-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/radio-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/radio-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/has-unicode/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/has-unicode/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/has-unicode/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/has-unicode/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-data-descriptor/node_modules/kind-of/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/for-in/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/for-in/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/for-in/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/for-in/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-group.js` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-stream.js` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/CHANGES.md` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker-base.js` → shared with year `2018`
+- `input_devices/mag/node_modules/are-we-there-yet/tracker.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/a/hello.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/test/fixtures/b/a/test.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/test/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/test-browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/node_modules/pump/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/tar-fs/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/set-value/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/set-value/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/set-value/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/set-value/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-base/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-base/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-base/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-base/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-base/changelog.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-assign/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-assign/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/object-assign/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-assign/license` → shared with year `2018`
+- `input_devices/mag/node_modules/process-nextick-args/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/process-nextick-args/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/process-nextick-args/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/process-nextick-args/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-hidden/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-hidden/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-hidden/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-hidden/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-red/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-red/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-red/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-red/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/signals.js` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/signal-exit/LICENSE.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/pointer-symbol/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/pointer-symbol/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/pointer-symbol/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/pointer-symbol/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-number/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-number/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-number/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-number/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bggreen/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bggreen/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bggreen/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bggreen/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/for-own/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/for-own/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/for-own/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/for-own/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/extend-shallow/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/extend-shallow/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/extend-shallow/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/extend-shallow/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-italic/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-italic/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-italic/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-italic/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-json-comments/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-json-comments/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-json-comments/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-json-comments/license` → shared with year `2018`
+- `input_devices/mag/node_modules/number-is-nan/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/number-is-nan/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/number-is-nan/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/number-is-nan/license` → shared with year `2018`
+- `input_devices/mag/node_modules/to-object-path/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/to-object-path/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/to-object-path/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/to-object-path/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/collection-visit/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/collection-visit/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/collection-visit/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/collection-visit/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/readme.markdown` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/examples/pow.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/bin/usage.txt` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/bin/cmd.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/opts_fs.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/umask.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/root.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/rel.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/sync.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/mkdirp.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/return_sync.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/chmod.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/perm.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/opts_fs_sync.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/race.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/return.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/umask_sync.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/perm_sync.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/test/clobber.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/readme.markdown` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/long.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/short.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/dash.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/parse.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/default_bool.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/whitespace.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/test/dotted.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/example/parse.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/node_modules/minimist/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/mkdirp/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/prominode` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/serialport-list` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/serialport-term` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/semver` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/window-size` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/detect-libc` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/prebuild-install` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/rc` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/mkdirp` → shared with year `2018`
+- `input_devices/mag/node_modules/.bin/serialport-repl` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/lib/utils.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/lib/choice.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/clone-deep/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/kind-of/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/define-property/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/prompt-choices/node_modules/shallow-clone/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-fullwidth-code-point/license` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-regex/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-regex/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-regex/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-regex/license` → shared with year `2018`
+- `input_devices/mag/node_modules/time-stamp/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/time-stamp/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/time-stamp/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/time-stamp/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/util-deprecate/History.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/is-accessor-descriptor/node_modules/kind-of/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-swap/node_modules/is-number/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov.info` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/base.css` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/__root__/mute.js.html` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/sorter.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/prettify.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/coverage/lcov-report/prettify.css` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/test/basic.js` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/mute-stream/mute.js` → shared with year `2018`
+- `input_devices/mag/node_modules/define-property/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/define-property/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/define-property/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/define-property/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/test/basic.js` → shared with year `2018`
+- `input_devices/mag/node_modules/simple-concat/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-flatten/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-flatten/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-flatten/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/arr-flatten/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgred/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgred/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgred/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgred/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/wrappy/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/wrappy/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/wrappy/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/wrappy/wrappy.js` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/bl.js` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/test/test.js` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/LICENSE.md` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/bl/.jshintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/bindings/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/bindings/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/bindings/bindings.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-gray/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-gray/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-gray/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-gray/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/set-getter/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/set-getter/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/set-getter/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/set-getter/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.coveralls.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/node.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/browser.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/inspector-log.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/src/debug.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/Makefile` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/karma.conf.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.eslintrc` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/component.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.travis.yml` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/debug/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/string-width/license` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/strip-ansi/license` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/is-fullwidth-code-point/license` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ansi-regex/license` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/license.md` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/readline-ui/node_modules/ms/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/koalas/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/koalas/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/koalas/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/koalas/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/shallow-clone/node_modules/kind-of/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/toggle-array/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/toggle-array/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/toggle-array/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/toggle-array/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-color/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-color/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-color/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/strip-color/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-blue/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-blue/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-blue/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-blue/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-cyan/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-cyan/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-cyan/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-cyan/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-visit/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/object-visit/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/object-visit/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/object-visit/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/README.md` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/bin/prominode.js` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/promirepl/.npmignore` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgwhite/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgwhite/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgwhite/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/ansi-bgwhite/readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/LICENSE` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/Readme.md` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/index.js` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/package.json` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/typings/index.d.ts` → shared with year `2018`
+- `input_devices/mag/node_modules/commander/CHANGELOG.md` → shared with year `2018`
+- `input_devices/mag/hello.mag.D11C.traces.png` → shared with year `2020`
+- `input_devices/mag/hello.mag.D11C.interior.png` → shared with year `2020`
+- `input_devices/mag/hello.mag.serial.ino` → shared with year `2020`
+- `input_devices/mag/hello.mag.45.html` → shared with year `2014`
+- `input_devices/mag/hello.mag.t412` → shared with year `2020`
+- `output_devices/H-bridge/hello.H-bridge.44.traces.png` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.cad` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.cad` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44` → shared with year `2019`
+- `output_devices/H-bridge/hello.H-bridge.44.interior.png` → shared with year `2012`
+- `output_devices/H-bridge/hello.H-bridge.44.Zetex.c` → shared with year `2015`
+- `output_devices/servo/hello.servo.44.1` → shared with year `2019`
+- `output_devices/servo/hello.servo.44.1.interior.png` → shared with year `2018`
+- `output_devices/servo/hello.servo.44.2.c` → shared with year `2015`
+- `output_devices/servo/hello.servo.44.cad` → shared with year `2016`
+- `output_devices/servo/hello.servo.44.make` → shared with year `2018`
+- `output_devices/servo/hello.servo.44.1.traces.png` → shared with year `2018`
+- `output_devices/servo/hello.servo.44.2.make` → shared with year `2018`
+- `output_devices/servo/hello.servo.44` → shared with year `2019`
+- `output_devices/servo/hello.servo.44.traces.png` → shared with year `2018`
+- `output_devices/servo/hello.servo.44.c` → shared with year `2015`
+- `output_devices/servo/hello.servo.44.interior.png` → shared with year `2018`
+- `output_devices/LEDs/hello.LEDs.t412.traces.png` → shared with year `2020`
+- `output_devices/LEDs/hello.LEDs.t412.interior.png` → shared with year `2020`
+- `output_devices/LEDs/hello.LEDs.t412.ino` → shared with year `2020`
+- `output_devices/LEDs/hello.LEDs.t412` → shared with year `2020`
+- `output_devices/speaker/hello.speaker.45.wave.asm` → shared with year `2012`
+- `output_devices/speaker/hello.speaker.45.interior.png` → shared with year `2018`
+- `output_devices/speaker/hello.speaker.45.cad` → shared with year `2012`
+- `output_devices/speaker/hello.speaker.45.c` → shared with year `2018`
+- `output_devices/speaker/hello.speaker.45` → shared with year `2019`
+- `output_devices/speaker/hello.speaker.45.traces.png` → shared with year `2018`
+- `output_devices/speaker/hello.speaker.45.make` → shared with year `2018`
+- `output_devices/DC/hello.H-bridge.44.DC.c` → shared with year `2015`
+- `output_devices/DC/hello.H-bridge.44.DC.make` → shared with year `2018`
+- `output_devices/RGB/hello.RGB.45.traces.png` → shared with year `2012`
+- `output_devices/RGB/hello.RGB/hello.RGB-cache.lib` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB-Edge.Cuts.svg` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/test.obj` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.pro` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB-F.Cu.svg` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.kicad_pcb-bak` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.bak` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/sym-lib-table` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.step` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.kicad_pcb` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB-Margin.svg` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.net` → shared with year `2019`
+- `output_devices/RGB/hello.RGB/hello.RGB.sch` → shared with year `2019`
+- `output_devices/RGB/hello.RGB.45.interior.png` → shared with year `2012`
+- `output_devices/RGB/hello.RGB.45` → shared with year `2019`
+- `output_devices/RGB/hello.RGB.45.make` → shared with year `2018`
+- `output_devices/RGB/hello.RGB.45.c` → shared with year `2015`
+- `output_devices/RGB/hello.RGB.45.cad` → shared with year `2012`
+- `output_devices/OLED/hello.SSD1306.45.traces.png` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45.interior.png` → shared with year `2019`
+- `output_devices/OLED/Monospace11.h` → shared with year `2019`
+- `output_devices/OLED/scripts.html` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45.inline` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45.make` → shared with year `2019`
+- `output_devices/OLED/foo` → shared with year `2019`
+- `output_devices/OLED/Monospace16B.h` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45.c` → shared with year `2019`
+- `output_devices/OLED/hello.SSD1306.45.html` → shared with year `2019`
+- `output_devices/OLED/Monospace11B.h` → shared with year `2019`
+- `output_devices/OLED/pixbyte16.py` → shared with year `2019`
+- `output_devices/OLED/pixbyte8.py` → shared with year `2020`
+- `output_devices/OLED/Monospace16.h` → shared with year `2019`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.top.png` → shared with year `2020`
+- `output_devices/TFT/hello.ILI9341.HW.D21E` → shared with year `2020`
+- `output_devices/TFT/hello.ILI9341.SW.D21E` → shared with year `2020`
+- `output_devices/TFT/hello.ILI9341.SW.D21E.traces.png` → shared with year `2020`
+- `output_devices/TFT/hello.ILI9341.SW.D21E.interior.png` → shared with year `2020`
+- `output_devices/TFT/hello.ILI9341.HW.D21E.interior.png` → shared with year `2020`
+- `output_devices/array/hello.array.44.2.make` → shared with year `2018`
+- `output_devices/array/hello.array.44.2.interior.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.traces.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.make` → shared with year `2018`
+- `output_devices/array/hello.array.44.c` → shared with year `2015`
+- `output_devices/array/hello.array.44` → shared with year `2020`
+- `output_devices/array/hello.array.44.2.c` → shared with year `2015`
+- `output_devices/array/hello.array.44.2.top.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.interior.png` → shared with year `2012`
+- `output_devices/array/hello.array.44.2` → shared with year `2020`
+- `output_devices/video/hello.video.44` → shared with year `2019`
+- `output_devices/video/hello.video.44.asm` → shared with year `2012`
+- `output_devices/video/hello.video.44.make` → shared with year `2018`
+- `output_devices/video/hello.video.44.interior.png` → shared with year `2012`
+- `output_devices/video/hello.video.44.c` → shared with year `2015`
+- `output_devices/video/hello.video.44.cad` → shared with year `2012`
+- `output_devices/video/hello.video.44.traces.png` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44` → shared with year `2019`
+- `output_devices/LCD/hello.LCD.44.c` → shared with year `2015`
+- `output_devices/LCD/hello.LCD.44.make` → shared with year `2018`
+- `output_devices/LCD/hello.LCD.44.cad` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44.interior.png` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.44.traces.png` → shared with year `2012`
+- `output_devices/LCD/hello.LCD.I2C.ino` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.45` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.44.interior.png` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.44.c` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.44.traces.png` → shared with year `2019`
+- `output_devices/ESC/out.html` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.45.c` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.44.make` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.44` → shared with year `2019`
+- `output_devices/ESC/hello.ESC.45.make` → shared with year `2019`
+- `output_devices/stepper/hello.stepper.bipolar.44.traces.png` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.half.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.half.make` → shared with year `2018`
+- `output_devices/stepper/hello.stepper.44.traces.png` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.44.wave.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.interior.png` → shared with year `2012`
+- `output_devices/stepper/hello.stepper.44` → shared with year `2020`
+- `output_devices/stepper/hello.stepper.bipolar.44.full.make` → shared with year `2018`
+- `output_devices/stepper/hello.stepper.bipolar.44` → shared with year `2020`
+- `output_devices/stepper/hello.stepper.bipolar.44.interior.png` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.bipolar.44.full.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.full.c` → shared with year `2015`
+- `output_devices/stepper/hello.stepper.44.full.make` → shared with year `2018`
+- `output_devices/stepper/hello.stepper.44.wave.make` → shared with year `2018`
+- `computer_design/alien.cad` → shared with year `2012`
+- `computer_design/alien.math` → shared with year `2012`
+- `computer_design/video.html` → shared with year `2020`
+- `computer_design/alien.svg` → shared with year `2012`
+- `computer_design/assembly.mp4` → shared with year `2019`
+- `computer_design/render.mp4` → shared with year `2019`
+- `computer_design/animation.mp4` → shared with year `2019`
+- `computer_design/alien.fab` → shared with year `2013`
+- `computer_machining/test.cad` → shared with year `2013`
+- `computer_machining/sample.g` → shared with year `2012`
+- `computer_machining/sample.path` → shared with year `2012`
+- `computer_machining/sample.ord` → shared with year `2012`
+- `computer_machining/test.math` → shared with year `2013`
+- `computer_machining/sample.rml` → shared with year `2013`
+- `molding_casting/tippy.cad` → shared with year `2013`
+- `molding_casting/sample.cad` → shared with year `2012`
+- `molding_casting/hello.svg` → shared with year `2012`
+- `project_management/scripts/Xubuntu_18.04` → shared with year `2020`
+- `project_management/scripts/Xubuntu_20.04` → shared with year `2020`
+- `computer_cutting/gray.svg` → shared with year `2013`
+- `computer_cutting/gik.cad` → shared with year `2012`
+- `computer_cutting/joints.sb` → shared with year `2015`
+- `computer_cutting/gik.fab` → shared with year `2012`
+- `computer_cutting/gik.math` → shared with year `2012`
+- `interface_application_programming/svg_lines.html` → shared with year `2012`
+- `interface_application_programming/xline.c` → shared with year `2012`
+- `interface_application_programming/canvas_lines.html` → shared with year `2012`
+- `interface_application_programming/programs/numbapi.py` → shared with year `2020`
+- `interface_application_programming/programs/xline.c` → shared with year `2017`
+- `interface_application_programming/programs/cudapi.cu` → shared with year `2017`
+- `interface_application_programming/programs/threejssurf.html` → shared with year `2017`
+- `interface_application_programming/programs/udprcv.py` → shared with year `2020`
+- `interface_application_programming/programs/plot.ipynb` → shared with year `2017`
+- `interface_application_programming/programs/mpipi2.py` → shared with year `2020`
+- `interface_application_programming/programs/lines.py` → shared with year `2020`
+- `interface_application_programming/programs/sendudp.c` → shared with year `2017`
+- `interface_application_programming/programs/udprcv.js` → shared with year `2017`
+- `interface_application_programming/programs/pi.py` → shared with year `2020`
+- `interface_application_programming/programs/JavaImage.java` → shared with year `2017`
+- `interface_application_programming/programs/ximage.c` → shared with year `2017`
+- `interface_application_programming/programs/recvudp.c` → shared with year `2017`
+- `interface_application_programming/programs/threejsline.html` → shared with year `2017`
+- `interface_application_programming/programs/pi.html` → shared with year `2018`
+- `interface_application_programming/programs/plotly-latest.min.js` → shared with year `2020`
+- `interface_application_programming/programs/sympi.py` → shared with year `2020`
+- `interface_application_programming/programs/plot.html` → shared with year `2017`
+- `interface_application_programming/programs/psline.c` → shared with year `2017`
+- `interface_application_programming/programs/stl.c` → shared with year `2017`
+- `interface_application_programming/programs/audioline.html` → shared with year `2017`
+- `interface_application_programming/programs/surface.py` → shared with year `2020`
+- `interface_application_programming/programs/line.py` → shared with year `2020`
+- `interface_application_programming/programs/three.min.js` → shared with year `2017`
+- `interface_application_programming/programs/threejsimage.html` → shared with year `2017`
+- `interface_application_programming/programs/webglline.html` → shared with year `2017`
+- `interface_application_programming/programs/canvasline.html` → shared with year `2017`
+- `interface_application_programming/programs/psimage.c` → shared with year `2017`
+- `interface_application_programming/programs/pim.c` → shared with year `2017`
+- `interface_application_programming/programs/images.py` → shared with year `2020`
+- `interface_application_programming/programs/numpi.py` → shared with year `2020`
+- `interface_application_programming/programs/udpsnd.js` → shared with year `2017`
+- `interface_application_programming/programs/pi.c` → shared with year `2017`
+- `interface_application_programming/programs/udpsnd.py` → shared with year `2017`
+- `interface_application_programming/programs/canvasimage.html` → shared with year `2017`
+- `interface_application_programming/programs/plotline.html` → shared with year `2020`
+- `interface_application_programming/programs/image.py` → shared with year `2020`
+- `interface_application_programming/programs/cython_pi/cython_pi.py` → shared with year `2020`
+- `interface_application_programming/programs/cython_pi/setup.py` → shared with year `2017`
+- `interface_application_programming/programs/cython_pi/cython_pi.pyx` → shared with year `2017`
+- `interface_application_programming/programs/svgline.html` → shared with year `2017`
+- `interface_application_programming/JavaImage.java` → shared with year `2012`
+- `interface_application_programming/ximage.c` → shared with year `2012`
+- `interface_application_programming/js/three.min.js` → shared with year `2015`
+- `interface_application_programming/js/stats.min.js` → shared with year `2015`
+- `interface_application_programming/webgl_lines.html` → shared with year `2012`
+- `interface_application_programming/matline.py` → shared with year `2012`
+- `interface_application_programming/three.js_lines.html` → shared with year `2015`
+- `interface_application_programming/matimage.py` → shared with year `2012`
+- `interface_application_programming/glsurf.c` → shared with year `2012`
+- `invention_IP_business/license.txt` → shared with year `2013`
+- `networking_communications/socket/udprcv.py` → shared with year `2020`
+- `networking_communications/socket/udprcv.c` → shared with year `2013`
+- `networking_communications/socket/udpsnd.c` → shared with year `2013`
+- `networking_communications/socket/udprcv.js` → shared with year `2015`
+- `networking_communications/socket/udpsnd.js` → shared with year `2015`
+- `networking_communications/socket/udpsnd.py` → shared with year `2013`
+- `networking_communications/MFRC522/hello.MFRC522.t1614.traces.png` → shared with year `2020`
+- `networking_communications/MFRC522/hello.MFRC522.t1614.interior.png` → shared with year `2020`
+- `networking_communications/MFRC522/hello.MFRC522.t1614` → shared with year `2020`
+- `networking_communications/I2C/hello.I2C.45.bridge` → shared with year `2019`
+- `networking_communications/I2C/hello.I2C.t1614` → shared with year `2019`
+- `networking_communications/I2C/hello.I2C.t1614.interior.png` → shared with year `2019`
+- `networking_communications/I2C/hello.I2C.t1614.traces.png` → shared with year `2019`
+- `networking_communications/I2C/hello.I2C.ino` → shared with year `2019`
+- `networking_communications/I2C/hello.I2C.45.bridge.cad` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node.cad` → shared with year `2013`
+- `networking_communications/I2C/hello.I2C.45.node` → shared with year `2019`
+- `networking_communications/APA/apa.c` → shared with year `2012`
+- `networking_communications/APA/apa.ftdi.make` → shared with year `2013`
+- `networking_communications/APA/apa.ftdi.c` → shared with year `2015`
+- `networking_communications/APA/apa.py` → shared with year `2020`
+- `networking_communications/APA/apa.io.make` → shared with year `2013`
+- `networking_communications/APA/apa.h` → shared with year `2012`
+- `networking_communications/APA/apa.ftdi.cad` → shared with year `2012`
+- `networking_communications/APA/apa.io.c` → shared with year `2015`
+- `networking_communications/APA/apa.io.cad` → shared with year `2012`
+- `networking_communications/hello.html` → shared with year `2019`
+- `networking_communications/HM11/hello.HM-11.ftdi.traces.png` → shared with year `2016`
+- `networking_communications/HM11/hello.HM-11.ftdi` → shared with year `2019`
+- `networking_communications/HM11/hello.HM-11.ftdi.interior.png` → shared with year `2016`
+- `networking_communications/HM11/hello.HM-11.ftdi.cad` → shared with year `2016`
+- `networking_communications/ESP8266/hello.ESP-01` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP-01.echo.ino` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP-01.interior.png` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.traces.png` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi.cad` → shared with year `2015`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.interior.png` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP-01.traces.png` → shared with year `2020`
+- `networking_communications/ESP8266/commands.html` → shared with year `2015`
+- `networking_communications/ESP8266/hello.ESP-WROOM-02D.echo.ino` → shared with year `2020`
+- `networking_communications/ESP8266/hello.ESP8266-12E.ftdi` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.echo.ino` → shared with year `2020`
+- `networking_communications/ESP32/hello.ESP32-CAM.interior.png` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.interior.png` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.WebServerAccessPoint.ino` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.BLE.ino` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-CAM.ino` → shared with year `2020`
+- `networking_communications/ESP32/hello.ESP32-WROOM` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.html` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-CAM.traces.png` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-CAM` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-CAM.html` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.WebServer.ino` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.WebClient.ino` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.UDP.ino` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.traces.png` → shared with year `2019`
+- `networking_communications/ESP32/hello.ESP32-WROOM.SPP.ino` → shared with year `2019`
+- `networking_communications/SLIP/udp_slip.py` → shared with year `2020`
+- `networking_communications/SLIP/hello.bus.45.SLIP.c` → shared with year `2013`
+- `networking_communications/SLIP/hello.bus.45.SLIP.make` → shared with year `2018`
+- `networking_communications/bus/hello.bus.45.bridge.interior.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node` → shared with year `2019`
+- `networking_communications/bus/hello.bus.45.c` → shared with year `2013`
+- `networking_communications/bus/hello.bus.45.bridge` → shared with year `2019`
+- `networking_communications/bus/hello.bus.45.bridge.cad` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.make` → shared with year `2018`
+- `networking_communications/bus/hello.bus.45.node.traces.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node.cad` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.node.interior.png` → shared with year `2012`
+- `networking_communications/bus/hello.bus.45.bridge.traces.png` → shared with year `2012`
+- `networking_communications/nRF/hello.nRF24L01P.44` → shared with year `2019`
+- `networking_communications/nRF/hello.nRF24L01P.44.c` → shared with year `2017`
+- `networking_communications/nRF/hello.nRF24L01P.44.interior.png` → shared with year `2016`
+- `networking_communications/nRF/hello.nRF24L01P.44.cad` → shared with year `2016`
+- `networking_communications/nRF/hello.nRF24L01P.44.traces.png` → shared with year `2016`
+- `networking_communications/APTP/notes.html` → shared with year `2016`
+- `networking_communications/APTP/bit/ATP.E5.bit.c` → shared with year `2016`
+- `networking_communications/APTP/bit/ATP.16E5.bit.make` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.16E5.FTDI.char.make` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.E5.FTDI.char.c` → shared with year `2016`
+- `networking_communications/APTP/ftdi/ATP.FTDI.cad` → shared with year `2016`
+- `networking_communications/APTP/ATP.XMEGA.E.h` → shared with year `2016`
+- `networking_communications/APTP/byte/ATP.E5.byte.c` → shared with year `2016`
+- `networking_communications/APTP/byte/ATP.16E5.byte.make` → shared with year `2016`
+- `networking_communications/APTP/board/ATP.E5.cad` → shared with year `2016`
+- `networking_communications/i0/i0.3.hub.4.cad` → shared with year `2012`
+- `networking_communications/i0/thtpv4.py` → shared with year `2020`
+- `networking_communications/i0/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `networking_communications/i0/i0.3.serial.44.cad` → shared with year `2012`
+- `networking_communications/i0/i0.3.IO.44.cad` → shared with year `2012`
+- `networking_communications/SD/hello.uSD.D11C.traces.png` → shared with year `2019`
+- `networking_communications/SD/hello.uSD.44.cad` → shared with year `2018`
+- `networking_communications/SD/hello.uSD.44.read.txt` → shared with year `2018`
+- `networking_communications/SD/hello.uSD.44.interior.png` → shared with year `2018`
+- `networking_communications/SD/hello.uSD.D11C.interior.png` → shared with year `2019`
+- `networking_communications/SD/hello.uSD.44.read.c` → shared with year `2019`
+- `networking_communications/SD/hello.uSD.D11C.ino` → shared with year `2019`
+- `networking_communications/SD/hello.uSD.44.read.make` → shared with year `2018`
+- `networking_communications/SD/hello.uSD.44` → shared with year `2019`
+- `networking_communications/SD/hello.uSD.44.traces.png` → shared with year `2018`
+- `networking_communications/SD/hello.uSD.D11C` → shared with year `2019`
+- `networking_communications/RN4871/hello.RN4871.ftdi.cad` → shared with year `2017`
+- `networking_communications/RN4871/hello.RN4871.ftdi.traces.png` → shared with year `2017`
+- `networking_communications/RN4871/hello.RN4871.ftdi.interior.png` → shared with year `2017`
+- `networking_communications/RN4871/hello.RN4871.ftdi` → shared with year `2019`
+- `old/sensors_actuators_displays/through-hole.cad` → shared with year `2012`
+- `old/cad_cam_cae/software.html` → shared with year `2012`
+- `old/computer_machining/sample.g` → shared with year `2012`
+- `old/computer_machining/sample.rml` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.hub.4.cad` → shared with year `2012`
+- `old/embedded_networking_communications/thtpv4.py` → shared with year `2020`
+- `old/embedded_networking_communications/i0.3.serial.44.packetv4.asm` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.serial.44.cad` → shared with year `2012`
+- `old/embedded_networking_communications/i0.3.IO.44.cad` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/RS232_bauds.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/IA4421_config.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/messager.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/RS232.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/delays_8MHz.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/asm/IA4421_code.asm` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/messager.py` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/board/hello_radio.erc` → shared with year `2012`
+- `old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg` → shared with year `2012`
+- `electronics_production/linetest.svg` → shared with year `2018`
+- `electronics_production/linetest.interior.png` → shared with year `2017`
+
+## 3. Files missing from canonical
+
+### 3.1 First seen in 2021 (not in master or earlier years, copied)
+
+- `inventory/ScanningPrinting.js`
+- `inventory/MechanicalMachine.js`
+- `inventory/ElectronicsDesign.js`
+- `inventory/inventory.js`
+- `inventory/NetworkingCommunications.js`
+- `inventory/InputDevices.js`
+- `inventory/EmbeddedProgramming.js`
+- `inventory/ElectronicsProduction.js`
+- `inventory/OutputDevices.js`
+- `inventory/ComputerCutting.js`
+- `inventory/DesignManagement.js`
+
+### 3.2 Shared with previous years (not copied for this year)
+
+- `computer_machining/rough.mp4` → shared with year `2016`
+- `computer_machining/finish.mp4` → shared with year `2016`
+- `interface_application_programming/glsurf` → shared with year `2016`

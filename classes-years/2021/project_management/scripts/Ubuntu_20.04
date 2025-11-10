@@ -1,0 +1,69 @@
+#!/bin/bash
+#
+# Ubuntu 20.04
+#
+# update and install
+#
+sudo apt update
+sudo apt -y upgrade
+#
+# Gnome
+#
+sudo apt -y install gnome-tweak-tool dconf-editor gnome-shell-extensions gnome-shell-extension-dash-to-panel
+#
+# utilities
+#
+sudo apt -y install vim-gtk qpdf expect xournal geany geany-plugins evince gparted hardinfo powertop htop gnome-disk-utility ntp exfat-fuse exfat-utils ncdu
+#
+# net
+#
+sudo apt -y install net-tools firefox remmina openssh-client
+#
+# graphics, CAD
+#
+sudo apt -y install geeqie gimp mypaint inkscape blender meshlab
+#
+# office
+#
+sudo apt -y install libreoffice ttf-mscorefonts-installer fonts-symbola ttf-ancient-fonts
+#
+# project management
+#
+sudo apt -y install rsync git gitk git-cola
+#
+# media
+#
+sudo apt -y install pavucontrol ffmpeg vlc mplayer guvcview audacity kdenlive simplescreenrecorder
+#
+# node
+#
+sudo apt -y install nodejs npm
+#
+# code
+#
+sudo apt -y install make cmake build-essential libpng-dev libgif-dev python3-dev freeglut3 freeglut3-dev libglew-dev libglfw3-dev python-is-python3
+#
+# EDA
+#
+sudo apt -y install kicad
+#
+# embedded programming
+#
+sudo apt -y install python3-serial python3-tk
+#
+# math
+#
+sudo apt -y install python3-numpy python3-scipy python3-matplotlib
+#
+# TeX
+#
+sudo apt -y install texlive-latex-recommended texlive-fonts-recommended texlive-font-utils
+#
+# downloads
+#
+echo "downloads:"
+echo "   freecad: https://www.freecadweb.org"
+echo "   kdenlive: https://kdenlive.org"
+echo "   Arduino: https://www.arduino.cc/en/software"
+echo "   edbg: https://github.com/ataradov/edbg"
+
