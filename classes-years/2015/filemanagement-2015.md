@@ -1,6 +1,6 @@
 # Asset file management report for 2015
 
-- Generated: 2025-11-10T21:16:46+00:00
+- Generated: 2025-11-10T21:51:52+00:00
 - Year snapshot base: `/classes-years/2015`
 - Class root (canonical): `/classes-years/2015/Web/classes` (Web/classes)
 - Canonical root: `/FabAcademyArchiveAssets/classes-master`
@@ -10,16 +10,78 @@
 ## Summary
 
 - Total files scanned: 1958
+- Index files (index.html) always copied (no dedup): 55
 - Identical files (vs canonical): 512
-- Different vs canonical (total): 454
-  - Variants first seen in 2015 (copied): 115
-  - Variants shared with previous years (not copied): 339
-- Files missing in canonical (total): 992
-  - First seen in 2015 (copied): 973
-  - Shared with previous years (not copied): 19
-- Total files copied into `classes-years/2015`: 1088
+- Different vs canonical (total): 401
+  - Variants first seen in 2015 (copied): 82
+  - Variants shared with previous years (not copied): 319
+- Files missing in canonical (total): 990
+  - First seen in 2015 (copied): 972
+  - Shared with previous years (not copied): 18
+- Total files copied into `classes-years/2015`: 1109
 
 Paths below are relative to `classes-years/2015`.
+
+## 0. Index files (always copied for each year)
+
+These `index.html` files are always copied into the year-specific
+tree, even if they are identical to canonical or previous years.
+
+- `Web/classes/principles_practices/index.html`
+- `Web/classes/machine_design/index.html`
+- `Web/classes/index.html`
+- `Web/classes/electronics_design/index.html`
+- `Web/classes/scanning_printing/index.html`
+- `Web/classes/scanning_printing/light/index.html`
+- `Web/classes/scanning_printing/light/scan_gray_code/index.html`
+- `Web/classes/scanning_printing/light/scan_line/index.html`
+- `Web/classes/pit/index.html`
+- `Web/classes/embedded_programming/index.html`
+- `Web/classes/input_devices/index.html`
+- `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html`
+- `Web/classes/output_devices/index.html`
+- `Web/classes/composites/index.html`
+- `Web/classes/mechanical_design/index.html`
+- `Web/classes/computer_design/index.html`
+- `Web/classes/computer_machining/index.html`
+- `Web/classes/molding_casting/index.html`
+- `Web/classes/project_management/index.html`
+- `Web/classes/computer_cutting/index.html`
+- `Web/classes/interface_application_programming/index.html`
+- `Web/classes/invention_IP_business/index.html`
+- `Web/classes/networking_communications/index.html`
+- `Web/classes/old/sensors_actuators_displays/index.html`
+- `Web/classes/old/cad_cam_cae/index.html`
+- `Web/classes/old/embedded_programming/index.html`
+- `Web/classes/old/computer_machining/index.html`
+- `Web/classes/old/molding_casting/index.html`
+- `Web/classes/old/computer_cutting/index.html`
+- `Web/classes/old/scan_print/index.html`
+- `Web/classes/old/embedded_networking_communications/index.html`
+- `Web/classes/project_presentation/index.html`
+- `Web/classes/electronics_production/index.html`
+- `Web/classes/applications_implications/electronics/index.html`
+- `Web/classes/applications_implications/houses/index.html`
+- `Web/classes/applications_implications/drones/index.html`
+- `Web/classes/applications_implications/index.html`
+- `Web/classes/applications_implications/boats/index.html`
+- `Web/classes/applications_implications/clothes/index.html`
+- `Web/classes/applications_implications/consumer_electronics/index.html`
+- `Web/classes/applications_implications/cities/index.html`
+- `Web/classes/applications_implications/robots/index.html`
+- `Web/classes/applications_implications/food/index.html`
+- `Web/classes/applications_implications/biology/index.html`
+- `Web/classes/applications_implications/test_equipment/index.html`
+- `Web/classes/applications_implications/furniture/index.html`
+- `Web/classes/applications_implications/musical_instruments/index.html`
+- `Web/classes/applications_implications/cars/index.html`
+- `Web/classes/applications_implications/art/index.html`
+- `Web/classes/applications_implications/bicycles/index.html`
+- `Web/classes/applications_implications/inflatables/index.html`
+- `Web/classes/applications_implications/prosthetics/index.html`
+- `Web/classes/applications_implications/environment/index.html`
+- `Web/classes/applications_implications/shoes/index.html`
+- `Web/classes/project_development/index.html`
 
 ## 1. Files identical to canonical (live in master)
 
@@ -540,13 +602,8 @@ Paths below are relative to `classes-years/2015`.
 
 ### 2.1 Variants first seen in 2015 (copied for this year)
 
-- `Web/classes/principles_practices/index.html`
-- `Web/classes/machine_design/index.html`
-- `Web/classes/electronics_design/index.html`
 - `Web/classes/scanning_printing/sample.f`
-- `Web/classes/scanning_printing/index.html`
 - `Web/classes/embedded_programming/hello.arduino.328P.cad`
-- `Web/classes/embedded_programming/index.html`
 - `Web/classes/embedded_programming/hello.ftdi.44.echo.c`
 - `Web/classes/embedded_programming/hello.ftdi.44.cad`
 - `Web/classes/embedded_programming/rx.py`
@@ -555,7 +612,6 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/embedded_programming/hello.ISP.44.res.cad`
 - `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.c`
 - `Web/classes/embedded_programming/hello.ISP.44.old.cad`
-- `Web/classes/input_devices/index.html`
 - `Web/classes/input_devices/temp/hello.temp.45.c`
 - `Web/classes/input_devices/video.html`
 - `Web/classes/input_devices/button/hello.button.45.c`
@@ -598,7 +654,6 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/input_devices/mag/node_modules/ws/README.md`
 - `Web/classes/input_devices/mag/node_modules/ws/index.js`
 - `Web/classes/input_devices/mag/node_modules/ws/package.json`
-- `Web/classes/output_devices/index.html`
 - `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.c`
 - `Web/classes/output_devices/servo/hello.servo.44.2.c`
 - `Web/classes/output_devices/servo/hello.servo.44.c`
@@ -615,57 +670,28 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.interior.png`
 - `Web/classes/output_devices/stepper/hello.stepper.bipolar.44.full.c`
 - `Web/classes/output_devices/stepper/hello.stepper.44.full.c`
-- `Web/classes/composites/index.html`
-- `Web/classes/mechanical_design/index.html`
-- `Web/classes/computer_design/index.html`
-- `Web/classes/computer_machining/index.html`
-- `Web/classes/molding_casting/index.html`
-- `Web/classes/project_management/index.html`
 - `Web/classes/project_management/archive.html`
-- `Web/classes/computer_cutting/index.html`
 - `Web/classes/computer_cutting/joints.sb`
-- `Web/classes/interface_application_programming/index.html`
 - `Web/classes/interface_application_programming/js/three.min.js`
 - `Web/classes/interface_application_programming/js/stats.min.js`
 - `Web/classes/interface_application_programming/three.js_lines.html`
 - `Web/classes/interface_application_programming/glimage`
-- `Web/classes/invention_IP_business/index.html`
 - `Web/classes/networking_communications/socket/udprcv.js`
 - `Web/classes/networking_communications/socket/udpsnd.js`
-- `Web/classes/networking_communications/index.html`
 - `Web/classes/networking_communications/APA/apa.ftdi.c`
 - `Web/classes/networking_communications/APA/apa.io.c`
 - `Web/classes/networking_communications/ESP8266/hello.ESP8266-12E.ftdi.cad`
 - `Web/classes/networking_communications/ESP8266/commands.html`
 - `Web/classes/networking_communications/SLIP/hello.bus.45.SLIP.mp4`
 - `Web/classes/networking_communications/bus/bus.mp4`
-- `Web/classes/project_presentation/index.html`
-- `Web/classes/electronics_production/index.html`
-- `Web/classes/applications_implications/electronics/index.html`
-- `Web/classes/applications_implications/drones/index.html`
-- `Web/classes/applications_implications/index.html`
-- `Web/classes/applications_implications/clothes/index.html`
-- `Web/classes/applications_implications/food/index.html`
-- `Web/classes/applications_implications/biology/index.html`
-- `Web/classes/applications_implications/test_equipment/index.html`
-- `Web/classes/applications_implications/furniture/index.html`
-- `Web/classes/applications_implications/cars/index.html`
-- `Web/classes/applications_implications/art/index.html`
-- `Web/classes/applications_implications/bicycles/index.html`
-- `Web/classes/applications_implications/prosthetics/index.html`
-- `Web/classes/applications_implications/shoes/index.html`
-- `Web/classes/project_development/index.html`
 
 ### 2.2 Variants shared with previous years (not copied for this year)
 
 - `Web/classes/machine_design/oldindex.html` → shared with year `2012`
-- `Web/classes/index.html` → shared with year `2012`
 - `Web/classes/scanning_printing/bearing.cad` → shared with year `2012`
 - `Web/classes/scanning_printing/bearing.math` → shared with year `2012`
-- `Web/classes/scanning_printing/light/index.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/HDMI1_1366x768` → shared with year `2014`
 - `Web/classes/scanning_printing/light/png_sub.c` → shared with year `2014`
-- `Web/classes/scanning_printing/light/scan_gray_code/index.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_gray_code/all_color.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_gray_code/img_005_0.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_gray_code/all_diff.png.html` → shared with year `2014`
@@ -706,7 +732,6 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/scanning_printing/light/scan_line/diff_025.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_line/img_021_0.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_line/img_026_0.png.html` → shared with year `2014`
-- `Web/classes/scanning_printing/light/scan_line/index.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_line/img_011_0.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_line/img_022_0.png.html` → shared with year `2014`
 - `Web/classes/scanning_printing/light/scan_line/img_005_0.png.html` → shared with year `2014`
@@ -962,19 +987,11 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/networking_communications/i0/i0.3.serial.44.packetv4.asm` → shared with year `2012`
 - `Web/classes/networking_communications/i0/i0.3.serial.44.cad` → shared with year `2012`
 - `Web/classes/networking_communications/i0/i0.3.IO.44.cad` → shared with year `2012`
-- `Web/classes/old/sensors_actuators_displays/index.html` → shared with year `2012`
 - `Web/classes/old/sensors_actuators_displays/through-hole.cad` → shared with year `2012`
-- `Web/classes/old/cad_cam_cae/index.html` → shared with year `2012`
 - `Web/classes/old/cad_cam_cae/software.html` → shared with year `2012`
-- `Web/classes/old/embedded_programming/index.html` → shared with year `2012`
-- `Web/classes/old/computer_machining/index.html` → shared with year `2012`
 - `Web/classes/old/computer_machining/sample.g` → shared with year `2012`
 - `Web/classes/old/computer_machining/sample.rml` → shared with year `2012`
-- `Web/classes/old/molding_casting/index.html` → shared with year `2012`
-- `Web/classes/old/computer_cutting/index.html` → shared with year `2012`
-- `Web/classes/old/scan_print/index.html` → shared with year `2012`
 - `Web/classes/old/embedded_networking_communications/i0.3.hub.4.cad` → shared with year `2012`
-- `Web/classes/old/embedded_networking_communications/index.html` → shared with year `2012`
 - `Web/classes/old/embedded_networking_communications/thtpv4.py` → shared with year `2012`
 - `Web/classes/old/embedded_networking_communications/i0.3.serial.44.packetv4.asm` → shared with year `2012`
 - `Web/classes/old/embedded_networking_communications/i0.3.serial.44.cad` → shared with year `2012`
@@ -989,14 +1006,6 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.erc` → shared with year `2012`
 - `Web/classes/old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg` → shared with year `2012`
 - `Web/classes/electronics_production/breadboard.jpg` → shared with year `2012`
-- `Web/classes/applications_implications/houses/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/boats/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/consumer_electronics/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/cities/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/robots/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/musical_instruments/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/inflatables/index.html` → shared with year `2014`
-- `Web/classes/applications_implications/environment/index.html` → shared with year `2014`
 
 ## 3. Files missing from canonical
 
@@ -1101,7 +1110,6 @@ Paths below are relative to `classes-years/2015`.
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/build.js`
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/abi_crosswalk.json`
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/versioning.js`
-- `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/index.html`
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw-pre-gyp/package.json`
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/nw_crosswalk.json`
 - `Web/classes/input_devices/mag/node_modules/serialport/node_modules/node-pre-gyp/lib/util/s3_setup.js`
@@ -1979,7 +1987,6 @@ Paths below are relative to `classes-years/2015`.
 ### 3.2 Shared with previous years (not copied for this year)
 
 - `.hgignore` → shared with year `2012`
-- `Web/classes/pit/index.html` → shared with year `2013`
 - `Web/classes/pit/measurement_coding.pdf` → shared with year `2013`
 - `Web/classes/pit/antennas.pdf` → shared with year `2013`
 - `Web/classes/pit/references.pdf` → shared with year `2013`
