@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>svg line test</title>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" version="1.1"
+   viewBox="0 0 1 1">
+</svg>
+</div>
+<script type="application/javascript">
+//
+// svgline.html
+// Neil Gershenfeld 1/28/17
+// demonstrates drawing SVG lines by animating sin(k*x)/k*x
+//
+var div = document.getElementById("div")
+var height = div.clientHeight
+var width = height
+var svgns = "http://www.w3.org/2000/svg"
+svg = document.getElementById("svg")
+svg.setAttribute("width",width)
+svg.setAttribute("height",height)
+var npts = 1000
+var nloop = 100
+var loop = 1
+var step = 1
+var linewidth = 0.005
+var dtms = 10
+window.setInterval("animate()",dtms)
+line = document.createElementNS(svgns,"polyline")
+line.setAttribute("stroke-width",linewidth)
+line.setAttribute("stroke","black")
+line.setAttribute("fill","none")
+svg.appendChild(line)
+function animate() {
+   var x1,y1,x2,y2,r1,r2
+   var points = ""
+   for (var point= 0; point < npts; ++point) {
+      r1 = 100*(2*point-(npts+1))/(npts*nloop)
+      x1 = point/npts
+      y1 = (1-Math.sin(loop*r1)/(loop*r1))/2
+      r2 = 100*(2*(point+1)-(npts+1))/(npts*nloop)
+      x2 = (point+1)/npts
+      y2 = (1-Math.sin(loop*r2)/(loop*r2))/2
+      points += x1+','+y1+' '+x2+','+y2+' '
+      }
+   line.setAttribute("points",points)
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   }
+</script>
+</body>
+</html>

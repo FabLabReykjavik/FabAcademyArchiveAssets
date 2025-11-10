@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>webgl line test</title>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+<canvas id="canvas"></canvas>
+</div>
+<script type="text/javascript">
+//
+// webglline.html
+// Neil Gershenfeld 2/1/17
+// demonstrates drawing WebGL lines by animating sin(k*x)/k*x
+//
+var canvas = document.getElementById('canvas')
+var height = div.clientHeight
+var width = height
+canvas.width = width
+canvas.height = height
+var npts = 500
+var nloop = 100
+var loop = 1
+var step = 1
+var linewidth = 0.005
+var dtms = 10
+var gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl')
+gl.viewport(0,0,canvas.width,canvas.height)
+var buffer = gl.createBuffer()
+gl.bindBuffer(gl.ARRAY_BUFFER,buffer)
+gl.bufferData(gl.ARRAY_BUFFER,2*4*npts,gl.DYNAMIC_DRAW)
+var vertCode =
+   'attribute vec2 coordinates;' +
+   'void main(void) {' +
+   '  gl_Position = vec4(coordinates,0.0,1.0);' +
+   '}'
+var vertShader = gl.createShader(gl.VERTEX_SHADER)
+gl.shaderSource(vertShader,vertCode)
+gl.compileShader(vertShader)
+var fragCode =
+   'void main(void) {' +
+   '   gl_FragColor = vec4(0.0,0.0,0.0,1.0);' +
+   '}'
+var fragShader = gl.createShader(gl.FRAGMENT_SHADER)
+gl.shaderSource(fragShader,fragCode)
+gl.compileShader(fragShader)
+var shaderProgram = gl.createProgram()
+gl.attachShader(shaderProgram,vertShader)
+gl.attachShader(shaderProgram,fragShader)
+gl.linkProgram(shaderProgram)
+gl.useProgram(shaderProgram)
+var coordinatesVar = gl.getAttribLocation(shaderProgram,"coordinates")
+gl.enableVertexAttribArray(coordinatesVar)
+gl.vertexAttribPointer(coordinatesVar,2,gl.FLOAT,false,0,0)
+gl.lineWidth(linewidth*width)
+window.setInterval("animate()",dtms);
+function animate() {
+   var x,y,r
+   var verts = []
+   var point = 0
+   r = 100*(2*point-npts)/(npts*nloop)
+   x = 2*point/npts-1
+   y = (Math.sin(loop*r)/(loop*r))
+   verts.push(x,y)
+   for (point = 1; point < npts; ++point) {
+      r = 100*(2*point-npts)/(npts*nloop)
+      x = 2*point/npts-1
+      y = (Math.sin(loop*r)/(loop*r))
+      verts.push(x,y)
+      }
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   gl.bufferSubData(gl.ARRAY_BUFFER,0,new Float32Array(verts))
+   gl.clearColor(1.0,1.0,1.0,1.0)
+   gl.clear(gl.COLOR_BUFFER_BIT)
+   gl.drawArrays(gl.LINE_STRIP,0,npts);
+   }
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Asset file management report for 2012
 
-- Generated: 2025-11-10T21:12:47+00:00
+- Generated: 2025-11-10T21:47:03+00:00
 - Year snapshot base: `/classes-years/2012`
 - Class root (canonical): `/classes-years/2012/Web/classes` (Web/classes)
 - Canonical root: `/FabAcademyArchiveAssets/classes-master`
@@ -10,16 +10,56 @@
 ## Summary
 
 - Total files scanned: 435
+- Index files (index.html) always copied (no dedup): 33
 - Identical files (vs canonical): 158
-- Different vs canonical (total): 235
-  - Variants first seen in 2012 (copied): 235
+- Different vs canonical (total): 206
+  - Variants first seen in 2012 (copied): 206
   - Variants shared with previous years (not copied): 0
-- Files missing in canonical (total): 42
-  - First seen in 2012 (copied): 42
+- Files missing in canonical (total): 38
+  - First seen in 2012 (copied): 38
   - Shared with previous years (not copied): 0
 - Total files copied into `classes-years/2012`: 277
 
 Paths below are relative to `classes-years/2012`.
+
+## 0. Index files (always copied for each year)
+
+These `index.html` files are always copied into the year-specific
+tree, even if they are identical to canonical or previous years.
+
+- `Web/index.html`
+- `Web/about/index.html`
+- `Web/courses/index.html`
+- `Web/classes/principles_practices/index.html`
+- `Web/classes/machine_design/index.html`
+- `Web/classes/index.html`
+- `Web/classes/electronics_design/index.html`
+- `Web/classes/scanning_printing/index.html`
+- `Web/classes/embedded_programming/index.html`
+- `Web/classes/input_devices/index.html`
+- `Web/classes/output_devices/index.html`
+- `Web/classes/composites/index.html`
+- `Web/classes/mechanical_design/index.html`
+- `Web/classes/computer_design/index.html`
+- `Web/classes/computer_machining/index.html`
+- `Web/classes/molding_casting/index.html`
+- `Web/classes/project_management/index.html`
+- `Web/classes/computer_cutting/index.html`
+- `Web/classes/interface_application_programming/index.html`
+- `Web/classes/final_project/index.html`
+- `Web/classes/invention_IP_business/index.html`
+- `Web/classes/networking_communications/index.html`
+- `Web/classes/old/sensors_actuators_displays/index.html`
+- `Web/classes/old/cad_cam_cae/index.html`
+- `Web/classes/old/embedded_programming/index.html`
+- `Web/classes/old/computer_machining/index.html`
+- `Web/classes/old/molding_casting/index.html`
+- `Web/classes/old/computer_cutting/index.html`
+- `Web/classes/old/scan_print/index.html`
+- `Web/classes/old/embedded_networking_communications/index.html`
+- `Web/classes/electronics_production/index.html`
+- `Web/classes/applications_implications/index.html`
+- `Web/classes/project_development/index.html`
 
 ## 1. Files identical to canonical (live in master)
 
@@ -186,16 +226,10 @@ Paths below are relative to `classes-years/2012`.
 
 ### 2.1 Variants first seen in 2012 (copied for this year)
 
-- `Web/classes/principles_practices/index.html`
-- `Web/classes/machine_design/index.html`
 - `Web/classes/machine_design/oldindex.html`
-- `Web/classes/index.html`
-- `Web/classes/electronics_design/index.html`
-- `Web/classes/scanning_printing/index.html`
 - `Web/classes/scanning_printing/bearing.cad`
 - `Web/classes/scanning_printing/bearing.math`
 - `Web/classes/embedded_programming/hello.ftdi.44.echo.interrupt.c.make`
-- `Web/classes/embedded_programming/index.html`
 - `Web/classes/embedded_programming/doc8183.pdf`
 - `Web/classes/embedded_programming/hello.ftdi.44.echo.asm`
 - `Web/classes/embedded_programming/hello.ftdi.44.echo.c`
@@ -218,7 +252,6 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/embedded_programming/hello.ftdi.44.interior.png`
 - `Web/classes/embedded_programming/serial.png`
 - `Web/classes/embedded_programming/hello.ISP.44.old.cad`
-- `Web/classes/input_devices/index.html`
 - `Web/classes/input_devices/temp/hello.temp.45.interior.png`
 - `Web/classes/input_devices/temp/hello.temp.45.traces.png`
 - `Web/classes/input_devices/temp/hello.temp.45.c`
@@ -268,7 +301,6 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/input_devices/light/hello.reflect.45.interior.png`
 - `Web/classes/input_devices/light/hello.reflect.45.c`
 - `Web/classes/input_devices/light/hello.light.45.c`
-- `Web/classes/output_devices/index.html`
 - `Web/classes/output_devices/H-bridge/hello.H-bridge.44.traces.png`
 - `Web/classes/output_devices/H-bridge/hello.H-bridge.44.cad`
 - `Web/classes/output_devices/H-bridge/hello.H-bridge.44.Zetex.cad`
@@ -329,33 +361,25 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/output_devices/stepper/hello.stepper.44.full.c`
 - `Web/classes/output_devices/stepper/hello.stepper.44.full.make`
 - `Web/classes/output_devices/stepper/hello.stepper.44.wave.make`
-- `Web/classes/composites/index.html`
 - `Web/classes/composites/digital.png`
-- `Web/classes/mechanical_design/index.html`
-- `Web/classes/computer_design/index.html`
 - `Web/classes/computer_design/alien.cad`
 - `Web/classes/computer_design/alien.math`
 - `Web/classes/computer_design/alien.svg`
 - `Web/classes/computer_design/alien.fab`
-- `Web/classes/computer_machining/index.html`
 - `Web/classes/computer_machining/sample.g`
 - `Web/classes/computer_machining/sample.path`
 - `Web/classes/computer_machining/sample.ord`
 - `Web/classes/computer_machining/sample.rml`
-- `Web/classes/molding_casting/index.html`
 - `Web/classes/molding_casting/sample.png`
 - `Web/classes/molding_casting/tippy.cad`
 - `Web/classes/molding_casting/sample.cad`
 - `Web/classes/molding_casting/tippy.mp4`
 - `Web/classes/molding_casting/hello.svg`
-- `Web/classes/project_management/index.html`
 - `Web/classes/project_management/archive.html`
-- `Web/classes/computer_cutting/index.html`
 - `Web/classes/computer_cutting/gik.cad`
 - `Web/classes/computer_cutting/gik.fab`
 - `Web/classes/computer_cutting/gik.math`
 - `Web/classes/interface_application_programming/svg_lines.html`
-- `Web/classes/interface_application_programming/index.html`
 - `Web/classes/interface_application_programming/xline.c`
 - `Web/classes/interface_application_programming/canvas_lines.html`
 - `Web/classes/interface_application_programming/JavaImage.java`
@@ -367,8 +391,6 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/interface_application_programming/matimage.py`
 - `Web/classes/interface_application_programming/xline`
 - `Web/classes/interface_application_programming/glsurf.c`
-- `Web/classes/invention_IP_business/index.html`
-- `Web/classes/networking_communications/index.html`
 - `Web/classes/networking_communications/APA/apa.c`
 - `Web/classes/networking_communications/APA/apa.ftdi.make`
 - `Web/classes/networking_communications/APA/apa.ftdi.c`
@@ -391,19 +413,11 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/networking_communications/i0/i0.3.serial.44.packetv4.asm`
 - `Web/classes/networking_communications/i0/i0.3.serial.44.cad`
 - `Web/classes/networking_communications/i0/i0.3.IO.44.cad`
-- `Web/classes/old/sensors_actuators_displays/index.html`
 - `Web/classes/old/sensors_actuators_displays/through-hole.cad`
-- `Web/classes/old/cad_cam_cae/index.html`
 - `Web/classes/old/cad_cam_cae/software.html`
-- `Web/classes/old/embedded_programming/index.html`
-- `Web/classes/old/computer_machining/index.html`
 - `Web/classes/old/computer_machining/sample.g`
 - `Web/classes/old/computer_machining/sample.rml`
-- `Web/classes/old/molding_casting/index.html`
-- `Web/classes/old/computer_cutting/index.html`
-- `Web/classes/old/scan_print/index.html`
 - `Web/classes/old/embedded_networking_communications/i0.3.hub.4.cad`
-- `Web/classes/old/embedded_networking_communications/index.html`
 - `Web/classes/old/embedded_networking_communications/thtpv4.py`
 - `Web/classes/old/embedded_networking_communications/i0.3.serial.44.packetv4.asm`
 - `Web/classes/old/embedded_networking_communications/i0.3.serial.44.cad`
@@ -417,10 +431,7 @@ Paths below are relative to `classes-years/2012`.
 - `Web/classes/old/embedded_networking_communications/hello_radio/messager.py`
 - `Web/classes/old/embedded_networking_communications/hello_radio/board/hello_radio.erc`
 - `Web/classes/old/embedded_networking_communications/hello_radio/board/antenna_back_ifa.svg`
-- `Web/classes/electronics_production/index.html`
 - `Web/classes/electronics_production/breadboard.jpg`
-- `Web/classes/applications_implications/index.html`
-- `Web/classes/project_development/index.html`
 
 ### 2.2 Variants shared with previous years (not copied for this year)
 
@@ -431,9 +442,6 @@ _None._
 ### 3.1 First seen in 2012 (not in master or earlier years, copied)
 
 - `.hgignore`
-- `Web/index.html`
-- `Web/about/index.html`
-- `Web/courses/index.html`
 - `Web/classes/electronics_design/pcb.cad`
 - `Web/classes/embedded_programming/hello.arduino.168.blink.make`
 - `Web/classes/embedded_programming/hello.arduino.168.interior.png`
@@ -467,7 +475,6 @@ _None._
 - `Web/classes/computer_cutting/David.jpg`
 - `Web/classes/interface_application_programming/glsurf.mpg`
 - `Web/classes/interface_application_programming/glsurf`
-- `Web/classes/final_project/index.html`
 - `Web/classes/networking_communications/APA/apa.mpg`
 - `Web/classes/networking_communications/bus/bus.mpg`
 - `Web/images/logo.jpg`

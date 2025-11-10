@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>canvas image test</title>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+<canvas id="canvas"></canvas>
+</div>
+<script type="text/javascript">
+//
+// canvasimage.html
+// Neil Gershenfeld 1/28/17
+// demonstrates drawing canvas image by animating sin(k*r)/k*r
+//
+var div = document.getElementById("div")
+var height = div.clientHeight
+var width = height
+var canvas = document.getElementById("canvas")
+canvas.width = width
+canvas.height = height
+var ctx = canvas.getContext("2d")
+var npts = 100
+var nloop = 100
+var loop = 1
+var step = 1
+var dtms = 10
+var buffer = new Uint8ClampedArray(npts*npts*4)
+var bufcanvas = document.createElement('canvas')
+bufcanvas.width = npts
+bufcanvas.height = npts
+var bufctx = bufcanvas.getContext("2d")
+window.setInterval("animate()",dtms);
+function animate() {
+   var r,i
+   for (var y = 0; y < npts; ++y) {
+      for (var x = 0; x < npts; ++x) {
+         r = 30*Math.sqrt((0.5+y-npts/2)*(0.5+y-npts/2)+
+            (0.5+x-npts/2)*(0.5+x-npts/2))/(nloop*npts/2)
+         i = 255*(1+Math.sin(loop*r)/(loop*r))/2
+         buffer[y*npts*4+x*4+0] = i
+         buffer[y*npts*4+x*4+1] = i
+         buffer[y*npts*4+x*4+2] = i
+         buffer[y*npts*4+x*4+3] = 255
+         }
+      }
+   var bufdata = new ImageData(buffer,npts,npts)
+   bufctx.putImageData(bufdata,0,0)
+   ctx.drawImage(bufcanvas,0,0,width,height)
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   }
+</script>
+</body>
+</html>
+

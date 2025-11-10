@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>three.js image test</title>
+<script src="three.min.js"></script>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+</div>
+<script type="text/javascript">
+//
+// threejssurf.html
+// Neil Gershenfeld 2/3/17
+// demonstrates drawing three.js images by animating sin(k*x)/k*x
+//
+var div = document.getElementById("div")
+var height = div.clientHeight
+var width = height
+var npts = 100
+var nloop = 100
+var loop = 1
+var step = 1
+var scene = new THREE.Scene()
+var camera = new THREE.OrthographicCamera(-1,1,1,-1,-1,1)
+var geometry = new THREE.PlaneGeometry(1,1,npts,npts)
+for (var y = 0; y <= npts; ++y)
+   for (var x = 0; x <= npts; ++x) {
+      geometry.vertices[x*(npts+1)+y].x = 2*(x-npts/2)/npts
+      geometry.vertices[x*(npts+1)+y].y = 2*(y-npts/2)/npts
+      }
+for (var y = 0; y < npts; ++y)
+   for (var x = 0; x < npts; ++x) {
+      var c = new THREE.Color(0,0,0)
+      geometry.faces[x*(2*npts)+2*y].vertexColors[0] = c
+      geometry.faces[x*(2*npts)+2*y].vertexColors[1] = c
+      geometry.faces[x*(2*npts)+2*y].vertexColors[2] = c
+      geometry.faces[x*(2*npts)+2*y+1].vertexColors[0] = c
+      geometry.faces[x*(2*npts)+2*y+1].vertexColors[1] = c
+      geometry.faces[x*(2*npts)+2*y+1].vertexColors[2] = c
+      }
+var material = new THREE.MeshBasicMaterial({vertexColors:THREE.VertexColors})
+var mesh = new THREE.Mesh(geometry,material)
+scene.add(mesh)
+var renderer = new THREE.WebGLRenderer({antialias:true})
+renderer.setClearColor(new THREE.Color(0xffffff))
+renderer.setSize(width,height)
+document.body.appendChild(renderer.domElement)
+animate()
+function animate() {
+   var r,z
+   for (var y = 0; y < npts; ++y)
+      for (var x = 0; x < npts; ++x) {
+         r = 30*Math.sqrt((0.5+y-npts/2)*(0.5+y-npts/2)+
+               (0.5+x-npts/2)*(0.5+x-npts/2))/(nloop*npts/2)
+         i = (1+Math.sin(loop*r)/(loop*r))/2
+         var c = new THREE.Color(i,i,i)
+         mesh.geometry.faces[x*(2*npts)+2*y].vertexColors[0].set(c)
+         mesh.geometry.faces[x*(2*npts)+2*y].vertexColors[1].set(c)
+         mesh.geometry.faces[x*(2*npts)+2*y].vertexColors[2].set(c)
+         mesh.geometry.faces[x*(2*npts)+2*y+1].vertexColors[0].set(c)
+         mesh.geometry.faces[x*(2*npts)+2*y+1].vertexColors[1].set(c)
+         mesh.geometry.faces[x*(2*npts)+2*y+1].vertexColors[2].set(c)
+         }
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   mesh.geometry.colorsNeedUpdate = true
+   renderer.render(scene,camera);
+   requestAnimationFrame(animate)
+	}
+</script>
+</body>
+</html>

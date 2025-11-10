@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>three.js line test</title>
+<script src="three.min.js"></script>
+</head>
+<body>
+<div id="div" style="position:absolute;top:0%;height:100%;left:0%;width:100%;text-align:center;">
+</div>
+<script type="text/javascript">
+//
+// threejsline.html
+// Neil Gershenfeld 1/31/17
+// demonstrates drawing three.js lines by animating sin(k*x)/k*x
+//
+var div = document.getElementById("div")
+var height = div.clientHeight
+var width = height
+var npts = 500
+var nloop = 100
+var loop = 1
+var step = 1
+var linewidth = 0.005
+var dtms = 10
+var scene = new THREE.Scene()
+var camera = new THREE.OrthographicCamera(0,1,1,-1,-1,1)
+var renderer = new THREE.WebGLRenderer({antialias:true})
+renderer.setClearColor(new THREE.Color("rgb(255,255,255)"))
+renderer.setSize(width,height)
+document.body.appendChild(renderer.domElement)
+var line = new THREE.Line(
+   new THREE.Geometry(),
+   new THREE.LineBasicMaterial(
+      {color:"rgb(0,0,0)",linewidth:linewidth*width}))
+scene.add(line)
+window.setInterval("animate()",dtms);
+function animate() {
+   var x,y,r
+   var point = 0.5
+   r = 100*(2*point-npts)/(npts*nloop)
+   x = point/npts
+   y = (Math.sin(loop*r)/(loop*r))
+   var verts = []
+   verts.push(new THREE.Vector3(x,y,0))
+   for (point = 1.5; point < npts; ++point) {
+      r = 100*(2*point-npts)/(npts*nloop)
+      x = point/npts
+      y = (Math.sin(loop*r)/(loop*r))
+      verts.push(new THREE.Vector3(x,y,0))
+      }
+   loop += step
+   if ((loop == 1) || (loop == nloop))
+      step = -step
+   line.geometry.vertices = verts 
+   line.geometry.verticesNeedUpdate = true
+   renderer.render(scene,camera)
+   }
+</script>
+</body>
+</html>
