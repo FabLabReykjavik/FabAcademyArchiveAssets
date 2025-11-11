@@ -1,0 +1,77 @@
+#!/bin/bash
+#
+# Ubuntu 24.04
+#
+# update and install
+#
+sudo apt update
+sudo apt -y upgrade
+#
+# Gnome
+#
+sudo apt -y install gnome-tweaks gnome-browser-connector
+#
+# utilities
+#
+sudo apt -y install vim-gtk3 qpdf expect xournal geany geany-plugins evince gparted hardinfo powertop htop gnome-disk-utility exfat-fuse libfuse2 ncdu
+#
+# time
+#
+sudo apt -y install systemd-timesyncd
+timedatectl set-ntp true
+#
+# net
+#
+sudo apt -y install net-tools openssh-client curl
+#
+# graphics
+#
+sudo apt -y install geeqie eog gimp mypaint inkscape blender meshlab
+#
+# office
+#
+sudo apt -y install libreoffice ttf-mscorefonts-installer fonts-symbola ttf-ancient-fonts
+#
+# project management
+#
+sudo apt -y install rsync git gitk git-cola
+#
+# media
+#
+sudo apt -y install pavucontrol ffmpeg vlc mplayer guvcview audacity vokoscreen-ng
+#
+# C
+#
+sudo apt -y install make cmake build-essential clang g++ libudev-dev libpng-dev pkg-config
+#
+# Node
+#
+sudo apt -y install nodejs npm
+sudo npm install -g --unsafe-perm node-red
+#
+# TeX
+#
+sudo apt -y install texlive-latex-recommended texlive-fonts-recommended texlive-font-utils
+#
+# Snaps
+#
+sudo snap install zoom-client
+sudo snap install chromium
+sudo snap set system refresh.timer=1:00-5:00
+#
+# config
+#
+echo "   use gnome-tweaks to set window focus, keyboard mapping"
+echo "   turn off Settings -> Ubuntu Desktop -> Enhanced tiling"
+echo "   turn on Dash to Panel: https://extensions.gnome.org/extension/1160/dash-to-panel"
+echo "   install"
+echo "      Kdenlive: https://kdenlive.org/en/download"
+echo "      FreeCAD: https://www.freecad.org"
+echo "      KiCad: https://www.kicad.org"
+echo "      Arduino: https://www.arduino.cc"
+echo "         needs --no-sandbox"
+echo "      Edbg: https://github.com/ataradov/edbg"
+echo "      Chrome: https://www.google.com/chrome/"
+echo "      Rust: https://www.rust-lang.org/tools/install"
+echo "      Miniconda: https://docs.anaconda.com/miniconda/install"
+echo "         numpy, matplotlib, jax, pyserial, ..."

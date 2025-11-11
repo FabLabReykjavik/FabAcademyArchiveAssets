@@ -1,0 +1,135 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i><a href=http://inventory.fabcloud.io/?purpose=Electronics%20Production>Electronics Production</a></i></b><br>
+</div>
+</center>
+<div style="font-size: 120%; margin-left: 2.5%;">
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b>PCB (Printed Circuit Board) fabrication</b>
+   <a href=https://spectrum.ieee.org/with-the-dead-bug-method-hobbyists-can-break-through-the-highfrequency-barrier>dead bug</a> <a href=https://fab.cba.mit.edu/classes/863.19/CBA/people/zach/week03.html>circuits</a>
+   <a href=http://pub.fabcloud.io/helloworld/uncharted/acid_etch.html>etching</a>
+      set-up, feature size, batch
+      <a href=https://www.4pcb.com/media/presentation-how-to-build-pcb.pdf>lithography</a>, <a href=https://hackaday.com/2016/09/12/take-your-pcbs-from-good-to-great-toner-transfer/>transfer</a>, <a href=https://www.youtube.com/watch?v=RudStbSApdE>print</a>
+      ferric/cupric chloride, ammonium/sodium persulfate
+      <a href=http://fab.academany.org/2020/labs/kamakura/students/toshiki-tsuchiyama/assignments/week04/#5-make-etching-liquid>citric acid, peroxide</a>
+      <a href=https://us.vwr.com/store/search/searchMSDS.jsp>SDS</a>
+      <a href=https://www.researchgate.net/publication/235313645_Water_use_in_the_printed_circuit_board_manufacturing_process_and_approaches_for_reducing_consumption>water consumption</a>
+      <a href=https://archive.epa.gov/sectors/web/pdf/01050.pdf>waste</a>
+   <a href=http://www.youtube.com/watch?v=XdamEhs2RIk&list=PL-xEsC0ZUCUM42QNHaOOdoOwYg0j251dU&index=1>machining</a>
+      <a href=PCBs.jpg>finish</a>
+      <a href=http://cba.mit.edu/tools>machines</a>
+      tools
+         <a href=http://www.carbidedepot.com/00100in-DIA-2FL-SE-MICRO-AlTiN-P183831.aspx>0.010</a>
+         <a href=http://www.carbidedepot.com/00156in-DIA-2FL-SE-AlTiN-164-P180142.aspx>1/64</a>
+         <a href=http://www.carbidedepot.com/00312in-DIA-2FL-SE-AlTiN-132-P180143.aspx>1/32</a>
+         <a href=https://www.amazon.com/SainSmart-Genmitsu-Engraving-Degree-Conical/dp/B07P99F3L1/>V-bits</a>
+         <a href=https://www.precisebits.com/products/carbidebits/tapered_stub_125.asp>tapered bits</a>
+      fixturing
+      underlay
+      zeroing
+         <a href=mounting.jpg>mounting</a> <a href=lowering.jpg>lowering</a> <a href=probing.jpg>probing</a>
+      set-screws, collets
+      lifetime
+      deburring
+      cleaning
+      climb vs conventional
+      nesting
+      <a href=http://sibusaman.fabcloud.io/doublepcb/>registration</a>
+   <a href=http://fab.cba.mit.edu/classes/863.17/Harvard/people/HonghaoDeng/project-3/project-3.html>vinyl cutter</a> <a href=http://fab.cba.mit.edu/classes/863.17/Harvard/people/HonghaoDeng/project-9/project-9.html>flex</a> <a href=http://fab.cba.mit.edu/classes/863.17/CBA/people/tomasero/index.html>connections</a> <a href=http://fab.cba.mit.edu/classes/863.18/Harvard/people/victoria/week_04.html>encapsulation</a> <a href=http://fabacademy.org/2019/labs/kamplintfort/students/alessandra-crotty/week6.html>milling</a>
+   <a href=http://fabacademy.org/archives/2015/doc/fiber-laser-cutting-pcb.html>laser cutter</a> <a href=https://fab.cba.mit.edu/classes/863.22/CBA/people/Wedyan/LIG.html>LIG</a>
+   <a href=http://fab.cba.mit.edu/classes/863.19/CBA/people/joaowilbert/week6/>printing</a> <a href=https://www.voltera.io/product/pcb-printer>conducting inks</a>
+   <a href=https://www.google.com/search?q=electroplating>plating</a>
+   <a href=http://cba.mit.edu/docs/papers/00.07.E-broidery.pdf>sewing</a>
+
+<b>PCB materials</b>
+   rigid
+      FR4 (epoxy glass)
+      <a href=https://store.bantamtools.com/products/pcb?variant=585249129>FR1</a> (phenolic paper)
+      <a href=https://www.mcmaster.com/garolite/multipurpose-flame-retardant-garolite-g-10-fr4-sheets-and-bars/>garolite</a>
+   flex
+      <a href=https://www.dupont.com/electronic-materials/polyimide-films.html>Kapton</a>, <a href=https://www.dupont.com/products/pyralux-lf.html>Pyralux</a>
+      <a href=http://multimedia.3m.com/mws/media/37468O/3m-epoxy-film-electrical-tape-1.pdf>#1 epoxy film</a>, <a href=http://multimedia.3m.com/mws/media/104361O/tape-1126-copper-foil-with-conductive-adhesive.pdf>#1126 copper tape</a>
+   high-frequency
+      teflon
+      glass
+   copper
+      0.5 oz: 17.5 um
+      1.0 oz: 35 um
+      2.0 oz: 70 um
+
+<b><a href=Gerber.jpg>board houses</a></b>
+   <a href=https://jlcpcb.com>JLCPCB</a>, <a href=https://www.pcbway.com>PCBWay<a>, <a href=https://oshpark.com/>OSH Park</a>, <a href=https://aisler.net>Aisler</a>,
+      PCB, kit, BOM
+   design rules
+      width/spacing (15, 5 mils)
+   layers
+      <a href=../embedded_programming/D11C/hello.D11C.serial.3V3.png>1</a>, <a href=../embedded_programming/D11C/hello.D11C.serial.5V.png>1.5</a>, <a href=../output_devices/TFT/hello.ILI9341.HW.D21E.png>2</a>, <a href=../output_devices/array/hello.array.44.2.jpg>2+</a>, 4, N
+   mechanical, drill, solder mask, silk screen
+   vias
+      <a href=../output_devices/stepper/hello.stepper.bipolar.D11C.jpg>wires</a>, <a href=http://fab.cba.mit.edu/classes/863.16/doc/tutorials/PCB_Rivets>rivets</a>, <a href=plated.jpg>plated</a>, blind, buried
+
+<a href=http://octopart.com/><b>components</b></a>
+   through-hole
+   surface-mount
+   chip-scale
+
+<a href=breadboard.jpg><b>breadboards</b></a>
+
+<b>assembly</b>
+   <a href=https://www.digikey.com/products/en/soldering-desoldering-rework-products/solder/262>solder</a>
+      <a href=https://www.google.com/search?q=soldering+iron&tbm=isch>iron</a> <a href=https://www.google.com/search?q=soldering+station&source=lnms&tbm=isch>station</a> <a href=https://www.google.com/search?q=soldering+fume+extractor&tbm=isch>fume extractor</a> <a href=https://www.mayoclinic.org/first-aid/first-aid-burns/basics/art-20056649>burns</a>
+      <a href=http://ec.europa.eu/environment/waste/rohs_eee/index_en.htm>ROHS</a>
+      <a href=solders.png>types</a>
+         lead-free <a href=https://www.digikey.com/en/products/detail/chip-quik-inc/SMDSWLF-020-4OZ/2177058>wire</a> <a href=https://www.digikey.com/en/products/detail/chip-quik-inc/TS391SNL/7802215>paste</a> <a href=https://www.chipquik.com/msds/TS391SNL.pdf>SDS</a>
+         leaded <a href=https://www.digikey.com/en/products/detail/kester-solder/24-6337-8834/365526>wire</a> <a href=https://www.digikey.com/en/products/detail/chip-quik-inc/TS391AX10/7802226>paste</a> <a href=https://www.chipquik.com/msds/TS391AX10.pdf>SDS</a>
+         low-temp <a href=https://www.digikey.com/en/products/detail/chip-quik-inc/SMDSWLT-040-10G/9836741>wire</a> <a href=https://www.digikey.com/en/products/detail/chip-quik-inc/TS391LT/7802220>paste</a>
+      eutectic
+      tinning
+      <a href=solders.png>wetting</a>
+      <a href=wire.jpg>manual</a>, drag, wave
+      <a href=https://www.google.com/search?q=cold+solder+joint&source=lnms&tbm=isch>cold solder joints</a>, solder bridges, checking joints
+      flux core, paste, pen
+      reflow
+         <a href=https://academany.fabcloud.io/fabacademy/2024/bootcamp-instructors/workshops/Soldermask/>stencil</a>
+         <a href=hotair.jpg>hot air</a>, <a href=hotplate.jpg>hot plate</a>, oven, IR
+      <a href=https://www.amazon.com/s?k=magnifying+lamp>magnifying</a>
+   stuffing
+      component orientation
+      tacking down parts
+      bottom to top, inside to outside
+      <a href=http://academy.cba.mit.edu/classes/input_devices/imu/6050/hello.MPU-6050.RP2040.jpg>breakout headers</a>
+      fumes
+      washing
+   <a href=desolder.jpg>desoldering</a>
+      <a href=https://www.digikey.com/en/products/detail/menda-easybraid/Q-B-10AS/350543>braid</a>
+      <a href=https://www.amazon.com/VPABES-Portable-Tweezers-Soldering-Repairing/dp/B07QYMW9NS/>tweezers</a>
+      <a href=https://www.amazon.com/Velleman-VTDESOL3U-Vacuum-Desoldering-Heater/dp/B00B88FRME>vacuum</a>
+      <a href=https://www.amazon.com/TOAUTO-Soldering-Conversion-Temperature-Correction/dp/B08L8YGYQZ>hot air</a>
+      <a href=gravity.jpg>gravity</a>
+   <a href=../output_devices/I2S/hello.MAX98357A.RP2040.fix.jpg>cutting traces, adding jumpers</a>
+   <a href=https://www.google.com/search?q=bga+rework+station>placement</a> <a href=http://cba.mit.edu/tools/index.html#Mechatronika_M10V_Pick_and_Place>pick-and-place</a>
+   encapsulation
+
+<b>CAM</b>
+   formats
+      <a href=https://www.ucamco.com/files/downloads/file/81/the_gerber_file_format_specification.pdf>Gerber/RS-274X</a>
+      <a href=../embedded_programming/hello.ISP.44.res.traces.png>png</a> resolution
+   <a href=http://flatcam.org>FlatCAM</a> <a href=https://github.com/pcb2gcode/pcb2gcode>pcb2gcode</a> <a href=https://quentinbolsee.pages.cba.mit.edu/gerber2img/>gerber2img</a>
+   <a href=https://modsproject.org/?program=programs/machines/G-code/mill%202D%20PCB>mods</a> interior <a href=https://modsproject.org/?program=programs/machines/Carvera/mill%202D%20PCB>tool changer</a> <a href=mods.mp4>video</a>
+   trace width
+      <a href=linetest.traces.png>traces</a> <a href=linetest.traces_exterior.png>traces+exterior</a> <a href=linetest.interior.png>interior</a> <a href=0156.jpg>1/64"</a> <a href=010.jpg>0.010"</a> <a href=V.jpg>V-bit</a> <a href=fiber.jpg>fiber laser</a>
+   <a href=pads.jpg>pad, trace size</a>
+   
+<b> <a href=https://fabacademy.org/2020/labs/ulb/students/quentin-bolsee/assignments/week05/>assignment</a> <a href=https://fab.cba.mit.edu/classes/863.24/people/IsaakFreeman/week6/week6.html>assignment</a> <a href=https://gitlab.cba.mit.edu/quentinbolsee/tracking/-/raw/main/img/pcb_upside_down.jpg>assignment</a> <a href=http://fab.cba.mit.edu/classes/863.17/CBA/people/seanhickey/weeks/06-large-format-machining/>assignment</a> </b>
+   <i>group assignment:</i>
+      - characterize the design rules for your in-house PCB production process
+      - submit a PCB design to a board house
+   <i>individual assignment:</i>
+      - make and test a microcontroller development board that you designed
+      - extra credit: make it with another process

@@ -1,0 +1,214 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+</head>
+<body link="black" vlink="black" alink="black">
+<font face="bitstream vera sans,arial,helvetica,sans-serif">
+<center>
+<div style="font-size: 125%;">
+<b><i><a href=http://inventory.fabcloud.io/?purpose=Networking%20and%20Communications>Networking and Communications</a></i></b>
+</div>
+</center>
+
+<div style="font-size: 120%; margin-left: 2.5%;">
+
+<pre><font face="bitstream vera sans,arial,helvetica,sans-serif">
+<b>purposes</b>
+   location
+   parallelism
+   modularity
+   interference
+
+<b>wired</b>
+   UART, USART, SERCOM, bit-bang
+   <i>asynchronous serial</i>
+      <a href=https://pdfserv.maximintegrated.com/en/an/AN723.pdf>RS-232, RS-422, RS-485</a>
+      <i>serial broadcast</i>
+         <a href=http://fabacademy.org/2020/labs/leon/students/adrian-torres/week14.html#hello_serial_bus>ATtiny412</a>
+         ATtiny45
+            <a href=bus/bus.jpg>components</a> <a href=bus/bus.mp4>video</a>
+            <a href=bus/hello.bus.45.bridge>hello.bus.45.bridge</a> <a href=bus/hello.bus.45.bridge.png>board</a> <a href=bus/hello.bus.45.bridge.traces.png>traces</a> <a href=bus/hello.bus.45.bridge.traces_exterior.png>traces+exterior</a> <a href=bus/hello.bus.45.bridge.interior.png>interior</a>
+            <a href=bus/hello.bus.45.node>hello.bus.45.node</a> <a href=bus/hello.bus.45.node.png>board</a> <a href=bus/hello.bus.45.node.traces.png>traces</a> <a href=bus/hello.bus.45.node.traces_exterior.png>traces+exterior</a> <a href=bus/hello.bus.45.node.interior.png>interior</a>
+            <a href=bus/hello.bus.45.c>hello.bus.45.c</a> <a href=bus/hello.bus.45.make>makefile</a>
+      <i>hop-count</i>
+         <a href=https://cdn-shop.adafruit.com/datasheets/WS2812.pdf>chip</a> <a href=https://www.digikey.com/en/products/detail/adafruit-industries-llc/3094/6058485>LED</a> <a href=https://learn.adafruit.com/adafruit-neopixel-uberguide>strip</a>
+         <a href=hop/hello.hop-LED.t1624>hello.hop-LED.t1624</a> <a href=hop/hello.hop-LED.t1624.png>board</a> <a href=hop/hello.hop-LED.t1624.jpg>components</a> <a href=hop/hello.hop-LED.t1624.top.png>top</a> <a href=hop/hello.hop-LED.t1624.interior.png>interior</a>
+            <a href=hop/hello.hop-LED.t1624.ino>hello.hop-LED.t1624.ino</a> <a href=hop/hello.hop-LED.py>hello.hop-LED.py</a> <a href=hop/hello.hop-LED.t1624.mp4>video</a>
+      <i>broad-hop</i>
+         <a href=hop/hello.broadhop-LED.t1624>hello.broadhop-LED.t1624</a> <a href=hop/hello.broadhop-LED.t1624.png>board</a> <a href=hop/hello.broadhop-LED.t1624.jpg>components</a> <a href=hop/hello.broadhop-LED.t1624.top.png>top</a> <a href=hop/hello.broadhop-LED.t1624.interior.png>interior</a>
+            <a href=hop/hello.broadhop-LED.t1624.ino>hello.broadhop-LED.t1624.ino</a> <a href=hop/hello.broadhop-LED.py>hello.broadhop-LED.py</a> <a href=hop/hello.broadhop-LED.t1624.mp4>video</a>
+            <a href=hop/hello.broadhop-serial.D11C>hello.broadhop-serial.D11C</a> <a href=hop/hello.broadhop-serial.D11C.png>board</a> <a href=hop/hello.broadhop-serial.D11C.jpg>components</a> <a href=hop/hello.broadhop-serial.D11C.top.png>top</a> <a href=hop/hello.broadhop-serial.D11C.bot.png>bottom</a> <a href=hop/hello.broadhop-serial.D11C.holes.png>holes</a> <a href=hop/hello.broadhop-serial.D11C.interior.png>interior</a>
+   <i>synchronous serial</i>
+      <i><a name=SPI href=http://ww1.microchip.com/downloads/en/AppNotes/Atmel-2585-Setup-and-Use-of-the-SPI_ApplicationNote_AVR151.pdf>SPI</a></i>
+         SDI/SDO/CS/SCK, PICO/POCI, <s>MISO/MOSI/SS</s>
+         <a href=http://arduino.cc/en/Reference/SPI>library</a> <a href=https://docs.micropython.org/en/latest/library/machine.SPI.html>library</a>
+         <a name="SD"></a>SD memory cards
+            <a href=SD/SD.pdf>specification</a> <a href=SD/FAT.pdf>FAT</a>
+            <a href=SD/hello.uSD.RP2040>hello.uSD.RP2040</a> <a href=SD/hello.uSD.RP2040.png>board</a> <a href=SD/hello.uSD.RP2040.jpg>components</a> <a href=SD/hello.uSD.RP2040.top.png>top</a> <a href=SD/hello.uSD.RP2040.bottom.png>bottom</a> <a href=SD/hello.uSD.RP2040.holes.png>holes</a> <a href=SD/hello.uSD.RP2040.interior.png>interior</a>
+               <a href=SD/hello.uSD.RP2040.py>hello.uSD.RP2040.py</a> <a href=SD/hello.uSD.RP2040.mp4>video</a>
+            <a href=SD/hello.uSD.D11C>hello.uSD.D11C</a> <a href=SD/hello.uSD.D11C.png>board</a> <a href=SD/hello.uSD.D11C.jpg>components</a> <a href=SD/hello.uSD.D11C.traces.png>traces</a> <a href=SD/hello.uSD.D11C.traces_exterior.png>traces+exterior</a> <a href=SD/hello.uSD.D11C.interior.png>interior</a>
+               <a href=SD/hello.uSD.D11C.ino>hello.uSD.D11C.ino</a> <a href=SD/hello.uSD.D11C.mp4>video</a>
+            <a href=SD/hello.uSD.44>hello.uSD.44</a> <a href=SD/hello.uSD.44.png>board</a> <a href=SD/hello.uSD.44.jpg>components</a> <a href=SD/hello.uSD.44.traces.png>traces</a> <a href=SD/hello.uSD.44.traces_exterior.png>traces+exterior</a> <a href=SD/hello.uSD.44.interior.png>interior</a>
+               <a href=SD/hello.uSD.44.read.c>hello.uSD.44.read.c</a> <a href=SD/hello.uSD.44.read.make>make</a> <a href=SD/hello.uSD.44.read.txt>output</a>
+      <i><a name=I2C href=https://www.nxp.com/docs/en/application-note/AN10216.pdf>I2C, TWI</a></i>
+         SCL/SDA, pull-ups
+         <a href=https://www.sparkfun.com/qwiic>Qwiic</a> <a href=https://learn.adafruit.com/introducing-adafruit-stemma-qt>STEMMA</a>
+         <a href=https://www.arduino.cc/reference/en/language/functions/communication/wire>library</a> <a href=https://docs.micropython.org/en/latest/library/machine.I2C.html>library</a> <a href=http://academy.cba.mit.edu/classes/input_devices/mag/TLE493D/hello.TLE493D.t412.ino>hardware</a> <a href=http://academy.cba.mit.edu/classes/input_devices/mag/TLE493D/hello.TLE493D.t412.c>software</a>
+         <a id=hello.I2C.t1614 href=I2C/hello.I2C.t1614>hello.I2C.t1614</a> <a href=I2C/hello.I2C.t1614.png>board</a> <a href=I2C/hello.I2C.t1614.jpg>components</a> <a href=I2C/hello.I2C.t1614.traces.png>traces</a> <a href=I2C/hello.I2C.t1614.traces_exterior.png>traces+exterior</a> <a href=I2C/hello.I2C.t1614.interior.png>interior</a> 
+            <a href=I2C/hello.I2C.ino>hello.I2C.ino</a> <a href=I2C/hello.I2C.mp4>video</a>
+         <a href=https://fabacademy.org/2020/labs/leon/students/adrian-torres/week14.html#hello_i2c>ATtiny412</a>
+      <i><a href=https://www.mipi.org/resources/i3c-frequently-asked-questions>I3C</a></i>
+   <i><a href=http://www.usb.org>USB</a></i>
+      <a href=https://github.com/hathach/tinyusb>TinyUSB</a>
+      CircuitPython <a href=https://docs.circuitpython.org/projects/hid/en/latest>HID</a> <a href=https://docs.circuitpython.org/projects/midi/en/latest>MIDI</a>
+      Arduino <a href=https://www.arduino.cc/reference/en/libraries/hid-project>HID</a> <a href=https://www.arduino.cc/reference/en/libraries/midiusb>MIDI</a>
+   <a href=http://www.ieee802.org/3/><i>Ethernet</i></a>
+      <a href=https://www.digikey.com/en/products/detail/wiznet/W5500/4425702>chip</a> <a href=https://www.digikey.com/en/products/detail/wiznet/WIZ850IO/8789619>module</a>
+   <i><a href=http://www.ti.com/lit/an/sloa101a/sloa101a.pdf>CAN</a>, <a href=http://www.ti.com/lit/an/slla383/slla383.pdf?ts=1588800462407>LIN</a></i>
+   <a href=https://modbus.org><i>MODBUS</i></a>
+   <a href=https://learn.sparkfun.com/tutorials/introduction-to-dmx/all><i>DMX</i></a>
+
+<b>wireless</b>
+   <i><a href=https://www.arrl.org/shop/ARRL-Handbook>radios</a></i>
+      oscillator, mixer, PA, LNA, IF, I/Q, demod, baseband, filters
+   <i><a href=https://www.wiley.com/en-us/Antenna+Theory%3A+Analysis+and+Design%2C+4th+Edition-p-9781118642061>antennas</a></i>
+      Q, antenna gain, impedance matching, short antennas
+      <a href=https://www.fastcompany.com/1761891/afghanistans-amazing-diy-internet>FabFi</a>
+   <i><a href=nRF/nRF24L01.pdf>single-chip</a></i>
+      ESP32 (2.4 GHz Wi-Fi, Bluetooth, 32-bit) <a href=https://www.espressif.com/en/products/modules>versions</a>
+         <a href=https://www.espressif.com/en/products/socs/esp32-c3>ESP32-C3</a> <a href=https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html>module</a>
+            <a href=../embedded_programming/ESP32-C3/hello.button-blink.C3>hello.button-blink.C3</a> <a href=../embedded_programming/ESP32-C3/hello.button-blink.C3.png>board</a> <a href=../embedded_programming/ESP32-C3/hello.button-blink.C3.jpg>components</a> <a href=../embedded_programming/ESP32-C3/hello.button-blink.C3.top.png>traces</a> <a href=../embedded_programming/ESP32-C3/hello.button-blink.C3.interior.png>interior</a>
+               <a href=ESP32C3/hello.Web-blink.C3.py>hello.Web-blink.C3.py</a> <a href=ESP32C3/microdot.py>microdot.py</a> <a href=ESP32C3/microdot_asyncio.py>microdot_asyncio.py</a> <a href=ESP32C3/hello.Web-blink.C3.mp4>video</a>
+               <a href=ESP32C3/hello.BLE-blink.C3.py>hello.BLE-blink.C3.py</a> <a href=ESP32C3/blueart.py>blueart.py</a> <a href=ESP32C3/hello.BLE-blink.C3.html>hello.BLE-blink.C3.html</a> <a href=ESP32C3/hello.BLE-blink.C3.mp4>video</a>
+                  <a href=https://developer.nordicsemi.com/nRF_Connect_SDK/doc/latest/nrf/libraries/bluetooth_services/services/nus.html>NUS</a> <a href=https://developer.chrome.com/articles/bluetooth>Web Bluetooth</a>
+         <a href=ESP32/esp32-wroom-32_datasheet_en.pdf>ESP32-WROOM</a> <a href=https://randomnerdtutorials.com/esp32-pinout-reference-gpios/>pins</a>
+            <a href=ESP32/hello.ESP32-WROOM>hello.ESP32-WROOM</a> <a href=ESP32/hello.ESP32-WROOM.png>board</a> <a href=ESP32/hello.ESP32-WROOM.jpg>components</a> <a href=ESP32/hello.ESP32-WROOM.traces.png>traces</a> <a href=ESP32/hello.ESP32-WROOM.traces_exterior.png>traces+exterior</a> <a href=ESP32/hello.ESP32-WROOM.holes.png>holes</a> <a href=ESP32/hello.ESP32-WROOM.interior.png>interior</a>
+               <a href=ESP32/hello.ESP32-WROOM.WebClient.ino>Web client</a> <a href=ESP32/hello.ESP32-WROOM.WebClient.mp4>video</a>
+               <a href=ESP32/hello.ESP32-WROOM.WebServer.ino>Web server</a> <a href=ESP32/hello.ESP32-WROOM.WebServer.mp4>video</a>
+               <a href=ESP32/hello.ESP32-WROOM.UDP.ino>UDP</a> <a href=ESP32/hello.ESP32-WROOM.UDP.mp4>video</a>
+               <a href=ESP32/hello.ESP32-WROOM.SPP.ino>Bluetooth serial</a> <a href=ESP32/hello.ESP32-WROOM.SPP.mp4>video</a>
+               <a href=https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/wifi.html>802.11 LR</a>
+         <a href=https://www.amazon.com/s?k=esp32-cam>ESP23-CAM</a> 
+            <a href=ESP32/hello.ESP32-CAM>hello.ESP32-CAM</a> <a href=ESP32/hello.ESP32-CAM.png>board</a> <a href=ESP32/hello.ESP32-CAM.jpg>components</a> <a href=ESP32/hello.ESP32-CAM.traces.png>traces</a> <a href=ESP32/hello.ESP32-CAM.traces_exterior.png>traces+exterior</a> <a href=ESP32/hello.ESP32-CAM.holes.png>holes</a> <a href=ESP32/hello.ESP32-CAM.interior.png>interior</a>
+            <a href=https://www.uctronics.com/download/cam_module/OV2640DS.pdf>camera</a> <a href=ESP32/hello.ESP32-CAM.video.mp4>video</a>
+      ESP8266 (2.4 GHz Wi-Fi, 8-bit)
+         <a href=ESP8266/0a-esp8266ex_datasheet_en.pdf>chip</a> <a href=ESP8266/0c-esp-wroom-02_datasheet_en.pdf>module</a> <a href=../networking_communications/ESP8266/esp01.pdf>board</a> power
+            <a href=ESP8266/hello.ESP-01>hello.ESP-01</a> <a href=ESP8266/hello.ESP-01.png>board</a> <a href=ESP8266/hello.ESP-01.jpg>components</a> <a href=ESP8266/hello.ESP-01.traces.png>traces</a> <a href=ESP8266/hello.ESP-01.traces_exterior.png>traces+exterior</a> <a href=ESP8266/hello.ESP-01.holes.png>holes</a> <a href=ESP8266/hello.ESP-01.interior.png>interior</a>
+               <a href=https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WebServer/examples/HelloServer/HelloServer.ino>Web server</a> <a href=../networking_communications/ESP8266/hello.ESP-01.WebServer.mp4>video</a>
+            <a href=ESP8266/hello.ESP-WROOM-02D>hello.ESP-WROOM-02D</a> <a href=ESP8266/hello.ESP-WROOM-02D.png>board</a> <a href=ESP8266/hello.ESP-WROOM-02D.jpg>components</a> <a href=ESP8266/hello.ESP-WROOM-02D.traces.png>traces</a> <a href=ESP8266/hello.ESP-WROOM-02D.traces_exterior.png>traces+exterior</a> <a href=ESP8266/hello.ESP-WROOM-02D.holes.png>holes</a> <a href=ESP8266/hello.ESP-WROOM-02D.interior.png>interior</a>
+               <a href=https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/examples/WiFiAccessPoint/WiFiAccessPoint.ino>Access point</a> <a href=ESP8266/hello.ESP-WROOM-02D.AccessPoint.mp4>video</a>
+      MFRC522 (13.56 MHz RFID)
+         <a href=https://www.nxp.com/docs/en/data-sheet/MFRC522.pdf>chip</a> <a href=https://www.amazon.com/s?k=mfrc522>module</a> <a href=https://github.com/miguelbalboa/rfid>library</a> <a href=https://www.computerworld.com/article/2537817/how-they-hacked-it--the-mifare-rfid-crack-explained.html>security</a>
+            <a href=MFRC522/hello.MFRC522.t1614>hello.MFRC522.t1614</a> <a href=MFRC522/hello.MFRC522.t1614.png>board</a> <a href=MFRC522/hello.MFRC522.t1614.jpg>components</a> <a href=MFRC522/hello.MFRC522.t1614.traces.png>traces</a> <a href=MFRC522/hello.MFRC522.t1614.traces_exterior.png>traces+exterior</a> <a href=MFRC522/hello.MFRC522.t1614.interior.png>interior</a> <a href=MFRC522/hello.MFRC522.t1614.mp4>video</a>
+      nRF24L01+ (2.4 GHz ISM)
+         <a href=https://www.digikey.com/en/products/detail/nordic-semiconductor-asa/NRF24L01P-T/4626383>chip</a> <a href=https://www.amazon.com/Arduino-NRF24L01-2-4GHz-Wireless-Transceiver/dp/B00O9O868G>module</a> <a href=http://playground.arduino.cc/InterfacingWithHardware/Nrf24L01>library</a> <a href=http://fab.cba.mit.edu/classes/863.19/doc/hello_world_t44_nrf24L01/index.html>project</a> antennas
+         <a href=nRF/hello.nRF24L01P.44>hello.nRF24L01P.44</a> <a href=nRF/hello.nRF24L01P.44.png>board</a> <a href=nRF/hello.nRF24L01P.44.jpg>components</a> <a href=nRF/hello.nRF24L01P.44.traces.png>traces</a> <a href=nRF/hello.nRF24L01P.44.traces_exterior.png>traces+exterior</a> <a href=nRF/hello.nRF24L01P.44.interior.png>interior</a>
+      nRF905 (433/868/915 MHz ISM)
+         <a href=http://www.digikey.com/product-detail/en/NRF905/1490-1028-ND>chip</a> <a href=https://www.amazon.com/NRF905-wireless-module-PTR8000-transmission/dp/B01FDD4C70>module</a> <a href=https://github.com/zkemble/nRF905>library</a>
+      RN4871 (2.4 GHz Bluetooth)
+         <a href=http://www.microchip.com/wwwproducts/en/IS1871>chip</a> <a href=https://www.digikey.com/product-detail/en/microchip-technology/RN4871-V-RM118/RN4871-V-RM118-ND/6130476>module</a> <a href=http://ww1.microchip.com/downloads/en/DeviceDoc/RN4870-71-Bluetooth-Low-Energy-Module-User-Guide-DS50002466C.pdf>commands</a>
+         <a href=RN4871/hello.RN4871.ftdi>hello.RN4871.ftdi</a> <a href=RN4871/hello.RN4871.ftdi.png>board</a> <a href=RN4871/hello.RN4871.ftdi.jpg>components</a> <a href=RN4871/hello.RN4871.ftdi.traces.png>traces</a> <a href=RN4871/hello.RN4871.ftdi.traces_exterior.png>traces+exterior</a> <a href=RN4871/hello.RN4871.ftdi.interior.png>interior</a> <a href=RN4871/RN4871.mp4>video</a>
+      CC2541 (2.4 GHz Bluetooth)
+         <a href=http://www.ti.com/product/cc2541>chip</a> <a href=https://www.amazon.com/DSD-TECH-SH-HC-08-Transceiver-Compatible/dp/B01N4P7T0H>HC-08</a> <a href=https://www.amazon.com/DSD-TECH-Bluetooth-iBeacon-Arduino/dp/B06WGZB2N4>HM-10</a> <a href=https://www.amazon.com/Qunqi-HM-11-Bluetooth-Anti-lost-Android/dp/B015C6DIBO>HM-11</a> <a href=http://wiki.seeedstudio.com/wiki/Bluetooth_V4.0_HM-11_BLE_Module>commands</a>
+         <a href=HM11/hello.HM-11.ftdi>hello.HM-11.ftdi</a> <a href=HM11/hello.HM-11.ftdi.png>board</a> <a href=HM11/hello.HM-11.ftdi.jpg>components</a> <a href=HM11/hello.HM-11.ftdi.traces.png>traces</a> <a href=HM11/hello.HM-11.ftdi.traces_exterior.png>traces+exterior</a> <a href=HM11/hello.HM-11.ftdi.interior.png>interior</a> <a href=HM11/HM11.mp4>video</a>
+      nRF52 (2.4 GHz Bluetooth, ISM)
+         <a href=https://infocenter.nordicsemi.com/index.jsp?topic=%2Fstruct_nrf52%2Fstruct%2Fnrf52.html>chip</a> <a href=http://www.fanstel.com/bluenor-summaries>module</a> <a href=https://gitlab.cba.mit.edu/pub/hello-world/nrf52/tree/master>project</a> <a href=https://gitlab.cba.mit.edu/tomasero/vegatooth-i2c>project</a>
+      CYW43438 (2.4 GHz, Wi-Fi, Bluetooth, FM)
+         <a href=https://www.cypress.com/documentation/datasheets/cyw43438-single-chip-ieee-80211ac-bgn-macbasebandradio-integrated-bluetooth>chip</a> <a href=https://www.mouser.com/new/embedded-solutions/wireless-rf-modules/wifi-modules-80211/murata-type-1ld-module/n-6l7qaZ1w98wl>module</a> <a href=https://www.raspberrypi.org/products/raspberry-pi-zero-w>board</a>
+      RFM95/6/7/8 (433/470/868/915 MHz LoRa)
+         <a href=https://www.rfsolutions.co.uk/downloads/1463993415RFM95_96_97_98W.pdf>chip</a> <a href=https://www.digikey.com/product-detail/en/seeed-technology-co-ltd/109990166/1597-1488-ND>module</a> <a href=https://www.thethingsnetwork.org>LoRaWAN</a>
+      SX1276 (137-1050 MHz LoRa)
+         <a href=https://www.semtech.com/products/wireless-rf/lora-transceivers/sx1276>chip</a> <a href=https://www.amazon.com/s?k=SX1276>board</a> <a href=https://github.com/ExpressLRS/ExpressLRS>ExpressLRS</a>
+      SIM800L (GSM)
+         <a href=https://www.amazon.com/HiLetgo-Smallest-Breakout-Quad-band-3-7-4-2V/dp/B01DLIJM2E/>module</a>
+   <i><a href=http://gnuradio.org>software radio</a></i>
+   <i><a href=https://openwrt.org/about>OpenWrt</a></i>
+
+<a href=http://www.iso.org/iso/home.htm><b>OSI layers</b></a>
+   7: application (HTTP)
+   6: presentation (SSL)
+   5: session (RPC)
+   4: transport (TCP, UDP)
+   3: network (IP)
+   2: data link (MAC)
+   1: physical (PHY)
+
+<b><a href=http://fab.cba.mit.edu/classes/MAS.862>physical media</a></b>
+   <i>capacity</i>
+      bandwidth * log_2 (signal/noise)
+   <i>wired</i>
+      single-ended, differential, powerline
+      open collector, open drain
+      transmission (pass) gate, tri-state
+      transmission line
+      waveguide
+      <a href=http://www.sonet.com/EDU/edu.htm>SONET</a> optical fiber
+   <i>wireless</i>
+      RF
+         <a href=http://www.fcc.gov/>FCC</a> <a href=http://www.ecfr.gov/cgi-bin/text-idx?c=ecfr&sid=896fdfef3883114171de384cf10702ce&rgn=div5&view=text&node=47:1.0.1.1.16&idno=47>Part 15</a> <a href=http://www.fcc.gov/Bureaus/OPP/working_papers/oppwp38chart.pdf>ISM</a>
+         <a href=http://www.ieee802.org/11/>802.11</a> <a href=http://www.wi-fi.org/>Wi-Fi</a> <a href=https://people.csail.mit.edu/fadel/papers/wivi-paper.pdf>sensing</a>
+         <a href=http://www.ieee802.org/15>802.15</a> <a href=http://www.zigbee.org/>ZigBee</a> <a href=https://tools.ietf.org/html/rfc4944>6LoWPAN</a>
+         <a href=http://www.bluetooth.com/>Bluetooth</a> <a href=https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works>BLE</a> <a href=https://www.bluetooth.com/specifications/gatt/generic-attributes-overview>GATT</a> <a href=https://www.bluetooth.com/specifications/assigned-numbers/generic-access-profile>GAP</a> <a href=https://www.bluetooth.com/specifications/assigned-numbers/service-discovery>UUID</a> <a href=https://www.bluetooth.com/specifications/gatt/services>Services</a> <a href=https://www.nordicsemi.com/Products/Development-tools/nRF-Toolbox>app</a> <a href=http://www.bluez.org>stack</a>
+      optical
+         <a href=http://ww1.microchip.com/downloads/en/AppNotes/Atmel-2534-RC5-IR-Remote-Control-Transmitter-on-tinyAVR-and-megaAVR_ApplicationNote_AVR415.pdf>transmitter</a> <a href=http://ww1.microchip.com/downloads/en/AppNotes/Atmel-1473-RC5-IR-Remote-Control-Receiver-on-tinyAVR-and-megaAVR-Devices_ApplicationNote_AVR410.pdf>receiver</a> <a href=https://purelifi.com>LiFi</a> <a href=https://fabacademy.org/2022/labs/waag/students/bas-pijls/blog/week14/>RGB</a>
+      <a href=https://www.mit.edu/~fadel/papers/PAB-paper.pdf>acoustic</a>
+
+<b><a href=http://www.crcpress.com/product/isbn/9780849309670>modulation</a></b>
+   PCM: Pulse-Code Modulation
+   PPM: Pulse-Position Modulation
+   OOK: On-Off Keying
+   FSK: Frequency-Shift Keying
+   BPSK: Binary Phase-Shift Keying
+   QAM: Quadrature Amplitude Modulation
+   OFDM: Orthogonal Frequency-Division Multiplexing
+   FHSS: Frequency-Hopping Spread Spectrum
+   DSSS: Direct-Sequence Spread Spectrum
+   UWB:  Ultra-WideBand
+
+<b><a href=https://www.pearson.com/us/higher-education/program/Tanenbaum-Computer-Networks-5th-Edition/PGM270019.html>channel sharing</a></b>
+   ALOHA
+   Master-Secondary
+   Token Ring
+   TDMA: Time-Division Multiple Access
+   FDMA: Frequency-Divsion Multiple Access
+   CSMA: Carrier-Sense Multiple Access
+      CD: Collision Detection
+      CA: Collision Avoidance
+      1-persistent: transmit when clear
+      nonpersistent: random backoff
+      p-persistent: probability to transmit
+   CDMA: Code-Division Multiple Access
+   MIMO: Multiple-Input Multiple-Output
+   "PDMA": Physical-Division Multiple Access
+
+<b><a href=http://fab.cba.mit.edu/classes/MAS.862>errors</a></b>
+   detection, correction
+   block, convolution codes
+   parity, checksum, Hamming, Reed-Solomon, Turbo
+
+<b><a href=https://www.pearson.com/us/higher-education/program/Tanenbaum-Computer-Networks-5th-Edition/PGM270019.html>networking</a></b>
+   <a href=http://www.ietf.org/>Internet protocols</a>
+      <a href=https://www.rfc-editor.org/>RFCs</a> <a href=https://www.ietf.org/rfc/rfc2324.txt>example</a> <a href=https://www.rfc-editor.org/rfc/rfc2549>example</a>
+      <a href=http://www.ietf.org/rfc/rfc0791.txt>IPv4</a>, <a href=http://www.ietf.org/rfc/rfc2460.txt>IPv6</a>
+         unrouted, routed, unicast, multicast, broadcast addresses
+      <a href=http://www.ietf.org/rfc/rfc1035.txt>DNS</a> <a href=http://www.ietf.org/rfc/rfc2131.txt>DHCP</a> <a href=http://www.ietf.org/rfc/rfc1631.txt>NAT</a> <a href=https://www.cisco.com/assets/sol/sb/RV320_Emulators/RV320_Emulator_v1-1-0-09/help/Setup13.html>PAT</a> <a href=http://www.ietf.org/rfc/rfc1918.txt>private</a>
+      <a href=http://www.ietf.org/rfc/rfc768.txt>UDP</a>, <a href=http://www.ietf.org/rfc/rfc793.txt>TCP</a>
+      <a href=http://www.ietf.org/rfc/rfc2616.txt>HTTP</a>
+      <a href=http://www.ietf.org/rfc/rfc4271.txt>BGP</a> <a href=http://www.ietf.org/rfc/rfc3561.txt>AODV</a> <a href=http://www.ietf.org/dyn/wg/charter/roll-charter.html>ROLL</a>
+      <a href=http://docs.python.org/library/socket.html>sockets</a>
+         <a href=socket/udpsnd.js>udpsnd.js</a> <a href=socket/udprcv.js>udprcv.js</a> <a href=socket/udp.mp4>video</a>
+         <a href=socket/udpsnd.py>udpsnd.py</a> <a href=socket/udprcv.py>udprcv.py</a>
+         <a href=socket/udpsnd.c>udpsnd.c</a> <a href=socket/udprcv.c>udprcv.c</a>
+         <a href=../interface_application_programming/index.html>WebSockets</a>
+      <a href=http://www.wireshark.org/>Wireshark</a>
+      <a href=http://www.ietf.org/rfc/rfc1055.txt>SLIP</a>
+         <a href=http://manpages.ubuntu.com/manpages/trusty/en/man8/slattach.8.html>slattach</a> <a href=http://manpages.ubuntu.com/manpages/trusty/man8/route.8.html>route</a>
+         <a href=SLIP/hello.bus.45.SLIP.c>hello.bus.45.SLIP.c</a> <a href=SLIP/hello.bus.45.SLIP.make>makefile</a> <a href=SLIP/udp_slip.py>udp_slip.py</a> <a href=SLIP/hello.bus.45.SLIP.mp4>video</a>
+      <a href=https://cba.mit.edu/docs/papers/04.10.i0.pdf>IoT</a>, <a href=https://cba.mit.edu/events/13.03.DC>event</a>
+
+<b><a href=https://fabacademy.org/2020/labs/kamakura/assignments/week17/>assignment</a></b>
+   <i>individual assignment:</i>
+      design, build, and connect wired or wireless node(s)
+      with network or bus addresses and a local interface
+   <i>group assignment:</i>
+      send a message between two projects

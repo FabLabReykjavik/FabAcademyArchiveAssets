@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+//
+// hello.ws-blink.html
+//    WebSocket blink hello-world
+//
+// Neil Gershenfeld 11/24/23
+//
+// This work may be reproduced, modified, distributed,
+// performed, and displayed for any purpose, but must
+// acknowledge this project. Copyright is retained and
+// must be preserved. The work is provided as is; no
+// warranty is provided, and users accept all liability.
+//
+var ws
+function message(text) {
+   document.getElementById('message').innerHTML = text
+   }
+function connect() {
+   let URL = document.getElementById('URL').value
+   let port = document.getElementById('port').value
+   ws = new WebSocket("ws://"+URL+':'+port)
+   ws.onopen = (event) => {
+      message("connect")
+      }
+   ws.onclose = (event) => {
+      message("close")
+      }
+   ws.onerror = (event) => {
+      message("error")
+      }
+   ws.onmessage = (event) => {
+      message("message: "+event.data)
+      }
+   }
+function disconnect() {
+   ws.close()
+   }
+function on() {
+   ws.send('on')
+   }
+function off() {
+   ws.send('off')
+   }
+</script>
+</head>
+<body>
+<div style="margin-left:2.5%">
+<p>
+WebSocket server address: <input type="text" id="URL" value="127.0.0.1">&nbsp;
+port: <input type="text" id="port" value="12345">&nbsp;
+<button onclick='connect()'>connect</button>&nbsp;
+<button onclick='disconnect()'>disconnect</button><br>
+<p>
+<button onclick='on()'>turn LED on</button>&nbsp;
+<button onclick='off()'>turn LED off</button>&nbsp;
+<p>
+<div id='message'></div>
+</div>
+</body>
+</html>

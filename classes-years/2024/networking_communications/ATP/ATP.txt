@@ -1,0 +1,38 @@
+ATP: Asynchronous Token Protocol
+
+- unlocked operation
+- exchange verification
+- static state
+
+T: token
+B: bit
+
+T B
+0 0 x: empty
+0 1 o: occupied
+1 0 0: 0
+1 1 1: 1
+
+TO: token out
+BO: bit out
+TI: token in
+BI: bit in
+
+send, receive:
+
+T B    T B
+O O    I I
+0 0 -- 0 0 empty
+1 ? -> 0 0 send bit
+1 ? <- 0 1 receive occupied
+0 0 -> 0 1 send empty
+0 0 <- 0 0 receive empty
+
+swap:
+
+T B     T B
+O O     I I
+0 0 --- 0 0 empty
+1 ? <-> 1 ? send and receive bit
+0 1 <-> 0 1 send and receive occupied
+0 0 <-> 0 0 send and receive empty
